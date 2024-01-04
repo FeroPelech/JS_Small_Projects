@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.steps-container::before {
+  content: "";
+  background-color: rgb(215, 213, 213);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+.steps {
+  background-color: aquamarine;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transform: translateY(-50%);
+  transition: 0.4s ease-in;
+}
+
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(215, 213, 213);
+  transition: 0.4s ease-in;
+}
+
+.circle.active {
+  border-color: blue;
+}
+
+.btn {
+  border-radius: 20%;
+  background-color: rgb(114, 248, 248);
+  border: hidden;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+}
