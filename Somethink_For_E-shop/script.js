@@ -28,4 +28,17 @@ function update() {
       circle.classList.remove("active");
     }
   });
+
+  const actives = document.querySelectorAll(".active");
+
+  steps.style.width = ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
+
+  if (counter === 1) {
+    buttonPrev.disabled = true;
+  } else if (counter === circles.length) {
+    buttonNext.disabled = true;
+  } else {
+    buttonPrev.disabled = false;
+    buttonNext.disabled = false;
+  }
 }
