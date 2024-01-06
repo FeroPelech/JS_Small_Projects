@@ -1,13 +1,65 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  background-color: rgb(58, 58, 58);
-  color: black;
+  background-image: linear-gradient(90deg, rgb(46, 92, 162), rgb(19, 59, 118));
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   overflow-x: hidden;
   margin: 0;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+  /*border-radius: 25px 0 0 25px;*/
+  border-radius: 25px;
+}
+
+.search .input {
+  background-color: bisque;
+  border: 0;
+  font-size: 20px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+  /*border-radius: 25px 0 0 25px;*/
+  border-radius: 25px;
+}
+
+.btn {
+  position: absolute;
+  background-color: bisque;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+  /*border-radius: 0 25px 25px 0;*/
+  border-radius: 25px;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+  border-radius: 25px 0 0 25px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+  border-radius: 0 25px 25px 0;
 }
