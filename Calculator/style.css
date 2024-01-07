@@ -1,0 +1,14 @@
+#calculator {
+  background-color: black;
+  overflow: hidden;
+  border-radius: 15px;
+  max-width: 500px;
+}
+
+#display {
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  border: none;
+  background-color: rgb(215, 215, 215);
+}
