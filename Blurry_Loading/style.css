@@ -23,6 +23,8 @@ body {
   height: calc(100vh + 60px);
   z-index: -1;
   filter: blur(0px);
+  background-size: cover;
+  max-width: 100%;
 }
 
 .loading-text {
