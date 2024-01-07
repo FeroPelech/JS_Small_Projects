@@ -7,9 +7,40 @@
 body {
   font-family: "Ubuntu", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow-x: hidden;
   margin: 0;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.box {
+  background-color: aqua;
+  color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 12px 5px rgba(35, 35, 35, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.5s ease-in;
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+b {
+  padding: 20px;
+  font-size: 25px;
 }
