@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: beige;
+}
+
 #calculator {
   background-color: black;
   overflow: hidden;
@@ -6,9 +16,10 @@
 }
 
 #display {
+  font-size: 35px;
   width: 100%;
-  padding: 20px;
-  text-align: left;
+  padding: 20px 0;
+  text-align: right;
   border: none;
   background-color: rgb(215, 215, 215);
 }
@@ -25,4 +36,9 @@ button {
   height: 50px;
   font-size: 2rem;
   cursor: pointer;
+  background-color: rgb(191, 191, 191);
+}
+
+button:hover {
+  background-color: rgb(130, 130, 130);
 }
