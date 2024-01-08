@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
+:root {
+  --left-bg-color: rgba(160, 162, 194, 0.7);
+  --right-bg-color: rgba(69, 71, 89, 0.8);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,11 +16,37 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 70px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%);
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%);
+  text-decoration: none;
+  color: aliceblue;
+  border: aliceblue solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 20rem;
+  padding: 1.5rem;
+}
+
 .container {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgb(44, 44, 44);
+  background: rgb(44, 44, 44);
 }
 
 .split {
@@ -27,14 +58,34 @@ body {
 
 .split.left {
   left: 0;
-  background-image: url("https://images.unsplash.com/photo-1568572933382-74d440642117?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background: url("https://images.unsplash.com/photo-1568572933382-74d440642117?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.split.left::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--left-bg-color);
+}
+
 .split.right {
   right: 0;
-  background-image: url("https://plus.unsplash.com/premium_photo-1666612335748-d23dcba788e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background: url("https://plus.unsplash.com/premium_photo-1666612335748-d23dcba788e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.split.right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--right-bg-color);
+}
+
+.btn:hover {
+  background-color: rgb(180, 94, 94);
 }
