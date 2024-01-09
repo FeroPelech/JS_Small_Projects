@@ -89,3 +89,18 @@ h1 {
 .btn:hover {
   background-color: rgb(180, 94, 94);
 }
+
+.hover-left .left {
+  width: 75%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+.hover-right .right {
+  width: 75%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
