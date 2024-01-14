@@ -5,12 +5,33 @@
 }
 
 body {
+  background-color: steelblue;
   font-family: "Poppins", sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow-x: hidden;
   margin: 0;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 1.5rem 3rem;
+}
+
+.btn:hover {
+  background-color: aqua;
+  color: black;
+}
+
+.btn:focus {
+  outline: none;
 }
