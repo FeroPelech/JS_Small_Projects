@@ -14,8 +14,16 @@ sounds.forEach((sound) => {
   btn.innerText = sound;
 
   btn.addEventListener("click", () => {
+    stop();
     document.getElementById(sound).play();
   });
 
   document.getElementById("buttons").appendChild(btn);
 });
+
+function stop() {
+  sounds.forEach((sound) => {
+    const song = document.getElementById(sound);
+    song.pause();
+  });
+}
