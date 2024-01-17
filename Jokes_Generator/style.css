@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(134, 203, 180);
+  background-color: rgb(75, 47, 101);
   font-family: "Ubuntu", sans-serif;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  background-color: rgb(255, 33, 33);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 50px 20px;
   text-align: center;
@@ -42,7 +42,7 @@ h3 {
 }
 
 .btn {
-  background-color: rgb(137, 88, 184);
+  background-color: rgb(98, 148, 131);
   color: white;
   border: 0;
   border-radius: 10px;
