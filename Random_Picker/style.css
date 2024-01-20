@@ -17,8 +17,9 @@ body {
 }
 
 h3 {
-  color: white;
+  color: black;
   margin: 10px 0 20px;
+  /*text-align: center;*/
 }
 
 .container {
@@ -33,4 +34,18 @@ textarea {
   font-family: inherit;
   padding: 10px;
   margin: 0 0 20px;
+}
+
+.tag {
+  background-color: rgb(235, 162, 27);
+  color: white;
+  border-radius: 20%;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: blue;
 }
