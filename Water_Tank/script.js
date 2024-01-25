@@ -1,27 +1,52 @@
-const smallCups = document.querySelectorAll(".cup-small");
+const smallTanks = document.querySelectorAll(".tank-small");
 const liters = document.getElementById("liters");
 const percentage = document.getElementById("percentage");
-const remaind = document.getElementById("remained");
+const remained = document.getElementById("remained");
 
-smallCups.forEach((e, idx) => {
+updateBigTank();
+
+smallTanks.forEach((e, idx) => {
   e.addEventListener("click", () => {
-    highlightCups(idx);
+    highlightTanks(idx);
   });
 });
 
-function highlightCups(idx) {
+function highlightTanks(idx) {
   if (
-    smallCups[idx].classList.contains("full") &&
-    !smallCups[idx].nextElementSibling.classList.contains("full")
+    smallTanks[idx].classList.contains("full") &&
+    !smallTanks[idx].nextElementSibling.classList.contains("full")
   ) {
     idx--;
   }
 
-  smallCups.forEach((e, idx2) => {
+  smallTanks.forEach((e, idx2) => {
     if (idx2 <= idx) {
       e.classList.add("full");
     } else {
       e.classList.remove("full");
     }
   });
+  updateBigTank();
+}
+
+function updateBigTank() {
+  const fullTanks = document.querySelectorAll(".tank-small.full").length;
+  const totalTanks = smallTanks.length;
+
+  if (fullTanks === 0) {
+    percentage.style.visibility = "hidden";
+    percentage.style.height = 0;
+  } else {
+    percentage.style.visibility = "visible";
+    percentage.style.height = `${(fullTanks / totalTanks) * 330}px`;
+    percentage.innerText = `${(fullTanks / totalTanks) * 100}%`;
+  }
+
+  if (fullTanks === totalTanks) {
+    remained.style.visibility = "hidden";
+    remained.style.height = 0;
+  } else {
+    remained.style.visibility = "visible";
+    liters.innerText = `${2 - (250 * fullTanks) / 1000}L`;
+  }
 }
