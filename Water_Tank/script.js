@@ -3,7 +3,7 @@ const liters = document.getElementById("liters");
 const percentage = document.getElementById("percentage");
 const remained = document.getElementById("remained");
 
-updateBigTank();
+updateMainTank();
 
 smallTanks.forEach((e, idx) => {
   e.addEventListener("click", () => {
@@ -26,10 +26,10 @@ function highlightTanks(idx) {
       e.classList.remove("full");
     }
   });
-  updateBigTank();
+  updateMainTank();
 }
 
-function updateBigTank() {
+function updateMainTank() {
   const fullTanks = document.querySelectorAll(".tank-small.full").length;
   const totalTanks = smallTanks.length;
 
