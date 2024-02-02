@@ -33,7 +33,7 @@ body {
   margin: 0;
 }
 
-.toggle {
+.btn {
   position: absolute;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -43,7 +43,7 @@ body {
   top: 100px;
 }
 
-.toggle:focus {
+.btn:focus {
   outline: none;
 }
 
