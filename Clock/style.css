@@ -68,6 +68,7 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
+  transition: all 0.1s ease-in;
 }
 
 .needle.hour {
@@ -113,8 +114,8 @@ body {
 }
 
 .date {
-  color: #595959;
-  font-size: 14px;
+  color: #7f7f7f;
+  font-size: 20px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
 }
