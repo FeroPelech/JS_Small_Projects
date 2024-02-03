@@ -24,6 +24,17 @@ body {
   background-image: url("https://source.unsplash.com/random/150x150");
   width: 145px;
   height: 145px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px lightgray;
+  border-color: white;
+  border-style: dashed;
+}
+
+.hovered {
+  border-color: rgb(69, 69, 69);
 }
 
 @media (max-width: 800px) {
