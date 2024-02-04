@@ -51,6 +51,19 @@ function drawLine(x1, y1, x2, y2) {
   ctx.stroke();
 }
 
+function updateSizeOnScreen() {
+  sizeEl.innerText = size;
+}
+
+increaseBtn.addEventListener("click", () => {
+  size += 1;
+  if (size > 50) {
+    size = 50;
+  }
+
+  updateSizeOnScreen();
+});
+
 colorEl.addEventListener("change", (e) => {
   color = e.target.value;
 });
