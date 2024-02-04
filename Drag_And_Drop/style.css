@@ -29,12 +29,12 @@ body {
 
 .hold {
   border: solid 5px lightgray;
-  border-color: white;
-  border-style: dashed;
 }
 
 .hovered {
   border-color: rgb(69, 69, 69);
+  border-color: white;
+  border-style: dashed;
 }
 
 @media (max-width: 800px) {
