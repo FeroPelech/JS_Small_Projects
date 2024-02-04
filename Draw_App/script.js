@@ -2,7 +2,30 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 let size = 20;
+let isPressed = false;
 let color = "black";
+let x;
+let y;
+
+canvas.addEventListener("mousedown", (e) => {
+  isPressed = true;
+  x = e.offsetX;
+  y = e.offsetY;
+});
+
+canvas.addEventListener("mouseup", (e) => {
+  isPressed = false;
+  x = null;
+  y = null;
+});
+
+canvas.addEventListener("mousemove", (e) => {
+  if (isPressed) {
+    const x2 = e.offsetX;
+    const y2 = e.offsetY;
+    drawCircle(e.offsetX, e.offsetY);
+  }
+});
 
 function drawCircle(x, y) {
   ctx.beginPath();
