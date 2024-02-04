@@ -64,6 +64,15 @@ increaseBtn.addEventListener("click", () => {
   updateSizeOnScreen();
 });
 
+decreaseBtn.addEventListener("click", () => {
+  size -= 1;
+  if (size <= 0) {
+    size = 1;
+  }
+
+  updateSizeOnScreen();
+});
+
 colorEl.addEventListener("change", (e) => {
   color = e.target.value;
 });
