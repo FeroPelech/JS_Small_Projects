@@ -50,3 +50,7 @@ function drawLine(x1, y1, x2, y2) {
   ctx.lineWidth = size * 2;
   ctx.stroke();
 }
+
+colorEl.addEventListener("change", (e) => {
+  color = e.target.value;
+});
