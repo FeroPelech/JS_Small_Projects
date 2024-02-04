@@ -18,11 +18,11 @@ body {
 }
 
 canvas {
-  border: 4px solid steelblue;
+  border: 4px solid rgb(39, 101, 151);
 }
 
 .toolbox {
-  background-color: steelblue;
+  background-color: rgb(39, 101, 151);
   border: none;
   display: flex;
   width: 808px;
