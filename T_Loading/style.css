@@ -11,7 +11,59 @@ body {
   overflow: hidden;
   margin: 0;
 }
+h1 {
+  padding-bottom: 80px;
+  position: relative;
+  color: #000;
+}
 
 .loading {
   position: relative;
+  left: -100px;
+}
+
+.loading::after,
+.loading::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top-color: black;
+  animation: rotateA 2s linear infinite 0.5s;
+}
+
+.loading::before {
+  transform: rotate(90deg);
+  animation: rotateB 2s linear infinite;
+}
+
+@keyframes rotateA {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateB {
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
 }
