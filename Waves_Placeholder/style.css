@@ -24,4 +24,44 @@ img {
   border-radius: 10px;
   overflow: hidden;
   width: 350px;
+  background-color: white;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  background-color: white;
+  padding: 30px;
+}
+
+.card-title {
+  color: darkslategray;
+  margin: 0;
+}
+
+.card-except {
+  color: rgb(32, 63, 63);
+  margin: 10px 0 20px;
+}
+
+.author {
+  display: flex;
+}
+
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+}
+
+.author-info {
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+  width: 100px;
 }
