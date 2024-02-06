@@ -24,7 +24,9 @@ img {
   border-radius: 10px;
   overflow: hidden;
   width: 350px;
-  background-color: white;
+}
+.card-header {
+  height: 200px;
 }
 
 .card-header img {
@@ -34,17 +36,17 @@ img {
 }
 
 .card-content {
-  background-color: white;
+  background-color: darkslategray;
   padding: 30px;
 }
 
 .card-title {
-  color: darkslategray;
+  height: 20px;
   margin: 0;
 }
 
 .card-except {
-  color: rgb(32, 63, 63);
+  color: rgb(152, 210, 210);
   margin: 10px 0 20px;
 }
 
@@ -65,4 +67,15 @@ img {
   justify-content: space-around;
   margin-left: 10px;
   width: 100px;
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    darkslategray 0%,
+    rgb(32, 63, 63) 10%,
+    darkslategray 20%,
+    darkslategray 100%
+  );
+  background-size: 200% 100%;
 }
