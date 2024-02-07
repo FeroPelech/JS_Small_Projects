@@ -63,3 +63,53 @@ body {
   line-height: 30px;
   letter-spacing: 1.2px;
 }
+
+.navbar {
+  position: fixed;
+  background-color: #222;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.active {
+  background-color: #fff;
+}
+
+.navbar.active a {
+  color: black;
+}
+
+.navbar.active .container {
+  padding: 10px 0;
+}
+
+.navbar a.current,
+.navbar a:hover {
+  color: rgb(194, 78, 0);
+  font-weight: bold;
+}
