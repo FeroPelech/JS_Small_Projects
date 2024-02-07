@@ -54,4 +54,12 @@ body {
 .content h2,
 .content h3 {
   font-size: 150%;
+  margin: 10px 0;
+  color: rgb(47, 0, 0);
+}
+
+.content p {
+  color: rgb(91, 0, 0);
+  line-height: 30px;
+  letter-spacing: 1.2px;
 }
