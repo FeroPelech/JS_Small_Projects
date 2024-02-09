@@ -18,6 +18,11 @@ const changeSlide = (direction) => {
     if (activeSlideIndex > slideLength - 1) {
       activeSlideIndex = 0;
     }
+  } else {
+    activeSlideIndex--;
+    if (activeSlideIndex < 0) {
+      activeSlideIndex = slideLength - 1;
+    }
   }
   slideRight.style.transform = `translateY(-${
     activeSlideIndex * sliderHeight
