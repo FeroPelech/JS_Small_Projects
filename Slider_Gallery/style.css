@@ -57,3 +57,36 @@ body {
   height: 100%;
   width: 100%;
 }
+
+button {
+  background-color: #ebebeb;
+  border: none;
+  color: rgb(126, 126, 126);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+button:focus {
+  outline: none;
+}
+
+.slider-container .action-btn button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.slider-container .action-btn .down-btn {
+  transform: translateX(-100%);
+  border-radius: 5px 0 0 5px;
+}
+
+.slider-container .action-btn .up-btn {
+  transform: translateY(-100%);
+  border-radius: 0 5px 5px 0;
+}
