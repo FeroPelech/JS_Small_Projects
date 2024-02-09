@@ -4,7 +4,6 @@ const slideLeft = document.querySelector(".left-slide");
 const upBtn = document.querySelector(".up-btn");
 const downBtn = document.querySelector(".down-btn");
 const slideLength = slideRight.querySelectorAll("div").length;
-
 let activeSlideIndex = 0;
 
 slideLeft.style.top = `-${(slideLength - 1) * 100}vh`;
@@ -21,6 +20,9 @@ const changeSlide = (direction) => {
     }
   }
   slideRight.style.transform = `translateY(-${
+    activeSlideIndex * sliderHeight
+  }px)`;
+  slideLeft.style.transform = `translateY(${
     activeSlideIndex * sliderHeight
   }px)`;
 };
