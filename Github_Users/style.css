@@ -42,3 +42,12 @@ input::placeholder {
 .user-form input:focus {
   outline: none;
 }
+
+.card {
+  max-width: 800px;
+  background-color: rgba(137, 43, 226, 0.483);
+  border-radius: 20px;
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
