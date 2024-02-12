@@ -16,3 +16,29 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: rgba(137, 43, 226, 0.483);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.716);
+}
+
+.user-form input:focus {
+  outline: none;
+}
