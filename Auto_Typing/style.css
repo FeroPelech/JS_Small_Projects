@@ -13,3 +13,24 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.speed {
+  position: absolute;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid pink;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
