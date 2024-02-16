@@ -45,3 +45,32 @@ h2 {
   height: 50px;
   width: 100%;
 }
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% -40px);
+}
+
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid white;
+}
+
+.btn {
+  border: none;
+  background-color: rgb(43, 92, 226);
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
