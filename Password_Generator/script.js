@@ -1,3 +1,12 @@
+const resultEl = document.getElementById("result");
+const lengthEl = document.getElementById("length");
+const upperCaseEl = document.getElementById("uppercase");
+const lowerCaseEl = document.getElementById("lowercase");
+const numberEl = document.getElementById("numbers");
+const symbolEl = document.getElementById("symbols");
+const generateEl = document.getElementById("generate");
+const clipboardEl = document.getElementById("clipboard");
+
 const randomFunc = {
   lower: getRandomLower(),
   upper: getRandomUpper(),
