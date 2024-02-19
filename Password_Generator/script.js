@@ -20,8 +20,22 @@ generateEl.addEventListener("click", () => {
   const hasUpper = upperCaseEl.checked;
   const hasNumber = numberEl.checked;
   const hasSymbol = symbolEl.checked;
-  //insert function for generate password
+  resultEl.innerText = generatePassword(
+    hasLower,
+    hasUpper,
+    hasSymbol,
+    hasNumber,
+    length
+  );
 });
+
+function generatePassword(lower, upper, symbol, number, length) {
+  let generatePassword = "";
+  const typesCount = lower + upper + symbol + number;
+  const typesArr = [{ lower }, { upper }, { number }, { symbol }];
+  console.log(typesCount);
+  console.log(typesArr);
+}
 
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
