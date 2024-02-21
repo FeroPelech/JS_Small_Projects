@@ -35,4 +35,18 @@ function doContent(part) {
     const elementDeleteP = document.getElementById("newPower");
     elementDeleteP.remove();
   }
+
+  if (part === wisdom && wisdom.checked === true) {
+    const Wisdom = document.createElement("div");
+    Wisdom.setAttribute("id", "newWisdom");
+    const newWisdomContent = document.createTextNode(
+      "Wisdom is yours! Can I ask you something?"
+    );
+    Wisdom.appendChild(newWisdomContent);
+    document.body.appendChild(Wisdom);
+  }
+  if (part === wisdom && wisdom.checked === false) {
+    const elementDeleteW = document.getElementById("newWisdom");
+    elementDeleteW.remove();
+  }
 }
