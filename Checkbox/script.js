@@ -8,11 +8,16 @@ toggles.forEach((toggle) =>
 );
 
 function doContent(part) {
-  console.log(part);
   if (part === fly && fly.checked === true) {
     const Fly = document.createElement("div");
+    Fly.setAttribute("id", "newFly");
     const newFlyContent = document.createTextNode("And now, you can fly");
     Fly.appendChild(newFlyContent);
     document.body.appendChild(Fly);
+    console.log(Fly);
+  }
+  if (part === fly && fly.checked === false) {
+    const elementDelete = document.getElementById("newFly");
+    elementDelete.remove();
   }
 }
