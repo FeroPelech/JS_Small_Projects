@@ -9,15 +9,30 @@ toggles.forEach((toggle) =>
 
 function doContent(part) {
   if (part === fly && fly.checked === true) {
-    const Fly = document.createElement("div");
-    Fly.setAttribute("id", "newFly");
-    const newFlyContent = document.createTextNode("And now, you can fly");
-    Fly.appendChild(newFlyContent);
-    document.body.appendChild(Fly);
-    console.log(Fly);
+    const fly = document.createElement("div");
+    fly.setAttribute("id", "newFly");
+    const newFlyContent = document.createTextNode(
+      "And now, you can fly like an Eagle"
+    );
+    fly.appendChild(newFlyContent);
+    document.body.appendChild(fly);
   }
   if (part === fly && fly.checked === false) {
-    const elementDelete = document.getElementById("newFly");
-    elementDelete.remove();
+    const elementDeleteF = document.getElementById("newFly");
+    elementDeleteF.remove();
+  }
+
+  if (part === power && power.checked === true) {
+    const Power = document.createElement("div");
+    Power.setAttribute("id", "newPower");
+    const newPowerContent = document.createTextNode(
+      "And now, you are more powerfull than Hercules"
+    );
+    Power.appendChild(newPowerContent);
+    document.body.appendChild(Power);
+  }
+  if (part === power && power.checked === false) {
+    const elementDeleteP = document.getElementById("newPower");
+    elementDeleteP.remove();
   }
 }
