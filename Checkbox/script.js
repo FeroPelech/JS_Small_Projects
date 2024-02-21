@@ -9,4 +9,10 @@ toggles.forEach((toggle) =>
 
 function doContent(part) {
   console.log(part);
+  if (part === fly && fly.checked === true) {
+    const Fly = document.createElement("div");
+    const newFlyContent = document.createTextNode("And now, you can fly");
+    Fly.appendChild(newFlyContent);
+    document.body.appendChild(Fly);
+  }
 }
