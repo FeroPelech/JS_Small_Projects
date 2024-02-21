@@ -12,7 +12,7 @@ function doContent(part) {
     const fly = document.createElement("div");
     fly.setAttribute("id", "newFly");
     const newFlyContent = document.createTextNode(
-      "And now, you can fly like an Eagle"
+      "And now, you can fly like an Eagle!"
     );
     fly.appendChild(newFlyContent);
     document.body.appendChild(fly);
@@ -26,7 +26,7 @@ function doContent(part) {
     const Power = document.createElement("div");
     Power.setAttribute("id", "newPower");
     const newPowerContent = document.createTextNode(
-      "And now, you are more powerfull than Hercules"
+      "And now, you are more powerfull than Hercules!"
     );
     Power.appendChild(newPowerContent);
     document.body.appendChild(Power);
