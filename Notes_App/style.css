@@ -23,3 +23,16 @@ body {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+
+.note {
+  background-color: #fff;
+  margin: 30px 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.note .tools {
+  background-color: #6bdb46;
+  display: flex;
+  justify-content: flex-end;
+}
