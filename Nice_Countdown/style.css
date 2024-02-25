@@ -37,7 +37,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .final.show {
@@ -55,4 +55,13 @@ body {
   100% {
     transform: translate(-50%, -50%) scale(1);
   }
+}
+
+.nums {
+  color: rgb(0, 174, 255);
+  font-size: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 50px;
 }
