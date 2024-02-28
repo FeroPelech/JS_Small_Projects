@@ -19,3 +19,15 @@ body {
   width: 500px;
   overflow: hidden;
 }
+
+img {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
