@@ -22,11 +22,18 @@ function changeImage() {
 }
 
 function resetInterval() {
+  clearInterval(interval);
   interval = setInterval(run, 2000);
 }
 
 rightBtn.addEventListener("click", () => {
   index++;
+  changeImage();
+  resetInterval();
+});
+
+leftBtn.addEventListener("click", () => {
+  index--;
   changeImage();
   resetInterval();
 });
