@@ -23,7 +23,10 @@ function setColor(e) {
   e.style.boxShadow = `0 0 5px ${color}, 0 0 50px ${color}`;
 }
 
-function removeColor(e) {}
+function removeColor(e) {
+  e.style.background = "rgb(51, 51, 51, 0.492)";
+  // e.style.boxShadow = "0 0 2px black";
+}
 
 function getRandomColor() {
   return colors[Math.floor(Math.random() * colors.length)];
