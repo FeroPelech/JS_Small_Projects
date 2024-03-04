@@ -18,3 +18,14 @@ body {
   min-height: 100vh;
   background: var(--color);
 }
+
+.navigation {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
