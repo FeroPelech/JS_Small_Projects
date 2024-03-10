@@ -38,6 +38,9 @@ const createPokemonCard = (pokemon) => {
 
   const pokeTypes = pokemon.types.map((type) => type.type.name);
   const type = mainTypes.find((type) => pokeTypes.indexOf(type) > -1);
+  const color = colors[type];
+
+  pokemonEl.style.backgroundColor = color;
 
   const pokemonHTML = `
     <div class="img-container">
