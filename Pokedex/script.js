@@ -36,17 +36,17 @@ const createPokemonCard = (pokemon) => {
   //   const name = pokemon.name[].toUpperCase()
   const pokemonHTML = `
     <div class="img-container">
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
-      pokemon.id
-    }.png" alt="pokemon_picture">
-</div>
-<div class="info">
-    <span class="number">#001</span>
-    <h3 class="name">${
-      pokemon.name[0].toUpperCase() + pokemon.name.slice(1)
-    }</h3>
-    <small class="type">Type: <span>grass</span></small>
-</div>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+          pokemon.id
+        }.png" alt="pokemon_picture">
+    </div>
+    <div class="info">
+        <span class="number">#${pokemon.id.toString().padStart(3, "0")}</span>
+        <h3 class="name">${
+          pokemon.name[0].toUpperCase() + pokemon.name.slice(1)
+        }</h3>
+        <small class="type">Type: <span>grass</span></small>
+    </div>
     `;
 
   pokemonEl.innerHTML = pokemonHTML;
