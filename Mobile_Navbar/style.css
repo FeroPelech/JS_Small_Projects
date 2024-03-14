@@ -22,3 +22,14 @@ body {
   height: 600px;
   width: 340px;
 }
+
+.phone .content {
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100% - 60px);
+  width: 100%;
+  position: absolute;
+  transition: opacity 0.4s ease;
+}
