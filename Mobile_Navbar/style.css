@@ -33,3 +33,15 @@ body {
   position: absolute;
   transition: opacity 0.4s ease;
 }
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
