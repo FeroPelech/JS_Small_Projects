@@ -7,3 +7,7 @@ listItems.forEach((item, index) => {
     hideAllItems();
   });
 });
+
+function hideAllContents() {
+  contents.forEach((content) => content.classList.remove("show"));
+}
