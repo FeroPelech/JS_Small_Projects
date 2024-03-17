@@ -43,3 +43,22 @@ body {
 .magic:hover {
   opacity: 0.8;
 }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+}
+
+.boxes.big {
+  width: 600px;
+  height: 600px;
+}
+
+.box {
+  background: yellow;
+  height: 125px;
+  width: 125px;
+}
