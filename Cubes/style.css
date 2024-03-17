@@ -15,3 +15,31 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+.magic {
+  background-color: rgb(255, 183, 0);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  letter-spacing: 1px;
+  box-shadow: 3px 3px rgba(249, 202, 36, 0.5);
+  z-index: 100;
+}
+
+.magic:focus {
+  outline: none;
+}
+
+.magic:active {
+  box-shadow: none;
+}
+
+.magic:hover {
+  opacity: 0.8;
+}
