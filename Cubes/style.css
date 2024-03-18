@@ -64,9 +64,9 @@ body {
 }
 
 .box {
-  background: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGYxZmJub2U3bGN6Y3B1NHpnOHgwdjl3c2dnMGw1YnR3eXZtdjN3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g4N6wTrf1v6yQ/giphy.gif");
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGYxZmJub2U3bGN6Y3B1NHpnOHgwdjl3c2dnMGw1YnR3eXZtdjN3ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g4N6wTrf1v6yQ/giphy.gif");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 500px 500px;
   position: relative;
   height: 125px;
   width: 125px;
