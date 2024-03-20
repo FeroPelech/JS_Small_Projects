@@ -14,3 +14,12 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+.container {
+  background-color: #fff;
+  border: 3px black solid;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+  text-align: center;
+}
