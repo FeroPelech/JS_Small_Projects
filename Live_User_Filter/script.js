@@ -1,9 +1,13 @@
 const result = document.getElementById("result");
-const filter = document.getElementById("filter");
+const searcher = document.getElementById("filter");
 const listItems = [];
 
+searcher.addEventListener("input", (e) => {
+  filterPeople(e.target.value);
+});
+
 async function getDuta() {
-  const name = await fetch("https://randomuser.me/api?results=50");
+  const name = await fetch("https://randomuser.me/api?results=100");
   const datafromfetch = await name.json();
 
   datafromfetch.results.forEach((element) => {
@@ -22,3 +26,13 @@ async function getDuta() {
 }
 
 getDuta();
+
+function filterPeople(searcherInfo) {
+  listItems.forEach((found) => {
+    if (found.innerText.toLowerCase().includes(searcherInfo.toLowerCase())) {
+      found.classList.remove("hide");
+    } else {
+      found.classList.add("hide");
+    }
+  });
+}
