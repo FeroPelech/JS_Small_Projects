@@ -45,11 +45,6 @@ body {
   margin: 10px 5px;
 }
 
-img {
-  height: 50px;
-  width: 50px;
-}
-
 .rating:hover,
 .rating.active {
   border-radius: 4px;
