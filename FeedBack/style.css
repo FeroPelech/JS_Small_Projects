@@ -42,4 +42,10 @@ body {
   flex: 1;
   cursor: pointer;
   padding: 20px;
+  margin: 10px 5px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
 }
