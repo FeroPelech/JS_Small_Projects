@@ -11,6 +11,25 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
+}
+
+.text {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.open-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
 }
