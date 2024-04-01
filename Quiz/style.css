@@ -38,3 +38,27 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+input {
+  accent-color: blue;
+}
+
+button {
+  background-color: darkmagenta;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+}
