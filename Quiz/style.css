@@ -61,4 +61,14 @@ button {
   cursor: pointer;
   font-size: 1.1rem;
   font-family: inherit;
+  padding: 1.3rem;
+}
+
+button:hover {
+  background-color: rgb(55, 1, 55);
+}
+
+button:focus {
+  outline: none;
+  background-color: blueviolet;
 }
