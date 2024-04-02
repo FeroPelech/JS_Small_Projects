@@ -42,7 +42,7 @@ const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 
-let currentQuiz = 2;
+let currentQuiz = 0;
 let score = 0;
 
 loadQuiz();
@@ -59,7 +59,7 @@ function loadQuiz() {
 }
 
 function deselectAnswers() {
-  answerEls.forEach((answer) => (answerEls.checked = false));
+  answerEls.forEach((answer) => (answer.checked = false));
 }
 
 function getSelected() {
@@ -74,5 +74,19 @@ function getSelected() {
 
 submitBtn.addEventListener("click", () => {
   const answer = getSelected();
-  console.log(answer);
+
+  if (answer) {
+    if (answer === quizQuestions[currentQuiz].correct) {
+      score++;
+    }
+    currentQuiz++;
+    if (currentQuiz < quizQuestions.length) {
+      loadQuiz();
+    } else {
+      quiz.innerHTML = `
+      <h2>You answered correctly at ${score}/${quizQuestions.length} question</h2>
+      <button onclick="location.reload()">Reload</button>
+      `;
+    }
+  }
 });
