@@ -7,6 +7,30 @@ const quizQuestions = [
     d: "JS",
     correct: "d",
   },
+  {
+    question: "On what continent would you find the world’s largest desert?",
+    a: "Africa",
+    b: "Antarctica",
+    c: "Asia",
+    d: "America",
+    correct: "b",
+  },
+  {
+    question: "What is the capital of Canada?",
+    a: "Ottawa",
+    b: "Montreal",
+    c: "Toronto",
+    d: "Vancouver",
+    correct: "a",
+  },
+  {
+    question: "Which is the best football team ?",
+    a: "Liverpool",
+    b: "AC Milan",
+    c: "Arsenal FC",
+    d: "SK Odeva Lipany",
+    correct: "c",
+  },
 ];
 
 const quiz = document.getElementById("quiz");
@@ -18,7 +42,7 @@ const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById("submit");
 
-let currentQuiz = 0;
+let currentQuiz = 2;
 let score = 0;
 
 loadQuiz();
