@@ -15,3 +15,13 @@ body {
   margin: 0;
   padding: 10px;
 }
+
+.testimonial-container {
+  background-color: rgba(0, 89, 255, 0.703);
+  color: white;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 50px 80px;
+  max-width: 768px;
+  position: relative;
+}
