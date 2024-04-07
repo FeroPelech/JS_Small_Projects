@@ -72,3 +72,20 @@ const testimonials = [
        it’s your turn. You got this!<br>`,
   },
 ];
+
+let index = 0;
+
+function updateTestimonial() {
+  const { name, position, photo, text } = testimonials[index];
+  testimonial.innerHTML = text;
+  userImage.src = photo;
+  userName.innerHTML = name;
+  role.innerHTML = position;
+  index++;
+
+  if (index > testimonials.length - 1) {
+    index = 0;
+  }
+}
+
+updateTestimonial();
