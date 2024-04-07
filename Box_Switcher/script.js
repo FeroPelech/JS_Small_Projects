@@ -87,5 +87,5 @@ function updateTestimonial() {
     index = 0;
   }
 }
-
 updateTestimonial();
+setInterval(updateTestimonial, 10000);
