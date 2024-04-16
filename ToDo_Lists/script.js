@@ -2,6 +2,12 @@ const form = document.getElementById("form");
 const input = document.getElementById("input");
 const todoUL = document.getElementById("todos");
 
+const todos = JSON.parse(localStorage.getItem("todos"));
+
+if (todos) {
+  todos.forEach((todo) => addTodo(todo));
+}
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   addTodo();
@@ -9,7 +15,7 @@ form.addEventListener("submit", (e) => {
 
 function addTodo(todo) {
   let todoText = input.value;
-  //   console.log(todoText);
+
   if (todo) {
     todoText = todo.text;
   }
@@ -22,13 +28,29 @@ function addTodo(todo) {
     todoEl.innerText = todoText;
     todoEl.addEventListener("click", () => {
       todoEl.classList.toggle("completed");
+      updateLS();
     });
     todoEl.addEventListener("contextmenu", (e) => {
       e.preventDefault();
       todoEl.remove();
+      updateLS();
     });
 
     todoUL.appendChild(todoEl);
     input.value = "";
+
+    updateLS();
   }
+}
+
+function updateLS() {
+  const todoEl = document.querySelectorAll("li");
+  const todos = [];
+  todoEl.forEach((todoEl) => {
+    todos.push({
+      text: todoEl.innerText,
+      completed: todoEl.classList.contains("completed"),
+    });
+  });
+  localStorage.setItem("todos", JSON.stringify(todos));
 }
