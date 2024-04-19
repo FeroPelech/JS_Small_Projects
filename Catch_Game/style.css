@@ -88,3 +88,25 @@ h1 {
   height: 100px;
   object-fit: contain;
 }
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  line-height: 1.6;
+}
