@@ -27,4 +27,21 @@
   height: 100%;
   background: rgba(235, 0, 255, 0.11);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+}
+
+.container::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: #f41b75;
+  border-radius: 5px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: -1;
+  opacity: 0.8;
 }
