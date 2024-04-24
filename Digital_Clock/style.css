@@ -68,10 +68,21 @@
 }
 
 .clock span::after {
-  content: "HOURS";
   font-size: 16px;
   position: absolute;
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#hrs::after {
+  content: "HOURS";
+}
+
+#min::after {
+  content: "MINUTES";
+}
+
+#sec::after {
+  content: "SECONDS";
 }
