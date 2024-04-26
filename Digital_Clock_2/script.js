@@ -21,9 +21,16 @@ const days = [
   "Friday",
   "Saturday",
 ];
-const indexDate = document.getElementById("Date");
+let indexDate = document.getElementById("date");
 
 setInterval(() => {
   let date = new Date();
-  document.getElementById("Date");
+  indexDate.innerHTML =
+    days[date.getDay()] +
+    " " +
+    date.getDate() +
+    " " +
+    months[date.getMonth()] +
+    " " +
+    date.getFullYear();
 }, 1000);
