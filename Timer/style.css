@@ -1,0 +1,12 @@
+:root {
+  --degrees: 0deg;
+}
+
+.bg-conic {
+  background: conic-gradient(
+    transparent 0deg,
+    transparent var(--degrees),
+    aqua var(--degrees),
+    blue 360deg
+  );
+}
