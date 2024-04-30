@@ -1,4 +1,4 @@
-const restBtn = document.getElementById("reset");
+const resetBtn = document.getElementById("reset");
 const playBtn = document.getElementById("play");
 const timerEl = document.getElementById("timer");
 const root = document.querySelector(":root");
@@ -18,6 +18,8 @@ playBtn.addEventListener("click", () => {
   playIcon.classList.toggle("fa-play");
   playIcon.classList.toggle("fa-pause");
 });
+
+resetBtn.addEventListener("click", resetAll);
 
 function run() {
   if (playing) {
