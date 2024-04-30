@@ -8,6 +8,8 @@ let playing = false;
 let currentSeconds = totalseconds;
 timerEl.innerText = formatTime(totalseconds);
 
+const timerInterval = setInterval(run, 1000);
+
 playBtn.addEventListener("click", () => {
   playing = !playing;
   playBtn.classList.toggle("play");
