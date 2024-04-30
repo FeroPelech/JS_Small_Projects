@@ -24,6 +24,7 @@ function run() {
     currentSeconds -= 1;
     if (currentSeconds <= 1) {
       clearInterval(timerInterval);
+      resetAll();
     }
     timerEl.innerText = formatTime(currentSeconds);
     root.style.setProperty("--degrees", calcDeg());
@@ -32,6 +33,18 @@ function run() {
 
 function calcDeg() {
   return `${360 - (currentSeconds / totalseconds) * 360}deg`;
+}
+
+function resetAll() {
+  playing = false;
+  playBtn.classList.remove("play");
+  playBtn.classList.remove("bg-green-500");
+  const playIcon = playBtn.querySelector("i");
+  playIcon.classList.remove("fa-pause");
+  playIcon.classList.add("fa-play");
+  currentSeconds = totalseconds;
+  timerEl.innerText = formatTime(totalseconds);
+  root.style.setProperty("--degrees", "0deg");
 }
 
 function formatTime(seconds) {
