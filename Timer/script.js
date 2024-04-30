@@ -26,7 +26,12 @@ function run() {
       clearInterval(timerInterval);
     }
     timerEl.innerText = formatTime(currentSeconds);
+    root.style.setProperty("--degrees", calcDeg());
   }
+}
+
+function calcDeg() {
+  return `${360 - (currentSeconds / totalseconds) * 360}deg`;
 }
 
 function formatTime(seconds) {
