@@ -25,6 +25,7 @@ function run() {
     if (currentSeconds <= 1) {
       clearInterval(timerInterval);
     }
+    timerEl.innerText = formatTime(currentSeconds);
   }
 }
 
