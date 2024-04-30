@@ -17,6 +17,15 @@ playBtn.addEventListener("click", () => {
   playIcon.classList.toggle("fa-pause");
 });
 
+function run() {
+  if (playing) {
+    currentSeconds -= 1;
+    if (currentSeconds <= 1) {
+      clearInterval(timerInterval);
+    }
+  }
+}
+
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   const newSeconds = seconds % 60;
