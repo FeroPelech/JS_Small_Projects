@@ -25,6 +25,13 @@ input {
   height: 25px;
 }
 
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 button {
   height: 25px;
   background-color: rgb(203, 203, 203);
