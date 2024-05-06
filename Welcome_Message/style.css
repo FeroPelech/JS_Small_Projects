@@ -17,3 +17,9 @@ body {
   border: 5px solid #19232d;
   border-radius: 10px;
 }
+
+input {
+  border: transparent;
+  border-radius: 5px;
+  height: 25px;
+}
