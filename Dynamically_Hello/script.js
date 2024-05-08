@@ -1,12 +1,13 @@
 const button = document.querySelector("button");
 const output = document.querySelector(".output");
-let message;
 
 button.addEventListener("click", showOutput);
 
 function showOutput() {
   const date = new Date();
   let current = date.getHours();
+  console.log(current);
+  let message;
   if (current > 17) {
     message = "Its evening";
   } else if (current > 12) {
@@ -16,4 +17,5 @@ function showOutput() {
   } else {
     message = "Something is wrong";
   }
+  output.innerHTML = `<h1>` + message + `</h1>`;
 }
