@@ -6,7 +6,6 @@ button.addEventListener("click", showOutput);
 function showOutput() {
   const date = new Date();
   let current = date.getHours();
-  console.log(current);
   let message;
   if (current > 17) {
     message = "Its evening";
