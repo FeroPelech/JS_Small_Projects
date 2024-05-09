@@ -35,4 +35,9 @@ button {
   border-radius: 5px;
   border: none;
   background-color: rgba(64, 255, 0, 0.678);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(64, 255, 0, 0.84);
 }
