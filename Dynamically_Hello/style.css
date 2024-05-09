@@ -29,3 +29,10 @@ body {
   padding: 20px;
   border-radius: 15px;
 }
+
+button {
+  margin: 15px 0 0 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(64, 255, 0, 0.678);
+}
