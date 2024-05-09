@@ -11,3 +11,13 @@ body {
   height: 100vh;
   margin: 0;
 }
+
+.output {
+  width: 200px;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 15px 0 0;
+}
