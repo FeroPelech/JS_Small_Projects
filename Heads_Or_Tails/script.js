@@ -8,4 +8,6 @@ for (let i = 0; i < buttons.length; i++) {
 
 function tossCoin(e) {
   console.log(e.target.innerText);
+  let toss = Math.floor(Math.random() * 2);
+  console.log(toss);
 }
