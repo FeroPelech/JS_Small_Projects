@@ -1,13 +1,16 @@
 const message = document.querySelector(".message");
 const buttons = document.querySelectorAll("button");
-console.log(buttons);
+const coins = ["Heads", "Tails"];
+let score = [0, 0];
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", tossCoin);
 }
 
 function tossCoin(e) {
-  console.log(e.target.innerText);
-  let toss = Math.floor(Math.random() * 2);
-  console.log(toss);
+  let playerGuess = e.target.innerText;
+  let toss = Math.floor(Math.random() * coins.length);
+  let computerGuess = coins[toss];
+  message.innerHTML = "Computer Selected " + computerGuess + "<br>";
+  let output;
 }
