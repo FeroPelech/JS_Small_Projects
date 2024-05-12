@@ -25,6 +25,6 @@ function tossCoin(e) {
     output +
     "<br>Your score is: " +
     score[0] +
-    "Computer score is: " +
+    "<br>Computer score is: " +
     score[1];
 }
