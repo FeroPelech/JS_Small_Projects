@@ -8,6 +8,30 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
   margin: 0;
+}
+
+.message {
+  background-color: rgba(137, 43, 226, 0.612);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px black;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  border-radius: 20%;
+  background-color: azure;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(240, 255, 255, 0.72);
 }
