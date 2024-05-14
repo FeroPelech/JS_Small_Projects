@@ -9,7 +9,7 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 function gameLogic(e) {
-  console.log(e.target.textContent);
+  let playerSelection = e.target.textContent;
   let randomNumber = Math.random();
   let compSelection = "";
   if (randomNumber <= 0.33) {
@@ -20,4 +20,33 @@ function gameLogic(e) {
     compSelection = "Scissors";
   }
   console.log("Computer: " + compSelection);
+  let result = checkWinner(playerSelection, compSelection);
+  console.log(result);
+}
+
+function checkWinner(pl, co) {
+  if (pl === co) {
+    return "Draw";
+  }
+  if (pl === "Rock") {
+    if (co === "Paper") {
+      return "Computer";
+    } else {
+      return "Player";
+    }
+  }
+  if (pl === "Paper") {
+    if (co === "Scissors") {
+      return "Computer";
+    } else {
+      return "Player";
+    }
+  }
+  if (pl === "Scissors") {
+    if (co === "Rock") {
+      return "Computer";
+    } else {
+      return "Player";
+    }
+  }
 }
