@@ -22,7 +22,15 @@ function gameLogic(e) {
   }
   console.log("Computer: " + compSelection);
   let result = checkWinner(playerSelection, compSelection);
-  console.log(result);
+  if (result === "Player") {
+    result += " wins!";
+    winner[0]++;
+  } else if (result === "Computer") {
+    result += " wins!";
+    winner[1]++;
+  } else {
+    result += " result in a tie match";
+  }
 }
 
 function checkWinner(pl, co) {
