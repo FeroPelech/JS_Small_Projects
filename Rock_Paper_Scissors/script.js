@@ -1,6 +1,7 @@
 const score = document.querySelector(".score");
 const message = document.querySelector(".message");
 const buttons = document.querySelectorAll("button");
+let winner = [0, 0];
 
 console.log(buttons[0].textContent);
 
