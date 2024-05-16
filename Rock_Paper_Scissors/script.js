@@ -31,6 +31,19 @@ function gameLogic(e) {
   } else {
     result += " result in a tie match";
   }
+  score.innerHTML =
+    "<small>Player</small>[" +
+    winner[0] +
+    "]<small>Computer</small>[" +
+    winner[1] +
+    "]";
+  messager(
+    playerSelection + " vs " + compSelection + "<br><b>" + result + "</b>"
+  );
+}
+
+function messager(mes) {
+  message.innerHTML = mes;
 }
 
 function checkWinner(pl, co) {
