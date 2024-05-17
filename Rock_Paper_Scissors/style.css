@@ -21,3 +21,13 @@ body {
   border-radius: 8px;
   padding: 25px;
 }
+
+button {
+  border: solid 0.5px rgb(96, 96, 96);
+  border-radius: 12px;
+  background-color: rgb(189, 189, 189);
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+}
