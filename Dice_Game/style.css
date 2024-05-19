@@ -32,3 +32,13 @@ body {
   text-align: center;
   font-size: 2em;
 }
+
+button {
+  padding: 10px;
+  text-align: center;
+  width: 550px;
+  background-color: rgb(155, 97, 209);
+  border: 1px solid grey;
+  border-radius: 15px;
+  font-size: 2em;
+}
