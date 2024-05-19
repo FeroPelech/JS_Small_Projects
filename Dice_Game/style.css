@@ -26,3 +26,9 @@ body {
   font-size: 7em;
   background-color: brown;
 }
+
+#output {
+  width: 550px;
+  text-align: center;
+  font-size: 2em;
+}
