@@ -13,4 +13,7 @@ button.addEventListener("click", () => {
   console.log(rolls);
 });
 
-function roll(num) {}
+function roll(num) {
+  let randonNumber = Math.floor(Math.random() * num) + 1;
+  return randonNumber;
+}
