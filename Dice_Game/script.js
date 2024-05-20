@@ -20,6 +20,8 @@ button.addEventListener("click", () => {
     temp = "Player 2 wins";
   }
   output.innerHTML = temp;
+  player1.innerHTML = rolls[0];
+  player2.innerHTML = rolls[1];
 });
 
 function roll(num) {
