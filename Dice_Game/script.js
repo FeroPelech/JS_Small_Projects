@@ -11,6 +11,15 @@ button.addEventListener("click", () => {
   console.log("ok");
   let rolls = [roll(6), roll(6)];
   console.log(rolls);
+  let temp;
+  if (rolls[0] === rolls[1]) {
+    temp = "Draw";
+  } else if (rolls[0] > rolls[1]) {
+    temp = "Player 1 wins";
+  } else {
+    temp = "Player 2 wins";
+  }
+  output.innerHTML = temp;
 });
 
 function roll(num) {
