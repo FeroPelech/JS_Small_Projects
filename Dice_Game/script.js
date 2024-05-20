@@ -9,4 +9,8 @@ console.log(output1);
 
 button.addEventListener("click", () => {
   console.log("ok");
+  let rolls = [roll(6), roll(6)];
+  console.log(rolls);
 });
+
+function roll(num) {}
