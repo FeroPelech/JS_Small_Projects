@@ -20,11 +20,11 @@ body {
   width: 200px;
   height: 140px;
   border: 1px solid black;
-  padding: 5px;
   margin: 25px;
   text-align: center;
   font-size: 7em;
   background-color: brown;
+  padding-left: 250px;
 }
 
 #output {
@@ -41,4 +41,5 @@ button {
   border: 1px solid grey;
   border-radius: 15px;
   font-size: 2em;
+  margin: 25px;
 }
