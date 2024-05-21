@@ -19,7 +19,7 @@ button.addEventListener("click", () => {
   } else {
     temp = "Player 2 wins";
   }
-  output.innerHTML = temp;
+  output.innerHTML = temp + "	&#128;";
   player1.innerHTML = rolls[0];
   player2.innerHTML = rolls[1];
 });
@@ -28,5 +28,7 @@ function roll(num) {
   let randonNumber = Math.floor(Math.random() * num) + 1;
   let n = 9855 + randonNumber;
   let char = "&#" + n + ";";
+  // code for dices are from code table .net
+  console.log(char);
   return randonNumber + " " + char;
 }

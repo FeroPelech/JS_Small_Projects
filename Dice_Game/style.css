@@ -43,3 +43,7 @@ button {
   font-size: 2em;
   margin: 25px;
 }
+
+button:hover {
+  background-color: rgb(178, 133, 221);
+}
