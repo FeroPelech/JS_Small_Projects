@@ -56,3 +56,27 @@ button {
 button:hover {
   background-color: rgb(178, 133, 221);
 }
+
+.dicer {
+  border: 1px solid black;
+  width: 90px;
+  height: 90px;
+  padding: 2px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.black {
+  background-color: black;
+}
+.white {
+  background-color: white;
+}
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
