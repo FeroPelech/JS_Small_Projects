@@ -1,4 +1,5 @@
-const button = document.querySelector("button");
+const button1 = document.querySelector(".buttonRoll");
+const button2 = document.querySelector(".buttonReset");
 const player1 = document.querySelector(".player1");
 const player2 = document.querySelector(".player2");
 const output = document.querySelector(".output");
@@ -11,7 +12,10 @@ const dice = [
   [1, 3, 4, 6, 7, 9],
 ];
 
-button.addEventListener("click", () => {
+let player1Sum = 0;
+let player2Sum = 0;
+
+button1.addEventListener("click", () => {
   let rolls = [roll(6), roll(6)];
   let temp;
   if (rolls[0] === rolls[1]) {
@@ -47,6 +51,7 @@ function builder(num) {
     div.appendChild(span);
   }
   div.setAttribute("class", "dicer");
+  console.log(div);
   return div;
 }
 
