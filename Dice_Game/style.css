@@ -22,6 +22,7 @@ body {
   border-radius: 15px;
   margin-left: 40px;
   background-color: rgb(199, 55, 55);
+  margin-top: 20px;
 }
 
 .namer {
@@ -79,4 +80,9 @@ button:hover {
   border-radius: 50%;
   display: inline-block;
   margin: 2px;
+}
+
+#sum {
+  text-align: center;
+  font-size: 2em;
 }
