@@ -36,6 +36,12 @@ button1.addEventListener("click", () => {
   output.innerHTML = temp + "	&#128;";
 });
 
+button2.addEventListener("click", () => {
+  player1Sum = 0;
+  player2Sum = 0;
+  updateSum(player1Sum, player2Sum);
+});
+
 function updateSum(p1, p2) {
   P1Score.innerHTML = "Player 1 Score: " + p1;
   P2Score.innerHTML = "Player 2 Score: " + p2;
@@ -61,7 +67,6 @@ function builder(num) {
     div.appendChild(span);
   }
   div.setAttribute("class", "dicer");
-  console.log(div);
   return div;
 }
 
