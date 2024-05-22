@@ -3,6 +3,8 @@ const button2 = document.querySelector(".buttonReset");
 const player1 = document.querySelector(".player1");
 const player2 = document.querySelector(".player2");
 const output = document.querySelector(".output");
+const P1Score = document.querySelector(".sumP1");
+const P2Score = document.querySelector(".sumP2");
 const dice = [
   [5],
   [1, 9],
@@ -22,14 +24,22 @@ button1.addEventListener("click", () => {
     temp = "Draw";
   } else if (rolls[0] > rolls[1]) {
     temp = "Player 1 wins";
+    player1Sum++;
   } else {
     temp = "Player 2 wins";
+    player2Sum++;
   }
 
   updateOutput(player1, rolls[0]);
   updateOutput(player2, rolls[1]);
+  updateSum(player1Sum, player2Sum);
   output.innerHTML = temp + "	&#128;";
 });
+
+function updateSum(p1, p2) {
+  P1Score.innerHTML = "Player 1 Score: " + p1;
+  P2Score.innerHTML = "Player 2 Score: " + p2;
+}
 
 function updateOutput(el, num) {
   let holder = builder(num);
