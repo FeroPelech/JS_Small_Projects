@@ -12,4 +12,16 @@
   justify-content: center;
   height: 100vh;
   margin: 0;
+  gap: 20px;
+}
+button {
+  background-color: rgb(89, 158, 158);
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid purple;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(144, 202, 202);
 }
