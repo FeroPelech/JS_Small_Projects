@@ -9,4 +9,8 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
   console.log(btn.innerText);
+  if (btn.innerText === "Start") {
+    playText.disabled = false;
+    playGame();
+  }
 });
