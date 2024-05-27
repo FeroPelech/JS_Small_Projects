@@ -4,7 +4,7 @@ const wording = [
   "The worst teams are spurs, ugly and protected 115 city and chelsea",
 ];
 const message = document.querySelector(".message");
-const playText = document.querySelector(".textarea");
+const playText = document.querySelector("textarea");
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
@@ -14,3 +14,8 @@ btn.addEventListener("click", () => {
     playGame();
   }
 });
+
+function playGame() {
+  let randomNumber = Math.floor(Math.random() * 10);
+  console.log(randomNumber);
+}
