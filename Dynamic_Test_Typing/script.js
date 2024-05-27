@@ -6,3 +6,7 @@ const wording = [
 const message = document.querySelector(".message");
 const playText = document.querySelector(".textarea");
 const btn = document.querySelector("button");
+
+btn.addEventListener("click", () => {
+  console.log(btn.innerText);
+});
