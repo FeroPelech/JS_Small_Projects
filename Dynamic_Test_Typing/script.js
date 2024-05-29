@@ -3,6 +3,7 @@ const wording = [
   "Hope you are not spurs fan...",
   "The worst teams are spurs, ugly and protected 115 city and chelsea",
 ];
+let startTime, endTime;
 const message = document.querySelector(".message");
 const playText = document.querySelector("textarea");
 const btn = document.querySelector("button");
@@ -18,5 +19,9 @@ btn.addEventListener("click", () => {
 function playGame() {
   let randomNumber = Math.floor(Math.random() * wording.length);
   message.innerText = wording[randomNumber];
+  let date = new Date();
+  startTime = date.getTime();
+  console.log("start time: " + startTime);
+  btn.innerText = "Done";
   console.log(randomNumber);
 }
