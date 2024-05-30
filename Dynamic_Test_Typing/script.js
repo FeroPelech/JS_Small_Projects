@@ -6,15 +6,24 @@ const wording = [
 let startTime, endTime;
 const message = document.querySelector(".message");
 const playText = document.querySelector("textarea");
+console.log(playText.disabled);
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
   console.log(btn.innerText);
-  if (btn.innerText === "Start") {
+  if (btn.innerText == "Start") {
     playText.disabled = false;
+    btn.innerText == "Done";
     playGame();
+  } else if (btn.innerText == "Done") {
+    playText.disabled = true;
+    endGame();
   }
 });
+
+function endGame() {
+  console.log("endgame");
+}
 
 function playGame() {
   let randomNumber = Math.floor(Math.random() * wording.length);
