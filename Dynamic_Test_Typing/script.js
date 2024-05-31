@@ -24,6 +24,9 @@ btn.addEventListener("click", () => {
 function endGame() {
   let date = new Date();
   console.log("date in endgame: " + date);
+  endTime = date.getTime();
+  let totalTime = (endTime - startTime) / 1000;
+  console.log(totalTime);
 }
 
 function playGame() {
