@@ -22,7 +22,8 @@ btn.addEventListener("click", () => {
 });
 
 function endGame() {
-  console.log("endgame");
+  let date = new Date();
+  console.log("date in endgame: " + date);
 }
 
 function playGame() {
