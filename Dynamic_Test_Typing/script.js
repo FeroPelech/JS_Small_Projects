@@ -27,6 +27,8 @@ function endGame() {
   endTime = date.getTime();
   let totalTime = (endTime - startTime) / 1000;
   console.log(totalTime);
+  let text = playText.value;
+  console.log("Text: " + text);
 }
 
 function playGame() {
