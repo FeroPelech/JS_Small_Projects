@@ -29,6 +29,13 @@ function endGame() {
   console.log(totalTime);
   let text = playText.value;
   console.log("Text: " + text);
+  let wordCount = wordCounter(text);
+  console.log("WordCount: " + wordCount);
+}
+
+function wordCounter(str) {
+  let response = str.split(" ").length;
+  return response;
 }
 
 function playGame() {
