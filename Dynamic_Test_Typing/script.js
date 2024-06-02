@@ -31,11 +31,28 @@ function endGame() {
   console.log("Text: " + text);
   let wordCount = wordCounter(text);
   console.log("WordCount: " + wordCount);
+  let speed = Math.random((wordCount / totalTime) * 60);
+  let finalMessage = "You typed at " + speed + " words per minute.";
+  finalMessage += "<br>" + compareWords(message.innerText, text);
+  console.log(finalMessage);
+  message.innerHTML = finalMessage;
 }
 
 function wordCounter(str) {
   let response = str.split(" ").length;
   return response;
+}
+
+function compareWords(str1, str2) {
+  let words1 = str1.split(" ");
+  let words2 = str2.split(" ");
+  let cnt = 0;
+  words1.forEach(function (item, index) {
+    if (item === words[index]) {
+      cnt++;
+    }
+  });
+  return cnt + " correct out of " + words1.length + " words";
 }
 
 function playGame() {
