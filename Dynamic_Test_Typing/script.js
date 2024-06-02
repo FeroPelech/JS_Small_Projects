@@ -48,7 +48,7 @@ function compareWords(str1, str2) {
   let words2 = str2.split(" ");
   let cnt = 0;
   words1.forEach(function (item, index) {
-    if (item === words[index]) {
+    if (item === words2[index]) {
       cnt++;
     }
   });
