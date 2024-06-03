@@ -6,35 +6,29 @@ const wording = [
 let startTime, endTime;
 const message = document.querySelector(".message");
 const playText = document.querySelector("textarea");
-console.log(playText.disabled);
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
-  console.log(btn.innerText);
   if (btn.innerText == "Start") {
     playText.disabled = false;
     btn.innerText == "Done";
     playGame();
   } else if (btn.innerText == "Done") {
     playText.disabled = true;
+    btn.innerText = "Start";
     endGame();
   }
 });
 
 function endGame() {
   let date = new Date();
-  console.log("date in endgame: " + date);
   endTime = date.getTime();
   let totalTime = (endTime - startTime) / 1000;
-  console.log(totalTime);
   let text = playText.value;
-  console.log("Text: " + text);
   let wordCount = wordCounter(text);
-  console.log("WordCount: " + wordCount);
-  let speed = Math.random((wordCount / totalTime) * 60);
+  let speed = Math.round((wordCount / totalTime) * 60);
   let finalMessage = "You typed at " + speed + " words per minute.";
   finalMessage += "<br>" + compareWords(message.innerText, text);
-  console.log(finalMessage);
   message.innerHTML = finalMessage;
 }
 
@@ -60,7 +54,5 @@ function playGame() {
   message.innerText = wording[randomNumber];
   let date = new Date();
   startTime = date.getTime();
-  console.log("start time: " + startTime);
   btn.innerText = "Done";
-  console.log(randomNumber);
 }
