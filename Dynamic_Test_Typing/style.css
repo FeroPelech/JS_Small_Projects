@@ -29,4 +29,14 @@
   border: 2px solid gray;
   border-radius: 5px;
   margin: 5px;
+  cursor: pointer;
+}
+
+.ResetBtn {
+  display: block;
+  width: 80px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
