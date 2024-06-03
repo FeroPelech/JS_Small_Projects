@@ -22,3 +22,11 @@
   border: 3px solid rgb(86, 0, 0);
   border-radius: 10px;
 }
+
+.StartBtn {
+  display: block;
+  width: 80px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+}
