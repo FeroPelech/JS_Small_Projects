@@ -21,6 +21,10 @@ btn.addEventListener("click", () => {
   }
 });
 
+btnReset.addEventListener("click", () => {
+  playText.value = "";
+});
+
 function endGame() {
   let date = new Date();
   endTime = date.getTime();
