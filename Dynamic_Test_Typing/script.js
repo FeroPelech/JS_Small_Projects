@@ -6,7 +6,8 @@ const wording = [
 let startTime, endTime;
 const message = document.querySelector(".message");
 const playText = document.querySelector("textarea");
-const btn = document.querySelector("button");
+const btn = document.querySelector(".StartBtn");
+const btnReset = document.querySelector(".ResetBtn");
 
 btn.addEventListener("click", () => {
   if (btn.innerText == "Start") {
