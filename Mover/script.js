@@ -6,5 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   myBlock.textContent = "Hello";
   myBlock.style.width = "100px";
   myBlock.style.height = "100px";
+  myBlock.style.backgroundColor = "Blue";
   document.body.appendChild(myBlock);
 });
