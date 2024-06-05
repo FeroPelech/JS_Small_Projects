@@ -14,3 +14,7 @@
   margin: 0;
   gap: 20px;
 }
+
+.myBlock {
+  background-color: aqua;
+}
