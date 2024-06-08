@@ -45,6 +45,7 @@ button {
   margin: 2px;
   width: 49%;
   color: white;
+  cursor: pointer;
 }
 
 button:hover {
