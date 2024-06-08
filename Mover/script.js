@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   myBlock.style.lineHeight = "100px";
   myBlock.style.textAlign = "center";
   myBlock.style.position = "absolute";
+  myBlock.style.top = "100px";
   document.body.appendChild(myBlock);
 });
