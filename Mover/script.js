@@ -8,5 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   myBlock.style.backgroundColor = "Blue";
   myBlock.style.color = "White";
   myBlock.style.lineHeight = "100px";
+  myBlock.style.textAlign = "center";
   document.body.appendChild(myBlock);
 });
