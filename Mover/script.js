@@ -14,3 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
   myBlock.style.left = "150px";
   document.body.appendChild(myBlock);
 });
+
+function goLeft() {
+  let temp = myBlock.offsetLeft;
+  temp = temp + 50;
+  myBlock.style.left = temp + "px";
+}
