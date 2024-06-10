@@ -20,3 +20,9 @@ function goLeft() {
   temp = temp + 50;
   myBlock.style.left = temp + "px";
 }
+
+function goRight() {
+  let temp = myBlock.offsetRight;
+  temp = temp - 50;
+  myBlock.style.right = temp + "px";
+}
