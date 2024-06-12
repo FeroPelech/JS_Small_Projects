@@ -26,3 +26,9 @@ function goRight() {
   temp = temp - 50;
   myBlock.style.right = temp + "px";
 }
+
+function goUp() {
+  let temp = myBlock.offsetTop;
+  temp = temp - 50;
+  myBlock.style.top = temp + "px";
+}
