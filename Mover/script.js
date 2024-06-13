@@ -22,13 +22,19 @@ function goLeft() {
 }
 
 function goRight() {
-  let temp = myBlock.offsetRight;
+  let temp = myBlock.offsetLeft;
   temp = temp - 50;
-  myBlock.style.right = temp + "px";
+  myBlock.style.left = temp + "px";
 }
 
 function goUp() {
   let temp = myBlock.offsetTop;
   temp = temp - 50;
+  myBlock.style.top = temp + "px";
+}
+
+function goDown() {
+  let temp = myBlock.offsetTop;
+  temp = temp + 50;
   myBlock.style.top = temp + "px";
 }
