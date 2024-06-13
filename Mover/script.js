@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(myBlock);
 });
 
+document.addEventListener("keydown", (e) => {
+  e.preventDefault();
+  console.log(e.key);
+});
+
 function goLeft() {
   let temp = myBlock.offsetLeft;
   temp = temp + 50;
