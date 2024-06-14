@@ -20,13 +20,15 @@ document.addEventListener("keydown", (e) => {
   console.log(e.key);
   let key = e.key;
   if (key === "ArrowDown") {
+    myBlock.style.backgroundColor = randomColor();
     goDown();
   } else if (key === "ArrowUp") {
+    myBlock.style.backgroundColor = randomColor();
     goUp();
   } else if (key === "ArrowRight") {
+    myBlock.style.backgroundColor = randomColor();
     goRight();
   } else if (key === "ArrowLeft") {
-    console.log(randomColor());
     myBlock.style.backgroundColor = randomColor();
     goLeft();
   }
