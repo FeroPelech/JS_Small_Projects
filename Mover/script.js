@@ -18,17 +18,27 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("keydown", (e) => {
   e.preventDefault();
   console.log(e.key);
+  let key = e.key;
+  if (key === "ArrowDown") {
+    goDown();
+  } else if (key === "ArrowUp") {
+    goUp();
+  } else if (key === "ArrowRight") {
+    goRight();
+  } else if (key === "ArrowLeft") {
+    goLeft();
+  }
 });
 
 function goLeft() {
   let temp = myBlock.offsetLeft;
-  temp = temp + 50;
+  temp = temp - 50;
   myBlock.style.left = temp + "px";
 }
 
 function goRight() {
   let temp = myBlock.offsetLeft;
-  temp = temp - 50;
+  temp = temp + 50;
   myBlock.style.left = temp + "px";
 }
 
