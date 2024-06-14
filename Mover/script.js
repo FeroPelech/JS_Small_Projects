@@ -1,4 +1,6 @@
 let myBlock;
+let list;
+let funList = [];
 document.addEventListener("DOMContentLoaded", () => {
   myBlock = document.createElement("div");
   myBlock.className = "myBlock";
@@ -13,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
   myBlock.style.top = "100px";
   myBlock.style.left = "150px";
   document.body.appendChild(myBlock);
+  list = document.createElement("div");
+  document.body.appendChild(list);
 });
 
 document.addEventListener("keydown", (e) => {
