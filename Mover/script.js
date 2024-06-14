@@ -34,9 +34,14 @@ document.addEventListener("keydown", (e) => {
     goRight();
   } else if (key === "ArrowLeft") {
     myBlock.style.backgroundColor = randomColor();
-    goLeft();
+    addFun("Left");
   }
 });
+
+function addFun(val) {
+  funList.push(val);
+  console.log(funList);
+}
 
 function randomColor() {
   return "#" + Math.random().toString(16).substring(9);
