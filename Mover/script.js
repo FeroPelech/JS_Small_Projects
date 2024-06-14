@@ -26,9 +26,15 @@ document.addEventListener("keydown", (e) => {
   } else if (key === "ArrowRight") {
     goRight();
   } else if (key === "ArrowLeft") {
+    console.log(randomColor());
+    myBlock.style.backgroundColor = randomColor();
     goLeft();
   }
 });
+
+function randomColor() {
+  return "#" + Math.random().toString(16).substring(9);
+}
 
 function goLeft() {
   let temp = myBlock.offsetLeft;
