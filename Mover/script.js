@@ -42,6 +42,8 @@ function addFun(val) {
   funList.push(val);
   let span = document.createElement("span");
   span.textContent = " + " + val;
+  span.style.padding = "10px";
+
   console.log(span);
   console.log(funList);
 }
