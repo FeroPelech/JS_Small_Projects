@@ -44,6 +44,10 @@ function addFun(val) {
   span.textContent = " + " + val;
   span.style.padding = "10px";
   span.style.border = "1px solid #ddd";
+  span.addEventListener("mouseover", () => {
+    span.style.backgroundColor = randomColor();
+    span.style.color = "white";
+  });
   list.appendChild(span);
   console.log(span);
   console.log(funList);
