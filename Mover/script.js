@@ -43,7 +43,8 @@ function addFun(val) {
   let span = document.createElement("span");
   span.textContent = " + " + val;
   span.style.padding = "10px";
-
+  span.style.border = "1px solid #ddd";
+  list.appendChild(span);
   console.log(span);
   console.log(funList);
 }
