@@ -40,6 +40,9 @@ document.addEventListener("keydown", (e) => {
 
 function addFun(val) {
   funList.push(val);
+  let span = document.createElement("span");
+  span.textContent = " + " + val;
+  console.log(span);
   console.log(funList);
 }
 
