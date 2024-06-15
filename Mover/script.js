@@ -48,6 +48,10 @@ function addFun(val) {
     span.style.backgroundColor = randomColor();
     span.style.color = "white";
   });
+  span.addEventListener("mouseout", () => {
+    span.style.backgroundColor = "white";
+    span.style.color = "black";
+  });
   list.appendChild(span);
   console.log(span);
   console.log(funList);
