@@ -72,9 +72,11 @@ function goLeft() {
 }
 
 function goRight() {
-  let temp = myBlock.offsetLeft;
-  temp = temp + 50;
-  myBlock.style.left = temp + "px";
+  if (myBlock.offsetLeft < 800) {
+    let temp = myBlock.offsetLeft;
+    temp = temp + 50;
+    myBlock.style.left = temp + "px";
+  }
 }
 
 function goUp() {
