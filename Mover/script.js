@@ -66,9 +66,11 @@ function randomColor() {
 }
 
 function goLeft() {
-  let temp = myBlock.offsetLeft;
-  temp = temp - 50;
-  myBlock.style.left = temp + "px";
+  if (myBlock.offsetLeft > 50) {
+    let temp = myBlock.offsetLeft;
+    temp = temp - 50;
+    myBlock.style.left = temp + "px";
+  }
 }
 
 function goRight() {
