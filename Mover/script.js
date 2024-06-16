@@ -78,9 +78,11 @@ function goRight() {
 }
 
 function goUp() {
-  let temp = myBlock.offsetTop;
-  temp = temp - 50;
-  myBlock.style.top = temp + "px";
+  if (myBlock.offsetTop > 50) {
+    let temp = myBlock.offsetTop;
+    temp = temp - 50;
+    myBlock.style.top = temp + "px";
+  }
 }
 
 function goDown() {
