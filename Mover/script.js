@@ -26,6 +26,7 @@ document.addEventListener("keydown", (e) => {
   if (key === "ArrowDown") {
     myBlock.style.backgroundColor = randomColor();
     addFun("Down");
+    goDown();
   } else if (key === "ArrowUp") {
     myBlock.style.backgroundColor = randomColor();
     addFun("Up");
