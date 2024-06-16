@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("keydown", (e) => {
   e.preventDefault();
-  console.log(e.key);
   let key = e.key;
   if (key === "ArrowDown") {
     myBlock.style.backgroundColor = randomColor();
@@ -43,10 +42,15 @@ document.addEventListener("keydown", (e) => {
 });
 
 function addFun(val) {
+  let text = "";
   funList.push(val);
+  if (funList.length > 10) {
+    funList.splice(0, 1);
+  }
   let span = document.createElement("span");
   span.textContent = " + " + val;
-  span.style.padding = "10px";
+  span.style.padding = "0px";
+  span.style.margin = "0px";
   span.style.border = "1px solid #ddd";
   span.addEventListener("mouseover", () => {
     span.style.backgroundColor = randomColor();
@@ -57,8 +61,6 @@ function addFun(val) {
     span.style.color = "black";
   });
   list.appendChild(span);
-  console.log(span);
-  console.log(funList);
 }
 
 function randomColor() {
