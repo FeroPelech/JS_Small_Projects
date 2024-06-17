@@ -6,4 +6,5 @@ button.addEventListener("click", () => {
   console.log(question.value);
   let responds = Math.floor(Math.random() * answers.length);
   console.log(answers[responds]);
+  message.innerText = question.value + " " + answers[responds];
 });
