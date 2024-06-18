@@ -3,3 +3,7 @@
   border: 1px solid #eee;
   display: none;
 }
+
+.container .active .abody {
+  display: block;
+}
