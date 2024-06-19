@@ -1,7 +1,7 @@
 .container .abody {
   padding: 5px;
   border: 1px solid #eee;
-  /* display: none; */
+  display: none;
 }
 
 .container .active .abody {
