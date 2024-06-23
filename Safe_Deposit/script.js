@@ -13,6 +13,12 @@ btn.addEventListener("click", () => {
 
 function maker() {
   let el = document.createElement("input");
+  el.setAttribute("type", "number");
+  el.max = 9;
+  el.min = 0;
+  el.size = 1;
+  el.style.width = "130px";
+  el.order = 0;
   console.log(el);
   gameArea.appendChild(el);
 }
