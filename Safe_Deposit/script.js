@@ -12,5 +12,7 @@ btn.addEventListener("click", () => {
 });
 
 function maker() {
-  console.log("maker");
+  let el = document.createElement("input");
+  console.log(el);
+  gameArea.appendChild(el);
 }
