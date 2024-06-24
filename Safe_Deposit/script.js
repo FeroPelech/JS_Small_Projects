@@ -1,5 +1,7 @@
 const gameArea = document.querySelector(".game");
 const btn = document.querySelector("button");
+const message = document.querySelector(".message");
+let score = 0;
 let gamePlay = false;
 btn.addEventListener("click", () => {
   if (!gamePlay) {
@@ -8,6 +10,7 @@ btn.addEventListener("click", () => {
     btn.innerHTML = "Check Combo";
   } else {
     console.log("checker");
+    score++;
     const numbers = document.querySelectorAll(".numb");
     console.log(numbers);
     for (let i = 0; i < numbers.length; i++) {
