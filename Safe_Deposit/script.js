@@ -8,6 +8,12 @@ btn.addEventListener("click", () => {
     btn.innerHTML = "Check Combo";
   } else {
     console.log("checker");
+    const numbers = document.querySelectorAll(".numb");
+    console.log(numbers);
+    for (let i = 0; i < numbers.length; i++) {
+      console.log(numbers[i].value);
+      console.log(numbers[i].correct);
+    }
   }
 });
 
