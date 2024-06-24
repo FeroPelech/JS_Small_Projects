@@ -13,6 +13,11 @@ btn.addEventListener("click", () => {
     for (let i = 0; i < numbers.length; i++) {
       console.log(numbers[i].value);
       console.log(numbers[i].correct);
+      if (numbers[i].value == numbers[i].correct) {
+        console.log("Match");
+      } else {
+        console.log("No Match");
+      }
     }
   }
 });
