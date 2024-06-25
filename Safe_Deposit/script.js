@@ -11,11 +11,13 @@ btn.addEventListener("click", () => {
   } else {
     score++;
     const numbers = document.querySelectorAll(".numb");
+    let winCondition = 0;
     for (let i = 0; i < numbers.length; i++) {
       if (numbers[i].value == numbers[i].correct) {
         console.log("Match");
         numbers[i].style.backgroundColor = "green";
         numbers[i].style.color = "white";
+        winCondition++;
       } else {
         let color = numbers[i].value < numbers[i].correct ? "blue" : "red";
         numbers[i].style.backgroundColor = color;
