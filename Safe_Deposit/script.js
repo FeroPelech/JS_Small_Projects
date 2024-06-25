@@ -17,6 +17,9 @@ btn.addEventListener("click", () => {
         numbers[i].style.backgroundColor = "green";
         numbers[i].style.color = "white";
       } else {
+        let color = numbers[i].value < numbers[i].correct ? "blue" : "red";
+        numbers[i].style.backgroundColor = color;
+        numbers[i].style.color = "black";
         console.log("No Match");
       }
     }
