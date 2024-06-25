@@ -10,6 +10,7 @@ btn.addEventListener("click", () => {
     btn.innerHTML = "Check Combo";
   } else {
     score++;
+    message.innerHTML = "Guesses " + score;
     const numbers = document.querySelectorAll(".numb");
     let winCondition = 0;
     for (let i = 0; i < numbers.length; i++) {
@@ -23,6 +24,9 @@ btn.addEventListener("click", () => {
         numbers[i].style.backgroundColor = color;
         numbers[i].style.color = "black";
         console.log("No Match");
+      }
+      if (winCondition === numbers.length) {
+        console.log("Win");
       }
     }
   }
