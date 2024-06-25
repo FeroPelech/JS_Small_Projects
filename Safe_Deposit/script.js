@@ -9,15 +9,13 @@ btn.addEventListener("click", () => {
     maker();
     btn.innerHTML = "Check Combo";
   } else {
-    console.log("checker");
     score++;
     const numbers = document.querySelectorAll(".numb");
-    console.log(numbers);
     for (let i = 0; i < numbers.length; i++) {
-      console.log(numbers[i].value);
-      console.log(numbers[i].correct);
       if (numbers[i].value == numbers[i].correct) {
         console.log("Match");
+        numbers[i].style.backgroundColor = "green";
+        numbers[i].style.color = "white";
       } else {
         console.log("No Match");
       }
