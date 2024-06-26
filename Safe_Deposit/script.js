@@ -32,6 +32,8 @@ btn.addEventListener("click", () => {
   }
 });
 
+function gameEnd() {}
+
 function maker() {
   for (let x = 0; x < 4; x++) {
     let el = document.createElement("input");
