@@ -6,6 +6,7 @@ let gamePlay = false;
 btn.addEventListener("click", () => {
   if (!gamePlay) {
     gamePlay = true;
+    gameArea.innerHTML = "";
     maker();
     btn.innerHTML = "Check Combo";
   } else {
