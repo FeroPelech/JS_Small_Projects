@@ -8,6 +8,7 @@ btn.addEventListener("click", () => {
     gamePlay = true;
     gameArea.innerHTML = "";
     maker();
+    message.innerHTML = "Guess the combination";
     btn.innerHTML = "Check Combo";
   } else {
     score++;
