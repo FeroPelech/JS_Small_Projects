@@ -26,7 +26,7 @@ btn.addEventListener("click", () => {
         console.log("No Match");
       }
       if (winCondition === numbers.length) {
-        console.log("Win");
+        gameEnd();
       }
     }
   }
@@ -34,6 +34,8 @@ btn.addEventListener("click", () => {
 
 function gameEnd() {
   message.innerHTML = "You solved the combination in " + score + " guesses";
+  gamePlay = false;
+  btn.innerHTML = "Restart game";
 }
 
 function maker() {
