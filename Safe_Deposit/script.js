@@ -32,7 +32,9 @@ btn.addEventListener("click", () => {
   }
 });
 
-function gameEnd() {}
+function gameEnd() {
+  message.innerHTML = "You solved the combination in " + score + " guesses";
+}
 
 function maker() {
   for (let x = 0; x < 4; x++) {
