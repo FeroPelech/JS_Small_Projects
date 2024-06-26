@@ -37,6 +37,7 @@ btn.addEventListener("click", () => {
 function gameEnd() {
   message.innerHTML = "You solved the combination in " + score + " guesses";
   gamePlay = false;
+  score = 0;
   btn.innerHTML = "Restart game";
 }
 
