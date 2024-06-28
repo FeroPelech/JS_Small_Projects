@@ -17,7 +17,6 @@ btn.addEventListener("click", () => {
     let winCondition = 0;
     for (let i = 0; i < numbers.length; i++) {
       if (numbers[i].value == numbers[i].correct) {
-        console.log("Match");
         numbers[i].style.backgroundColor = "green";
         numbers[i].style.color = "white";
         winCondition++;
@@ -25,7 +24,6 @@ btn.addEventListener("click", () => {
         let color = numbers[i].value < numbers[i].correct ? "blue" : "red";
         numbers[i].style.backgroundColor = color;
         numbers[i].style.color = "black";
-        console.log("No Match");
       }
       if (winCondition === numbers.length) {
         gameEnd();
