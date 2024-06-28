@@ -54,7 +54,7 @@ function maker() {
     el.value = 0;
     el.order = x;
     el.correct = Math.floor(Math.random() * 10);
-    el.value = el.correct;
+    el.value = 0;
     gameArea.appendChild(el);
   }
 }
