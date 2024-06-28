@@ -31,8 +31,12 @@ body {
 button {
   margin: 5px;
   border-radius: 10px;
+  border: 2px solid black;
   background-color: black;
   color: white;
+}
+button:hover {
+  background-color: rgb(92, 91, 91);
 }
 
 .instruction {
