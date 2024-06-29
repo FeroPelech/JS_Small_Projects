@@ -5,4 +5,8 @@ let inPlay = false;
 const myList = ["javascript", "website", "html", "document", "course"];
 button.addEventListener("click", () => {
   console.log("kukaj");
+  if (!inPlay) {
+    inPlay = true;
+    button.innerHTML = "Guess";
+  }
 });
