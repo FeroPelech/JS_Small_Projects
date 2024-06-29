@@ -8,5 +8,6 @@ button.addEventListener("click", () => {
   if (!inPlay) {
     inPlay = true;
     button.innerHTML = "Guess";
+    guess.classList.toggle("hidden");
   }
 });
