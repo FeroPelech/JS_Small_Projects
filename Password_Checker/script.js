@@ -9,7 +9,11 @@ button.addEventListener("click", () => {
     inPlay = true;
     button.innerHTML = "Guess";
     guess.classList.toggle("hidden");
+    createWord();
   }
 });
 
-function createWord() {}
+function createWord() {
+  let randomIndex = Math.floor(Math.random() * myList.length);
+  console.log(randomIndex);
+}
