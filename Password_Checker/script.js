@@ -28,6 +28,8 @@ function randomArray(arr) {
     console.log(temp);
     console.log(i);
     console.log(jou);
+    arr[i] = arr[jou];
+    arr[jou] = temp;
   }
-  console.log("end");
+  return arr;
 }
