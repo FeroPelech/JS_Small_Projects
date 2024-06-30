@@ -11,3 +11,5 @@ button.addEventListener("click", () => {
     guess.classList.toggle("hidden");
   }
 });
+
+function createWord() {}
