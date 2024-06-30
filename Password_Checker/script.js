@@ -9,7 +9,7 @@ button.addEventListener("click", () => {
     inPlay = true;
     button.innerHTML = "Guess";
     guess.classList.toggle("hidden");
-    createWord();
+    console.log(createWord());
   }
 });
 
@@ -17,7 +17,7 @@ function createWord() {
   let randomIndex = Math.floor(Math.random() * myList.length);
   let tempWord = myList[randomIndex];
   let rand = randomArray(tempWord.split(""));
-  console.log(rand);
+  console.log(rand.join(""));
   return tempWord;
 }
 
