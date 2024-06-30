@@ -16,9 +16,18 @@ button.addEventListener("click", () => {
 function createWord() {
   let randomIndex = Math.floor(Math.random() * myList.length);
   let tempWord = myList[randomIndex];
-  console.log(tempWord);
-  console.log(randomIndex);
+  let rand = randomArray(tempWord.split(""));
+  console.log(rand);
   return tempWord;
 }
 
-function randomArray(arr) {}
+function randomArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    let temp = arr[i];
+    let jou = Math.floor(Math.random() * (i + 1));
+    console.log(temp);
+    console.log(i);
+    console.log(jou);
+  }
+  console.log("end");
+}
