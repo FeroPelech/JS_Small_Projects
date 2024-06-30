@@ -20,3 +20,5 @@ function createWord() {
   console.log(randomIndex);
   return tempWord;
 }
+
+function randomArray(arr) {}
