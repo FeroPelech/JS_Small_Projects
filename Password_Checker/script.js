@@ -15,5 +15,8 @@ button.addEventListener("click", () => {
 
 function createWord() {
   let randomIndex = Math.floor(Math.random() * myList.length);
+  let tempWord = myList[randomIndex];
+  console.log(tempWord);
   console.log(randomIndex);
+  return tempWord;
 }
