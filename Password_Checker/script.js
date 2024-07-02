@@ -1,6 +1,7 @@
 const message = document.querySelector(".message");
 const guess = document.querySelector("input");
 const button = document.querySelector("button");
+const result = document.querySelector(".result");
 let inPlay = false;
 let scramble = "";
 let scrambled = "";
@@ -16,6 +17,13 @@ button.addEventListener("click", () => {
   } else {
     let tempGuess = guess.value;
     console.log(tempGuess);
+    if (tempGuess === scramble) {
+      console.log("correct");
+      result.innerHTML = "Correct ! It was " + scramble + ".";
+    } else {
+      console.log("Guess again");
+      result.innerHTML = "Guess again!";
+    }
   }
 });
 
