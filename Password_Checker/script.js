@@ -5,6 +5,7 @@ const result = document.querySelector(".result");
 let inPlay = false;
 let scramble = "";
 let scrambled = "";
+let score = 0;
 const myList = ["javascript", "website", "html", "document", "course"];
 button.addEventListener("click", () => {
   if (!inPlay) {
@@ -15,11 +16,13 @@ button.addEventListener("click", () => {
     scrambled = randomArray(scramble.split("")).join("");
     message.innerHTML = scrambled;
   } else {
+    score++;
     let tempGuess = guess.value;
     console.log(tempGuess);
     if (tempGuess === scramble) {
       console.log("correct");
-      result.innerHTML = "Correct ! It was " + scramble + ".";
+      result.innerHTML =
+        "Correct ! It was " + scramble + " and your score is: " + score;
     } else {
       console.log("Guess again");
       result.innerHTML = "Guess again!";
