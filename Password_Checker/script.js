@@ -13,6 +13,9 @@ button.addEventListener("click", () => {
     scramble = createWord();
     scrambled = randomArray(scramble.split("")).join("");
     message.innerHTML = scrambled;
+  } else {
+    let tempGuess = guess.value;
+    console.log(tempGuess);
   }
 });
 
@@ -26,9 +29,6 @@ function randomArray(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
     let temp = arr[i];
     let jou = Math.floor(Math.random() * (i + 1));
-    console.log(temp);
-    console.log(i);
-    console.log(jou);
     arr[i] = arr[jou];
     arr[jou] = temp;
   }
