@@ -15,6 +15,14 @@ body {
   background-color: rgb(140, 205, 184);
 }
 
+.container {
+  background-color: blanchedalmond;
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
 .hidden {
   display: none;
 }
