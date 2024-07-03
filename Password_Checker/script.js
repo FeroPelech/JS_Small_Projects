@@ -18,11 +18,16 @@ button.addEventListener("click", () => {
   } else {
     score++;
     let tempGuess = guess.value;
-    console.log(tempGuess);
     if (tempGuess === scramble) {
-      console.log("correct");
       result.innerHTML =
         "Correct ! It was " + scramble + " and your score is: " + score;
+      button.innerHTML = "Reset";
+      if (button.textContent === "Reset") {
+        score = 0;
+        inPlay = false;
+        guess.value = "";
+        guess.classList.toggle("hidden");
+      }
     } else {
       console.log("Guess again");
       result.innerHTML = "Guess again!";
