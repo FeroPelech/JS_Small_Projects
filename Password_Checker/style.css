@@ -31,3 +31,12 @@ body {
   font-size: 2em;
   margin-bottom: 20px;
 }
+
+button {
+  background-color: rgb(237, 181, 107);
+  border: 1px solid rgb(237, 181, 107);
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(223, 153, 63);
+}
