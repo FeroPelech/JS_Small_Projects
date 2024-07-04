@@ -6,4 +6,9 @@ endDate.addEventListener("change", (e) => {
   console.log(endDate.value);
   const temp = new Date(endDate.value);
   console.log(temp);
+  startClock(temp);
 });
+
+function startClock(d) {
+  console.log(d);
+}
