@@ -10,5 +10,12 @@ endDate.addEventListener("change", (e) => {
 });
 
 function startClock(d) {
-  console.log(d);
+  timeLeft();
+}
+
+function timeLeft(d) {
+  let currentDate = new Date();
+  console.log(Date.parse(d));
+  console.log(currentDate);
+  console.log(Date.parse(currentDate));
 }
