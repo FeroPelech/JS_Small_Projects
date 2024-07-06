@@ -23,5 +23,7 @@ function timeLeft(d) {
   console.log(t);
   let seconds = Math.floor((t / 1000) % 60);
   let minutes = Math.floor((t / 1000 / 60) % 60);
+  let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+
   return t;
 }
