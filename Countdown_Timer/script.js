@@ -22,6 +22,6 @@ function timeLeft(d) {
   let t = Date.parse(d) - Date.parse(currentDate);
   console.log(t);
   let seconds = Math.floor((t / 1000) % 60);
-
+  let minutes = Math.floor((t / 1000 / 60) % 60);
   return t;
 }
