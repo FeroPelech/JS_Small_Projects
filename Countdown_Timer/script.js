@@ -10,8 +10,16 @@ endDate.addEventListener("change", (e) => {
 });
 
 function startClock(d) {
-  console.log(timeLeft(d));
-  timeLeft(d);
+  let tl = timeLeft(d);
+  console.log("Start Clock" + tl.days);
+  for (let pro in tl) {
+    console.log(pro, tl[pro]);
+    let el = document.querySelector("." + pro);
+    if (el) {
+      console.log(el);
+      el.innerHTML = tl[pro];
+    }
+  }
 }
 
 function timeLeft(d) {
@@ -19,8 +27,9 @@ function timeLeft(d) {
   let t = Date.parse(d) - Date.parse(currentDate);
   let seconds = Math.floor((t / 1000) % 60);
   let minutes = Math.floor((t / 1000 / 60) % 60);
-  let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  let hours = Math.floor((t / (1000 * 60 * 60)) % 24) - 2;
   let days = Math.floor(t / (1000 * 60 * 60 * 24));
+  console.log(days);
 
   return {
     total: t,
