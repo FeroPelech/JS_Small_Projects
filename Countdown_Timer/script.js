@@ -1,6 +1,6 @@
 const endDate = document.querySelector("input[name='endDate']");
 const clock = document.querySelector(".clock");
-
+let timeInterval;
 endDate.addEventListener("change", (e) => {
   e.preventDefault();
   console.log(endDate.value);
@@ -10,16 +10,20 @@ endDate.addEventListener("change", (e) => {
 });
 
 function startClock(d) {
-  let tl = timeLeft(d);
-  console.log("Start Clock" + tl.days);
-  for (let pro in tl) {
-    console.log(pro, tl[pro]);
-    let el = document.querySelector("." + pro);
-    if (el) {
-      console.log(el);
-      el.innerHTML = tl[pro];
+  function updateCouter() {
+    let tl = timeLeft(d);
+    console.log("Start Clock" + tl.days);
+    for (let pro in tl) {
+      console.log(pro, tl[pro]);
+      let el = document.querySelector("." + pro);
+      if (el) {
+        console.log(el);
+        el.innerHTML = tl[pro];
+      }
     }
   }
+  updateCouter();
+  timeInterval = setInterval(updateCouter, 1000);
 }
 
 function timeLeft(d) {
