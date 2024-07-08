@@ -6,13 +6,13 @@ const savedValue = localStorage.getItem("countDown") || false;
 
 if (savedValue) {
   startClock(savedValue);
+  let inputValue = new Date(savedValue);
+  endDate.valueAsDate = inputValue;
 }
 
 endDate.addEventListener("change", (e) => {
   e.preventDefault();
-  console.log(endDate.value);
   const temp = new Date(endDate.value);
-  console.log(temp);
   localStorage.setItem("countDown", temp);
   startClock(temp);
   timeStop = true;
@@ -24,12 +24,9 @@ function startClock(d) {
     if (tl.total <= 0) {
       timeStop = false;
     }
-    console.log("Start Clock" + tl.days);
     for (let pro in tl) {
-      console.log(pro, tl[pro]);
       let el = document.querySelector("." + pro);
       if (el) {
-        console.log(el);
         el.innerHTML = tl[pro];
       }
     }
@@ -49,7 +46,6 @@ function timeLeft(d) {
   let minutes = Math.floor((t / 1000 / 60) % 60);
   let hours = Math.floor((t / (1000 * 60 * 60)) % 24) - 2;
   let days = Math.floor(t / (1000 * 60 * 60 * 24));
-  console.log(days);
 
   return {
     total: t,
