@@ -3,6 +3,7 @@ const clock = document.querySelector(".clock");
 let timeInterval;
 endDate.addEventListener("change", (e) => {
   e.preventDefault();
+  clearInterval(timeInterval);
   console.log(endDate.value);
   const temp = new Date(endDate.value);
   console.log(temp);
