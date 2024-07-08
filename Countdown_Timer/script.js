@@ -2,11 +2,18 @@ const endDate = document.querySelector("input[name='endDate']");
 const clock = document.querySelector(".clock");
 let timeInterval;
 let timeStop = true;
+const savedValue = localStorage.getItem("countDown") || false;
+
+if (savedValue) {
+  startClock(savedValue);
+}
+
 endDate.addEventListener("change", (e) => {
   e.preventDefault();
   console.log(endDate.value);
   const temp = new Date(endDate.value);
   console.log(temp);
+  localStorage.setItem("countDown", temp);
   startClock(temp);
   timeStop = true;
 });
