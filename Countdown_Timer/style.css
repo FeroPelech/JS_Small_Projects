@@ -11,13 +11,19 @@ body {
   justify-content: center;
   height: 100vh;
 }
+
 .container {
   background-color: rgb(80, 123, 123);
   color: white;
-  width: 300px;
+  width: 350px;
   height: 120px;
   padding: 25px;
   margin: 5px;
   border: 5px solid brown;
   border-radius: 15px;
+}
+
+input {
+  margin: 10px 80px;
+  padding: 5px;
 }
