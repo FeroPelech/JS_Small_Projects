@@ -41,3 +41,9 @@ input {
   border-radius: 10px;
   background-color: black;
 }
+
+.clock > span > span {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: red;
+}
