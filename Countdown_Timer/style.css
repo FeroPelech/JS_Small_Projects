@@ -15,7 +15,7 @@ body {
 .container {
   background-color: rgb(80, 123, 123);
   color: white;
-  width: 350px;
+  width: 470px;
   height: 120px;
   padding: 25px;
   margin: 5px;
@@ -24,6 +24,14 @@ body {
 }
 
 input {
-  margin: 10px 80px;
+  margin: 10px 145px;
   padding: 5px;
+}
+
+.clock {
+  background-color: blue;
+  width: 400px;
+  text-align: center;
+  color: white;
+  font-size: 1em;
 }
