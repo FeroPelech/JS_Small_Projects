@@ -13,4 +13,14 @@ window.addEventListener("load", setup);
 
 function setup() {
   console.log("Setup function");
+  for (let i = 0; i < colors.length; i++) {
+    let div = eleFactor("div");
+    gamearea;
+  }
+}
+
+function eleFactor(eleType) {
+  let ele = document.createElement(eleType);
+  console.log("kuk");
+  return ele;
 }
