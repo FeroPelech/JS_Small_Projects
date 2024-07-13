@@ -8,3 +8,9 @@ button.addEventListener("click", () => {
     console.log(colors[i]);
   }
 });
+
+window.addEventListener("load", setup);
+
+function setup() {
+  console.log("Setup function");
+}
