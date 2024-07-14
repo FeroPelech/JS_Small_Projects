@@ -3,6 +3,11 @@ const gamearea = document.querySelector(".gamearea");
 const button = document.querySelector("button");
 const colors = ["red", "blue", "green", "yellow"];
 
+let gameClicks = [];
+let userClicks = [];
+let inPlay = false;
+let playNum = 1;
+
 button.addEventListener("click", () => {});
 
 window.addEventListener("load", setup);
