@@ -12,6 +12,12 @@ function setup() {
     let div = eleFactor("div");
     div.style.backgroundColor = colors[i];
     div.classList.add("box");
+    div.style.opacity = "0.5";
+    div.myColor = colors[i];
+    div.addEventListener("click", (e) => {
+      let el = e.target;
+      console.log(el.myColor);
+    });
     gamearea.appendChild(div);
   }
 }
