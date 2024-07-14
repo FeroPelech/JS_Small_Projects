@@ -3,3 +3,11 @@
   width: 400px;
   border: 1px solid black;
 }
+
+.box {
+  width: 50%;
+  height: 50%;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+}
