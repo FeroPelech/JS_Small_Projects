@@ -11,6 +11,7 @@ function setup() {
   for (let i = 0; i < colors.length; i++) {
     let div = eleFactor("div");
     div.style.backgroundColor = colors[i];
+    div.classList.add("box");
     gamearea.appendChild(div);
   }
 }
