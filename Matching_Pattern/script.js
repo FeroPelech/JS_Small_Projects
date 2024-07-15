@@ -8,7 +8,11 @@ let userClicks = [];
 let inPlay = false;
 let playNum = 1;
 
-button.addEventListener("click", () => {});
+button.addEventListener("click", () => {
+  if (!inPlay) {
+    player();
+  }
+});
 
 window.addEventListener("load", setup);
 
@@ -31,3 +35,5 @@ function eleFactor(eleType) {
   let ele = document.createElement(eleType);
   return ele;
 }
+
+function player() {}
