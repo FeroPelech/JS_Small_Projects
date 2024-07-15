@@ -37,11 +37,18 @@ function player() {
   button.disabled = true;
   gameClicks = [];
   userClicks = [];
-  runSequence();
+  runSequence(playNum);
 }
 
-function runSequence() {
-  inPlay = true;
+function runSequence(num) {
+  let squares = document.querySelectorAll(".box");
+  num--;
+  if (num < 0) {
+    inPlay = true;
+    return;
+  }
+  let randomNum = Math.floor(Math.random() * colors.length);
+  console.log(randomNum);
 }
 
 function checkAnswer(e) {
