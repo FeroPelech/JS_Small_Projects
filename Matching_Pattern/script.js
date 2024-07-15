@@ -44,3 +44,10 @@ function player() {
 }
 
 function runSequence() {}
+
+function checkAnswer(e) {
+  if (inPlay) {
+    let el = e.target;
+    console.log("hen" + el.myColor);
+  }
+}
