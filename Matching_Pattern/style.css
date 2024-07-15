@@ -2,12 +2,13 @@
   height: 400px;
   width: 400px;
   border: 1px solid black;
+  font-size: 0;
 }
 
 .box {
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 200px;
   color: #000;
   text-align: center;
-  display: inline-block;
+  display: inline-flex;
 }
