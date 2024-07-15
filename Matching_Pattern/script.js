@@ -8,13 +8,13 @@ let userClicks = [];
 let inPlay = false;
 let playNum = 1;
 
+window.addEventListener("load", setup);
+
 button.addEventListener("click", () => {
   if (!inPlay) {
     player();
   }
 });
-
-window.addEventListener("load", setup);
 
 function setup() {
   for (let i = 0; i < colors.length; i++) {
@@ -36,4 +36,11 @@ function eleFactor(eleType) {
   return ele;
 }
 
-function player() {}
+function player() {
+  button.disabled = true;
+  gameClicks = [];
+  userClicks = [];
+  runSequence();
+}
+
+function runSequence() {}
