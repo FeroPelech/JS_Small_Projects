@@ -47,8 +47,11 @@ function runSequence() {
 function checkAnswer(e) {
   if (inPlay) {
     let el = e.target;
-    console.log(el.myColor);
     userClicks.push(el.myColor);
+    el.style.opacity = "1";
+    setTimeout(() => {
+      el.style.opacity = "0.5";
+    }, 500);
   }
   console.log(userClicks);
 }
