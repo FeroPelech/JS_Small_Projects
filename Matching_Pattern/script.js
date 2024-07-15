@@ -6,7 +6,7 @@ const colors = ["red", "blue", "green", "yellow"];
 let gameClicks = [];
 let userClicks = [];
 let inPlay = false;
-let playNum = 1;
+let playNum = 3;
 
 window.addEventListener("load", setup);
 
@@ -49,6 +49,11 @@ function runSequence(num) {
   }
   let randomNum = Math.floor(Math.random() * colors.length);
   console.log(squares[randomNum]);
+  gameClicks.push(colors[randomNum]);
+  squares[randomNum].style.opacity = "1";
+  setTimeout(() => {
+    squares[randomNum].style.opacity = "0.5";
+  }, 100);
 }
 
 function checkAnswer(e) {
