@@ -23,10 +23,7 @@ function setup() {
     div.classList.add("box");
     div.style.opacity = "0.5";
     div.myColor = colors[i];
-    div.addEventListener("click", (e) => {
-      let el = e.target;
-      console.log(el.myColor);
-    });
+    div.addEventListener("click", checkAnswer);
     gamearea.appendChild(div);
   }
 }
@@ -43,11 +40,15 @@ function player() {
   runSequence();
 }
 
-function runSequence() {}
+function runSequence() {
+  inPlay = true;
+}
 
 function checkAnswer(e) {
   if (inPlay) {
     let el = e.target;
-    console.log("hen" + el.myColor);
+    console.log(el.myColor);
+    userClicks.push(el.myColor);
   }
+  console.log(userClicks);
 }
