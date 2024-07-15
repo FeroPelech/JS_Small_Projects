@@ -48,7 +48,7 @@ function runSequence(num) {
     return;
   }
   let randomNum = Math.floor(Math.random() * colors.length);
-  console.log(randomNum);
+  console.log(squares[randomNum]);
 }
 
 function checkAnswer(e) {
