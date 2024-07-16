@@ -35,6 +35,7 @@ function eleFactor(eleType) {
 
 function player() {
   button.disabled = true;
+  button.style.display = "none";
   messager("Match Pattern");
   gameClicks = [];
   userClicks = [];
@@ -78,6 +79,7 @@ function checkAnswer(e) {
 
 function endGame() {
   button.disabled = false;
+  button.style.display = "block";
   if (userClicks.toString() == gameClicks.toString()) {
     playNum++;
     console.log("Correct");
