@@ -75,4 +75,6 @@ function checkAnswer(e) {
   console.log(userClicks);
 }
 
-function endGame() {}
+function endGame() {
+  button.disabled = false;
+}
