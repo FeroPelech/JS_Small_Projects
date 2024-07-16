@@ -53,7 +53,10 @@ function runSequence(num) {
   squares[randomNum].style.opacity = "1";
   setTimeout(() => {
     squares[randomNum].style.opacity = "0.5";
-  }, 100);
+    setTimeout(() => {
+      runSequence(num);
+    }, 100);
+  }, 500);
 }
 
 function checkAnswer(e) {
