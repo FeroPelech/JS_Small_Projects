@@ -82,9 +82,9 @@ function endGame() {
   button.style.display = "block";
   if (userClicks.toString() == gameClicks.toString()) {
     playNum++;
-    console.log("Correct");
+    messager("Correct");
   } else {
-    console.log("Not correct");
+    messager("Incorrect");
   }
 }
 
