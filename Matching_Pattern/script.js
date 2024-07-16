@@ -50,7 +50,6 @@ function runSequence(num) {
     return;
   }
   let randomNum = Math.floor(Math.random() * colors.length);
-  console.log(squares[randomNum]);
   gameClicks.push(colors[randomNum]);
   squares[randomNum].style.opacity = "1";
   setTimeout(() => {
@@ -74,7 +73,6 @@ function checkAnswer(e) {
       endGame();
     }
   }
-  console.log(userClicks);
 }
 
 function endGame() {
