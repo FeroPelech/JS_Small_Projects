@@ -67,6 +67,12 @@ function checkAnswer(e) {
     setTimeout(() => {
       el.style.opacity = "0.5";
     }, 500);
+    if (userClicks.length == gameClicks.length) {
+      inPlay = false;
+      endGame();
+    }
   }
   console.log(userClicks);
 }
+
+function endGame() {}
