@@ -77,4 +77,10 @@ function checkAnswer(e) {
 
 function endGame() {
   button.disabled = false;
+  if (userClicks.toString() == gameClicks.toString()) {
+    playNum++;
+    console.log("Correct");
+  } else {
+    console.log("Not correct");
+  }
 }
