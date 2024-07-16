@@ -6,7 +6,7 @@ const colors = ["red", "blue", "green", "yellow"];
 let gameClicks = [];
 let userClicks = [];
 let inPlay = false;
-let playNum = 3;
+let playNum = 2;
 
 window.addEventListener("load", setup);
 
