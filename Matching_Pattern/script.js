@@ -84,3 +84,5 @@ function endGame() {
     console.log("Not correct");
   }
 }
+
+function messager() {}
