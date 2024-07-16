@@ -35,6 +35,7 @@ function eleFactor(eleType) {
 
 function player() {
   button.disabled = true;
+  messager("Match Pattern");
   gameClicks = [];
   userClicks = [];
   runSequence(playNum);
@@ -85,4 +86,6 @@ function endGame() {
   }
 }
 
-function messager() {}
+function messager(mes) {
+  message.innerHTML = mes;
+}
