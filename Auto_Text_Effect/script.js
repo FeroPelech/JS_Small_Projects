@@ -1,4 +1,7 @@
 const containerElemenet = document.querySelector(".container");
-const carrers = ["Influencer", "Youtube", "Electrician", "Freelancer"];
+const careers = ["Influencer", "Youtube", "Electrician", "Freelancer"];
+let index = 0;
 
-containerElemenet.innerHTML = "";
+function updateText() {
+  containerElemenet.innerHTML = "";
+}
