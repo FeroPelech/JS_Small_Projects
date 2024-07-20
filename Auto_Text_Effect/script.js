@@ -6,10 +6,14 @@ let characterIndex = 0;
 updateText();
 
 function updateText() {
+  characterIndex++;
   containerElemenet.innerHTML = `I am a ${careers[index].slice(
     0,
     characterIndex
   )}`;
-  characterIndex++;
+  if (characterIndex === careers[index].length) {
+    index++;
+    characterIndex = 0;
+  }
   setTimeout(updateText, 400);
 }
