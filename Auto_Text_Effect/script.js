@@ -15,5 +15,9 @@ function updateText() {
     index++;
     characterIndex = 0;
   }
+
+  if (index === careers.length) {
+    index = 0;
+  }
   setTimeout(updateText, 400);
 }
