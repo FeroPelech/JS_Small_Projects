@@ -7,3 +7,11 @@ body {
   font-family: cursive;
   background-color: slateblue;
 }
+
+.container {
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
