@@ -14,4 +14,14 @@ body {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.month-name {
+  margin: 0;
+  background-color: orangered;
+  color: rgb(62, 0, 62);
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
 }
