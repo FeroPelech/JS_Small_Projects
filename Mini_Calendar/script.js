@@ -4,4 +4,7 @@ const dayNum = document.getElementById("day-number");
 const year = document.getElementById("year");
 
 const date = new Date();
-console.log(date);
+const month = date.getMonth();
+const cMonth = date.toLocaleString("sk", { month: "long" });
+
+monthN.innerText = cMonth.charAt(0).toUpperCase() + cMonth.slice(1);
