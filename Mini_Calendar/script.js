@@ -13,3 +13,4 @@ const cYear = date.getFullYear();
 monthN.innerText = cMonth.charAt(0).toUpperCase() + cMonth.slice(1);
 year.innerText = cYear;
 dayN.innerText = cDay.charAt(0).toUpperCase() + cDay.slice(1);
+dayNum.innerText = date.getDate();
