@@ -5,3 +5,7 @@
   background-color: lightgrey;
   border-radius: 20px;
 }
+
+.input {
+  visibility: absolute;
+}
