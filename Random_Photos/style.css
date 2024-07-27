@@ -18,3 +18,19 @@ body {
   height: 300px;
   background-color: lightgray;
 }
+
+.btn {
+  background-color: slateblue;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: black;
+  background-color: cadetblue;
+}
