@@ -1,4 +1,4 @@
-body {
+.container {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -25,4 +25,5 @@ body {
   border-radius: 50%;
   top: 3px;
   position: absolute;
+  left: 3px;
 }
