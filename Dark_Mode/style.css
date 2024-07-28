@@ -17,3 +17,12 @@ body {
 .input {
   visibility: absolute;
 }
+
+.circle {
+  width: 34px;
+  background-color: darkgray;
+  height: 34px;
+  border-radius: 50%;
+  top: 3px;
+  position: absolute;
+}
