@@ -26,6 +26,7 @@
   top: 3px;
   position: absolute;
   left: 3px;
+  animation: toggleOff 0.2s linear backwards;
 }
 
 .input:checked + .label {
