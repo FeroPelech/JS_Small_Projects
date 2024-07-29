@@ -1,6 +1,6 @@
 const inputEl = document.querySelector(".input");
 const bodyEl = document.querySelector("body");
-console.log(inputEl.checked);
+const circleEl = document.querySelector(".circle");
 
 updateBody();
 
