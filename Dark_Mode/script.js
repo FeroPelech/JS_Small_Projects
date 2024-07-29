@@ -11,3 +11,7 @@ function updateBody() {
     bodyEl.style.backgroundColor = "white";
   }
 }
+
+inputEl.addEventListener("input", () => {
+  updateBody();
+});
