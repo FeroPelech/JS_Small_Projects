@@ -1,4 +1,8 @@
 const inputEl = document.querySelector(".input");
+const bodyEl = document.querySelector("body");
 console.log(inputEl.checked);
 
-function updateBody() {}
+function updateBody() {
+  if (inputEl.checked) {
+  }
+}
