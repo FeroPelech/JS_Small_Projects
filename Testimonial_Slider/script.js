@@ -1,27 +1,27 @@
 const testimonial = [
   {
-    name: "Thomas Wayne",
+    name: `"Thomas Wayne"`,
     photoURL:
       "https://images.unsplash.com/photo-1588862081167-d5b98006637e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     text: "Why do we fall sir? So that we can learn to pick ourselves up.",
     alt: "Batman",
   },
   {
-    name: "Jor El",
+    name: `"Jor El"`,
     photoURL:
       "https://images.unsplash.com/photo-1558679908-541bcf1249ff?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     text: "They will race behind you, they will stumble, they will fall. But in time, they will join you in the sun, Kal. In time, you will help them accomplish wonders.",
     alt: "Super-Man",
   },
   {
-    name: "Ben Parker",
+    name: `"Ben Parker"`,
     photoURL:
       "https://images.unsplash.com/photo-1558680689-ce686c5e2fb8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     text: "With great power comes great responsibility.",
     alt: "Spider-Man",
   },
   {
-    name: "Viseris",
+    name: `"Viseris"`,
     photoURL:
       "https://images.unsplash.com/photo-1695840210597-4020baf877ff?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     text: "This World Doesn't Need A Hero; It Needs A Professional.",
@@ -46,8 +46,8 @@ function updateHtml() {
   idx++;
   setTimeout(() => {
     updateHtml();
-  }, 2000);
-  if (idx === 4) {
+  }, 5000);
+  if (idx === testimonial.length) {
     idx = 0;
   }
 }
