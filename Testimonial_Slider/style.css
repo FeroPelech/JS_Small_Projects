@@ -7,10 +7,15 @@ body {
 }
 
 .container {
-  padding: 10px;
-  width: 450px;
-  height: 200px;
+  margin: 5px;
+  padding: 40px 20px;
+  width: 500px;
+  height: 250px;
   background-color: slateblue;
+  font-family: cursive;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  min-width: 300px;
 }
 
 img {
