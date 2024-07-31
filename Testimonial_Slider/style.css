@@ -6,6 +6,13 @@ body {
   align-items: center;
 }
 
+.container {
+  padding: 10px;
+  width: 450px;
+  height: 200px;
+  background-color: slateblue;
+}
+
 img {
   width: 100px;
   height: 100px;
