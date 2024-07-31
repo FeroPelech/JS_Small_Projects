@@ -28,6 +28,12 @@ const usernameEl = document.querySelector(".username");
 
 let idx = 0;
 
+updateHtml();
+
 function updateHtml() {
   const { name, photoURL, text, alt } = testimonial[idx];
+  imgEl.src = photoURL;
+  imgEl.alt = alt;
+  textEl.innerHTML = text;
+  usernameEl.innerHTML = name;
 }
