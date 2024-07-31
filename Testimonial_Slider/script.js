@@ -22,6 +22,12 @@ const testimonial = [
   },
 ];
 
+const imgEl = document.querySelector("img");
+const textEl = document.querySelector(".text");
+const usernameEl = document.querySelector(".username");
+
 let idx = 0;
 
-function updateHtml() {}
+function updateHtml() {
+  const { name, photoURL, text, alt } = testimonial[idx];
+}
