@@ -7,3 +7,12 @@ body {
   background-color: rgb(41, 17, 63);
   font-family: cursive;
 }
+
+.container {
+  background-color: lightpink;
+  width: 400px;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
