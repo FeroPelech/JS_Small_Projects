@@ -27,3 +27,9 @@ body {
   box-sizing: border-box;
   border: solid 2px darkgray;
 }
+
+.counter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
