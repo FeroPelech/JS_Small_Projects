@@ -8,3 +8,5 @@ console.log(remainingCounter);
 textAreaEl.addEventListener("keyup", () => {
   updateCounter();
 });
+
+function updateCounter() {}
