@@ -25,3 +25,7 @@ body {
   right: 0;
   background-color: lightblue;
 }
+
+h1 {
+  font-size: 100px;
+}
