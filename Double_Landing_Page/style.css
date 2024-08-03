@@ -28,6 +28,9 @@ body {
 
 h1 {
   font-size: 100px;
+  color: aliceblue;
+  backdrop-filter: brightness(0.5);
+  letter-spacing: 4px;
 }
 
 .btn {
