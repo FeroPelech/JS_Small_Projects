@@ -12,3 +12,9 @@ body {
   width: 50%;
   height: 100%;
 }
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+}
