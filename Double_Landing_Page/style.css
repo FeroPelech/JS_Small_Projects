@@ -12,6 +12,7 @@ body {
   width: 50%;
   height: 100%;
   top: 0;
+  overflow: hidden;
 }
 
 .split.left {
@@ -54,4 +55,20 @@ h1 {
   background-color: white;
   color: black;
   border: 3px solid red;
+}
+
+.active-left .left {
+  width: 75%;
+}
+
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .left {
+  width: 25%;
+}
+
+.active-right .right {
+  width: 75%;
 }
