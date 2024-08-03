@@ -18,12 +18,18 @@ body {
   position: absolute;
   left: 0;
   background-color: pink;
+  background-image: url("https://images.unsplash.com/photo-1698702078485-0654dd6cd61e?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .split.right {
   position: absolute;
   right: 0;
   background-color: lightblue;
+  background-image: url("https://images.unsplash.com/photo-1721864428866-811f04fbd1cd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
