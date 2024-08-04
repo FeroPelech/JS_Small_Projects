@@ -9,3 +9,11 @@ left.addEventListener("mouseenter", () => {
 left.addEventListener("mouseleave", () => {
   container.classList.remove("active-left");
 });
+
+right.addEventListener("mouseenter", () => {
+  container.classList.add("active-right");
+});
+
+right.addEventListener("mouseleave", () => {
+  container.classList.remove("active-right");
+});
