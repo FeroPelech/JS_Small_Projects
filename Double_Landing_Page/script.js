@@ -3,5 +3,9 @@ const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 
 left.addEventListener("mouseenter", () => {
-  console.log("kuk");
+  container.classList.add("active-left");
+});
+
+left.addEventListener("mouseleave", () => {
+  container.classList.remove("active-left");
 });
