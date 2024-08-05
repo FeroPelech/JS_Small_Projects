@@ -25,6 +25,7 @@ function generateColors() {
   colorContainers.forEach((e) => {
     const newColorCode = randomColor();
     e.style.backgroundColor = "#" + newColorCode;
+    e.innerText = "#" + newColorCode;
   });
 }
 
