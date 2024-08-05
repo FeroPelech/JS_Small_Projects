@@ -1,4 +1,5 @@
 const container = document.querySelector(".color-containers");
+const colorContainers = document.querySelectorAll(".color-container");
 
 for (let i = 0; i < 30; i++) {
   const colorContainerEl = document.createElement("div");
