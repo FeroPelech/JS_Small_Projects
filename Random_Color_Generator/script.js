@@ -28,5 +28,3 @@ function generateColors() {
     e.innerText = "#" + newColorCode;
   });
 }
-
-console.log(colorContainers[0]);
