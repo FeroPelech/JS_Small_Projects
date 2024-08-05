@@ -18,3 +18,5 @@ function randomColor() {
     console.log(color);
   }
 }
+
+function generateColors() {}
