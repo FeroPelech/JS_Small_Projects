@@ -5,3 +5,5 @@ for (let i = 0; i < 30; i++) {
   colorContainerEl.classList.add("color-container");
   container.appendChild(colorContainerEl);
 }
+
+function randomColor() {}
