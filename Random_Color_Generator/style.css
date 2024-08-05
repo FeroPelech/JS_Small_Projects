@@ -2,3 +2,16 @@ body {
   margin: 0;
   font-family: cursive;
 }
+
+h1 {
+  text-align: center;
+}
+
+.color-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-container {
+}
