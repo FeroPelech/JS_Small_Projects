@@ -51,3 +51,11 @@
 .btn:hover {
   filter: brightness(1.5);
 }
+
+#prev {
+  left: 25%;
+}
+
+#next {
+  right: 25%;
+}
