@@ -14,5 +14,12 @@
   width: 200px;
   height: 200px;
   transform-style: preserve-3d;
-  transform: perspective(1000px) rotateY("0deg");
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.image-container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(calc(var(--i) * 45deg));
 }
