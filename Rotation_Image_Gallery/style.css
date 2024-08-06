@@ -9,3 +9,10 @@
   background-color: black;
   overflow: hidden;
 }
+
+.image-container {
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY("0deg");
+}
