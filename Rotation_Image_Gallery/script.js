@@ -10,6 +10,11 @@ prevBtn.addEventListener("click", () => {
   updateGallery();
 });
 
+nextBtn.addEventListener("click", () => {
+  x -= 45;
+  updateGallery();
+});
+
 function updateGallery() {
   imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
 }
