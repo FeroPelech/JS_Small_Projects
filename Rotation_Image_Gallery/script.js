@@ -15,6 +15,16 @@ nextBtn.addEventListener("click", () => {
   updateGallery();
 });
 
+imageContainer.addEventListener("click", (e) => {
+  console.log("X: " + e.clientX);
+  console.log("Y: " + e.clientY);
+  let x = e.clientX;
+  let y = e.clientY;
+  if (x > 500 && x < 830 && y > 300 && y < 530) {
+    console.log("hit");
+  }
+});
+
 function updateGallery() {
   imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
 }
