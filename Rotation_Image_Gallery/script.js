@@ -1,4 +1,5 @@
 const imageContainer = document.querySelector(".image-container");
+const img = document.querySelectorAll("img");
 
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -13,16 +14,6 @@ prevBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
   x -= 45;
   updateGallery();
-});
-
-imageContainer.addEventListener("click", (e) => {
-  console.log("X: " + e.clientX);
-  console.log("Y: " + e.clientY);
-  let x = e.clientX;
-  let y = e.clientY;
-  if (x > 500 && x < 830 && y > 300 && y < 530) {
-    console.log("hit");
-  }
 });
 
 function updateGallery() {
