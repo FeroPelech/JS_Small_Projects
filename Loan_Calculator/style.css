@@ -7,3 +7,10 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+.container {
+  background: darkcyan;
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
