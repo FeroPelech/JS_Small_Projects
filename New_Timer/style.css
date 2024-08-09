@@ -48,3 +48,7 @@ button {
 #reset {
   background-color: rgb(56, 56, 246);
 }
+
+input {
+  height: 30px;
+}
