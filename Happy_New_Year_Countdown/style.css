@@ -7,3 +7,8 @@ body {
   justify-content: center;
   background-color: slateblue;
 }
+
+.container {
+  font-family: cursive;
+  text-align: center;
+}
