@@ -24,3 +24,14 @@ h2 {
   color: white;
   font-weight: bold;
 }
+
+.countdown {
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  color: white;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
