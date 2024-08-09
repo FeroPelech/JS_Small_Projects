@@ -18,3 +18,9 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.year {
+  font-size: 5em;
+  color: white;
+  font-weight: bold;
+}
