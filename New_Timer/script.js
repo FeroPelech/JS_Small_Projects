@@ -12,15 +12,20 @@ let interval;
 function updateTimer() {
   let minutes = Math.floor(userTime / 60);
   let seconds = userTime % 60;
-  let formattedTime = minutes + ":" + seconds;
+  let formattedTime = `${minutes.toString().padStart(2, 0)}:${seconds}`;
   timer.innerHTML = formattedTime;
 }
 
 submit.addEventListener("click", () => {
   if (input.value < 1) {
     alert("You cannot insert negative time");
+  } else if (input.value < 10 && input.value > 0) {
+    userTime = input.value * 60;
+    timer.innerHTML = "0" + Math.floor(userTime / 60) + ":00";
+    input.value = "";
   } else {
     userTime = input.value * 60;
+    timer.innerHTML = Math.floor(userTime / 60) + ":00";
   }
 });
 
