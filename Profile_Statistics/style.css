@@ -13,3 +13,11 @@ body {
   background-color: yellow;
   font-family: cursive;
 }
+
+.stats-container {
+  padding: 20px;
+  margin: 20px;
+  border: dotted 5px green;
+  min-width: 200px;
+  height: 100px;
+}
