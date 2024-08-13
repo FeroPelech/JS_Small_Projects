@@ -20,4 +20,18 @@ body {
   border: dotted 5px green;
   min-width: 200px;
   height: 100px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
 }
