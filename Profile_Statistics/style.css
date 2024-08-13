@@ -18,7 +18,7 @@ body {
   padding: 20px;
   margin: 20px;
   border: dotted 5px green;
-  min-width: 200px;
+  min-width: 300px;
   height: 100px;
   position: relative;
 }
@@ -26,6 +26,13 @@ body {
 .icon {
   position: absolute;
   top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.counter {
+  font-size: 40px;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
