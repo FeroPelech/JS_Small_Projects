@@ -23,6 +23,14 @@ body {
   position: relative;
 }
 
+.stats-container h4 {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
 .icon {
   position: absolute;
   top: -30px;
@@ -31,10 +39,11 @@ body {
 }
 
 .counter {
-  font-size: 40px;
+  font-size: 50px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  color: green;
 }
 
 @media (max-width: 600px) {
