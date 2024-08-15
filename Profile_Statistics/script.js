@@ -6,7 +6,10 @@ counters.forEach((e) => {
 });
 
 function incrementCounter(e) {
-  const currentNum = +counters.innerText;
+  let currentNum = +e.innerText;
   const dataCeil = e.getAttribute("data-ceil");
+  const increment = dataCeil / 15;
+  currentNum = Math.ceil(currentNum + increment);
+  e.innerText = currentNum;
   console.log(dataCeil);
 }
