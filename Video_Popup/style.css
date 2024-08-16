@@ -50,6 +50,10 @@ body {
   border-radius: 10px;
 }
 
+.active.trailer-container {
+  visibility: hidden;
+}
+
 .btn {
   background-color: white;
   border: none;
