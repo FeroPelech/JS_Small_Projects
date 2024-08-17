@@ -6,4 +6,6 @@ btn.addEventListener("click", () => {
   trailerContainer.classList.remove("active");
 });
 
-closeIcon.addEventListener("click", () => {});
+closeIcon.addEventListener("click", () => {
+  trailerContainer.classList.add("active");
+});
