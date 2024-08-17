@@ -42,7 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: opacity 0.4s;
+  transition: opacity 0.8s;
 }
 
 .trailer-container video {
@@ -80,4 +80,5 @@ body {
   top: 30px;
   left: 30px;
   color: white;
+  cursor: pointer;
 }
