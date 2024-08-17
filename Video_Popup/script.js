@@ -9,4 +9,5 @@ btn.addEventListener("click", () => {
 
 closeIcon.addEventListener("click", () => {
   trailerContainer.classList.add("active");
+  video.pause();
 });
