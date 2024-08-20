@@ -39,3 +39,9 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: 0.5s ease-out;
 }
+
+.btn:hover {
+  color: white;
+  background-color: black;
+  transition: 0.3s ease-in;
+}
