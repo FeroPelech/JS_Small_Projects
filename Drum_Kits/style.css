@@ -26,3 +26,16 @@ h1 {
 .button-container {
   text-align: center;
 }
+
+.btn {
+  padding: 30px 50px;
+  background-color: white;
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease-out;
+}
