@@ -6,4 +6,7 @@ kits.forEach((e) => {
   btn.textContent = e;
   btn.classList.add("btn");
   containerBtn.appendChild(btn);
+  const Audio = document.createElement("audio");
+  Audio.src = "sounds/" + e + ".mp3";
+  containerBtn.appendChild(Audio);
 });
