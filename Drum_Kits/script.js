@@ -9,4 +9,7 @@ kits.forEach((e) => {
   const Audio = document.createElement("audio");
   Audio.src = "sounds/" + e + ".mp3";
   containerBtn.appendChild(Audio);
+  btn.addEventListener("click", () => {
+    Audio.play();
+  });
 });
