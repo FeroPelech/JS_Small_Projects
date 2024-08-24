@@ -13,7 +13,11 @@ function computeTemp(e) {
     case "fahrenheit":
       kelvin.value = (currentValue - 32) / 1.8 + 273.15;
       celsius.value = (currentValue - 32) / 1.8;
-
+      break;
+    case "kelvin":
+      celsius.value = currentValue - 273.15;
+      fahrenheit.value = (currentValue - 273.15) * 1.8 + 32;
+      break;
     default:
       break;
   }
