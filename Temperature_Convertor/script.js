@@ -3,6 +3,14 @@ const fahrenheit = document.getElementById("fahrenheit");
 const kelvin = document.getElementById("kelvin");
 
 function computeTemp(e) {
-  const currentValue = e.target.value;
-  console.log(currentValue);
+  const currentValue = +e.target.value;
+
+  switch (e.target.name) {
+    case "celsius":
+      kelvin.value = currentValue + 273.15;
+      fahrenheit.value = currentValue * 1.8 + 32;
+      break;
+    default:
+      break;
+  }
 }
