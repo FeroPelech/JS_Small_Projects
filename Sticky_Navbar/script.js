@@ -1,2 +1,3 @@
 const navbar = document.querySelector(".navbar");
-console.log(navbar);
+const bottomContainer = document.querySelector(".bottom-container");
+console.log(bottomContainer);
