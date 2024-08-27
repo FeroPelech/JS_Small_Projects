@@ -29,3 +29,12 @@ button {
   transition: filter 0.2s ease-in-out;
   cursor: pointer;
 }
+
+button:hover {
+  filter: grayscale(0);
+}
+
+p {
+  font-weight: 600;
+  color: rgb(139, 69, 0);
+}
