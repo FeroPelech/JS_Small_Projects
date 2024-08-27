@@ -9,7 +9,12 @@ async function getEmoji() {
     "http://emoji-api.com/emojis?access_key=6d34f1e3d8da09a09dd1598e030f5603e89ac084"
   );
   data = await response.json();
-  console.log(data);
+  for (let i = 0; i < 1500; i++) {
+    Emoji.push({
+      emojiName: data[i].character,
+      emojiCode: data[i].unicodeName,
+    });
+  }
 }
 
 getEmoji();
