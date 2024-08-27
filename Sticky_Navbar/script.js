@@ -2,9 +2,6 @@ const navbar = document.querySelector(".navbar");
 const bottomContainer = document.querySelector(".bottom-container");
 const image = document.querySelector("img");
 
-console.log(image.src);
-console.log(bottomContainer.offsetTop);
-
 window.addEventListener("scroll", () => {
   if (window.scrollY > bottomContainer.offsetTop - navbar.offsetHeight - 50) {
     navbar.classList.add("active");
