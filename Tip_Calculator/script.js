@@ -10,5 +10,5 @@ function calculation() {
   const tipV = tip.value;
   const totalV = billV * (1 + tipV / 100);
 
-  console.log(totalV);
+  result.innerText = totalV + "€";
 }
