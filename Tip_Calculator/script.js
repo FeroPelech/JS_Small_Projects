@@ -6,5 +6,9 @@ const result = document.getElementById("total");
 btn.addEventListener("click", calculation);
 
 function calculation() {
-  console.log("Kukaj");
+  const billV = bill.value;
+  const tipV = tip.value;
+  const totalV = billV * (1 + tipV / 100);
+
+  console.log(totalV);
 }
