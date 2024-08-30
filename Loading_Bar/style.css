@@ -8,3 +8,8 @@ body {
   color: lightgray;
   font-family: cursive;
 }
+
+.container {
+  text-align: center;
+  width: 300px;
+}
