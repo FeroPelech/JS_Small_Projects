@@ -19,4 +19,14 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-size: 32px;
+}
+p {
+  color: grey;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
 }
