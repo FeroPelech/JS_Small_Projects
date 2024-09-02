@@ -6,5 +6,5 @@ window.addEventListener("scroll", () => {
 
 function updateImage() {
   image.style.opacity = 1 - window.scrollY / 800;
-  console.log(window.scrollY, 1 - window.scrollY / 800);
+  image.style.backgroundSize = 160 - window.scrollY / 12 + "%";
 }
