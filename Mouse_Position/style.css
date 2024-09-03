@@ -12,3 +12,9 @@ body {
 .container {
   display: flex;
 }
+
+.mouse_position {
+  border: 2px solid lightblue;
+  margin: 40px;
+  min-width: 200px;
+}
