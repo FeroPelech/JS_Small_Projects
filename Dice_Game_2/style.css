@@ -28,3 +28,11 @@ button {
 button:hover {
   background-color: #4a91a9;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
