@@ -9,4 +9,6 @@ btn.addEventListener("click", () => {
   }, 1000);
 });
 
-function rollDice() {}
+function rollDice() {
+  const rollResult = Math.floor(Math.random() * 6) + 1;
+}
