@@ -8,3 +8,5 @@ btn.addEventListener("click", () => {
     dice.classList.remove("roll-animation");
   }, 1000);
 });
+
+function rollDice() {}
