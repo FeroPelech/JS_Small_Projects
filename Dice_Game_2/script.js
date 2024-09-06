@@ -14,4 +14,19 @@ function rollDice() {
   const diceFace = getDiceFace(rollResult);
 }
 
-function getDiceFace() {}
+function getDiceFace() {
+  switch (rollResult) {
+    case 1:
+      return "&#9856;";
+    case 2:
+      return "&#9857;";
+    case 3:
+      return "&#9858;";
+    case 4:
+      return "&#9859;";
+    case 5:
+      return "&#9860;";
+    case 6:
+      return "&#9861;";
+  }
+}
