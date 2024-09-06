@@ -11,4 +11,7 @@ btn.addEventListener("click", () => {
 
 function rollDice() {
   const rollResult = Math.floor(Math.random() * 6) + 1;
+  const diceFace = getDiceFace(rollResult);
 }
+
+function getDiceFace() {}
