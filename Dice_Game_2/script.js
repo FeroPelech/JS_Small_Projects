@@ -10,6 +10,8 @@ btn.addEventListener("click", () => {
   }, 1000);
 });
 
+let historyList = [];
+
 function rollDice() {
   const rollResult = Math.floor(Math.random() * 6) + 1;
   const diceFace = getDiceFace(rollResult);
