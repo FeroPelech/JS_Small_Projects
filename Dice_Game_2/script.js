@@ -15,8 +15,9 @@ let historyList = [];
 function rollDice() {
   const rollResult = Math.floor(Math.random() * 6) + 1;
   const diceFace = getDiceFace(rollResult);
-  console.log(diceFace);
   dice.innerHTML = diceFace;
+  historyList.push(rollResult);
+  updateRollHistory();
 }
 
 function getDiceFace(rollResult) {
@@ -35,3 +36,5 @@ function getDiceFace(rollResult) {
       return "&#9861;";
   }
 }
+
+function updateRollHistory() {}
