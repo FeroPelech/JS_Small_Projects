@@ -12,7 +12,7 @@ h1 {
 .dice {
   font-size: 10rem;
   margin: 5px;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
