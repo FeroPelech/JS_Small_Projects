@@ -1,5 +1,6 @@
 const btn = document.getElementById("roll-button");
 const dice = document.getElementById("dice");
+const rollHistory = document.getElementById("roll-history");
 
 btn.addEventListener("click", () => {
   console.log("Clicked");
