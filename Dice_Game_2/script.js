@@ -15,7 +15,9 @@ let historyList = [];
 
 function rollDice() {
   const rollResult = Math.floor(Math.random() * 6) + 1;
+  console.log(rollResult);
   const diceFace = getDiceFace(rollResult);
+  console.log(diceFace);
   dice.innerHTML = diceFace;
   historyList.push(rollResult);
   updateRollHistory();
@@ -38,4 +40,13 @@ function getDiceFace(rollResult) {
   }
 }
 
-function updateRollHistory() {}
+function updateRollHistory() {
+  rollHistory.innerHTML = "";
+  for (let i = 0; i < historyList.length; i++) {
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `Roll ${i + 1}: <span>${getDiceFace(
+      historyList[i]
+    )}</span>`;
+    rollHistory.appendChild(listItem);
+  }
+}
