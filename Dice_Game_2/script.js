@@ -1,9 +1,9 @@
 const btn = document.getElementById("roll-button");
 const dice = document.getElementById("dice");
 const rollHistory = document.getElementById("roll-history");
+let historyList = [];
 
 btn.addEventListener("click", () => {
-  console.log("Clicked");
   dice.classList.add("roll-animation");
   rollDice();
   setTimeout(() => {
@@ -11,13 +11,9 @@ btn.addEventListener("click", () => {
   }, 1000);
 });
 
-let historyList = [];
-
 function rollDice() {
   const rollResult = Math.floor(Math.random() * 6) + 1;
-  console.log(rollResult);
   const diceFace = getDiceFace(rollResult);
-  console.log(diceFace);
   dice.innerHTML = diceFace;
   historyList.push(rollResult);
   updateRollHistory();
