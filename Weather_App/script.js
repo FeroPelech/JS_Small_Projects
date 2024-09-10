@@ -21,5 +21,6 @@ async function getWeatherData(cityValue) {
     const data = await respons.json();
     console.log(data);
     const temperature = Math.round(data.main.temp);
+    const description = data.weather[0].description;
   } catch (error) {}
 }
