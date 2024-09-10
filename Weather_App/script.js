@@ -10,4 +10,15 @@ form.addEventListener("submit", (e) => {
   getWeatherData(cityValue);
 });
 
-function getWeatherData(CV) {}
+async function getWeatherData(cityValue) {
+  try {
+    const respons = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${apikey}&units=metric`
+    );
+    if (!respons.ok) {
+      throw new Error("Network respons was not ok");
+    }
+    const data = await respons.json();
+    console.log(data);
+  } catch (error) {}
+}
