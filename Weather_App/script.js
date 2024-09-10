@@ -22,10 +22,15 @@ async function getWeatherData(cityValue) {
     console.log(data);
     const temperature = Math.round(data.main.temp);
     const description = data.weather[0].description;
+    const icon = data.weather[0].icon;
+    console.log(data.weather[0].icon);
     const details = [
       `Feels like ${Math.round(data.main.feels_like)}`,
       `Humidity: ${data.main.humidity}`,
       `Wind speed: ${data.wind.speed}`,
     ];
+    weatherData.querySelector(
+      ".icon"
+    ).innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon">`;
   } catch (error) {}
 }
