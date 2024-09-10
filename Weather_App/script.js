@@ -22,5 +22,10 @@ async function getWeatherData(cityValue) {
     console.log(data);
     const temperature = Math.round(data.main.temp);
     const description = data.weather[0].description;
+    const details = [
+      `Feels like ${Math.round(data.main.feels_like)}`,
+      `Humidity: ${data.main.humidity}`,
+      `Wind speed: ${data.wind.speed}`,
+    ];
   } catch (error) {}
 }
