@@ -7,4 +7,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const cityValue = cityInput.value;
   console.log(cityValue);
+  getWeatherData(cityValue);
 });
+
+function getWeatherData(CV) {}
