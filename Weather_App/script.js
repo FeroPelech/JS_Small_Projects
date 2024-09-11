@@ -33,8 +33,15 @@ async function getWeatherData(cityValue) {
       ".icon"
     ).innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}.png" alt="Weather Icon">`;
     weatherData.querySelector(".temperature").textContent = `${temperature}°C`;
+    weatherData.querySelector(".description").textContent = `${description}`;
     weatherData.querySelector(".details").innerHTML = details
       .map((detail) => `<div>${detail}</div>`)
       .join("");
-  } catch (error) {}
+  } catch (error) {
+    weatherData.querySelector(".icon").innerHTML = "";
+    weatherData.querySelector(".temperature").textContent = "";
+    weatherData.querySelector(".description").textContent =
+      "An error happened, please try it again later.";
+    weatherData.querySelector(".details").innerHTML = "";
+  }
 }
