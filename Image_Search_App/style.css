@@ -70,4 +70,9 @@ form {
   height: 200px;
   object-fit: cover;
   background-repeat: no-repeat;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-result:hover img {
+  transform: scale(1.05);
 }
