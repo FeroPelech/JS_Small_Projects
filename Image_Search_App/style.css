@@ -17,4 +17,16 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
+}
+
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 19px;
+  color: #333;
 }
