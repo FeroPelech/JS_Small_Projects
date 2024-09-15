@@ -76,3 +76,11 @@ form {
 .search-result:hover img {
   transform: scale(1.05);
 }
+
+.search-result a {
+  padding: 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
