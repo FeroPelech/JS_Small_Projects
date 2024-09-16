@@ -105,3 +105,23 @@ form {
   background-color: #0077b5;
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 760px) {
+  .search-result {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-result {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  #search-input {
+    margin-bottom: 20px;
+  }
+}
