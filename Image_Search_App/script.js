@@ -5,10 +5,14 @@ const searchResultsEl = document.getElementById(".search-results");
 const showMoreBtn = document.getElementById("show-more-button");
 
 let inputData = "";
+let page = 1;
 
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
   searchImages();
 });
 
-function searchImages() {}
+function searchImages() {
+  inputData = searchInputEl.value;
+  console.log(inputData);
+}
