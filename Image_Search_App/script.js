@@ -10,3 +10,5 @@ formEl.addEventListener("submit", (e) => {
   e.preventDefault();
   searchImages();
 });
+
+function searchImages() {}
