@@ -14,4 +14,5 @@ formEl.addEventListener("submit", (e) => {
 
 function searchImages() {
   inputData = searchInputEl.value;
+  const url = `https://api.unsplash.com/search/photos?page=${page}`;
 }
