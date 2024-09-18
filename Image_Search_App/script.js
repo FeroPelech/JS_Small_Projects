@@ -14,5 +14,4 @@ formEl.addEventListener("submit", (e) => {
 
 function searchImages() {
   inputData = searchInputEl.value;
-  console.log(inputData);
 }
