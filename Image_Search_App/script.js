@@ -1,4 +1,4 @@
-const accessKey = "RZEIOVfPhS7vMLkFdd2TSKGFBS4o9_FmcV1Nje3FSjw";
+const accessKey = "H7Fcd2yiW1ghvxyLvcphv1Q4S8ijjaHkZfWV06hSxLo";
 const formEl = document.querySelector("form");
 const searchInputEl = document.getElementById("search-input");
 const searchResultsEl = document.getElementById(".search-results");
@@ -12,7 +12,12 @@ formEl.addEventListener("submit", (e) => {
   searchImages();
 });
 
-function searchImages() {
+async function searchImages() {
   inputData = searchInputEl.value;
-  const url = `https://api.unsplash.com/search/photos?page=${page}`;
+  const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
+  const res = await fetch(url);
+  const data = await res.json();
+  if (page === 1) {
+    searchResultsEl.innerHTML = "";
+  }
 }
