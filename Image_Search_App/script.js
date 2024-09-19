@@ -9,6 +9,7 @@ let page = 1;
 
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
+  page = 1;
   searchImages();
 });
 
@@ -20,4 +21,6 @@ async function searchImages() {
   if (page === 1) {
     searchResultsEl.innerHTML = "";
   }
+  const results = data.results;
+  console.log(results);
 }
