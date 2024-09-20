@@ -123,5 +123,6 @@ form {
 
   #search-input {
     margin-bottom: 20px;
+    width: 85%;
   }
 }
