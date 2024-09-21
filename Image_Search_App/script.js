@@ -15,7 +15,7 @@ formEl.addEventListener("submit", (e) => {
 
 async function searchImages() {
   inputData = searchInputEl.value;
-  const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
+  const url = `https://api.unsplash.com/search/${accessKey}?page=1&query=${inputData}`;
   const res = await fetch(url);
   const data = await res.json();
   if (page === 1) {
