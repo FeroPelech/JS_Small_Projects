@@ -54,3 +54,8 @@ button:hover {
   background-color: #fff;
   color: #333;
 }
+
+.operator {
+  background-color: #0074d9;
+  color: white;
+}
