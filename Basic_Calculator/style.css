@@ -40,7 +40,8 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.number:hover {
+.number:hover,
+.decimal:hover {
   background-color: #ddd;
 }
 
