@@ -43,3 +43,8 @@ button {
 button:hover {
   background-color: #ddd;
 }
+
+.clear {
+  background-color: rgba(250, 63, 21, 0.848);
+  color: white;
+}
