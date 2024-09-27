@@ -48,3 +48,9 @@ button:hover {
   background-color: rgba(250, 63, 21, 0.848);
   color: white;
 }
+
+.number,
+.decimal {
+  background-color: #fff;
+  color: #333;
+}
