@@ -3,6 +3,10 @@ const btns = document.querySelectorAll("button");
 btns.forEach((e) => {
   e.addEventListener("click", () => {
     const btnValue = e.textContent;
-    console.log(btnValue);
+    if (btnValue === "C") {
+      clearResult();
+    }
   });
 });
+
+function clearResult() {}
