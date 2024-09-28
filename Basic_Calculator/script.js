@@ -19,4 +19,6 @@ function clearResult() {}
 
 function calculateResult() {}
 
-function appendValue() {}
+function appendValue(btnValue) {
+  input.value += btnValue;
+}
