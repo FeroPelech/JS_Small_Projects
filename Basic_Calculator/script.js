@@ -1,2 +1,5 @@
 const btns = document.querySelectorAll("button");
-console.log(btns);
+
+btns.forEach((e) => {
+  console.log(e);
+});
