@@ -7,6 +7,8 @@ btns.forEach((e) => {
       clearResult();
     } else if (btnValue === "=") {
       calculateResult();
+    } else {
+      appendValue(btnValue);
     }
   });
 });
@@ -14,3 +16,5 @@ btns.forEach((e) => {
 function clearResult() {}
 
 function calculateResult() {}
+
+function appendValue() {}
