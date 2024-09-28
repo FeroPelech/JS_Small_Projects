@@ -1,5 +1,8 @@
 const btns = document.querySelectorAll("button");
 
 btns.forEach((e) => {
-  console.log(e);
+  e.addEventListener("click", () => {
+    const btnValue = e.textContent;
+    console.log(btnValue);
+  });
 });
