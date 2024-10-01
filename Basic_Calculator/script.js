@@ -17,7 +17,9 @@ btns.forEach((e) => {
 
 function clearResult() {}
 
-function calculateResult() {}
+function calculateResult() {
+  input.value = eval(input.value);
+}
 
 function appendValue(btnValue) {
   input.value += btnValue;
