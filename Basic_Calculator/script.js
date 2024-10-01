@@ -15,7 +15,9 @@ btns.forEach((e) => {
   });
 });
 
-function clearResult() {}
+function clearResult() {
+  input.value = "";
+}
 
 function calculateResult() {
   input.value = eval(input.value);
