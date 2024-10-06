@@ -3,3 +3,10 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+
+header {
+  background: #0c2461;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
