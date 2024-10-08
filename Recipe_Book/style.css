@@ -73,3 +73,14 @@ h1 {
   background: #20429a;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .recipe-item {
+    flex-direction: column;
+  }
+  .recipe-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
