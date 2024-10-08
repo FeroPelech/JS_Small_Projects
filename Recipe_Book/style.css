@@ -83,4 +83,10 @@ h1 {
     height: auto;
     margin-bottom: 10px;
   }
+  .recipe-item h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
 }
