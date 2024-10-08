@@ -98,4 +98,7 @@ h1 {
     width: 100%;
     text-align: center;
   }
+  .contaienr {
+    max-width: 90%;
+  }
 }
