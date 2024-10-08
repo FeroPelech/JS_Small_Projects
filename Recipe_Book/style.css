@@ -43,3 +43,10 @@ h1 {
   height: 150px;
   object-fit: cover;
 }
+
+.recipe-item h2 {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 200px;
+}
