@@ -1,1 +1,3 @@
-async function init() {}
+async function init() {
+  const recipes = await getRecipes();
+}
