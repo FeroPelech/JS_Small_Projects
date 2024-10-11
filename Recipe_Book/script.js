@@ -4,11 +4,13 @@ console.log(recipeListEl);
 
 function displayRecipes(recipes) {
   recipeListEl.innerHTML = "";
-  recipes.forEach((element) => {
+  recipes.forEach((e) => {
     const recipeItemEl = document.createElement("li");
     recipeItemEl.classList.add("recipe-item");
     recipeImageEl = document.createElement("img");
-
+    recipeImageEl.src = e.image;
+    recipeImageEl.alt = "recipe image";
+    recipeItemEl.appendChild(recipeImageEl);
     recipeListEl.appendChild(recipeItemEl);
   });
 }
