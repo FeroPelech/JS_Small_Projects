@@ -1,4 +1,6 @@
 const ApiKey = "af9f58a2b7444c4ebb81749f55532fc4";
+const recipeListEl = document.getElementById("recipe-list");
+console.log(recipeListEl);
 
 function displayRecipes(recipes) {}
 
