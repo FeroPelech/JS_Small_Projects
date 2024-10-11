@@ -5,7 +5,11 @@ console.log(recipeListEl);
 function displayRecipes(recipes) {
   recipeListEl.innerHTML = "";
   recipes.forEach((element) => {
-    const recipeListEl = document.createElement("li");
+    const recipeItemEl = document.createElement("li");
+    recipeItemEl.classList.add("recipe-item");
+    recipeImageEl = document.createElement("img");
+
+    recipeListEl.appendChild(recipeItemEl);
   });
 }
 
