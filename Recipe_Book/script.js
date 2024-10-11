@@ -5,7 +5,7 @@ async function getRecipes() {
     `https://api.spoonacular.com/recipes/random?number=10&apiKey=${ApiKey}`
   );
   const data = await response.json();
-  return data;
+  return data.recipes;
 }
 
 async function init() {
