@@ -4,6 +4,9 @@ console.log(recipeListEl);
 
 function displayRecipes(recipes) {
   recipeListEl.innerHTML = "";
+  recipes.forEach((element) => {
+    const recipeListEl = document.createElement("li");
+  });
 }
 
 async function getRecipes() {
