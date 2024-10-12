@@ -10,6 +10,7 @@ function displayRecipes(recipes) {
     recipeImageEl = document.createElement("img");
     recipeImageEl.src = e.image;
     recipeImageEl.alt = "recipe image";
+    recipeTitleEl = document.createElement("h2");
     recipeItemEl.appendChild(recipeImageEl);
     recipeListEl.appendChild(recipeItemEl);
   });
