@@ -11,7 +11,9 @@ function displayRecipes(recipes) {
     recipeImageEl.src = e.image;
     recipeImageEl.alt = "recipe image";
     recipeTitleEl = document.createElement("h2");
+    recipeTitleEl.innerText = e.title;
     recipeItemEl.appendChild(recipeImageEl);
+    recipeItemEl.appendChild(recipeTitleEl);
     recipeListEl.appendChild(recipeItemEl);
   });
 }
