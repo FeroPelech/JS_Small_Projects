@@ -16,6 +16,7 @@ function displayRecipes(recipes) {
     recipeIngredientsEl.innerHTML = `<strong>Ingredients:</strong> ${e.extendedIngredients
       .map((ingredient) => ingredient.original)
       .join(", ")}`;
+    recipeLinkEl = document.createElement("a");
     recipeItemEl.appendChild(recipeImageEl);
     recipeItemEl.appendChild(recipeTitleEl);
     recipeItemEl.appendChild(recipeIngredientsEl);
