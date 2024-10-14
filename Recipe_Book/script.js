@@ -12,6 +12,7 @@ function displayRecipes(recipes) {
     recipeImageEl.alt = "recipe image";
     recipeTitleEl = document.createElement("h2");
     recipeTitleEl.innerText = e.title;
+    recipeIngredientsEl = document.createElement("p");
     recipeItemEl.appendChild(recipeImageEl);
     recipeItemEl.appendChild(recipeTitleEl);
     recipeListEl.appendChild(recipeItemEl);
