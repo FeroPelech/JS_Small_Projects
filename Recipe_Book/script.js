@@ -13,7 +13,9 @@ function displayRecipes(recipes) {
     recipeTitleEl = document.createElement("h2");
     recipeTitleEl.innerText = e.title;
     recipeIngredientsEl = document.createElement("p");
-    recipeIngredientsEl.innerHTML = `<strong>Ingredients:</strong> ${e.extendedIngredients}`;
+    recipeIngredientsEl.innerHTML = `<strong>Ingredients:</strong> ${e.extendedIngredients
+      .map((ingredient) => ingredient.original)
+      .join(", ")}`;
     recipeItemEl.appendChild(recipeImageEl);
     recipeItemEl.appendChild(recipeTitleEl);
     recipeListEl.appendChild(recipeItemEl);
