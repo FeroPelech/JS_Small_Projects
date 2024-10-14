@@ -17,8 +17,8 @@ function displayRecipes(recipes) {
       .map((ingredient) => ingredient.original)
       .join(", ")}`;
     recipeItemEl.appendChild(recipeImageEl);
-    recipeItemEl.appendChild(recipeIngredientsEl);
     recipeItemEl.appendChild(recipeTitleEl);
+    recipeItemEl.appendChild(recipeIngredientsEl);
     recipeListEl.appendChild(recipeItemEl);
   });
 }
