@@ -17,6 +17,7 @@ function displayRecipes(recipes) {
       .map((ingredient) => ingredient.original)
       .join(", ")}`;
     recipeLinkEl = document.createElement("a");
+    recipeLinkEl.href = e.sourceUrl;
     recipeItemEl.appendChild(recipeImageEl);
     recipeItemEl.appendChild(recipeTitleEl);
     recipeItemEl.appendChild(recipeIngredientsEl);
