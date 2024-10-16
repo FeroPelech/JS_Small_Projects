@@ -22,6 +22,7 @@ function displayRecipes(recipes) {
     recipeItemEl.appendChild(recipeImageEl);
     recipeItemEl.appendChild(recipeTitleEl);
     recipeItemEl.appendChild(recipeIngredientsEl);
+    recipeItemEl.appendChild(recipeLinkEl);
     recipeListEl.appendChild(recipeItemEl);
   });
 }
