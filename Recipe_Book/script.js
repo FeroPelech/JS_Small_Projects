@@ -18,6 +18,7 @@ function displayRecipes(recipes) {
       .join(", ")}`;
     recipeLinkEl = document.createElement("a");
     recipeLinkEl.href = e.sourceUrl;
+    recipeLinkEl.innerText = "View Recipe";
     recipeItemEl.appendChild(recipeImageEl);
     recipeItemEl.appendChild(recipeTitleEl);
     recipeItemEl.appendChild(recipeIngredientsEl);
