@@ -4,5 +4,6 @@ const btn = document.getElementById("btn");
 console.log(btn);
 const color = document.querySelector(".color");
 btn.addEventListener("click", () => {
-  console.log("btnListener");
+  const randomNumber = 2;
+  console.log(randomNumber);
 });
