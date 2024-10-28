@@ -56,3 +56,13 @@ main {
   display: grid;
   place-items: center;
 }
+
+nav {
+  background: white;
+  margin: -10px;
+  padding: 10px;
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
