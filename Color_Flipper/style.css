@@ -97,3 +97,9 @@ nav a {
 nav a:hover {
   color: hsl(205, 78%, 60%);
 }
+
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
