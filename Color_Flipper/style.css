@@ -93,3 +93,7 @@ nav a {
   letter-spacing: 0.1rem;
   margin-right: 1rem;
 }
+
+nav a:hover {
+  color: hsl(205, 78%, 60%);
+}
