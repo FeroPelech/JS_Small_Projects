@@ -75,3 +75,8 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
+.nav-center h4 {
+  margin-bottom: 0;
+  color: hsl(205, 78%, 60%);
+}
