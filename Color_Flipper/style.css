@@ -80,3 +80,7 @@ nav {
   margin-bottom: 0;
   color: hsl(205, 78%, 60%);
 }
+
+.nav-links {
+  display: flex;
+}
