@@ -107,3 +107,11 @@ main {
 .container {
   text-align: center;
 }
+
+.container h2 {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 2.5rem;
+}
