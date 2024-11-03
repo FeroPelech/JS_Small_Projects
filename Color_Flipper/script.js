@@ -16,6 +16,15 @@ const simpleColorText = [
   "Orange",
   "Purple",
 ];
+const simpleColorCode = [
+  "#cc0000",
+  "#61c237",
+  "#2d7db9",
+  "#FFFF00",
+  "#FFC0CB",
+  "#FFA500",
+  "#A020F0",
+];
 
 btnSimple.addEventListener("click", () => {
   console.log("btnSimple");
