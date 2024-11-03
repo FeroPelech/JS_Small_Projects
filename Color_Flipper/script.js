@@ -7,6 +7,10 @@ const btnHex = document.querySelector(".btn-hex");
 console.log(btnHex);
 let statusS = 0;
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
+btnSimple.addEventListener("click", () => {
+  console.log("btnSimple");
+});
 if (statusS === 0) {
   btn.addEventListener("click", () => {
     const randomNumber = getRandomNumber();
