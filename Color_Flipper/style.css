@@ -86,10 +86,16 @@ nav {
   display: flex;
 }
 
+.btn-hex,
+.btn-simple {
+  border: none;
+  background-color: white;
+}
+
 nav .btn-hex,
 .btn-simple {
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   color: hsl(205, 86%, 17%);
   letter-spacing: 0.1rem;
