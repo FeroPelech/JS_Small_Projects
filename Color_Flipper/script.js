@@ -47,6 +47,8 @@ btn.addEventListener("click", () => {
     color.textContent = "Simple color";
     const simpleNumberColor = getSimpleColorNumber();
     console.log(simpleNumberColor);
+    color.textContent = simpleColorText[simpleNumberColor];
+    document.body.style.backgroundColor = simpleColorCode[simpleNumberColor];
   }
 });
 
