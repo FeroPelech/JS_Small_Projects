@@ -7,7 +7,8 @@ ul {
   list-style-type: none;
 }
 
-a {
+.btn-hex,
+.btn-simple {
   text-decoration: none;
 }
 
@@ -85,16 +86,18 @@ nav {
   display: flex;
 }
 
-nav a {
+nav .btn-hex,
+.btn-simple {
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
   color: hsl(205, 86%, 17%);
   letter-spacing: 0.1rem;
   margin-right: 1rem;
 }
 
-nav a:hover {
+.btn-hex:hover,
+.btn-simple:hover {
   color: hsl(205, 78%, 60%);
 }
 
