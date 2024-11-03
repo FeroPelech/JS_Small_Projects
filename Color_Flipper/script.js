@@ -45,6 +45,8 @@ btn.addEventListener("click", () => {
     document.body.style.backgroundColor = "#" + randomNumber;
   } else {
     color.textContent = "Simple color";
+    const simpleNumberColor = getSimpleColorNumber();
+    console.log(simpleNumberColor);
   }
 });
 
@@ -55,4 +57,10 @@ function getRandomNumber() {
   }
   console.log(code);
   return code;
+}
+
+function getSimpleColorNumber() {
+  let number = Math.floor(Math.random() * simpleColorText.length);
+  console.log(number);
+  return number;
 }
