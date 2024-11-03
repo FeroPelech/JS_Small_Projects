@@ -5,7 +5,7 @@ const btnSimple = document.querySelector(".btn-simple");
 console.log(btnSimple);
 const btnHex = document.querySelector(".btn-hex");
 console.log(btnHex);
-let statusS = 0;
+statusS = 0;
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
 btnSimple.addEventListener("click", () => {
@@ -19,21 +19,22 @@ btnHex.addEventListener("click", () => {
   console.log(statusS);
 });
 
-if (statusS === 0) {
-  btn.addEventListener("click", () => {
+btn.addEventListener("click", () => {
+  if (statusS === 1) {
     const randomNumber = getRandomNumber();
     console.log(randomNumber);
     color.textContent = "#" + randomNumber;
     document.body.style.backgroundColor = "#" + randomNumber;
-  });
-} else {
-}
+  } else {
+    color.textContent = "Simple color";
+  }
+});
 
 function getRandomNumber() {
-  let = "";
+  let code = "";
   for (let i = 0; i < 6; i++) {
-    let = let + hex[Math.floor(Math.random() * hex.length)];
+    code = code + hex[Math.floor(Math.random() * hex.length)];
   }
-  console.log(let);
-  return let;
+  console.log(code);
+  return code;
 }
