@@ -10,7 +10,15 @@ const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
 btnSimple.addEventListener("click", () => {
   console.log("btnSimple");
+  statusS = 0;
+  console.log(statusS);
 });
+btnHex.addEventListener("click", () => {
+  console.log("btnHex");
+  statusS = 1;
+  console.log(statusS);
+});
+
 if (statusS === 0) {
   btn.addEventListener("click", () => {
     const randomNumber = getRandomNumber();
