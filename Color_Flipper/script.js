@@ -3,6 +3,9 @@ console.log(btn);
 const color = document.querySelector(".color");
 const btnSimple = document.querySelector(".btn-simple");
 console.log(btnSimple);
+const btnHex = document.querySelector(".btn-hex");
+console.log(btnHex);
+let status = 0;
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 btn.addEventListener("click", () => {
   const randomNumber = getRandomNumber();
