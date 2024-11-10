@@ -55,7 +55,9 @@ const gridDisplay = document.querySelector("#grid");
 console.log(gridDisplay);
 
 function createBoard() {
-  console.log("function");
+  for (let i = 0; i < 10; i++) {
+    console.log("function: " + i);
+  }
 }
 
 createBoard();
