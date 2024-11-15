@@ -65,3 +65,5 @@ function createBoard() {
 }
 
 createBoard();
+
+function flipCard() {}
