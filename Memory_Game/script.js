@@ -68,5 +68,6 @@ function createBoard() {
 createBoard();
 
 function flipCard() {
-  console.log("jop");
+  const cardId = this.getAttribute("data-id");
+  console.log(cardId);
 }
