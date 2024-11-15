@@ -4,7 +4,7 @@ const cardArray = [
     img: "images/fries.png",
   },
   {
-    name: "cheeseburger.png",
+    name: "cheeseburger",
     img: "images/cheeseburger.png",
   },
   {
@@ -28,7 +28,7 @@ const cardArray = [
     img: "images/fries.png",
   },
   {
-    name: "cheeseburger.png",
+    name: "cheeseburger",
     img: "images/cheeseburger.png",
   },
   {
@@ -68,7 +68,8 @@ function createBoard() {
 createBoard();
 
 function flipCard() {
+  console.log(cardArray);
   const cardId = this.getAttribute("data-id");
-  console.log(cardArray[cardId]);
+  console.log(cardArray[cardId].name);
   console.log(cardId);
 }
