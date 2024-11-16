@@ -48,9 +48,9 @@ const cardArray = [
     img: "images/pizza.png",
   },
 ];
-
 cardArray.sort(() => 0.5 - Math.random());
 
+const cardsChosen = [];
 const gridDisplay = document.querySelector("#grid");
 console.log(gridDisplay);
 
