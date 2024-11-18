@@ -85,6 +85,7 @@ function flipCard() {
 
 function checkMatch() {
   const cards = document.querySelectorAll("img");
+  const optionOneId = cardsChosenIds[0];
   console.log(cards);
   console.log("check for match");
   if (cardsChosen[0] == cardsChosen[1]) {
