@@ -80,6 +80,7 @@ function flipCard() {
 }
 
 function checkMatch() {
+  const cards = document.querySelectorAll("img");
   console.log("check for match");
   if (cardsChosen[0] == cardsChosen[1]) {
     alert("You found match!");
