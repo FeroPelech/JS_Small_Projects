@@ -78,3 +78,5 @@ function flipCard() {
     setTimeout(checkMatch, 500);
   }
 }
+
+function checkMatch() {}
