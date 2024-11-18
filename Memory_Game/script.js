@@ -73,7 +73,9 @@ function flipCard() {
   const cardId = this.getAttribute("data-id");
   // console.log(cardArray[cardId].name);
   cardsChosen.push(cardArray[cardId].name);
+  cardsChosenIds.push(cardId);
   // console.log(cardsChosen);
+  console.log(cardsChosenIds);
   this.setAttribute("src", cardArray[cardId].img);
   if (cardsChosen.length === 2) {
     setTimeout(checkMatch, 500);
@@ -82,8 +84,10 @@ function flipCard() {
 
 function checkMatch() {
   const cards = document.querySelectorAll("img");
+  console.log(cards);
   console.log("check for match");
   if (cardsChosen[0] == cardsChosen[1]) {
     alert("You found match!");
+    cards[cardsChosenIds[0]].setAttribute("src", "images/white.png");
   }
 }
