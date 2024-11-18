@@ -53,6 +53,7 @@ cardArray.sort(() => 0.5 - Math.random());
 const cardsChosen = [];
 const gridDisplay = document.querySelector("#grid");
 const cardsChosenIds = [];
+const cardsWon = [];
 // console.log(gridDisplay);
 
 function createBoard() {
@@ -90,5 +91,7 @@ function checkMatch() {
     alert("You found match!");
     cards[cardsChosenIds[0]].setAttribute("src", "images/white.png");
     cards[cardsChosenIds[1]].setAttribute("src", "images/white.png");
+    cards[cardsChosenIds[0]].removeEventListener("click", flipCard);
+    cards[cardsChosenIds[1]].removeEventListener("click", flipCard);
   }
 }
