@@ -62,7 +62,7 @@ function createBoard() {
     card.setAttribute("data-id", i);
     card.addEventListener("click", flipCard);
     gridDisplay.append(card);
-    // console.log(card);
+    console.log(card);
   }
 }
 
@@ -89,5 +89,6 @@ function checkMatch() {
   if (cardsChosen[0] == cardsChosen[1]) {
     alert("You found match!");
     cards[cardsChosenIds[0]].setAttribute("src", "images/white.png");
+    cards[cardsChosenIds[1]].setAttribute("src", "images/white.png");
   }
 }
