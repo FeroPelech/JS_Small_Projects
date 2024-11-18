@@ -50,9 +50,9 @@ const cardArray = [
 ];
 cardArray.sort(() => 0.5 - Math.random());
 
-const cardsChosen = [];
+let cardsChosen = [];
 const gridDisplay = document.querySelector("#grid");
-const cardsChosenIds = [];
+let cardsChosenIds = [];
 const cardsWon = [];
 // console.log(gridDisplay);
 
@@ -95,4 +95,6 @@ function checkMatch() {
     cards[cardsChosenIds[1]].removeEventListener("click", flipCard);
     cardsWon.push(cardsChosen);
   }
+  cardsChosen = [];
+  cardsChosenIds = [];
 }
