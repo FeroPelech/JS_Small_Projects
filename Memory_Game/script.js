@@ -79,7 +79,7 @@ function flipCard() {
   console.log(cardsChosenIds);
   this.setAttribute("src", cardArray[cardId].img);
   if (cardsChosen.length === 2) {
-    setTimeout(checkMatch, 500);
+    setTimeout(checkMatch, 1500);
   }
 }
 
@@ -103,6 +103,7 @@ function checkMatch() {
   } else {
     cards[optionOneId].setAttribute("src", "images/blank.png");
     cards[optionTwoId].setAttribute("src", "images/blank.png");
+    // alert("Try again!");
   }
   cardsChosen = [];
   cardsChosenIds = [];
