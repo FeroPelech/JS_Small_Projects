@@ -102,6 +102,7 @@ function checkMatch() {
     cardsWon.push(cardsChosen);
   } else {
     cards[optionOneId].setAttribute("src", "images/blank.png");
+    cards[optionTwoId].setAttribute("src", "images/blank.png");
   }
   cardsChosen = [];
   cardsChosenIds = [];
