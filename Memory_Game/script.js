@@ -91,10 +91,10 @@ function checkMatch() {
   console.log("check for match");
   if (cardsChosen[0] == cardsChosen[1]) {
     alert("You found match!");
-    cards[cardsChosenIds[0]].setAttribute("src", "images/white.png");
-    cards[cardsChosenIds[1]].setAttribute("src", "images/white.png");
-    cards[cardsChosenIds[0]].removeEventListener("click", flipCard);
-    cards[cardsChosenIds[1]].removeEventListener("click", flipCard);
+    cards[optionOneId].setAttribute("src", "images/white.png");
+    cards[optionTwoId].setAttribute("src", "images/white.png");
+    cards[optionOneId].removeEventListener("click", flipCard);
+    cards[optionTwoId].removeEventListener("click", flipCard);
     cardsWon.push(cardsChosen);
   }
   cardsChosen = [];
