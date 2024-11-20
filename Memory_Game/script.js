@@ -107,4 +107,6 @@ function checkMatch() {
   }
   cardsChosen = [];
   cardsChosenIds = [];
+  if (cardsWon.length == cardArray.length / 2) {
+  }
 }
