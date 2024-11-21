@@ -54,7 +54,8 @@ let cardsChosen = [];
 const gridDisplay = document.querySelector("#grid");
 let cardsChosenIds = [];
 const cardsWon = [];
-// console.log(gridDisplay);
+const resultDisplay = document.getElementById("result");
+console.log("result display: " + resultDisplay);
 
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
