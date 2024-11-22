@@ -91,6 +91,8 @@ function checkMatch() {
   console.log(cards);
   console.log("check for match");
   if (optionOneId == optionTwoId) {
+    cards[optionOneId].setAttribute("src", "images/blank.png");
+    cards[optionTwoId].setAttribute("src", "images/blank.png");
     alert("You clicked the same image!");
   }
 
