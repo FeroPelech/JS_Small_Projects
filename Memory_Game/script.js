@@ -106,6 +106,7 @@ function checkMatch() {
     cards[optionTwoId].setAttribute("src", "images/blank.png");
     // alert("Try again!");
   }
+  resultDisplay.innerHTML = cardsWon.length;
   cardsChosen = [];
   cardsChosenIds = [];
   if (cardsWon.length == cardArray.length / 2) {
