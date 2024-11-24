@@ -1,2 +1,3 @@
 const squares = document.querySelectorAll(".square");
-console.log(square);
+const timeLeft = document.querySelector("#time-left");
+console.log(timeLeft);
