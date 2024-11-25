@@ -7,7 +7,7 @@ console.log(score);
 
 function randomSquare() {
   squares.forEach((e) => {
-    console.log(e);
+    e.classList.remove("mole");
   });
 }
 
