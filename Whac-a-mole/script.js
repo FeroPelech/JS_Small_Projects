@@ -4,3 +4,5 @@ const mole = document.querySelector(".mole");
 const score = document.getElementById("score");
 let result = 0;
 console.log(score);
+
+function randomSquare() {}
