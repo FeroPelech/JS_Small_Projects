@@ -5,4 +5,10 @@ const score = document.getElementById("score");
 let result = 0;
 console.log(score);
 
-function randomSquare() {}
+function randomSquare() {
+  squares.forEach((e) => {
+    console.log(e);
+  });
+}
+
+randomSquare();
