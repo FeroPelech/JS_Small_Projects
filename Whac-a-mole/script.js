@@ -13,6 +13,8 @@ function randomSquare() {
   console.log(randomNumber);
 }
 
-function moveMole() {}
+function moveMole() {
+  let timerId = null;
+}
 
 randomSquare();
