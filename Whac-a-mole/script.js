@@ -15,6 +15,7 @@ function randomSquare() {
 
 function moveMole() {
   let timerId = null;
+  timerId = setInterval(randomSquare, 500);
 }
 
 randomSquare();
