@@ -10,7 +10,7 @@ function randomSquare() {
     e.classList.remove("mole");
   });
   let randomSquare = squares[Math.floor(Math.random() * 9)];
-  console.log(randomNumber);
+  console.log(randomSquare);
 }
 
 function moveMole() {
