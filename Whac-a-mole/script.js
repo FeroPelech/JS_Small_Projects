@@ -13,4 +13,6 @@ function randomSquare() {
   console.log(randomNumber);
 }
 
+function moveMole() {}
+
 randomSquare();
