@@ -9,6 +9,8 @@ function randomSquare() {
   squares.forEach((e) => {
     e.classList.remove("mole");
   });
+  let randomNumber = squares[Math.floor(Math.random() * 9)];
+  console.log(randomNumber);
 }
 
 randomSquare();
