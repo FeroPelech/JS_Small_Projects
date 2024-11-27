@@ -14,10 +14,13 @@ function randomSquare() {
   console.log(randomSquare);
 }
 
+squares.forEach((e) => {
+  e.addEventListener("click", () => {});
+});
+
 function moveMole() {
   let timerId = null;
   timerId = setInterval(randomSquare, 500);
 }
 
-randomSquare();
 moveMole();
