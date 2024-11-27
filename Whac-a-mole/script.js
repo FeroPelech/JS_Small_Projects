@@ -17,12 +17,16 @@ function randomSquare() {
 }
 
 squares.forEach((e) => {
-  e.addEventListener("click", () => {});
+  e.addEventListener("click", () => {
+    if (e.id == hitPosition) {
+      console.log("Hit");
+    }
+  });
 });
 
 function moveMole() {
   let timerId = null;
-  timerId = setInterval(randomSquare, 500);
+  timerId = setInterval(randomSquare, 1000);
 }
 
 moveMole();
