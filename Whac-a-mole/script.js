@@ -3,6 +3,7 @@ const timeLeft = document.querySelector("#time-left");
 const mole = document.querySelector(".mole");
 const score = document.getElementById("score");
 let result = 0;
+let hitPosition;
 console.log(score);
 
 function randomSquare() {
