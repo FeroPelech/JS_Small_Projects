@@ -19,7 +19,7 @@ function randomSquare() {
 squares.forEach((e) => {
   e.addEventListener("click", () => {
     if (e.id == hitPosition) {
-      console.log("Hit");
+      result++;
     }
   });
 });
