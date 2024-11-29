@@ -21,6 +21,7 @@ squares.forEach((e) => {
     if (e.id == hitPosition) {
       result++;
       score.textContent = result;
+      hitPosition = null;
     }
   });
 });
