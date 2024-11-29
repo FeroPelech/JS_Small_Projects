@@ -20,6 +20,7 @@ squares.forEach((e) => {
   e.addEventListener("click", () => {
     if (e.id == hitPosition) {
       result++;
+      score.textContent = result;
     }
   });
 });
