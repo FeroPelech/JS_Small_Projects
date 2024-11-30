@@ -34,4 +34,6 @@ function moveMole() {
 
 moveMole();
 
-function countDown() {}
+function countDown() {
+  currentTime--;
+}
