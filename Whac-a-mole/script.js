@@ -5,6 +5,7 @@ const score = document.getElementById("score");
 let result = 0;
 let hitPosition;
 let currentTime = 60;
+let countDownTimerId = setInterval(countDown, 1000);
 console.log(score);
 
 function randomSquare() {
