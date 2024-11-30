@@ -4,6 +4,7 @@ const mole = document.querySelector(".mole");
 const score = document.getElementById("score");
 let result = 0;
 let hitPosition;
+let currentTime = 60;
 console.log(score);
 
 function randomSquare() {
