@@ -37,4 +37,5 @@ moveMole();
 
 function countDown() {
   currentTime--;
+  timeLeft.textContent = currentTime;
 }
