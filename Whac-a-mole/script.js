@@ -6,6 +6,7 @@ let result = 0;
 let hitPosition;
 let currentTime = 60;
 let countDownTimerId = setInterval(countDown, 1000);
+let timerId = null;
 console.log(score);
 
 function randomSquare() {
@@ -29,7 +30,6 @@ squares.forEach((e) => {
 });
 
 function moveMole() {
-  let timerId = null;
   timerId = setInterval(randomSquare, 1000);
 }
 
@@ -39,6 +39,5 @@ function countDown() {
   currentTime--;
   timeLeft.textContent = currentTime;
   if (currentTime == 0) {
-    console.log("End");
   }
 }
