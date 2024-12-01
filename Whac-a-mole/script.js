@@ -39,5 +39,6 @@ function countDown() {
   currentTime--;
   timeLeft.textContent = currentTime;
   if (currentTime == 0) {
+    clearInterval(countDownTimerId);
   }
 }
