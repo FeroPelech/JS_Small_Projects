@@ -7,7 +7,6 @@ let hitPosition;
 let currentTime = 60;
 let countDownTimerId = setInterval(countDown, 1000);
 let timerId = null;
-console.log(score);
 
 function randomSquare() {
   squares.forEach((e) => {
@@ -16,7 +15,6 @@ function randomSquare() {
   let randomSquare = squares[Math.floor(Math.random() * 9)];
   randomSquare.classList.add("mole");
   hitPosition = randomSquare.id;
-  console.log(randomSquare);
 }
 
 squares.forEach((e) => {
