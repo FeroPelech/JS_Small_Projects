@@ -40,6 +40,7 @@ function countDown() {
   timeLeft.textContent = currentTime;
   if (currentTime == 0) {
     clearInterval(countDownTimerId);
+    clearInterval(timerId);
     alert(`Game over! Your final score is ` + result);
   }
 }
