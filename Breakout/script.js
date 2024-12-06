@@ -1,2 +1,4 @@
 const grid = document.querySelector(".grid");
-console.log(grid);
+const block = document.createElement("div");
+
+console.log(block);
