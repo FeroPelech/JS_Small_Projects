@@ -2,6 +2,8 @@ const grid = document.querySelector(".grid");
 const blockWidth = 100;
 const blockHeight = 20;
 
+class Block {}
+
 function addBlock() {
   const block = document.createElement("div");
   block.classList.add("block");
