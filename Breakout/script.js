@@ -5,6 +5,7 @@ const blockHeight = 20;
 class Block {
   constructor(xAxis, yAxis) {
     this.bottomLeft = [xAxis, yAxis];
+    this.bottomRight = [xAxis + blockWidth, yAxis];
   }
 }
 
