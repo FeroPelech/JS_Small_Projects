@@ -41,3 +41,5 @@ function addBlock() {
 }
 
 addBlock();
+
+const user = document.createElement("div");
