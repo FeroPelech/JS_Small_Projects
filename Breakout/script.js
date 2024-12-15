@@ -49,3 +49,5 @@ user.classList.add("user");
 user.style.left = currentPosition[0] + "px";
 user.style.bottom = currentPosition[1] + "px";
 grid.appendChild(user);
+
+function moveUser(e) {}
