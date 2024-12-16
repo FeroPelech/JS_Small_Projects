@@ -55,4 +55,11 @@ function drawUser() {
   user.style.bottom = currentPosition[1] + "px";
 }
 
-function moveUser(e) {}
+function moveUser(e) {
+  switch (e.key) {
+    case "ArrowLeft":
+      currentPosition[0] -= 10;
+      drawUser();
+      break;
+  }
+}
