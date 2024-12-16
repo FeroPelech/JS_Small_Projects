@@ -51,6 +51,8 @@ user.style.bottom = currentPosition[1] + "px";
 grid.appendChild(user);
 drawUser();
 
+document.addEventListener("keydown", moveUser);
+
 function drawUser() {
   user.style.left = currentPosition[0] + "px";
   user.style.bottom = currentPosition[1] + "px";
@@ -64,5 +66,3 @@ function moveUser(e) {
       break;
   }
 }
-
-document.addEventListener("keydown", moveUser);
