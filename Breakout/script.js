@@ -75,3 +75,7 @@ function moveUser(e) {
       break;
   }
 }
+
+const ball = document.createElement("div");
+ball.classList.add("ball");
+grid.appendChild(ball);
