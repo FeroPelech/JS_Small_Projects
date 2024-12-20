@@ -80,4 +80,5 @@ function moveUser(e) {
 
 const ball = document.createElement("div");
 ball.classList.add("ball");
+ball.style.left = ballCurrentPosition[0] + "px";
 grid.appendChild(ball);
