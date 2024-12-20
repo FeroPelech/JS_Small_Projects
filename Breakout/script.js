@@ -5,6 +5,7 @@ const boardWidth = 600;
 const userStart = [230, 10];
 let currentPosition = userStart;
 const ballStart = [230, 40];
+let ballCurrentPosition = ballStart;
 
 class Block {
   constructor(xAxis, yAxis) {
