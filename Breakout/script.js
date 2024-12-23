@@ -49,8 +49,6 @@ addBlock();
 
 const user = document.createElement("div");
 user.classList.add("user");
-user.style.left = currentPosition[0] + "px";
-user.style.bottom = currentPosition[1] + "px";
 grid.appendChild(user);
 drawUser();
 
