@@ -6,6 +6,7 @@ const userStart = [230, 10];
 let currentPosition = userStart;
 const ballStart = [270, 40];
 let ballCurrentPosition = ballStart;
+let timerId;
 
 class Block {
   constructor(xAxis, yAxis) {
@@ -86,4 +87,10 @@ function drawBall() {
   ball.style.bottom = ballCurrentPosition[1] + "px";
 }
 
-function moveBall() {}
+function moveBall() {
+  ballCurrentPosition[0] += 2;
+  ballCurrentPosition[1] += 2;
+  drawBall();
+}
+
+timerId = setInterval(moveBall, 30);
