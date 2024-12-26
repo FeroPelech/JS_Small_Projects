@@ -94,3 +94,5 @@ function moveBall() {
 }
 
 timerId = setInterval(moveBall, 30);
+
+function checkForCollisions() {}
