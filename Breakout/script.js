@@ -7,6 +7,7 @@ let currentPosition = userStart;
 const ballStart = [270, 40];
 let ballCurrentPosition = ballStart;
 let timerId;
+const ballDiameter = 20;
 
 class Block {
   constructor(xAxis, yAxis) {
