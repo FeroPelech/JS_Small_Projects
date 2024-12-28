@@ -98,6 +98,7 @@ timerId = setInterval(moveBall, 30);
 
 function checkForCollisions() {
   if (ballCurrentPosition[0] >= boardWidth - ballDiameter) {
+    changeDirection();
   }
 }
 
