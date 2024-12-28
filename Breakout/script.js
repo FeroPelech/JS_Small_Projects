@@ -100,3 +100,5 @@ function checkForCollisions() {
   if (ballCurrentPosition[0] >= boardWidth - ballDiameter) {
   }
 }
+
+function changeDirection() {}
