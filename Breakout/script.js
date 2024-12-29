@@ -8,6 +8,8 @@ const ballStart = [270, 40];
 let ballCurrentPosition = ballStart;
 let timerId;
 const ballDiameter = 20;
+let xDirection = 2;
+let yDirection = 2;
 
 class Block {
   constructor(xAxis, yAxis) {
