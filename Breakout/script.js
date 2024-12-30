@@ -94,6 +94,7 @@ function moveBall() {
   ballCurrentPosition[0] += 2;
   ballCurrentPosition[1] += 2;
   drawBall();
+  checkForCollisions();
 }
 
 timerId = setInterval(moveBall, 30);
