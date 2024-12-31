@@ -10,6 +10,7 @@ let timerId;
 const ballDiameter = 20;
 let xDirection = 2;
 let yDirection = 2;
+const boardHeight = 300;
 
 class Block {
   constructor(xAxis, yAxis) {
