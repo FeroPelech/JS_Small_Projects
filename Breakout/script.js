@@ -92,8 +92,8 @@ function drawBall() {
 }
 
 function moveBall() {
-  ballCurrentPosition[0] += 2;
-  ballCurrentPosition[1] += 2;
+  ballCurrentPosition[0] += xDirection;
+  ballCurrentPosition[1] += yDirection;
   drawBall();
   checkForCollisions();
 }
@@ -105,24 +105,25 @@ function checkForCollisions() {
     ballCurrentPosition[0] >= boardWidth - ballDiameter ||
     ballCurrentPosition[1] >= boardHeight - ballDiameter
   ) {
+    console.log("Kukaj tu.");
     changeDirection();
   }
 }
 
 function changeDirection() {
-  if (xDirection == 2 && yDirection == 2) {
+  if (xDirection === 2 && yDirection === 2) {
     yDirection = -2;
     return;
   }
-  if (xDirection == 2 && yDirection == -2) {
+  if (xDirection === 2 && yDirection === -2) {
     xDirection = -2;
     return;
   }
-  if (xDirection == -2 && yDirection == -2) {
+  if (xDirection === -2 && yDirection === -2) {
     yDirection = 2;
     return;
   }
-  if (xDirection == -2 && yDirection == 2) {
+  if (xDirection === -2 && yDirection === 2) {
     xDirection = 2;
     return;
   }
