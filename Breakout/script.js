@@ -103,9 +103,9 @@ timerId = setInterval(moveBall, 30);
 function checkForCollisions() {
   if (
     ballCurrentPosition[0] >= boardWidth - ballDiameter ||
-    ballCurrentPosition[1] >= boardHeight - ballDiameter
+    ballCurrentPosition[1] >= boardHeight - ballDiameter ||
+    ballCurrentPosition[0] <= 0
   ) {
-    console.log("Kukaj tu.");
     changeDirection();
   }
 }
