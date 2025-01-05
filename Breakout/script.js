@@ -108,6 +108,9 @@ function checkForCollisions() {
   ) {
     changeDirection();
   }
+
+  if (ballCurrentPosition[1] <= 0) {
+  }
 }
 
 function changeDirection() {
