@@ -8,7 +8,7 @@ const ballStart = [270, 40];
 let ballCurrentPosition = ballStart;
 let timerId;
 const ballDiameter = 20;
-let xDirection = 2;
+let xDirection = -2;
 let yDirection = 2;
 const boardHeight = 300;
 const scoreDisplay = document.querySelector("#score");
@@ -102,6 +102,10 @@ function moveBall() {
 timerId = setInterval(moveBall, 30);
 
 function checkForCollisions() {
+  for (let i = 0; i < blocks.length; i++) {
+    console.log("kuka;:" + i);
+  }
+
   if (
     ballCurrentPosition[0] >= boardWidth - ballDiameter ||
     ballCurrentPosition[1] >= boardHeight - ballDiameter ||
