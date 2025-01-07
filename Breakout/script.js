@@ -102,9 +102,7 @@ function moveBall() {
 timerId = setInterval(moveBall, 30);
 
 function checkForCollisions() {
-  for (let i = 0; i < blocks.length; i++) {
-    console.log("kuka;:" + i);
-  }
+  for (let i = 0; i < blocks.length; i++) {}
 
   if (
     ballCurrentPosition[0] >= boardWidth - ballDiameter ||
