@@ -102,7 +102,15 @@ function moveBall() {
 timerId = setInterval(moveBall, 30);
 
 function checkForCollisions() {
-  for (let i = 0; i < blocks.length; i++) {}
+  for (let i = 0; i < blocks.length; i++) {
+    if (
+      ballCurrentPosition[0] > blocks[i].bottomLeft[0] &&
+      ballCurrentPosition[0] < blocks[i].bottomLeft[0] &&
+      ballCurrentPosition[1] + ballDiameter > blocks[i].bottomLeft[1] &&
+      ballCurrentPosition[1] < blocks[i].topLeft[1]
+    ) {
+    }
+  }
 
   if (
     ballCurrentPosition[0] >= boardWidth - ballDiameter ||
