@@ -110,6 +110,7 @@ function checkForCollisions() {
       ballCurrentPosition[1] < blocks[i].topLeft[1]
     ) {
       const allBlocks = Array.from(document.querySelectorAll(".block"));
+      allBlocks[i].classList.remove("block");
     }
   }
 
