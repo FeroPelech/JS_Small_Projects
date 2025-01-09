@@ -111,6 +111,7 @@ function checkForCollisions() {
     ) {
       const allBlocks = Array.from(document.querySelectorAll(".block"));
       allBlocks[i].classList.remove("block");
+      blocks.splice(i, 1);
     }
   }
 
