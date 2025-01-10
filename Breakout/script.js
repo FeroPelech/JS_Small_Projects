@@ -12,6 +12,7 @@ let xDirection = -2;
 let yDirection = 2;
 const boardHeight = 300;
 const scoreDisplay = document.querySelector("#score");
+let score = 0;
 
 class Block {
   constructor(xAxis, yAxis) {
@@ -113,6 +114,8 @@ function checkForCollisions() {
       allBlocks[i].classList.remove("block");
       blocks.splice(i, 1);
       changeDirection();
+      score++;
+      scoreDisplay.innerHTML = score;
     }
   }
 
