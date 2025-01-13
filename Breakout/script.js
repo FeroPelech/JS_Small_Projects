@@ -116,6 +116,8 @@ function checkForCollisions() {
       changeDirection();
       score++;
       scoreDisplay.innerHTML = score;
+      if (blocks.length === 0) {
+      }
     }
   }
 
