@@ -4,6 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 250px;
+  background-color: rgb(147, 108, 181);
 }
 
 .grid {
@@ -11,7 +12,9 @@ body {
   position: absolute;
   width: 560px;
   height: 300px;
-  border: solid black 1px;
+  border: solid black 3px;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
 }
 
 .block {
