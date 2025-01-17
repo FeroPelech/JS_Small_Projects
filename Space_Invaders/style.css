@@ -6,12 +6,17 @@
   flex-wrap: wrap;
 }
 
-.grid div {
+.container div {
   width: 20px;
   height: 20px;
 }
 
 .invader {
   background-color: blueviolet;
+  border-radius: 10px;
+}
+
+.shooter {
+  background-color: rgba(255, 0, 0, 0.882);
   border-radius: 10px;
 }
