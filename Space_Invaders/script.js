@@ -23,4 +23,6 @@ draw();
 
 squares[currentShooterIndex].classList.add("shooter");
 
-function moveShooter(e) {}
+function moveShooter(e) {
+  squares[currentShooterIndex].classList.remove("shooter");
+}
