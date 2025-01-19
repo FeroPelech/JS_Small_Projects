@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 let currentShooterIndex = 202;
+let width = 15;
 
 for (let i = 0; i < 225; i++) {
   const square = document.createElement("div");
