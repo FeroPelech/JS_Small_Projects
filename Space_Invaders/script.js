@@ -35,5 +35,8 @@ function moveShooter(e) {
       if (currentShooterIndex % width < width - 1) {
         currentShooterIndex += 1;
       }
+      break;
   }
+  squares[currentShooterIndex].classList.add("shooter");
 }
+document.addEventListener("keydown", moveShooter);
