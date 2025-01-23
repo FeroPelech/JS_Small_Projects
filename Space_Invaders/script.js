@@ -1,6 +1,7 @@
 const container = document.querySelector(".container");
 let currentShooterIndex = 202;
 let width = 15;
+let direction = 1;
 
 for (let i = 0; i < 225; i++) {
   const square = document.createElement("div");
@@ -55,7 +56,7 @@ function moveInvaders() {
   remove();
 
   for (let i = 0; i < alienInvaders.length; i++) {
-    alienInvaders[i] += 1;
+    alienInvaders[i] += direction;
   }
 
   draw();
