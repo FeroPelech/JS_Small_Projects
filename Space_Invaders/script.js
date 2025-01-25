@@ -56,11 +56,12 @@ function moveInvaders() {
     alienInvaders[alienInvaders.length - 1] % width === width - 1;
   remove();
 
-  for (let i = 0; i < alienInvaders.length; i++) {
-    alienInvaders[i] += direction;
+  if (rightEdge) {
+    for (let i = 0; i < alienInvaders.length; i++) {
+      alienInvaders[i] += direction;
+    }
   }
-
   draw();
 }
 
-setInterval(moveInvaders, 500);
+invadersID = setInterval(moveInvaders, 500);
