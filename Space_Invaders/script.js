@@ -66,6 +66,11 @@ function moveInvaders() {
   }
 
   if (leftEdge && !goingRight) {
+    for (let i = 0; i < alienInvaders.length; i++) {
+      alienInvaders[i] += width - 1;
+      direction = 1;
+      goingRight = true;
+    }
   }
 
   for (let i = 0; i < alienInvaders.length; i++) {
