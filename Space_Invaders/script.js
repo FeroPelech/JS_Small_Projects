@@ -66,6 +66,9 @@ function moveInvaders() {
     }
   }
 
+  if (leftEdge && goingLeft) {
+  }
+
   for (let i = 0; i < alienInvaders.length; i++) {
     alienInvaders[i] += direction;
   }
