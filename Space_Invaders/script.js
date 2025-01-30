@@ -4,6 +4,7 @@ let width = 15;
 let direction = 1;
 let invadersID;
 let goingRight = true;
+let goingLeft = false;
 
 for (let i = 0; i < 225; i++) {
   const square = document.createElement("div");
