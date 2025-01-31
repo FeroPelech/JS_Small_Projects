@@ -77,6 +77,9 @@ function moveInvaders() {
     alienInvaders[i] += direction;
   }
   draw();
+
+  if (squares[currentShooterIndex].classList.contains("invader", "shooter")) {
+  }
 }
 
 invadersID = setInterval(moveInvaders, 500);
