@@ -32,7 +32,7 @@ function remove() {
   }
 }
 
-squares[currentShooterIndex].classList.add("shooter");
+// squares[currentShooterIndex].classList.add("shooter");
 
 function moveShooter(e) {
   squares[currentShooterIndex].classList.remove("shooter");
@@ -84,7 +84,11 @@ function moveInvaders() {
     clearInterval(invadersID);
   }
 
-  for (let i = 0; i < alienInvaders.length; i++) {}
+  for (let i = 0; i < alienInvaders.length; i++) {
+    if (alienInvaders[i] > squares.length) {
+      resultsDisplay.innerHTML = "GAME OVER!";
+    }
+  }
 }
 
 invadersID = setInterval(moveInvaders, 500);
