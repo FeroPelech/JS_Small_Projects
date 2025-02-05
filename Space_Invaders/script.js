@@ -32,7 +32,7 @@ function remove() {
   }
 }
 
-// squares[currentShooterIndex].classList.add("shooter");
+squares[currentShooterIndex].classList.add("shooter");
 
 function moveShooter(e) {
   squares[currentShooterIndex].classList.remove("shooter");
@@ -85,10 +85,10 @@ function moveInvaders() {
   }
 
   for (let i = 0; i < alienInvaders.length; i++) {
-    if (alienInvaders[i] > squares.length) {
+    if (alienInvaders[i] > squares.length + width) {
       resultsDisplay.innerHTML = "GAME OVER!";
     }
   }
 }
 
-invadersID = setInterval(moveInvaders, 500);
+invadersID = setInterval(moveInvaders, 100);
