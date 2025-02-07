@@ -93,3 +93,5 @@ function moveInvaders() {
 }
 
 invadersID = setInterval(moveInvaders, 100);
+
+function shoot(e) {}
