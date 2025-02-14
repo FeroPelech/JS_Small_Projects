@@ -5,6 +5,7 @@ let width = 15;
 let direction = 1;
 let invadersID;
 let goingRight = true;
+let aliensRemoved = [];
 
 for (let i = 0; i < 225; i++) {
   const square = document.createElement("div");
@@ -102,6 +103,9 @@ function shoot(e) {
     currentLaserIndex -= width;
     squares[currentLaserIndex].classList.add("laser");
     if (squares[currentLaserIndex].classList.contains("invader")) {
+      squares[currentLaserIndex].classList.remove("laser");
+      squares[currentLaserIndex].classList.remove("invader");
+      squares[currentLaserIndex].classList.add("boom");
     }
   }
   switch (e.key) {
