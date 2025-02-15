@@ -118,7 +118,6 @@ function shoot(e) {
   }
   switch (e.key) {
     case "ArrowUp":
-      console.log("something");
       laserId = setInterval(moveLaser, 100);
   }
 }
