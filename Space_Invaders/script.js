@@ -6,6 +6,7 @@ let direction = 1;
 let invadersID;
 let goingRight = true;
 let aliensRemoved = [];
+let results = 0;
 
 for (let i = 0; i < 225; i++) {
   const square = document.createElement("div");
@@ -120,6 +121,7 @@ function shoot(e) {
       clearInterval(laserId);
       let alienRemoved = alienInvaders.indexOf(currentLaserIndex);
       aliensRemoved.push(alienRemoved);
+      results++;
     }
   }
   switch (e.key) {
