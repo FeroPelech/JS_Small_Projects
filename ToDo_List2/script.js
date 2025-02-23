@@ -1,5 +1,7 @@
 const container = document.querySelector(".container");
-console.log(container);
+
 const newtask = document.createElement("div");
-newtask.classList.add("newtask");
+newtask.id = "newtask";
+container.appendChild(newtask);
 console.log(newtask);
+console.log(container);
