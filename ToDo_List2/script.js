@@ -14,7 +14,9 @@ newtask.id = "newtask";
 tasks.id = "tasks";
 btn.id = "push";
 btn.textContent = "Insert";
+
 container.appendChild(newtask);
+container.appendChild(tasks);
 newtask.appendChild(input);
 newtask.appendChild(btn);
 console.log(newtask);
