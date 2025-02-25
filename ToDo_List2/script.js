@@ -11,6 +11,7 @@ input.type = "text";
 input.placeholder = "  New task";
 console.log(btn);
 newtask.id = "newtask";
+tasks.id = "tasks";
 btn.id = "push";
 btn.textContent = "Insert";
 container.appendChild(newtask);
