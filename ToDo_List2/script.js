@@ -5,6 +5,8 @@ const newtask = document.createElement("div");
 const input = document.createElement("input");
 
 const btn = document.createElement("button");
+
+const tasks = document.createElement("div");
 input.type = "text";
 input.placeholder = "  New task";
 console.log(btn);
@@ -16,3 +18,4 @@ newtask.appendChild(input);
 newtask.appendChild(btn);
 console.log(newtask);
 console.log(container);
+console.log(tasks);
