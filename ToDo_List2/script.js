@@ -19,6 +19,10 @@ container.appendChild(newtask);
 container.appendChild(tasks);
 newtask.appendChild(input);
 newtask.appendChild(btn);
+
+btn.addEventListener("click", () => {
+  console.log("button");
+});
 console.log(newtask);
 console.log(container);
 console.log(tasks);
