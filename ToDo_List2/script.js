@@ -23,9 +23,14 @@ newtask.appendChild(btn);
 btn.addEventListener("click", () => {
   if (input.value.length == 0) {
     alert("Please enter a Task.");
+  } else {
+    tasks.innerHTML += `
+    <div class=task>
+    hen
+    </div>
+    `;
   }
   console.log(input.value);
-  console.log("button");
 });
 console.log(newtask);
 console.log(container);
