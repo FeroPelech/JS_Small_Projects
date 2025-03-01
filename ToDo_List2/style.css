@@ -81,3 +81,9 @@ body {
   border: 2px solid #d1d3d4;
   cursor: pointer;
 }
+
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
