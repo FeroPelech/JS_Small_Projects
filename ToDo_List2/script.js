@@ -26,7 +26,9 @@ btn.addEventListener("click", () => {
   } else {
     tasks.innerHTML += `
     <div class=task>
-    hen
+        <span id="taskname">
+            ${input.value}
+        </span>
     </div>
     `;
   }
