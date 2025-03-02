@@ -39,7 +39,9 @@ btn.addEventListener("click", () => {
     `;
     input.value = "";
     let current_tasks = document.querySelectorAll(".delete");
-    for (let i = 0; i < current_tasks.length; i++) {}
+    for (let i = 0; i < current_tasks.length; i++) {
+      current_tasks[i].addEventListener("click", () => {});
+    }
     console.log(current_tasks);
   }
   console.log(input.value);
