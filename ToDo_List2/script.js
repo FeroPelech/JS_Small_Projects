@@ -37,6 +37,7 @@ btn.addEventListener("click", () => {
         </button>
     </div>
     `;
+    input.value = "";
     let current_tasks = document.querySelectorAll(".delete");
     for (let i = 0; i < current_tasks.length; i++) {}
     console.log(current_tasks);
