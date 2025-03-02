@@ -40,7 +40,9 @@ btn.addEventListener("click", () => {
     input.value = "";
     let current_tasks = document.querySelectorAll(".delete");
     for (let i = 0; i < current_tasks.length; i++) {
-      current_tasks[i].addEventListener("click", () => {});
+      current_tasks[i].addEventListener("click", () => {
+        current_tasks[i].parentNode.remove();
+      });
     }
     console.log(current_tasks);
   }
