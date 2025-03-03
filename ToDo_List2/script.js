@@ -9,7 +9,6 @@ const btn = document.createElement("button");
 const tasks = document.createElement("div");
 input.type = "text";
 input.placeholder = "  New task";
-console.log(btn);
 newtask.id = "newtask";
 tasks.id = "tasks";
 btn.id = "push";
@@ -44,10 +43,5 @@ btn.addEventListener("click", () => {
         current_tasks[i].parentNode.remove();
       });
     }
-    console.log(current_tasks);
   }
-  console.log(input.value);
 });
-console.log(newtask);
-console.log(container);
-console.log(tasks);
