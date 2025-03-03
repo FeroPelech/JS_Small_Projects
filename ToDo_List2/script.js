@@ -43,5 +43,9 @@ btn.addEventListener("click", () => {
         current_tasks[i].parentNode.remove();
       });
     }
+    let task = document.querySelectorAll(".task");
+    for (let i = 0; i < task.length; i++) {
+      console.log(task[i]);
+    }
   }
 });
