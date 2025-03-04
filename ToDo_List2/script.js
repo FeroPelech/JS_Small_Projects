@@ -46,8 +46,11 @@ btn.addEventListener("click", () => {
     let task = document.querySelectorAll(".task");
     for (let i = 0; i < task.length; i++) {
       task[i].addEventListener("click", () => {
-        task[i].classList.add("done");
-        console.log(task[i]);
+        if (task[i].classList.contains("done")) {
+          task[i].classList.remove("done");
+        } else {
+          task[i].classList.add("done");
+        }
       });
     }
   }
