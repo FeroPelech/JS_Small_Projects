@@ -98,3 +98,7 @@ body {
   outline: none;
   border: none;
 }
+
+.done {
+  text-decoration: line-through;
+}
