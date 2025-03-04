@@ -21,13 +21,14 @@ newtask.appendChild(input);
 newtask.appendChild(btn);
 
 btn.addEventListener("click", () => {
+  counter++;
   if (input.value.length == 0) {
     alert("Please enter a Task.");
   } else {
     tasks.innerHTML += `
     <div class=task>
         <span id="taskname">
-            ${input.value}
+            ${counter + ". " + input.value}
         </span>
         <button type="submit" class = "delete">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
