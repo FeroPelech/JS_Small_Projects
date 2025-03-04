@@ -1,13 +1,10 @@
 const container = document.querySelector(".container");
-
 const newtask = document.createElement("div");
-
 const input = document.createElement("input");
-
 const btn = document.createElement("button");
-
 const tasks = document.createElement("div");
 let counter = 0;
+
 input.type = "text";
 input.placeholder = "  New task";
 newtask.id = "newtask";
