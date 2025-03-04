@@ -59,6 +59,12 @@ body {
   background-color: #03a9f4;
   color: #ffffff;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#push:hover {
+  background-color: #0547b1;
+  transform: scale(1.1);
 }
 
 #tasks {
@@ -97,6 +103,12 @@ body {
   cursor: pointer;
   outline: none;
   border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete:hover {
+  background-color: #5523ca;
+  transform: scale(1.1);
 }
 
 .done {
