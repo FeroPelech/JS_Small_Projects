@@ -3,6 +3,7 @@ const bulb = document.createElement("div");
 const image = document.createElement("img");
 
 bulb.classList.add("bulb");
+image.classList.add("image");
 image.src = "./Bulbs/BulbOn.png";
 image.alt = "Light";
 
