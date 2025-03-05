@@ -7,5 +7,6 @@ image.src = "./Bulbs/BulbOn.png";
 image.alt = "Light";
 
 container.appendChild(bulb);
+container.appendChild(image);
 
 console.log(container);
