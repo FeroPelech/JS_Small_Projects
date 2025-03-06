@@ -11,5 +11,10 @@ image.alt = "Light";
 
 container.appendChild(bulb);
 container.appendChild(image);
+container.appendChild(btn);
 
 console.log(container);
+
+btn.addEventListener("click", () => {
+  console.log("button");
+});
