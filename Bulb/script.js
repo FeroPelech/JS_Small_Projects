@@ -13,8 +13,13 @@ container.appendChild(bulb);
 container.appendChild(image);
 container.appendChild(btn);
 
-console.log(container);
-
 btn.addEventListener("click", () => {
-  console.log("button");
+  if (
+    image.src == "http://127.0.0.1:5500/JS_Small_Projects/Bulb/Bulbs/BulbOn.png"
+  ) {
+    image.src = "./Bulbs/BulbOff.png";
+    console.log(image.src);
+  } else {
+    image.src = "./Bulbs/BulbOn.png";
+  }
 });
