@@ -1,6 +1,7 @@
-const Container = document.querySelector(".container");
+const container = document.querySelector(".container");
 
-const Result_Field = document.createElement("div");
-const Result_Images = document.createElement("div");
-const User_Result = document.createElement("span");
-console.log(User_Result);
+const result_field = document.createElement("div");
+const result_images = document.createElement("div");
+const user_result = document.createElement("span");
+const image = document.createElement("img");
+console.log(image);
