@@ -6,4 +6,5 @@ const user_result = document.createElement("span");
 const image = document.createElement("img");
 
 result_field.classList.add("result_field");
+result_images.classList.add("result_images");
 console.log(image);
