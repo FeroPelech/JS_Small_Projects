@@ -16,6 +16,7 @@ cpu_result.classList.add("cpu_result");
 container.appendChild(result_field);
 result_field.appendChild(result_images);
 result_images.appendChild(user_result);
+result_images.appendChild(cpu_result);
 user_result.appendChild(imageR);
 cpu_result.appendChild(imageP);
 console.log(image);
