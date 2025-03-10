@@ -9,6 +9,7 @@ const image = document.createElement("img");
 result_field.classList.add("result_field");
 result_images.classList.add("result_images");
 user_result.classList.add("user_result");
+cpu_result.classList.add("cpu_result");
 
 container.appendChild(result_field);
 result_field.appendChild(result_images);
