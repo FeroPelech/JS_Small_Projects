@@ -6,6 +6,7 @@ const user_result = document.createElement("span");
 const cpu_result = document.createElement("cpu_result");
 const imageR = document.createElement("img");
 const imageP = document.createElement("img");
+const imageS = document.createElement("img");
 
 result_field.classList.add("result_field");
 result_images.classList.add("result_images");
