@@ -15,6 +15,13 @@ body {
   background: #f6f7fb;
 }
 
+.container {
+  padding: 2rem 7rem;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
 .result_images img {
   width: 100px;
 }
