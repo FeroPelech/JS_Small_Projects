@@ -36,5 +36,5 @@ body {
 }
 
 .cpu_result img {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) rotateY(180deg);
 }
