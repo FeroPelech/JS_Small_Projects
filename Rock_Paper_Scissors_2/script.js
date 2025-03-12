@@ -13,6 +13,8 @@ result_field.classList.add("result_field");
 result_images.classList.add("result_images");
 user_result.classList.add("user_result");
 cpu_result.classList.add("cpu_result");
+result.classList.add("result");
+result.textContent = "Let's Play!";
 imageR.src = "./images/rock.png";
 imageP.src = "./images/paper.png";
 
