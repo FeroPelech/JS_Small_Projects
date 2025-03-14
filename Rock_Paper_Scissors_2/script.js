@@ -20,6 +20,7 @@ result.textContent = "Let's Play!";
 imageR.src = "./images/rock.png";
 imageP.src = "./images/paper.png";
 option_images.classList.add("option_images");
+option_image.classList.add("option_image");
 
 container.appendChild(result_field);
 result_field.appendChild(result_images);
