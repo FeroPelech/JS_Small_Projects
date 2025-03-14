@@ -9,6 +9,7 @@ const imageP = document.createElement("img");
 const imageS = document.createElement("img");
 const result = document.createElement("div");
 const option_images = document.createElement("div");
+const option_image = document.createElement("span");
 
 result_field.classList.add("result_field");
 result_images.classList.add("result_images");
