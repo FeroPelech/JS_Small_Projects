@@ -8,7 +8,7 @@ const imageR = document.createElement("img");
 const imageP = document.createElement("img");
 const imageS = document.createElement("img");
 const result = document.createElement("div");
-const option_image = document.createElement("div");
+const option_images = document.createElement("div");
 
 result_field.classList.add("result_field");
 result_images.classList.add("result_images");
@@ -18,7 +18,7 @@ result.classList.add("result");
 result.textContent = "Let's Play!";
 imageR.src = "./images/rock.png";
 imageP.src = "./images/paper.png";
-option_image.classList.add("option_images");
+option_images.classList.add("option_images");
 
 container.appendChild(result_field);
 result_field.appendChild(result_images);
