@@ -20,6 +20,7 @@ result.textContent = "Let's Play!";
 imageR.src = "./images/rock.png";
 imageR.alt = "Rock";
 imageP.src = "./images/paper.png";
+imageP.alt = "Paper";
 option_images.classList.add("option_images");
 option_image.classList.add("option_image");
 
