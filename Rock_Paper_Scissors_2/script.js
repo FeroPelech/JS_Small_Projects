@@ -14,6 +14,9 @@ const option_images = document.createElement("div");
 const option_image = document.createElement("span");
 const option_image1 = document.createElement("span");
 const option_image2 = document.createElement("span");
+const para = document.createElement("p");
+const para1 = document.createElement("p");
+const para2 = document.createElement("p");
 
 result_field.classList.add("result_field");
 result_images.classList.add("result_images");
