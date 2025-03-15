@@ -46,6 +46,8 @@ body {
   margin-top: 1.5rem;
 }
 
-.option_image img {
+.option_image img,
+.option_image1 img,
+.option_image2 img {
   width: 50px;
 }
