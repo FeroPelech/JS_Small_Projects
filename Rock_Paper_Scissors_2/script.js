@@ -36,6 +36,7 @@ imageS2.src = "./images/scissors.png";
 imageS2.alt = "Scissors2";
 para.textContent = "Rock";
 para1.textContent = "Papper";
+para2.textContent = "Scissors";
 option_images.classList.add("option_images");
 option_image.classList.add("option_image");
 option_image1.classList.add("option_image1");
@@ -56,5 +57,6 @@ option_image.appendChild(para);
 option_image1.appendChild(imageS1);
 option_image1.appendChild(para1);
 option_image2.appendChild(imageS2);
+option_image2.appendChild(para2);
 
 container.appendChild(option_images);
