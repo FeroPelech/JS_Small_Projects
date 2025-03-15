@@ -34,4 +34,5 @@ user_result.appendChild(imageR);
 cpu_result.appendChild(imageP);
 result_field.appendChild(result);
 option_images.appendChild(option_image);
+option_image.appendChild(imageS);
 container.appendChild(option_images);
