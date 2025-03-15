@@ -18,6 +18,7 @@ cpu_result.classList.add("cpu_result");
 result.classList.add("result");
 result.textContent = "Let's Play!";
 imageR.src = "./images/rock.png";
+imageR.alt = "Rock";
 imageP.src = "./images/paper.png";
 option_images.classList.add("option_images");
 option_image.classList.add("option_image");
