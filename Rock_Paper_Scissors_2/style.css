@@ -58,3 +58,10 @@ body {
   margin-top: 2.5rem;
   justify-content: space-between;
 }
+
+.option_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
