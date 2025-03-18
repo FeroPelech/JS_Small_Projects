@@ -63,40 +63,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  pointer-events: none;
   opacity: 0.5;
+  cursor: pointer;
   transition: opacity 0.3s ease;
 }
 
-.option_image1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  pointer-events: none;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.option_image2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  pointer-events: none;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.option_image p,
-.option_image1 p,
-.option_image2 p {
+.option_image p {
   color: #7d2ae8;
   font-size: 1.235rem;
   margin-top: 1rem;
   pointer-events: none;
 }
 
-.option_image:hover,
-.option_image1:hover,
-.option_image2:hover {
+.option_image:hover {
   opacity: 1;
 }
