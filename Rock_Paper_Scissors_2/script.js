@@ -39,8 +39,8 @@ para1.textContent = "Papper";
 para2.textContent = "Scissors";
 option_images.classList.add("option_images");
 option_image.classList.add("option_image");
-option_image1.classList.add("option_image1");
-option_image2.classList.add("option_image2");
+option_image1.classList.add("option_image");
+option_image2.classList.add("option_image");
 
 container.appendChild(result_field);
 result_field.appendChild(result_images);
