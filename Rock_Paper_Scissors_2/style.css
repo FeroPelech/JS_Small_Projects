@@ -68,6 +68,10 @@ body {
   transition: opacity 0.3s ease;
 }
 
+.option_image img {
+  pointer-events: none;
+}
+
 .option_image p {
   color: #7d2ae8;
   font-size: 1.235rem;
