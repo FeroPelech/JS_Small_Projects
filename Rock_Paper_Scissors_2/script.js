@@ -60,3 +60,7 @@ option_image2.appendChild(imageS2);
 option_image2.appendChild(para2);
 
 container.appendChild(option_images);
+
+option_image.addEventListener("click", (e) => {
+  console.log(e);
+});
