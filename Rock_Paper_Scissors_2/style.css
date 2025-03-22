@@ -82,3 +82,7 @@ body {
 .option_image:hover {
   opacity: 1;
 }
+
+.option_image.acttive {
+  opacity: 1;
+}
