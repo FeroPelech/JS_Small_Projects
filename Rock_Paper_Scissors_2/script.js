@@ -64,3 +64,7 @@ container.appendChild(option_images);
 option_image.addEventListener("click", (e) => {
   option_image.classList.add("active");
 });
+
+option_image1.addEventListener("click", (e) => {
+  option_image1.classList.add("active");
+});
