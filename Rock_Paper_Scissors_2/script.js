@@ -31,6 +31,7 @@ user_result.classList.add("user_result");
 cpu_result.classList.add("cpu_result");
 result.classList.add("result");
 result.textContent = "Let's Play!";
+paraR.textContent = "Scoreboard";
 imageR.src = "./images/rock.png";
 imageR.alt = "Rock";
 imagePC.src = "./images/paper.png";
@@ -66,8 +67,9 @@ option_image1.appendChild(imageS1);
 option_image1.appendChild(para1);
 option_image2.appendChild(imageS2);
 option_image2.appendChild(para2);
-
+result_counter.appendChild(paraR);
 container.appendChild(option_images);
+container.appendChild(result_counter);
 
 option_image.addEventListener("click", () => {
   option_image.classList.add("active");
