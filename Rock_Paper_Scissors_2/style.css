@@ -86,3 +86,11 @@ body {
 .option_image.active {
   opacity: 1;
 }
+
+.result_counter {
+  margin-top: 20px;
+  color: #7d2ae8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
