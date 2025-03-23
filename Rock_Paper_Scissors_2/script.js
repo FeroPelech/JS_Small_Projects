@@ -68,3 +68,7 @@ option_image.addEventListener("click", (e) => {
 option_image1.addEventListener("click", (e) => {
   option_image1.classList.add("active");
 });
+
+option_image2.addEventListener("click", (e) => {
+  option_image2.classList.add("active");
+});
