@@ -26,6 +26,8 @@ const option_Array = [
   "./images/paper.png",
   "./images/scissors.png",
 ];
+let computer = 0;
+let player = 0;
 
 result_field.classList.add("result_field");
 result_images.classList.add("result_images");
@@ -47,6 +49,8 @@ imageS2.alt = "Scissors2";
 para.textContent = "Rock";
 para1.textContent = "Papper";
 para2.textContent = "Scissors";
+paraR1.textContent = "Player: " + player;
+paraRPC.textContent = "Computer: " + computer;
 option_images.classList.add("option_images");
 option_image.classList.add("option_image");
 option_image1.classList.add("option_image");
@@ -70,6 +74,8 @@ option_image1.appendChild(para1);
 option_image2.appendChild(imageS2);
 option_image2.appendChild(para2);
 result_counter.appendChild(paraR);
+result_counter.appendChild(paraR1);
+result_counter.appendChild(paraRPC);
 container.appendChild(option_images);
 container.appendChild(result_counter);
 
