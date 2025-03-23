@@ -85,6 +85,7 @@ option_image.addEventListener("click", () => {
   option_image2.classList.remove("active");
   imageR.src = "./images/rock.png";
   computerChoose();
+  checkResult();
 });
 
 option_image1.addEventListener("click", () => {
@@ -93,6 +94,7 @@ option_image1.addEventListener("click", () => {
   option_image2.classList.remove("active");
   imageR.src = "./images/paper.png";
   computerChoose();
+  checkResult();
 });
 
 option_image2.addEventListener("click", () => {
@@ -101,10 +103,17 @@ option_image2.addEventListener("click", () => {
   option_image1.classList.remove("active");
   imageR.src = "./images/scissors.png";
   computerChoose();
+  checkResult();
 });
 
 function computerChoose() {
   let random_number = Math.floor(Math.random() * 3);
   imagePC.src = option_Array[random_number];
-  return random_number;
+}
+
+function checkResult() {
+  console.log("coooo");
+  if (imagePC.src === "./images/scissors.png") {
+    console.log("Remiza");
+  }
 }
