@@ -52,7 +52,7 @@ result_field.appendChild(result_images);
 result_images.appendChild(user_result);
 result_images.appendChild(cpu_result);
 user_result.appendChild(imageR);
-cpu_result.appendChild(imageP);
+cpu_result.appendChild(imagePC);
 result_field.appendChild(result);
 option_images.appendChild(option_image);
 option_images.appendChild(option_image1);
@@ -86,8 +86,7 @@ option_image2.addEventListener("click", (e) => {
 
 function computerChoose() {
   let random_number = Math.floor(Math.random() * 3);
+  imagePC.src = option_Array[random_number];
   return random_number;
 }
-
-let PC_choose = computerChoose();
-console.log(PC_choose);
+computerChoose();
