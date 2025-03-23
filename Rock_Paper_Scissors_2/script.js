@@ -19,6 +19,8 @@ const para = document.createElement("p");
 const para1 = document.createElement("p");
 const para2 = document.createElement("p");
 const paraR = document.createElement("p");
+const paraR1 = document.createElement("p");
+const paraRPC = document.createElement("p");
 const option_Array = [
   "./images/rock.png",
   "./images/paper.png",
