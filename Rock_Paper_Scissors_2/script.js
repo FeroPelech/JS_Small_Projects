@@ -5,7 +5,7 @@ const result_images = document.createElement("div");
 const user_result = document.createElement("span");
 const cpu_result = document.createElement("span");
 const imageR = document.createElement("img");
-const imageP = document.createElement("img");
+const imagePC = document.createElement("img");
 const imageS = document.createElement("img");
 const imageS1 = document.createElement("img");
 const imageS2 = document.createElement("img");
@@ -17,6 +17,11 @@ const option_image2 = document.createElement("span");
 const para = document.createElement("p");
 const para1 = document.createElement("p");
 const para2 = document.createElement("p");
+const option_Array = [
+  "./images/rock.png",
+  "./images/paper.png",
+  "./images/scissors.png",
+];
 
 result_field.classList.add("result_field");
 result_images.classList.add("result_images");
@@ -26,8 +31,8 @@ result.classList.add("result");
 result.textContent = "Let's Play!";
 imageR.src = "./images/rock.png";
 imageR.alt = "Rock";
-imageP.src = "./images/paper.png";
-imageP.alt = "Paper";
+imagePC.src = "./images/paper.png";
+imagePC.alt = "Paper";
 imageS.src = "./images/scissors.png";
 imageS.alt = "Scissors";
 imageS1.src = "./images/scissors.png";
@@ -81,7 +86,8 @@ option_image2.addEventListener("click", (e) => {
 
 function computerChoose() {
   let random_number = Math.floor(Math.random() * 3);
-  console.log(random_number);
+  return random_number;
 }
 
-computerChoose();
+let PC_choose = computerChoose();
+console.log(PC_choose);
