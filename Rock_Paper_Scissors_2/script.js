@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 
+const result_counter = document.createElement("div");
 const result_field = document.createElement("div");
 const result_images = document.createElement("div");
 const user_result = document.createElement("span");
@@ -17,6 +18,7 @@ const option_image2 = document.createElement("span");
 const para = document.createElement("p");
 const para1 = document.createElement("p");
 const para2 = document.createElement("p");
+const paraR = document.createElement("p");
 const option_Array = [
   "./images/rock.png",
   "./images/paper.png",
@@ -46,6 +48,7 @@ option_images.classList.add("option_images");
 option_image.classList.add("option_image");
 option_image1.classList.add("option_image");
 option_image2.classList.add("option_image");
+result_counter.classList.add("result_counter");
 
 container.appendChild(result_field);
 result_field.appendChild(result_images);
