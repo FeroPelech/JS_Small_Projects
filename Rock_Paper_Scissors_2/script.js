@@ -78,3 +78,10 @@ option_image2.addEventListener("click", (e) => {
   option_image.classList.remove("active");
   option_image1.classList.remove("active");
 });
+
+function computerChoose() {
+  let random_number = Math.floor(Math.random() * 3);
+  console.log(random_number);
+}
+
+computerChoose();
