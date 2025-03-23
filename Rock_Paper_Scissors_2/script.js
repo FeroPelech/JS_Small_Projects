@@ -63,12 +63,18 @@ container.appendChild(option_images);
 
 option_image.addEventListener("click", (e) => {
   option_image.classList.add("active");
+  option_image1.classList.remove("active");
+  option_image2.classList.remove("active");
 });
 
 option_image1.addEventListener("click", (e) => {
   option_image1.classList.add("active");
+  option_image.classList.remove("active");
+  option_image2.classList.remove("active");
 });
 
 option_image2.addEventListener("click", (e) => {
   option_image2.classList.add("active");
+  option_image.classList.remove("active");
+  option_image1.classList.remove("active");
 });
