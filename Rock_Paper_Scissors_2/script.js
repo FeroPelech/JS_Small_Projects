@@ -33,9 +33,9 @@ imageR.src = "./images/rock.png";
 imageR.alt = "Rock";
 imagePC.src = "./images/paper.png";
 imagePC.alt = "Paper";
-imageS.src = "./images/scissors.png";
+imageS.src = "./images/rock.png";
 imageS.alt = "Scissors";
-imageS1.src = "./images/scissors.png";
+imageS1.src = "./images/paper.png";
 imageS1.alt = "Scissors1";
 imageS2.src = "./images/scissors.png";
 imageS2.alt = "Scissors2";
@@ -70,18 +70,21 @@ option_image.addEventListener("click", (e) => {
   option_image.classList.add("active");
   option_image1.classList.remove("active");
   option_image2.classList.remove("active");
+  computerChoose();
 });
 
 option_image1.addEventListener("click", (e) => {
   option_image1.classList.add("active");
   option_image.classList.remove("active");
   option_image2.classList.remove("active");
+  computerChoose();
 });
 
 option_image2.addEventListener("click", (e) => {
   option_image2.classList.add("active");
   option_image.classList.remove("active");
   option_image1.classList.remove("active");
+  computerChoose();
 });
 
 function computerChoose() {
@@ -89,4 +92,3 @@ function computerChoose() {
   imagePC.src = option_Array[random_number];
   return random_number;
 }
-computerChoose();
