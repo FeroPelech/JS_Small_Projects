@@ -116,8 +116,6 @@ function computerChoose() {
 }
 
 function checkResult() {
-  console.log(imagePC.src);
-  console.log(imagePC.src.includes("/images/scissors.png"));
   if (
     imagePC.src.includes("/images/scissors.png") &
       imageR.src.includes("/images/paper.png") ||
