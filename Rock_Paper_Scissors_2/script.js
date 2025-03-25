@@ -123,7 +123,6 @@ function checkResult() {
       imageR.src.includes("/images/scissors.png")
   ) {
     computer++;
-    console.log("coooo");
     paraRPC.textContent = "Computer: " + computer;
   }
 }
