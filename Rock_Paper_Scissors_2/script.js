@@ -21,6 +21,7 @@ const para2 = document.createElement("p");
 const paraR = document.createElement("p");
 const paraR1 = document.createElement("p");
 const paraRPC = document.createElement("p");
+const btnReset = document.createElement("button");
 const option_Array = [
   "./images/rock.png",
   "./images/paper.png",
