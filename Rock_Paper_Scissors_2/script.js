@@ -141,4 +141,4 @@ function checkResult() {
   }
 }
 
-console.log(btnReset);
+btnReset.addEventListener("click", () => {});
