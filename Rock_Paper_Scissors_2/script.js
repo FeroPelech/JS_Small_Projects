@@ -81,6 +81,7 @@ result_counter.appendChild(paraR1);
 result_counter.appendChild(paraRPC);
 container.appendChild(option_images);
 container.appendChild(result_counter);
+container.appendChild(btnReset);
 
 option_image.addEventListener("click", () => {
   option_image.classList.add("active");
