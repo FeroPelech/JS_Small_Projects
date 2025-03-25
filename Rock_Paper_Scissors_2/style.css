@@ -94,3 +94,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.btnReset {
+  display: flex;
+  align-items: center;
+  background-color: rgb(159, 230, 230);
+  margin: 15px;
+  padding: 0 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
