@@ -57,6 +57,7 @@ option_image.classList.add("option_image");
 option_image1.classList.add("option_image");
 option_image2.classList.add("option_image");
 result_counter.classList.add("result_counter");
+btnReset.classList.add("btnReset");
 
 container.appendChild(result_field);
 result_field.appendChild(result_images);
