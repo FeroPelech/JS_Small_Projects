@@ -141,4 +141,9 @@ function checkResult() {
   }
 }
 
-btnReset.addEventListener("click", () => {});
+btnReset.addEventListener("click", () => {
+  player = 0;
+  computer = 0;
+  paraR1.textContent = "Player: " + player;
+  paraRPC.textContent = "Computer: " + computer;
+});
