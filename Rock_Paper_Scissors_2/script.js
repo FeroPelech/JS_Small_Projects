@@ -124,5 +124,15 @@ function checkResult() {
   ) {
     computer++;
     paraRPC.textContent = "Computer: " + computer;
+  } else if (
+    imagePC.src.includes("/images/paper.png") &
+      imageR.src.includes("/images/scissors.png") ||
+    imagePC.src.includes("/images/rock.png") &
+      imageR.src.includes("/images/paper.png") ||
+    imagePC.src.includes("/images/scissors.png") &
+      imageR.src.includes("/images/rock.png")
+  ) {
+    player++;
+    paraR1.textContent = "Player: " + player;
   }
 }
