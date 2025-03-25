@@ -112,13 +112,18 @@ function computerChoose() {
 }
 
 function checkResult() {
-  console.log("coooo");
   console.log(imagePC.src);
   console.log(imagePC.src.includes("/images/scissors.png"));
   if (
-    imagePC.src ===
-    "http://127.0.0.1:5500/JS_Small_Projects/Rock_Paper_Scissors_2/images/scissors.png"
+    imagePC.src.includes("/images/scissors.png") &
+      imageR.src.includes("/images/paper.png") ||
+    imagePC.src.includes("/images/paper.png") &
+      imageR.src.includes("/images/rock.png") ||
+    imagePC.src.includes("/images/rock.png") &
+      imageR.src.includes("/images/scissors.png")
   ) {
-    console.log("Remiza");
+    computer++;
+    console.log("coooo");
+    paraRPC.textContent = "Computer: " + computer;
   }
 }
