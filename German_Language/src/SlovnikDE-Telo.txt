@@ -1,0 +1,35 @@
+telo - der Körper - the Body
+hlava - der Kopf - the Head
+tvar - das Gesicht - Face
+oko - das Auge - Eye
+očí - die Augen - Eyes
+ucho - das Ohr - Ear
+uši - die Ohren - Ears
+hrudník - die Brust - Chest
+ruka (od ramena) - der Arm - Arm
+ruky - die Arme - Arms
+noha - (od pasa) - das Bein - leg
+nohy - die Beine - Legs
+noha - (od členka) - der Fuß - Foot
+nohy - die Füße - Feet
+ruka - (od zapestia) die Hand - Hand
+ruky - die Hände - Hands
+prst - (na ruke) der Finger - Finger
+prsty - die Finger - Fingers
+prst - (na nohe) der Zeh - Toe
+prsty - die Zehen - Toes
+chrbát - der Rücken - Back
+koleno - das Knie - Knee
+kolená - die Knie - Knees
+lakeť - der Ellbogen - Elbow
+rameno - die Schulter - Shoulder
+členok - der Knöchel - Ankle
+zub - der Zahn - Tooth
+zuby - die Zähne - Teeth
+nos - die Nase - Nose
+ústa - die Munde - Mouth
+žalúdok - der Magen - Stomach
+bok - die Hüfte - Hip
+brucho - der Bauch - Belly
+vlasy - die Haare - Hair
+dotknúť sa - Berühren - To touch
