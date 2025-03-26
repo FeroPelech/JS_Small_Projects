@@ -135,6 +135,7 @@ function checkResult() {
     imagePC.src.includes("/images/scissors.png") &
       imageR.src.includes("/images/rock.png")
   ) {
+    result.textContent = "Player won!";
     player++;
     paraR1.textContent = "Player: " + player;
   }
