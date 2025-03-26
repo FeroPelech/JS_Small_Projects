@@ -124,6 +124,7 @@ function checkResult() {
     imagePC.src.includes("/images/rock.png") &
       imageR.src.includes("/images/scissors.png")
   ) {
+    result.textContent = "Computer won!";
     computer++;
     paraRPC.textContent = "Computer: " + computer;
   } else if (
