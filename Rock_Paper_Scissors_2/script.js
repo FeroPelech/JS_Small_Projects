@@ -138,6 +138,8 @@ function checkResult() {
     result.textContent = "Player won!";
     player++;
     paraR1.textContent = "Player: " + player;
+  } else {
+    result.textContent = "Draw!";
   }
 }
 
