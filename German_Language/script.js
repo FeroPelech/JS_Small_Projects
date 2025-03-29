@@ -1,8 +1,7 @@
 const container = document.querySelector(".container");
-import { readFile } from "F:GitHubRepoJS_Small_ProjectsGerman_LanguagesrcSlovnikDE-Telo.txt";
 
-readFile("SlovnikDE-Telo.txt", (err, data) => {
-  if (err) throw err;
+const input = document.createElement("input");
+input.type = "file";
+console.log(input);
 
-  console.log(data.toString());
-});
+container.appendChild(input);
