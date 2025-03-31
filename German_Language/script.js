@@ -2,6 +2,7 @@ function loadFile() {
   // Získať vybraný súbor
   const fileInput = document.getElementById("fileInput");
   const file = fileInput.files[0];
+  const workArray = [];
 
   // Ak nie je vybraný žiadny súbor, zobrazí sa upozornenie
   if (!file) {
