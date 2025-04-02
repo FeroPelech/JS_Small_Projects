@@ -7,7 +7,9 @@ function loadFile() {
 
   // Ak nie je vybraný žiadny súbor, zobrazí sa upozornenie
   if (!file) {
-    alert("Prosím, vyberte súbor!");
+    alert(
+      `Please click on the button "Select file" and confirm it with button "Load file"`
+    );
     return;
   }
 
