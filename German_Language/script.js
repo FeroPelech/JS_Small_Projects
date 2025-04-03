@@ -1,5 +1,5 @@
-const workArray = [];
-const germanWords = [];
+let workArray = [];
+let germanWords = [];
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
@@ -23,6 +23,8 @@ document.getElementById("fileInput").addEventListener("change", function () {
   reader.onload = function (event) {
     const fileContent = event.target.result; // Obsah súboru
     console.log(fileContent); // Výpis obsahu do konzoly
+    console.log(typeof fileContent);
+    rows(fileContent);
 
     // Zobraziť obsah súboru v HTML
     document.getElementById("fileContent").innerText = fileContent;
@@ -31,3 +33,11 @@ document.getElementById("fileInput").addEventListener("change", function () {
   // Načítať súbor ako text
   reader.readAsText(file);
 });
+
+function rows(fileContent) {
+  console.log(typeof fileContent === "string");
+  if (typeof fileContent === "string") {
+    workArray = fileContent.split("\r\n");
+    console.log(workArray);
+  }
+}
