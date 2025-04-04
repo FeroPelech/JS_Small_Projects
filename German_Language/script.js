@@ -1,3 +1,4 @@
+let content = [];
 let workArray = [];
 let germanWords = [];
 
@@ -40,7 +41,5 @@ function rows(fileContent) {
     workArray = fileContent.split("\r\n");
     // console.log(workArray);
   }
-  for (let i = 0; i < workArray.length; i++) {
-    console.log(i + " " + workArray[i]);
-  }
+  for (let i = 0; i < workArray.length; i++) {}
 }
