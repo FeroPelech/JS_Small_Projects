@@ -38,8 +38,12 @@ document.getElementById("fileInput").addEventListener("change", function () {
 function rows(fileContent) {
   console.log(typeof fileContent === "string");
   if (typeof fileContent === "string") {
-    workArray = fileContent.split("\r\n");
+    content = fileContent.split("\r\n");
     // console.log(workArray);
   }
-  for (let i = 0; i < workArray.length; i++) {}
+  for (let i = 0; i < content.length; i++) {
+    workArray = content[i].split(" - ");
+    germanWords.push(workArray[1]);
+    console.log(germanWords);
+  }
 }
