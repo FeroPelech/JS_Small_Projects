@@ -2,6 +2,7 @@ let content = [];
 let workArray = [];
 let germanWords = [];
 let slovakWords = [];
+let englishwords = [];
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
