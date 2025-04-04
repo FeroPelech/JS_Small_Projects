@@ -2,7 +2,7 @@ let content = [];
 let workArray = [];
 let germanWords = [];
 let slovakWords = [];
-let englishwords = [];
+let englishWords = [];
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
@@ -45,9 +45,11 @@ function rows(fileContent) {
   }
   for (let i = 0; i < content.length; i++) {
     workArray = content[i].split(" - ");
-    germanWords.push(workArray[1]);
     slovakWords.push(workArray[0]);
+    germanWords.push(workArray[1]);
+    englishWords.push(workArray[2]);
   }
   console.log(germanWords);
   console.log(slovakWords);
+  console.log(englishWords);
 }
