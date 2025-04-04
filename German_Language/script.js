@@ -38,6 +38,9 @@ function rows(fileContent) {
   console.log(typeof fileContent === "string");
   if (typeof fileContent === "string") {
     workArray = fileContent.split("\r\n");
-    console.log(workArray);
+    // console.log(workArray);
+  }
+  for (let i = 0; i < workArray.length; i++) {
+    console.log(i + " " + workArray[i]);
   }
 }
