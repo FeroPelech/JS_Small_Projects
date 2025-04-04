@@ -1,6 +1,7 @@
 let content = [];
 let workArray = [];
 let germanWords = [];
+let slovakWords = [];
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
