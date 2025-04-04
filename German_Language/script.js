@@ -46,6 +46,8 @@ function rows(fileContent) {
   for (let i = 0; i < content.length; i++) {
     workArray = content[i].split(" - ");
     germanWords.push(workArray[1]);
-    console.log(germanWords);
+    slovakWords.push(workArray[0]);
   }
+  console.log(germanWords);
+  console.log(slovakWords);
 }
