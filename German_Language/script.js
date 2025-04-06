@@ -30,7 +30,7 @@ document.getElementById("fileInput").addEventListener("change", function () {
     rows(fileContent);
 
     // Zobraziť obsah súboru v HTML
-    document.getElementById("fileContent").innerText = fileContent;
+    // document.getElementById("fileContent").innerText = fileContent;
   };
 
   // Načítať súbor ako text
@@ -52,4 +52,11 @@ function rows(fileContent) {
   console.log(germanWords);
   console.log(slovakWords);
   console.log(englishWords);
+  germanPart(germanWords);
+}
+
+function germanPart(words) {
+  for (let i = 0; i < words.length; i++) {
+    console.log(words[i]);
+  }
 }
