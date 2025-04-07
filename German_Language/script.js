@@ -41,7 +41,6 @@ function rows(fileContent) {
   console.log(typeof fileContent === "string");
   if (typeof fileContent === "string") {
     content = fileContent.split("\r\n");
-    // console.log(workArray);
   }
   for (let i = 0; i < content.length; i++) {
     workArray = content[i].split(" - ");
