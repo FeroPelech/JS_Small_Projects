@@ -48,9 +48,6 @@ function rows(fileContent) {
     germanWords.push(workArray[1]);
     englishWords.push(workArray[2]);
   }
-  console.log(germanWords);
-  console.log(slovakWords);
-  console.log(englishWords);
   germanPart(germanWords);
 }
 
