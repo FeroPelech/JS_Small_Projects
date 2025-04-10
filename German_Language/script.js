@@ -56,7 +56,9 @@ function rows(fileContent) {
   slovakBtn.addEventListener("click", () => {
     germanPart(slovakWords);
   });
-  // germanPart(germanWords);
+  germanBtn.addEventListener("click", () => {
+    germanPart(germanWords);
+  });
 }
 
 function germanPart(words) {
