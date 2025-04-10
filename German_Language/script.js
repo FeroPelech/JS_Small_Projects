@@ -62,6 +62,7 @@ function rows(fileContent) {
 }
 
 function germanPart(wordsShowed, checkWords) {
+  container.innerHTML = "";
   for (let i = 0; i < wordsShowed.length; i++) {
     const newDiv = document.createElement("div");
     newDiv.className = `index: ${i}`;
