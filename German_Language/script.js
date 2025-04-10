@@ -51,17 +51,21 @@ function rows(fileContent) {
     slovakWords.push(workArray[0]);
     germanWords.push(workArray[1]);
     englishWords.push(workArray[2]);
+    console.log(slovakWords[i]);
   }
-  germanPart(germanWords);
+  slovakBtn.addEventListener("click", () => {
+    germanPart(slovakWords);
+  });
+  // germanPart(germanWords);
 }
 
 function germanPart(words) {
   for (let i = 0; i < words.length; i++) {
     const newDiv = document.createElement("div");
     newDiv.className = `index: ${i}`;
-    newDiv.textContent = germanWords[i];
-    console.log(newDiv);
+    newDiv.textContent = words[i];
+    // console.log(newDiv);
     container.appendChild(newDiv);
-    console.log(words[i]);
+    // console.log(words[i]);
   }
 }
