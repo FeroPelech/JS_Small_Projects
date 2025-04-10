@@ -6,7 +6,7 @@ let englishWords = [];
 const container = document.querySelector(".container");
 const slovakBtn = document.querySelector(".Slovak");
 const germanBtn = document.querySelector(".German");
-console.log(germanBtn);
+// console.log(germanBtn);
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
@@ -29,8 +29,8 @@ document.getElementById("fileInput").addEventListener("change", function () {
   // Po načítaní súboru, spracovať jeho obsah
   reader.onload = function (event) {
     const fileContent = event.target.result; // Obsah súboru
-    console.log(fileContent); // Výpis obsahu do konzoly
-    console.log(typeof fileContent);
+    // console.log(fileContent); // Výpis obsahu do konzoly
+    // console.log(typeof fileContent);
     rows(fileContent);
 
     // Zobraziť obsah súboru v HTML
@@ -42,7 +42,7 @@ document.getElementById("fileInput").addEventListener("change", function () {
 });
 
 function rows(fileContent) {
-  console.log(typeof fileContent === "string");
+  // console.log(typeof fileContent === "string");
   if (typeof fileContent === "string") {
     content = fileContent.split("\r\n");
   }
@@ -51,23 +51,24 @@ function rows(fileContent) {
     slovakWords.push(workArray[0]);
     germanWords.push(workArray[1]);
     englishWords.push(workArray[2]);
-    console.log(slovakWords[i]);
+    // console.log(slovakWords[i]);
   }
   slovakBtn.addEventListener("click", () => {
-    germanPart(slovakWords);
+    germanPart(slovakWords, germanWords);
   });
   germanBtn.addEventListener("click", () => {
-    germanPart(germanWords);
+    germanPart(germanWords, slovakWords);
   });
 }
 
-function germanPart(words) {
-  for (let i = 0; i < words.length; i++) {
+function germanPart(wordsShowed, checkWords) {
+  for (let i = 0; i < wordsShowed.length; i++) {
     const newDiv = document.createElement("div");
     newDiv.className = `index: ${i}`;
-    newDiv.textContent = words[i];
+    newDiv.textContent = wordsShowed[i];
     // console.log(newDiv);
     container.appendChild(newDiv);
     // console.log(words[i]);
+    const newInput = document.createElement("input");
   }
 }
