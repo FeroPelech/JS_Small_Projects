@@ -3,6 +3,8 @@ let workArray = [];
 let germanWords = [];
 let slovakWords = [];
 let englishWords = [];
+const container = document.querySelector(".container");
+console.log(container);
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
