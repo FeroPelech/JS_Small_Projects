@@ -56,7 +56,9 @@ function rows(fileContent) {
 function germanPart(words) {
   for (let i = 0; i < words.length; i++) {
     const newDiv = document.createElement("div");
+    newDiv.className = `index: ${i}`;
     newDiv.textContent = `Check: ${i + 1}`;
+    console.log(newDiv);
     container.appendChild(newDiv);
     console.log(words[i]);
   }
