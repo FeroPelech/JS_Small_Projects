@@ -5,7 +5,8 @@ let slovakWords = [];
 let englishWords = [];
 const container = document.querySelector(".container");
 const slovakBtn = document.querySelector(".Slovak");
-console.log(slovakBtn);
+const germanBtn = document.querySelector(".German");
+console.log(germanBtn);
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
