@@ -57,6 +57,7 @@ function germanPart(words) {
   for (let i = 0; i < words.length; i++) {
     const newDiv = document.createElement("div");
     newDiv.textContent = `Check: ${i + 1}`;
+    container.appendChild(newDiv);
     console.log(words[i]);
   }
 }
