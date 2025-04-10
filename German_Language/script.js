@@ -4,7 +4,8 @@ let germanWords = [];
 let slovakWords = [];
 let englishWords = [];
 const container = document.querySelector(".container");
-console.log(container);
+const slovakBtn = document.querySelector(".Slovak");
+console.log(slovakBtn);
 
 // Načítanie súboru po kliknutí na vlastné tlačidlo
 document
@@ -57,7 +58,7 @@ function germanPart(words) {
   for (let i = 0; i < words.length; i++) {
     const newDiv = document.createElement("div");
     newDiv.className = `index: ${i}`;
-    newDiv.textContent = `Check: ${i + 1}`;
+    newDiv.textContent = germanWords[i];
     console.log(newDiv);
     container.appendChild(newDiv);
     console.log(words[i]);
