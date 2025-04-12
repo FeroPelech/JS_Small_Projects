@@ -74,5 +74,8 @@ function germanPart(wordsShowed, checkWords) {
     newInput.className = `index: ${i}`;
     console.log(newInput);
     container.appendChild(newInput);
+
+    const checkBtn = document.createElement("button");
+    console.log(checkBtn);
   }
 }
