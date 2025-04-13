@@ -77,6 +77,7 @@ function germanPart(wordsShowed, checkWords) {
 
     const checkBtn = document.createElement("button");
     checkBtn.className = "checkBtn";
+    container.appendChild(checkBtn);
     console.log(checkBtn);
   }
 }
