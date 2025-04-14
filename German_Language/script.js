@@ -83,8 +83,10 @@ function germanPart(wordsShowed, checkWords) {
       const userInput = newInput.value.trim();
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
         newInput.style.border = "2px solid green";
+        newInput.style.boxShadow = "0 0 20px 4px green";
       } else {
         newInput.style.border = "2px solid red";
+        newInput.style.boxShadow = "0 0 20px 4px red";
       }
       console.log(userInput);
     });
