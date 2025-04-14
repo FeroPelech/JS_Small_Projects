@@ -80,7 +80,10 @@ function germanPart(wordsShowed, checkWords) {
     checkBtn.textContent = "Check!";
     container.appendChild(checkBtn);
     checkBtn.addEventListener("click", () => {
-      console.log("something");
+      const userInput = newInput.value.trim();
+      if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
+      }
+      console.log(userInput);
     });
     // console.log(checkBtn);
   }
