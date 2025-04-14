@@ -72,13 +72,16 @@ function germanPart(wordsShowed, checkWords) {
     // console.log(words[i]);
     const newInput = document.createElement("input");
     newInput.className = `index ${i}`;
-    console.log(newInput);
+    // console.log(newInput);
     container.appendChild(newInput);
 
     const checkBtn = document.createElement("button");
     checkBtn.className = `checkBtn ${i}`;
     checkBtn.textContent = "Check!";
     container.appendChild(checkBtn);
-    console.log(checkBtn);
+    checkBtn.addEventListener("click", () => {
+      console.log("something");
+    });
+    // console.log(checkBtn);
   }
 }
