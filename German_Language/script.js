@@ -65,18 +65,19 @@ function germanPart(wordsShowed, checkWords) {
   container.innerHTML = "";
   for (let i = 0; i < wordsShowed.length; i++) {
     const newDiv = document.createElement("div");
-    newDiv.className = `index: ${i}`;
+    newDiv.className = `index ${i}`;
     newDiv.textContent = wordsShowed[i];
     // console.log(newDiv);
     container.appendChild(newDiv);
     // console.log(words[i]);
     const newInput = document.createElement("input");
-    newInput.className = `index: ${i}`;
+    newInput.className = `index ${i}`;
     console.log(newInput);
     container.appendChild(newInput);
 
     const checkBtn = document.createElement("button");
-    checkBtn.className = "checkBtn";
+    checkBtn.className = `checkBtn ${i}`;
+    checkBtn.textContent = "Check!";
     container.appendChild(checkBtn);
     console.log(checkBtn);
   }
