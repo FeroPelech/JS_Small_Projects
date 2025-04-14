@@ -82,6 +82,9 @@ function germanPart(wordsShowed, checkWords) {
     checkBtn.addEventListener("click", () => {
       const userInput = newInput.value.trim();
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
+        newInput.style.border = "2px solid green";
+      } else {
+        newInput.style.border = "2px solid red";
       }
       console.log(userInput);
     });
