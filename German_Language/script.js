@@ -54,14 +54,14 @@ function rows(fileContent) {
     // console.log(slovakWords[i]);
   }
   slovakBtn.addEventListener("click", () => {
-    germanPart(slovakWords, germanWords);
+    loadWords(slovakWords, germanWords);
   });
   germanBtn.addEventListener("click", () => {
-    germanPart(germanWords, slovakWords);
+    loadWords(germanWords, slovakWords);
   });
 }
 
-function germanPart(wordsShowed, checkWords) {
+function loadWords(wordsShowed, checkWords) {
   container.innerHTML = "";
   for (let i = 0; i < wordsShowed.length; i++) {
     const newDiv = document.createElement("div");
