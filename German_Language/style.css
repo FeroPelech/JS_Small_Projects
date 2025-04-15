@@ -27,3 +27,11 @@ body {
   border-radius: 5px;
   border: 1px grey solid;
 }
+
+.menuBtn {
+  margin: 2px;
+  width: 150px;
+  background-color: rgb(233, 230, 230);
+  border-radius: 5px;
+  border-color: black;
+}
