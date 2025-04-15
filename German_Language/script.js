@@ -70,17 +70,18 @@ function loadWords(wordsShowed, checkWords) {
     newDiv.className = `index ${i}`;
     newDiv.textContent = wordsShowed[i];
     // console.log(newDiv);
-    container.appendChild(newDiv);
+    wordRow.appendChild(newDiv);
     // console.log(words[i]);
     const newInput = document.createElement("input");
     newInput.className = `index ${i}`;
     // console.log(newInput);
-    container.appendChild(newInput);
+    wordRow.appendChild(newInput);
 
     const checkBtn = document.createElement("button");
     checkBtn.className = `checkBtn ${i}`;
     checkBtn.textContent = "Check!";
-    container.appendChild(checkBtn);
+    wordRow.appendChild(checkBtn);
+    container.appendChild(wordRow);
     checkBtn.addEventListener("click", () => {
       const userInput = newInput.value.trim();
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
