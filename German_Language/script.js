@@ -64,6 +64,8 @@ function rows(fileContent) {
 function loadWords(wordsShowed, checkWords) {
   container.innerHTML = "";
   for (let i = 0; i < wordsShowed.length; i++) {
+    const wordRow = document.createElement("div");
+
     const newDiv = document.createElement("div");
     newDiv.className = `index ${i}`;
     newDiv.textContent = wordsShowed[i];
