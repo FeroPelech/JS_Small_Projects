@@ -7,14 +7,15 @@
     <title>German language</title>
 </head>
 <body>
-    <div class="menu"></div>
-    <div class="container">
+    <div class="menu">
         <label for="fileInput">Choose file with german words from src.</label>
-        <button id="customFileButton">Select file</button>
+        <button class= "menuBtn" id="customFileButton">Select file</button>
         <input type="file" id="fileInput" name="fileInput" />
-        <button onclick="loadFile()">Load file</button>
-        <button class="Slovak">Slovak words</button>
-        <button class="German">German words</button>
+        <button class="menuBtn" onclick="loadFile()">Load file</button>
+        <button class="Slovak menuBtn">Slovak words</button>
+        <button class="German menuBtn">German words</button>
+    </div>
+    <div class="container">
         <div id="fileContent"></div>
     </div>
     <script src="script.js"></script>
