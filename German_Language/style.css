@@ -11,7 +11,7 @@ body {
 
 .menu {
   background-color: bisque;
-  width: 500px;
+  width: 100%;
   padding: 10px;
   display: flex;
   flex-direction: column;
