@@ -64,11 +64,13 @@ body {
   margin-left: 10px; /* Odstup medzi inputom a tlačidlom */
   border-radius: 5px;
   border: 1px grey solid;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .checkBtn:hover {
   background-color: rgb(144, 235, 238);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .word-row > div:first-child {
