@@ -78,6 +78,9 @@ body {
 }
 
 input {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 23px;
   transition: border 0.5s, box-shadow 2s;
 }
 
