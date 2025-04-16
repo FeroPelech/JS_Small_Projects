@@ -64,6 +64,11 @@ body {
   border: 1px grey solid;
 }
 
+.checkBtn:hover {
+  background-color: rgb(144, 235, 238);
+  cursor: pointer;
+}
+
 .word-row > div:first-child {
   width: 150px; /* alebo podľa potreby */
   text-align: right; /* ak chceš, aby boli slová zarovnané k inputu */
