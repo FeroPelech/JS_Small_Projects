@@ -52,3 +52,12 @@ body {
   align-items: center;
   margin-right: 10px;
 }
+
+.checkBtn {
+  width: 100px; /* Uprav šírku tlačidla */
+  height: 30px;
+  padding: 5px;
+  margin-left: 10px; /* Odstup medzi inputom a tlačidlom */
+  border-radius: 5px;
+  border: 1px grey solid;
+}
