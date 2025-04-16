@@ -46,3 +46,9 @@ body {
   font-size: 20px;
   text-transform: capitalize;
 }
+
+.word-row {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
