@@ -21,6 +21,9 @@ document.getElementById("fileInput").addEventListener("change", function () {
     return;
   }
 
+  fileNameDisplay.textContent = `Topic: ${file.name
+    .slice(10)
+    .replace(".txt", "")}`;
   const reader = new FileReader();
 
   reader.onload = function (event) {
