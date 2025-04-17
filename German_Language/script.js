@@ -6,6 +6,7 @@ let englishWords = [];
 const container = document.querySelector(".container");
 const slovakBtn = document.querySelector(".Slovak");
 const germanBtn = document.querySelector(".German");
+const fileNameDisplay = document.getElementById("fileNameDisplay");
 
 document
   .getElementById("customFileButton")
