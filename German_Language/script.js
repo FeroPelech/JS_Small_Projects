@@ -35,6 +35,10 @@ document.getElementById("fileInput").addEventListener("change", function () {
 });
 
 function rows(fileContent) {
+  let germanWords = [];
+  let slovakWords = [];
+  let englishWords = [];
+
   if (typeof fileContent === "string") {
     content = fileContent.split("\r\n");
   }
