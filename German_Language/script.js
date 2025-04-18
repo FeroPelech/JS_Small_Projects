@@ -84,6 +84,10 @@ function loadWords(wordsShowed, checkWords) {
 
     inputs.push(newInput);
 
+    newInput.addEventListener("keydown", (e) => {
+      console.log("Something");
+    });
+
     checkBtn.addEventListener("click", () => {
       const userInput = newInput.value.trim();
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
