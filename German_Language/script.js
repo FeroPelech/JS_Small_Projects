@@ -86,7 +86,8 @@ function loadWords(wordsShowed, checkWords) {
 
     newInput.addEventListener("keydown", (e) => {
       if (e.key === "ArrowDown" && i < inputs.length - 1) {
-        console.log("something");
+        e.preventDefault();
+        inputs[i + 1].focus();
       }
     });
 
