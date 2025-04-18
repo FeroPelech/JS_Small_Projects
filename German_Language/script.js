@@ -94,7 +94,8 @@ function loadWords(wordsShowed, checkWords) {
         inputs[i - 1].focus();
       }
       if (e.key === "Enter") {
-        console.log("say");
+        e.preventDefault();
+        checkBtn.click();
       }
     });
 
