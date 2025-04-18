@@ -8,7 +8,6 @@ const slovakBtn = document.querySelector(".Slovak");
 const germanBtn = document.querySelector(".German");
 const fileNameDisplay = document.getElementById("fileNameDisplay");
 const specialGermanSign = document.querySelector(".specialSign");
-console.log(specialGermanSign);
 
 document
   .getElementById("customFileButton")
