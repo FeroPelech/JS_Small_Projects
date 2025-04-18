@@ -89,6 +89,9 @@ function loadWords(wordsShowed, checkWords) {
         e.preventDefault();
         inputs[i + 1].focus();
       }
+      if (e.key === "ArrowUp" && i > 0) {
+        console.log("some");
+      }
     });
 
     checkBtn.addEventListener("click", () => {
