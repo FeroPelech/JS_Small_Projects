@@ -7,6 +7,8 @@ const container = document.querySelector(".container");
 const slovakBtn = document.querySelector(".Slovak");
 const germanBtn = document.querySelector(".German");
 const fileNameDisplay = document.getElementById("fileNameDisplay");
+const specialGermanSign = document.querySelector(".specialSign");
+console.log(specialGermanSign);
 
 document
   .getElementById("customFileButton")
@@ -24,6 +26,7 @@ document.getElementById("fileInput").addEventListener("change", function () {
   fileNameDisplay.textContent = `Topic: ${file.name
     .slice(10)
     .replace(".txt", "")}`;
+
   const reader = new FileReader();
 
   reader.onload = function (event) {
