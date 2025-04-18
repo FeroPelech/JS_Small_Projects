@@ -35,6 +35,8 @@ document.getElementById("fileInput").addEventListener("change", function () {
 });
 
 function rows(fileContent) {
+  let content = [];
+  let workArray = [];
   let germanWords = [];
   let slovakWords = [];
   let englishWords = [];
