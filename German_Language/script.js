@@ -93,6 +93,9 @@ function loadWords(wordsShowed, checkWords) {
         e.preventDefault();
         inputs[i - 1].focus();
       }
+      if (e.key === "Enter") {
+        console.log("say");
+      }
     });
 
     checkBtn.addEventListener("click", () => {
