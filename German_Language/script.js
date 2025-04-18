@@ -61,13 +61,16 @@ function rows(fileContent) {
 function loadWords(wordsShowed, checkWords) {
   let inputs = [];
   container.innerHTML = "";
+
   for (let i = 0; i < wordsShowed.length; i++) {
     const wordRow = document.createElement("div");
     wordRow.className = "word-row";
+
     const newDiv = document.createElement("div");
     newDiv.className = `index ${i}`;
     newDiv.textContent = wordsShowed[i];
     wordRow.appendChild(newDiv);
+
     const newInput = document.createElement("input");
     newInput.className = `index ${i}`;
     wordRow.appendChild(newInput);
@@ -76,7 +79,11 @@ function loadWords(wordsShowed, checkWords) {
     checkBtn.className = `checkBtn ${i}`;
     checkBtn.textContent = "Check!";
     wordRow.appendChild(checkBtn);
+
     container.appendChild(wordRow);
+
+    inputs.push(newInput);
+
     checkBtn.addEventListener("click", () => {
       const userInput = newInput.value.trim();
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
