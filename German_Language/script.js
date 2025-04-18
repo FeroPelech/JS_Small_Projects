@@ -90,7 +90,8 @@ function loadWords(wordsShowed, checkWords) {
         inputs[i + 1].focus();
       }
       if (e.key === "ArrowUp" && i > 0) {
-        console.log("some");
+        e.preventDefault();
+        inputs[i - 1].focus();
       }
     });
 
