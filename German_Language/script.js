@@ -85,7 +85,9 @@ function loadWords(wordsShowed, checkWords) {
     inputs.push(newInput);
 
     newInput.addEventListener("keydown", (e) => {
-      console.log("Something");
+      if (e.key === "ArrowDown" && i < inputs.length - 1) {
+        console.log("something");
+      }
     });
 
     checkBtn.addEventListener("click", () => {
