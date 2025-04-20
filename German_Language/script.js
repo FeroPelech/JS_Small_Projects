@@ -63,7 +63,7 @@ function rows(fileContent) {
 function loadWords(wordsShowed, checkWords) {
   let inputs = [];
   container.innerHTML = "";
-  specialGermanSign.textContent = "Special german letters: ü,ß,ö";
+  specialGermanSign.innerHTML = "Special german sign: ü ß ö ä";
 
   for (let i = 0; i < wordsShowed.length; i++) {
     const wordRow = document.createElement("div");
