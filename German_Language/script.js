@@ -59,6 +59,9 @@ function rows(fileContent) {
   germanBtn.addEventListener("click", () => {
     loadWords(germanWords, slovakWords);
   });
+  englishBtn.addEventListener("click", () => {
+    loadWords(slovakWords, englishWords);
+  });
 }
 
 function loadWords(wordsShowed, checkWords) {
