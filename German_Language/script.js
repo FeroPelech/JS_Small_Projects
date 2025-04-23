@@ -131,7 +131,8 @@ function loadWords(wordsShowed, checkWords) {
     inputs.forEach((e, i) => {
       const userInputAll = e.value.trim();
       if (userInputAll.toLowerCase() === checkWords[i].toLowerCase()) {
-        console.log("something");
+        e.style.border = "2px solid green";
+        e.style.boxShadow = "0 0 20px 4px green";
       }
     });
   };
