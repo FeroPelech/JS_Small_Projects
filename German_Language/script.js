@@ -133,6 +133,9 @@ function loadWords(wordsShowed, checkWords) {
       if (userInputAll.toLowerCase() === checkWords[i].toLowerCase()) {
         e.style.border = "2px solid green";
         e.style.boxShadow = "0 0 20px 4px green";
+      } else {
+        input.style.border = "2px solid red";
+        input.style.boxShadow = "0 0 20px 4px red";
       }
     });
   };
