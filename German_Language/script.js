@@ -126,4 +126,8 @@ function loadWords(wordsShowed, checkWords) {
   if (inputs.length > 0) {
     inputs[0].focus();
   }
+
+  checkAllBtn.onclick = () => {
+    console.log("Something");
+  };
 }
