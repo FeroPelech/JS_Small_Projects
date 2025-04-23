@@ -128,6 +128,8 @@ function loadWords(wordsShowed, checkWords) {
   }
 
   checkAllBtn.onclick = () => {
-    console.log("Something");
+    inputs.forEach((e) => {
+      const userInputAll = e.value.trim();
+    });
   };
 }
