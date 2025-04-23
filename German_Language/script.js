@@ -120,4 +120,8 @@ function loadWords(wordsShowed, checkWords) {
   if (inputs.length > 0) {
     inputs[0].focus();
   }
+
+  //check button
+  const checkAllBtn = document.createElement("button");
+  console.log(checkAllBtn);
 }
