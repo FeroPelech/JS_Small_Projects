@@ -128,8 +128,11 @@ function loadWords(wordsShowed, checkWords) {
   }
 
   checkAllBtn.onclick = () => {
-    inputs.forEach((e) => {
+    inputs.forEach((e, i) => {
       const userInputAll = e.value.trim();
+      if (userInputAll.toLowerCase() === checkWords[i].toLowerCase()) {
+        console.log("something");
+      }
     });
   };
 }
