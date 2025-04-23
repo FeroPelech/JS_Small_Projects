@@ -10,6 +10,10 @@ const englishBtn = document.querySelector(".English");
 const fileNameDisplay = document.getElementById("fileNameDisplay");
 const specialGermanSign = document.querySelector(".specialSign");
 
+const checkAllBtn = document.createElement("button");
+checkAllBtn.className = "checkAllBtn";
+checkAllBtn.textContent = "Check all answers!";
+
 document
   .getElementById("customFileButton")
   .addEventListener("click", function () {
@@ -106,6 +110,8 @@ function loadWords(wordsShowed, checkWords) {
       }
     });
 
+    container.appendChild(checkAllBtn);
+
     checkBtn.addEventListener("click", () => {
       const userInput = newInput.value.trim();
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
@@ -120,9 +126,4 @@ function loadWords(wordsShowed, checkWords) {
   if (inputs.length > 0) {
     inputs[0].focus();
   }
-
-  //check button
-  const checkAllBtn = document.createElement("button");
-  checkAllBtn.className = "checkAllBtn";
-  checkAllBtn.textContent = "Check all answers!";
 }
