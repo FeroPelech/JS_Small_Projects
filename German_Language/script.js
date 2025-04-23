@@ -125,5 +125,4 @@ function loadWords(wordsShowed, checkWords) {
   const checkAllBtn = document.createElement("button");
   checkAllBtn.className = "checkAllBtn";
   checkAllBtn.textContent = "Check all answers!";
-  console.log(checkAllBtn);
 }
