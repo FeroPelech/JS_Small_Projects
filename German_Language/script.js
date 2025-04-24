@@ -134,8 +134,8 @@ function loadWords(wordsShowed, checkWords) {
         e.style.border = "2px solid green";
         e.style.boxShadow = "0 0 20px 4px green";
       } else {
-        input.style.border = "2px solid red";
-        input.style.boxShadow = "0 0 20px 4px red";
+        e.style.border = "2px solid red";
+        e.style.boxShadow = "0 0 20px 4px red";
       }
     });
   };
