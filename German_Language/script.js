@@ -136,6 +136,8 @@ function loadWords(wordsShowed, checkWords) {
       } else {
         e.style.border = "2px solid red";
         e.style.boxShadow = "0 0 20px 4px red";
+        const correctDiv = document.createElement("div");
+        console.log(correctDiv);
       }
     });
   };
