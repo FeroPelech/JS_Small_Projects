@@ -96,3 +96,7 @@ input:hover {
   font-style: italic;
   color: #888;
 }
+
+.checkAllBtn {
+  margin: 10px;
+}
