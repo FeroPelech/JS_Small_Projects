@@ -130,6 +130,12 @@ function loadWords(wordsShowed, checkWords) {
   checkAllBtn.onclick = () => {
     inputs.forEach((e, i) => {
       const userInputAll = e.value.trim();
+      const parent = e.parentElement;
+      const existingAnswer = parent.querySelector(".correct-answer");
+
+      if (existingAnswer) {
+        parent.removeChild(existingAnswer);
+      }
       if (userInputAll.toLowerCase() === checkWords[i].toLowerCase()) {
         e.style.border = "2px solid green";
         e.style.boxShadow = "0 0 20px 4px green";
@@ -140,7 +146,8 @@ function loadWords(wordsShowed, checkWords) {
         correctDiv.className = "correct-answer";
         correctDiv.style.color = "#888";
         correctDiv.style.fontSize = "0.85em";
-        correctDiv.textContent = `Right answer: ${checkWords[i]}`;
+        correctDiv.textContent = `    ${checkWords[i]}`;
+        parent.appendChild(correctDiv);
         console.log(correctDiv);
       }
     });
