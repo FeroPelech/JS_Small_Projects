@@ -104,4 +104,5 @@ input:hover {
   border-radius: 5px;
   border: 2px solid grey;
   font-size: 15px;
+  cursor: pointer;
 }
