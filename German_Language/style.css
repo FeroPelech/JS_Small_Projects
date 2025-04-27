@@ -101,4 +101,6 @@ input:hover {
   margin: 10px;
   width: 300px;
   height: 30px;
+  border-radius: 5px;
+  border: 2px solid grey;
 }
