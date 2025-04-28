@@ -106,3 +106,7 @@ input:hover {
   font-size: 15px;
   cursor: pointer;
 }
+
+.checkAllBtn:hover {
+  background-color: rgb(7, 199, 206);
+}
