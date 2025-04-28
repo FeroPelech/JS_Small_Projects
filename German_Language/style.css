@@ -38,6 +38,7 @@ body {
 
 .container {
   margin: 5px;
+  padding-left: 20px;
   background-color: bisque;
   width: 600px;
   display: flex;
