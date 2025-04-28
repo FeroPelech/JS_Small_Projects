@@ -110,4 +110,5 @@ input:hover {
 
 .checkAllBtn:hover {
   background-color: rgb(7, 199, 206);
+  transform: scale(1.1);
 }
