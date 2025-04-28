@@ -40,7 +40,7 @@ body {
   margin: 5px;
   padding-left: 20px;
   background-color: bisque;
-  width: 600px;
+  width: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,10 +59,10 @@ body {
 }
 
 .checkBtn {
-  width: 100px; /* Uprav šírku tlačidla */
+  width: 100px;
   height: 30px;
   padding: 5px;
-  margin-left: 10px; /* Odstup medzi inputom a tlačidlom */
+  margin-left: 10px;
   border-radius: 5px;
   border: 1px grey solid;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -75,8 +75,8 @@ body {
 }
 
 .word-row > div:first-child {
-  width: 150px; /* alebo podľa potreby */
-  text-align: right; /* ak chceš, aby boli slová zarovnané k inputu */
+  width: 150px;
+  text-align: right;
   margin-right: 10px;
 }
 
