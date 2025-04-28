@@ -113,4 +113,5 @@ input:hover {
   transform: scale(1.1);
   font-weight: bold;
   box-shadow: 0 0 10px 3px rgb(59, 201, 206);
+  border-color: black;
 }
