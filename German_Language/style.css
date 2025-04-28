@@ -92,7 +92,7 @@ input:hover {
 }
 
 .correct-answer {
-  margin-left: 20px; /* alebo 10px pre väčšiu medzeru */
+  margin-left: 20px;
   font-style: italic;
   color: #888;
 }
@@ -105,6 +105,7 @@ input:hover {
   border: 2px solid grey;
   font-size: 15px;
   cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .checkAllBtn:hover {
