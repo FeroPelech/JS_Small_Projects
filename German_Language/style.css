@@ -132,4 +132,11 @@ input:hover {
     height: auto;
     padding: 15px;
   }
+
+  .menuBtn,
+  .checkBtn {
+    width: 90%;
+    max-width: 300px;
+    font-size: 16px;
+  }
 }
