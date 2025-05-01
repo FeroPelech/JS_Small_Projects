@@ -135,7 +135,7 @@ input:hover {
 
   .menuBtn,
   .checkBtn {
-    width: 90%;
+    width: 100%;
     max-width: 300px;
     font-size: 16px;
   }
@@ -152,5 +152,8 @@ input:hover {
     width: 100%;
     text-align: left;
     margin: 5px 0;
+  }
+  input {
+    width: 100%;
   }
 }
