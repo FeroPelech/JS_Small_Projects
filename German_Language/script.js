@@ -13,6 +13,7 @@ const specialGermanSign = document.querySelector(".specialSign");
 const checkAllBtn = document.createElement("button");
 checkAllBtn.className = "checkAllBtn";
 checkAllBtn.textContent = "Check all answers!";
+const clearAllInputs = document.createElement("button");
 
 document
   .getElementById("customFileButton")
