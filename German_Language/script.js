@@ -158,6 +158,8 @@ function loadWords(wordsShowed, checkWords) {
     });
   };
   clearAllInputs.onclick = () => {
-    console.log("something");
+    inputs.forEach((e, i) => {
+      console.log("something" + i);
+    });
   };
 }
