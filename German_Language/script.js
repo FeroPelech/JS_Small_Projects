@@ -159,7 +159,7 @@ function loadWords(wordsShowed, checkWords) {
   };
   clearAllInputs.onclick = () => {
     inputs.forEach((e, i) => {
-      console.log("something" + i);
+      e.value = "";
     });
   };
 }
