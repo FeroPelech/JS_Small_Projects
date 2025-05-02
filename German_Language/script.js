@@ -14,6 +14,8 @@ const checkAllBtn = document.createElement("button");
 checkAllBtn.className = "checkAllBtn";
 checkAllBtn.textContent = "Check all answers!";
 const clearAllInputs = document.createElement("button");
+clearAllInputs.className = "clearBtn";
+console.log(clearAllInputs);
 
 document
   .getElementById("customFileButton")
