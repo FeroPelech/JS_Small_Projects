@@ -161,6 +161,7 @@ function loadWords(wordsShowed, checkWords) {
     inputs.forEach((e, i) => {
       e.value = "";
       e.style.border = "none";
+      e.style.boxShadow = "none";
     });
   };
 }
