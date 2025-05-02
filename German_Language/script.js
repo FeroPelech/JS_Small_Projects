@@ -160,6 +160,7 @@ function loadWords(wordsShowed, checkWords) {
   clearAllInputs.onclick = () => {
     inputs.forEach((e, i) => {
       e.value = "";
+      e.style.border = "none";
     });
   };
 }
