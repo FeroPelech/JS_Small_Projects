@@ -157,4 +157,7 @@ function loadWords(wordsShowed, checkWords) {
       }
     });
   };
+  clearAllInputs.onclick = () => {
+    console.log("something");
+  };
 }
