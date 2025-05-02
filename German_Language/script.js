@@ -15,6 +15,7 @@ checkAllBtn.className = "checkAllBtn";
 checkAllBtn.textContent = "Check all answers!";
 const clearAllInputs = document.createElement("button");
 clearAllInputs.className = "clearBtn";
+clearAllInputs.textContent = "Clear inputs.";
 console.log(clearAllInputs);
 
 document
