@@ -125,6 +125,17 @@ input:hover {
   height: 210px;
 }
 
+.clearBtn {
+  margin-bottom: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid grey;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
 @media (max-width: 768px) {
   .menu {
     flex-direction: column;
