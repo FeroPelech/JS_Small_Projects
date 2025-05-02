@@ -112,7 +112,8 @@ input:hover {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.checkAllBtn:hover {
+.checkAllBtn:hover,
+.clearBtn:hover {
   background-color: rgb(7, 199, 206);
   transform: scale(1.1);
   font-weight: bold;
