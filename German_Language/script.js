@@ -115,6 +115,7 @@ function loadWords(wordsShowed, checkWords) {
     });
 
     container.appendChild(checkAllBtn);
+    container.appendChild(clearAllInputs);
 
     checkBtn.addEventListener("click", () => {
       const userInput = newInput.value.trim();
