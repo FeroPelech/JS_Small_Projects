@@ -164,6 +164,7 @@ function loadWords(wordsShowed, checkWords) {
       e.style.boxShadow = "none";
 
       const parent = e.parentElement;
+      const existingAnswer = parent.querySelectorAll(".correct-answer");
     });
   };
 }
