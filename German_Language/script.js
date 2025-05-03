@@ -164,9 +164,9 @@ function loadWords(wordsShowed, checkWords) {
       e.style.boxShadow = "none";
 
       const parent = e.parentElement;
-      const existingAnswer = parent.querySelectorAll(".correct-answer");
-      if (existingAnswer) {
-        parent.removeChild(existingAnswer);
+      const existingAnswer = parent.querySelector(".correct-answer");
+      if (existingAnswer && existingAnswer.parentNode === parent) {
+        existingAnswer.remove();
       }
     });
   };
