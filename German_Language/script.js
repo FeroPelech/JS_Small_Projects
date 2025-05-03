@@ -162,6 +162,8 @@ function loadWords(wordsShowed, checkWords) {
       e.value = "";
       e.style.border = "none";
       e.style.boxShadow = "none";
+
+      const parent = e.parentElement;
     });
   };
 }
