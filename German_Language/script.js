@@ -16,7 +16,6 @@ checkAllBtn.textContent = "Check all answers!";
 const clearAllInputs = document.createElement("button");
 clearAllInputs.className = "clearBtn";
 clearAllInputs.textContent = "Clear inputs.";
-console.log(clearAllInputs);
 
 document
   .getElementById("customFileButton")
@@ -153,7 +152,6 @@ function loadWords(wordsShowed, checkWords) {
         correctDiv.style.fontSize = "0.85em";
         correctDiv.textContent = `    ${checkWords[i]}`;
         parent.appendChild(correctDiv);
-        console.log(correctDiv);
       }
     });
   };
