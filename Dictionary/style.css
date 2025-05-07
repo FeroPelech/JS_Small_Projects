@@ -53,3 +53,9 @@ body {
   font-size: 30px;
   color: #1f194c;
 }
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
