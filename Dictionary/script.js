@@ -11,5 +11,4 @@ btn.addEventListener("click", () => {
       console.log(data);
       result.innerHTML = ``;
     });
-  console.log(inpWord);
 });
