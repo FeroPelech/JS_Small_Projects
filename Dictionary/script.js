@@ -4,5 +4,6 @@ const sound = document.getElementById("sound");
 const btn = document.getElementById("search-btn");
 
 btn.addEventListener("click", () => {
-  console.log("something");
+  let inpWord = document.getElementById("inp-word");
+  console.log(inpWord);
 });
