@@ -12,7 +12,7 @@ btn.addEventListener("click", () => {
       result.innerHTML = `
                   <div class="word">
                 <h3>${inpWord}</h3>
-                <button>
+                <button onclick="playSound()">
                     <i class="fa-solid fa-volume-high"></i>
                 </button>
             </div>
@@ -27,3 +27,7 @@ btn.addEventListener("click", () => {
       console.log(sound);
     });
 });
+
+function playSound() {
+  sound.play();
+}
