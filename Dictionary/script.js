@@ -21,8 +21,7 @@ btn.addEventListener("click", () => {
                 <p>${data[0].phonetic}</p>
             </div>
             <p class="word-meaning">${data[0].meanings[0].definitions[0].definition}</p>
-            <p class="word-example">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Praesentium, aliquam?</p>
+            <p class="word-example">${data[0].meanings[0].definitions[0].example}</p>
       `;
     });
 });
