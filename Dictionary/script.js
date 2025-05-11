@@ -18,7 +18,7 @@ btn.addEventListener("click", () => {
             </div>
             <div class="details">
                 <p>${data[0].meanings[0].partOfSpeech}</p>
-                <p>/sample/</p>
+                <p>${data[0].phonetic}</p>
             </div>
             <p class="word-meaning"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             <p class="word-example">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
