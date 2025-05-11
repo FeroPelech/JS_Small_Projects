@@ -25,6 +25,9 @@ btn.addEventListener("click", () => {
       `;
       sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
       console.log(sound);
+    })
+    .catch(() => {
+      result.innerHTML = `<h3 class="Error notice">Couldn't find the word "${inpWord}"</h3>`;
     });
 });
 
