@@ -8,6 +8,11 @@
   cursor: pointer;
 }
 
+#gameContainer {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+}
+
 #cellContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
