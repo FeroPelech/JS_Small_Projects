@@ -1,2 +1,3 @@
 const cells = document.querySelectorAll(".cell");
-console.log(cells);
+const statusText = document.querySelector("#statusText");
+console.log(statusText);
