@@ -1,3 +1,4 @@
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#statusText");
-console.log(statusText);
+const restartBtn = document.querySelector("#restartBtn");
+console.log(restartBtn);
