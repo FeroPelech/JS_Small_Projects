@@ -18,3 +18,5 @@ let running = false;
 function initializeGame() {}
 
 function cellClicked() {}
+
+function updateCell() {}
