@@ -16,3 +16,5 @@ let currentPlayer = "X";
 let running = false;
 
 function initializeGame() {}
+
+function cellClicked() {}
