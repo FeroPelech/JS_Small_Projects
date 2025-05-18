@@ -19,4 +19,4 @@ function initializeGame() {}
 
 function cellClicked() {}
 
-function updateCell() {}
+function updateCell(cell, index) {}
