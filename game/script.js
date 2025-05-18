@@ -19,6 +19,7 @@ initializeGame();
 
 function initializeGame() {
   cells.forEach((cell) => cell.addEventListener("click", cellClicked));
+  restartBtn.addEventListener("click", restartGame);
 }
 
 function cellClicked() {}
