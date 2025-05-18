@@ -25,6 +25,10 @@ function initializeGame() {
 
 function cellClicked() {
   const cellIndex = this.getAttribute("cellIndex");
+
+  if (options[cellIndex] != "" || !running) {
+    return;
+  }
 }
 
 function updateCell(cell, index) {}
