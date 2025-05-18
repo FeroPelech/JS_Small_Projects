@@ -15,7 +15,11 @@ let options = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X";
 let running = false;
 
-function initializeGame() {}
+initializeGame();
+
+function initializeGame() {
+  cells.forEach((cell) => cell.addEventListener("click", cellClicked));
+}
 
 function cellClicked() {}
 
