@@ -22,3 +22,5 @@ function cellClicked() {}
 function updateCell(cell, index) {}
 
 function changePlayer() {}
+
+function checkWinner() {}
