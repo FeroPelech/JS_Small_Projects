@@ -29,6 +29,8 @@ function cellClicked() {
   if (options[cellIndex] != "" || !running) {
     return;
   }
+  updateCell(this, cellIndex);
+  checkWinner();
 }
 
 function updateCell(cell, index) {}
