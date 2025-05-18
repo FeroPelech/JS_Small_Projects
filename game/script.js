@@ -23,7 +23,9 @@ function initializeGame() {
   statusText.textContent = `${currentPlayer}'s turn`;
 }
 
-function cellClicked() {}
+function cellClicked() {
+  const cellIndex = this.getAttribute("cellIndex");
+}
 
 function updateCell(cell, index) {}
 
