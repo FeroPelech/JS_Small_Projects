@@ -31,7 +31,7 @@ function cellClicked() {
     return;
   }
   updateCell(this, cellIndex);
-
+  changePlayer();
   checkWinner();
 }
 
