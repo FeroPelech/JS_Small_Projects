@@ -34,7 +34,10 @@ function cellClicked() {
   checkWinner();
 }
 
-function updateCell(cell, index) {}
+function updateCell(cell, index) {
+  options[index] = currentPlayer;
+  cell.textContent = currentPlayer;
+}
 
 function changePlayer() {}
 
