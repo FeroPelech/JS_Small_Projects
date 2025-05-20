@@ -50,6 +50,7 @@ function checkWinner() {
   for (let i = 0; i < winConditions.length; i++) {
     const condition = winConditions[i];
     const cellA = options[condition[0]];
+    const cellB = options[condition[1]];
   }
 }
 
