@@ -49,6 +49,7 @@ function checkWinner() {
   let roundWon = false;
   for (let i = 0; i < winConditions.length; i++) {
     const condition = winConditions[i];
+    const cellA = options[condition[0]];
   }
 }
 
