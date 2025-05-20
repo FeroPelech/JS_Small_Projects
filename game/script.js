@@ -31,7 +31,7 @@ function cellClicked() {
     return;
   }
   updateCell(this, cellIndex);
-  changePlayer();
+  // changePlayer();
   checkWinner();
 }
 
@@ -45,6 +45,8 @@ function changePlayer() {
   statusText.textContent = `${currentPlayer}'s turn`;
 }
 
-function checkWinner() {}
+function checkWinner() {
+  let roundWon = false;
+}
 
 function restartGame() {}
