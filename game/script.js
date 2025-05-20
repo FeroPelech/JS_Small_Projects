@@ -48,7 +48,7 @@ function changePlayer() {
 function checkWinner() {
   let roundWon = false;
   for (let i = 0; i < winConditions.length; i++) {
-    console.log(winConditions[i]);
+    const condition = winConditions[i];
   }
 }
 
