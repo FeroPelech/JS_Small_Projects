@@ -61,6 +61,9 @@ function checkWinner() {
       break;
     }
   }
+  if (roundWon) {
+    statusText.textContent = `${currentPlayer} wins!`;
+  }
 }
 
 function restartGame() {}
