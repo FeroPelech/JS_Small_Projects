@@ -58,6 +58,7 @@ function checkWinner() {
     }
     if (cellA == cellB && cellB == cellC) {
       roundWon = true;
+      break;
     }
   }
 }
