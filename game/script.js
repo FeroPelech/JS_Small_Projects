@@ -67,6 +67,8 @@ function checkWinner() {
   } else if (!options.includes("")) {
     statusText.textContent = `Draw!`;
     running = false;
+  } else {
+    changePlayer();
   }
 }
 
