@@ -72,4 +72,6 @@ function checkWinner() {
   }
 }
 
-function restartGame() {}
+function restartGame() {
+  currentPlayer = "X";
+}
