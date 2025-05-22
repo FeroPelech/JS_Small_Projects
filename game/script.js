@@ -77,4 +77,5 @@ function restartGame() {
   let options = ["", "", "", "", "", "", "", "", ""];
   statusText.textContent = `${currentPlayer}'s turn`;
   cells.forEach((cell) => (cell.textContent = ""));
+  running = true;
 }
