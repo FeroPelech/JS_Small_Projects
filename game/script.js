@@ -74,4 +74,5 @@ function checkWinner() {
 
 function restartGame() {
   currentPlayer = "X";
+  let options = ["", "", "", "", "", "", "", "", ""];
 }
