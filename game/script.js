@@ -31,7 +31,6 @@ function cellClicked() {
     return;
   }
   updateCell(this, cellIndex);
-  // changePlayer();
   checkWinner();
 }
 
@@ -74,7 +73,7 @@ function checkWinner() {
 
 function restartGame() {
   currentPlayer = "X";
-  let options = ["", "", "", "", "", "", "", "", ""];
+  options = ["", "", "", "", "", "", "", "", ""];
   statusText.textContent = `${currentPlayer}'s turn`;
   cells.forEach((cell) => (cell.textContent = ""));
   running = true;
