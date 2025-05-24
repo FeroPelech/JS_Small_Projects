@@ -19,4 +19,5 @@
   border: 5px solid black;
   border-radius: 10px;
   cursor: pointer;
+  background-color: rgb(204, 204, 204);
 }
