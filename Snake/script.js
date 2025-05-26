@@ -4,4 +4,4 @@ const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector(".resetBtn");
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
-console.log(gameHeight);
+const boardBackground = "white";
