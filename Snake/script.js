@@ -7,3 +7,4 @@ const gameHeight = gameBoard.height;
 const boardBackground = "white";
 const snakeColor = "lightblue";
 const snakeBorder = "black";
+const foodColor = "red";
