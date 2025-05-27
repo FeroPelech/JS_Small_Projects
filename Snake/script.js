@@ -15,3 +15,4 @@ let yVelocity = 0;
 let foodX;
 let foodY;
 let score = 0;
+let snake = [{ x: 0, y: 0 }];
