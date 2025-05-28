@@ -30,3 +30,4 @@ function gameStart() {}
 function nextTick() {}
 function clearBoard() {}
 function drawFood() {}
+function moveSnake() {}
