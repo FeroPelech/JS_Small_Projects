@@ -35,3 +35,4 @@ function drawSnake() {}
 function changeDirection() {}
 function checkGameOver() {}
 function displayGameOver() {}
+function resetGame() {}
