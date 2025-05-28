@@ -33,3 +33,4 @@ function drawFood() {}
 function moveSnake() {}
 function drawSnake() {}
 function changeDirection() {}
+function checkGameOver() {}
