@@ -31,3 +31,4 @@ function nextTick() {}
 function clearBoard() {}
 function drawFood() {}
 function moveSnake() {}
+function drawSnake() {}
