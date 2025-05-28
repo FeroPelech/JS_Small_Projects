@@ -29,3 +29,4 @@ resetBtn.addEventListener("click", resetGame);
 function gameStart() {}
 function nextTick() {}
 function clearBoard() {}
+function drawFood() {}
