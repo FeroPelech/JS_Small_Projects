@@ -40,7 +40,7 @@ function createFood() {
     return randomNum;
   }
   foodX = randomFood(0, gameWidth - unitSize);
-  console.log(foodX);
+  foodY = randomFood(0, gameWidth - unitSize);
 }
 function drawFood() {}
 function moveSnake() {}
