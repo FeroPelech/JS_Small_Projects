@@ -34,6 +34,7 @@ function createFood() {
     const randomNum = Math.round(Math.random() * (max - min) + min);
     return randomNum;
   }
+  foodX = randomFood(0, gameWidth - unitSize);
 }
 function drawFood() {}
 function moveSnake() {}
