@@ -32,6 +32,7 @@ function clearBoard() {}
 function createFood() {
   function randomFood(min, max) {
     const randomNum = Math.round(Math.random() * (max - min) + min);
+    return randomNum;
   }
 }
 function drawFood() {}
