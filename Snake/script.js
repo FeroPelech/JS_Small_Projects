@@ -29,7 +29,9 @@ resetBtn.addEventListener("click", resetGame);
 function gameStart() {}
 function nextTick() {}
 function clearBoard() {}
-function createFood() {}
+function createFood() {
+  function randomFood(min, max) {}
+}
 function drawFood() {}
 function moveSnake() {}
 function drawSnake() {}
