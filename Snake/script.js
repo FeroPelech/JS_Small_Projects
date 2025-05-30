@@ -30,7 +30,9 @@ function gameStart() {}
 function nextTick() {}
 function clearBoard() {}
 function createFood() {
-  function randomFood(min, max) {}
+  function randomFood(min, max) {
+    const randomNum = Math.round(Math.random() * (max - min) + min);
+  }
 }
 function drawFood() {}
 function moveSnake() {}
