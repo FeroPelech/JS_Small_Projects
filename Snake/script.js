@@ -27,6 +27,7 @@ window.addEventListener("keydown", changeDirection);
 resetBtn.addEventListener("click", resetGame);
 
 gameStart();
+createFood();
 
 function gameStart() {}
 function nextTick() {}
@@ -37,6 +38,7 @@ function createFood() {
     return randomNum;
   }
   foodX = randomFood(0, gameWidth - unitSize);
+  console.log(foodX);
 }
 function drawFood() {}
 function moveSnake() {}
