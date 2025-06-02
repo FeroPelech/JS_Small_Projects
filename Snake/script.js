@@ -44,7 +44,7 @@ function createFood() {
 }
 function drawFood() {
   ctx.fillStyle = foodColor;
-  console.log(ctx.fillStyle);
+  ctx.fillRect(foodX, foodY, unitSize, unitSize);
 }
 function moveSnake() {}
 function drawSnake() {}
