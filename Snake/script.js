@@ -44,7 +44,7 @@ function nextTick() {
       drawSnake();
       checkGameOver();
       nextTick();
-    });
+    }, 75);
   }
 }
 function clearBoard() {}
