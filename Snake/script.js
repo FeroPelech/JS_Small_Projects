@@ -33,8 +33,12 @@ function gameStart() {
   scoreText.textContent = score;
   createFood();
   drawFood();
+  nextTick();
 }
-function nextTick() {}
+function nextTick() {
+  if (running) {
+  }
+}
 function clearBoard() {}
 function createFood() {
   function randomFood(min, max) {
