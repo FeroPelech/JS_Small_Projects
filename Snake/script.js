@@ -45,6 +45,8 @@ function nextTick() {
       checkGameOver();
       nextTick();
     }, 75);
+  } else {
+    displayGameOver();
   }
 }
 function clearBoard() {}
