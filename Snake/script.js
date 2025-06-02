@@ -32,6 +32,7 @@ drawFood();
 
 function gameStart() {
   running = true;
+  scoreText.textContent = score;
 }
 function nextTick() {}
 function clearBoard() {}
