@@ -28,8 +28,11 @@ resetBtn.addEventListener("click", resetGame);
 
 gameStart();
 createFood();
+drawFood();
 
-function gameStart() {}
+function gameStart() {
+  running = true;
+}
 function nextTick() {}
 function clearBoard() {}
 function createFood() {
