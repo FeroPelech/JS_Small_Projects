@@ -38,9 +38,8 @@ function nextTick() {}
 function clearBoard() {}
 function createFood() {
   function randomFood(min, max) {
-    const randomNum = Math.round(
-      (Math.random() * (max - min) + min) * unitSize
-    );
+    const randomNum =
+      Math.round((Math.random() * (max - min) + min) / unitSize) * unitSize;
     return randomNum;
   }
   foodX = randomFood(0, gameWidth - unitSize);
