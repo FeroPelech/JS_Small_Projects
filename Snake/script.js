@@ -69,6 +69,7 @@ function drawFood() {
 function moveSnake() {}
 function drawSnake() {
   ctx.fillStyle = snakeColor;
+  ctx.strokeStyle = snakeBorder;
 }
 function changeDirection() {}
 function checkGameOver() {}
