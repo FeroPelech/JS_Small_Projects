@@ -66,7 +66,9 @@ function drawFood() {
   ctx.fillStyle = foodColor;
   ctx.fillRect(foodX, foodY, unitSize, unitSize);
 }
-function moveSnake() {}
+function moveSnake() {
+  const head = { x: snake[0].x + xVelocity, y: snake[0].y + yVelocity };
+}
 function drawSnake() {
   ctx.fillStyle = snakeColor;
   ctx.strokeStyle = snakeBorder;
