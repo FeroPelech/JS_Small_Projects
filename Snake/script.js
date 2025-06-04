@@ -69,6 +69,10 @@ function drawFood() {
 function moveSnake() {
   const head = { x: snake[0].x + xVelocity, y: snake[0].y + yVelocity };
   snake.unshift(head);
+  if (false) {
+  } else {
+    snake.pop();
+  }
 }
 function drawSnake() {
   ctx.fillStyle = snakeColor;
