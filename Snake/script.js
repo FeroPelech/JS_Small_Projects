@@ -71,6 +71,7 @@ function moveSnake() {
   snake.unshift(head);
   if (snake[0].x == foodX && snake[0].y == foodY) {
     score + 1;
+    scoreText.textContent = score;
   } else {
     snake.pop();
   }
