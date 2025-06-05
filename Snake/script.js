@@ -102,6 +102,10 @@ function changeDirection(e) {
       xVelocity = -unitSize;
       yVelocity = 0;
       break;
+    case keyPressed == Up && !goingDown:
+      xVelocity = 0;
+      yVelocity = -unitSize;
+      break;
   }
 }
 function checkGameOver() {}
