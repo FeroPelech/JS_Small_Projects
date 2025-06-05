@@ -95,6 +95,7 @@ function changeDirection(e) {
   const goingUp = yVelocity == -unitSize;
   const goingDown = yVelocity == unitSize;
   const goingRight = xVelocity == unitSize;
+  const goingLeft = xVelocity == -unitSize;
   console.log(goingUp);
 }
 function checkGameOver() {}
