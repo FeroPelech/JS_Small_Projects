@@ -98,6 +98,10 @@ function changeDirection(e) {
   const goingLeft = xVelocity == -unitSize;
 
   switch (true) {
+    case keyPressed == Left && !goingRight:
+      xVelocity = -unitSize;
+      yVelocity = 0;
+      break;
   }
 }
 function checkGameOver() {}
