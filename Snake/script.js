@@ -90,6 +90,7 @@ function changeDirection(e) {
   const Left = 37;
   const Up = 38;
   const Right = 39;
+  const Down = 40;
   console.log(keyPressed);
 }
 function checkGameOver() {}
