@@ -85,7 +85,10 @@ function drawSnake() {
     ctx.strokeRect(e.x, e.y, unitSize, unitSize);
   });
 }
-function changeDirection() {}
+function changeDirection(e) {
+  const keyPressed = e.keyCode;
+  console.log(keyPressed);
+}
 function checkGameOver() {}
 function displayGameOver() {}
 function resetGame() {}
