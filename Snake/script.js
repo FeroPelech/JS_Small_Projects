@@ -89,6 +89,7 @@ function changeDirection(e) {
   const keyPressed = e.keyCode;
   const Left = 37;
   const Up = 38;
+  const Right = 39;
   console.log(keyPressed);
 }
 function checkGameOver() {}
