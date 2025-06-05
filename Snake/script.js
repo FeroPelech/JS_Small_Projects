@@ -87,7 +87,8 @@ function drawSnake() {
 }
 function changeDirection(e) {
   const keyPressed = e.keyCode;
-  const left = 37;
+  const Left = 37;
+  const Up = 38;
   console.log(keyPressed);
 }
 function checkGameOver() {}
