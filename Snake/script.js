@@ -124,6 +124,9 @@ function checkGameOver() {
     case snake[0].x >= gameWidth:
       running = false;
       break;
+    case snake[0].y < 0:
+      running = false;
+      break;
   }
 }
 function displayGameOver() {}
