@@ -116,6 +116,12 @@ function changeDirection(e) {
       break;
   }
 }
-function checkGameOver() {}
+function checkGameOver() {
+  switch (true) {
+    case snake[0].x < 0:
+      running = false;
+      break;
+  }
+}
 function displayGameOver() {}
 function resetGame() {}
