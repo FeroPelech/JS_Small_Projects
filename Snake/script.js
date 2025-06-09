@@ -142,5 +142,6 @@ function displayGameOver() {
   ctx.fillStyle = "black";
   ctx.textAlign = "center";
   ctx.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
+  running = false;
 }
 function resetGame() {}
