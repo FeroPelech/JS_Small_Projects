@@ -131,7 +131,10 @@ function checkGameOver() {
       running = false;
       break;
   }
-  for (let i = 1; i < snake.length; i++) {}
+  for (let i = 1; i < snake.length; i++) {
+    if (snake[i]) {
+    }
+  }
 }
 function displayGameOver() {}
 function resetGame() {}
