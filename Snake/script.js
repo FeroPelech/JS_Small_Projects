@@ -137,5 +137,7 @@ function checkGameOver() {
     }
   }
 }
-function displayGameOver() {}
+function displayGameOver() {
+  ctx.font = "50px MV Boli";
+}
 function resetGame() {}
