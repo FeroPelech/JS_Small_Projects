@@ -140,5 +140,6 @@ function checkGameOver() {
 function displayGameOver() {
   ctx.font = "50px MV Boli";
   ctx.fillStyle = "black";
+  ctx.textAlign = "center";
 }
 function resetGame() {}
