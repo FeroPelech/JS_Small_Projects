@@ -146,4 +146,5 @@ function displayGameOver() {
 }
 function resetGame() {
   score = 0;
+  xVelocity = unitSize;
 }
