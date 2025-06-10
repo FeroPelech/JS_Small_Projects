@@ -155,4 +155,5 @@ function resetGame() {
     { x: unitSize, y: 0 },
     { x: 0, y: 0 },
   ];
+  gameStart();
 }
