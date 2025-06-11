@@ -14,3 +14,7 @@ player.items = 3;
 playArea.btns.forEach((e) => {
   console.log(e);
 });
+
+function handleBtn() {
+  console.log(servus);
+}
