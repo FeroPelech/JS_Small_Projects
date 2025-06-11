@@ -9,3 +9,4 @@ playArea.page = Array.from(document.querySelectorAll(".page"));
 console.log(playArea);
 
 player.score = 0;
+player.items = 3;
