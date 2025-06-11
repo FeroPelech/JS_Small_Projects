@@ -20,5 +20,10 @@ function handleBtn(e) {
   console.log(e.target.classList.contains("newGame"));
   if (e.target.classList.contains("newGame")) {
     console.log("Holla");
+    startGame();
   }
+}
+
+function startGame() {
+  console.log("start");
 }
