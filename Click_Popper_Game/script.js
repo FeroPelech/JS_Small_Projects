@@ -10,3 +10,7 @@ console.log(playArea);
 
 player.score = 0;
 player.items = 3;
+
+playArea.btns.forEach((e) => {
+  console.log(e);
+});
