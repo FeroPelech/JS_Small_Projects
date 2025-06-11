@@ -16,6 +16,9 @@ playArea.btns.forEach((e) => {
   e.addEventListener("click", handleBtn);
 });
 
-function handleBtn() {
-  console.log("servus");
+function handleBtn(e) {
+  console.log(e.target.classList.contains("newGame"));
+  if (e.target.classList.contains("newGame")) {
+    console.log("Holla");
+  }
 }
