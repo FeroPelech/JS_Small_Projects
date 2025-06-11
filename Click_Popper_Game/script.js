@@ -13,8 +13,9 @@ player.items = 3;
 
 playArea.btns.forEach((e) => {
   console.log(e);
+  e.addEventListener("click", handleBtn);
 });
 
 function handleBtn() {
-  console.log(servus);
+  console.log("servus");
 }
