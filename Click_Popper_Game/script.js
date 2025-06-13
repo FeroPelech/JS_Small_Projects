@@ -75,6 +75,13 @@ playArea.btns.forEach((e) => {
 });
 
 function getData() {
+  fetch("https://discoveryvip.com/shared/json.php?f=game")
+    .then(function (rep) {
+      return rep.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
   console.log("DOOOOm");
 }
 
