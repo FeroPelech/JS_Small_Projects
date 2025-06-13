@@ -7,6 +7,7 @@ playArea.game = document.querySelector(".game");
 playArea.btns = Array.from(document.querySelectorAll(".btn"));
 playArea.page = Array.from(document.querySelectorAll(".page"));
 console.log(playArea);
+document.addEventListener("DOMContentLoaded", getData);
 
 player.score = 0;
 player.items = 3;
