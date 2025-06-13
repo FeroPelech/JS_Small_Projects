@@ -1,5 +1,6 @@
 const playArea = {};
 const player = {};
+let gameObj;
 const data = {
   data: [
     {
