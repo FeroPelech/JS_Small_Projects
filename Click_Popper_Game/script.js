@@ -81,6 +81,8 @@ function getData() {
     })
     .then(function (data) {
       console.log(data);
+      gameObj = data.data;
+      console.log(gameObj);
     });
   console.log("DOOOOm");
 }
