@@ -75,6 +75,7 @@ playArea.btns.forEach((e) => {
 });
 
 function getData() {
+  playArea.main.classList.add("visible");
   fetch("https://discoveryvip.com/shared/json.php?f=game")
     .then(function (rep) {
       return rep.json();
