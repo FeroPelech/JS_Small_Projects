@@ -27,6 +27,8 @@ function getData() {
     });
 }
 
+function buildBoard() {}
+
 function handleBtn(e) {
   if (e.target.classList.contains("newGame")) {
     startGame();
