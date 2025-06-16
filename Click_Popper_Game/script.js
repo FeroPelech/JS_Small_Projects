@@ -37,5 +37,6 @@ function startGame() {
   player.score = 0;
   player.items = 3;
   playArea.main.classList.remove("visible");
+  playArea.game.classList.add("visible");
   console.log("start");
 }
