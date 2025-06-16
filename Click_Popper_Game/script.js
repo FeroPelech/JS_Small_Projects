@@ -36,5 +36,6 @@ function handleBtn(e) {
 function startGame() {
   player.score = 0;
   player.items = 3;
+  playArea.main.classList.remove("visible");
   console.log("start");
 }
