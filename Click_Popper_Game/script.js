@@ -34,6 +34,7 @@ function buildBoard() {
   let cols = 4;
   let cnt = 0;
   playArea.game.style.width = cols * 100 + cols * 2;
+  playArea.game.style.margin = "auto";
 }
 
 function handleBtn(e) {
