@@ -24,6 +24,7 @@ function getData() {
     })
     .then(function (data) {
       gameObj = data.data;
+      buildBoard();
     });
 }
 
