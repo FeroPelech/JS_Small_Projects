@@ -28,7 +28,9 @@ function getData() {
     });
 }
 
-function buildBoard() {}
+function buildBoard() {
+  console.log("ola");
+}
 
 function handleBtn(e) {
   if (e.target.classList.contains("newGame")) {
