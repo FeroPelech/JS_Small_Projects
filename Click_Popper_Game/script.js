@@ -30,6 +30,7 @@ function getData() {
 
 function buildBoard() {
   console.log("ola");
+  let rows = 4;
 }
 
 function handleBtn(e) {
