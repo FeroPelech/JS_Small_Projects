@@ -33,6 +33,7 @@ function buildBoard() {
   let rows = 4;
   let cols = 4;
   let cnt = 0;
+  playArea.game.style.width = cols * 100 + cols * 2;
 }
 
 function handleBtn(e) {
