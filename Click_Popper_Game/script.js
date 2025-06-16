@@ -35,6 +35,6 @@ function handleBtn(e) {
 
 function startGame() {
   player.score = 0;
-
+  player.items = 3;
   console.log("start");
 }
