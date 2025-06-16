@@ -32,6 +32,7 @@ function buildBoard() {
   console.log("ola");
   let rows = 4;
   let cols = 4;
+  let cnt = 0;
 }
 
 function handleBtn(e) {
