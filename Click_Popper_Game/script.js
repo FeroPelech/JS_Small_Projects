@@ -39,7 +39,9 @@ function buildBoard() {
     let divMain = document.createElement("div");
     divMain.setAttribute("class", "row");
     divMain.style.width = cols * 100 + cols * 2;
-    for (let x = 0; x < rows; x++) {}
+    for (let x = 0; x < rows; x++) {
+      let div = document.createElement("div");
+    }
   }
 }
 
