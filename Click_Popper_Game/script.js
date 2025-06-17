@@ -44,6 +44,8 @@ function buildBoard() {
       div.setAttribute("class", "pop");
       cnt++;
       div.innerText = cnt;
+      div.cnt = cnt;
+      divMain.appendChild(div);
     }
   }
 }
