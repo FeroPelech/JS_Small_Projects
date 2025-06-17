@@ -43,6 +43,7 @@ function buildBoard() {
       let div = document.createElement("div");
       div.setAttribute("class", "pop");
       cnt++;
+      div.innerText = cnt;
     }
   }
 }
