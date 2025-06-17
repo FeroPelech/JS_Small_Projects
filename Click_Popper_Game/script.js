@@ -47,6 +47,7 @@ function buildBoard() {
       div.cnt = cnt;
       divMain.appendChild(div);
     }
+    playArea.game.appendChild(divMain);
   }
 }
 
