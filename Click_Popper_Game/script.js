@@ -37,6 +37,7 @@ function buildBoard() {
   playArea.game.style.margin = "auto";
   for (let i = 0; i < cols; i++) {
     let divMain = document.createElement("div");
+    divMain.setAttribute("class", "row");
     for (let x = 0; x < rows; x++) {}
   }
 }
