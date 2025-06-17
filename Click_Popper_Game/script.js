@@ -42,6 +42,7 @@ function buildBoard() {
     for (let x = 0; x < rows; x++) {
       let div = document.createElement("div");
       div.setAttribute("class", "pop");
+      cnt++;
     }
   }
 }
