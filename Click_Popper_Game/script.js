@@ -62,5 +62,6 @@ function startGame() {
   player.items = 3;
   playArea.main.classList.remove("visible");
   playArea.game.classList.add("visible");
+  player.gameOver = false;
   console.log("start");
 }
