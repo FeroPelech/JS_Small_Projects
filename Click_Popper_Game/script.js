@@ -74,5 +74,5 @@ function startPop() {
 
 function randomUp() {
   const pops = document.querySelectorAll(".pop");
-  return "Kuk";
+  return pops;
 }
