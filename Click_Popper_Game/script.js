@@ -75,5 +75,5 @@ function startPop() {
 function randomUp() {
   const pops = document.querySelectorAll(".pop");
   const idx = Math.floor(Math.random() * pops.length);
-  return pops;
+  return pops[idx];
 }
