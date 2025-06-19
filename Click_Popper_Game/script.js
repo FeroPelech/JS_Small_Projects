@@ -67,4 +67,7 @@ function startGame() {
   console.log("start");
 }
 
-function startPop() {}
+function startPop() {
+  let newPop = randomUp();
+  console.log(newPop);
+}
