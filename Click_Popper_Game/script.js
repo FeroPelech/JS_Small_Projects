@@ -78,5 +78,6 @@ function randomUp() {
   if (pops[idx].cnt == playArea.last) {
     return randomUp();
   }
+  playArea.last = pops[idx].cnt;
   return pops[idx];
 }
