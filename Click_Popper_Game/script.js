@@ -75,5 +75,8 @@ function startPop() {
 function randomUp() {
   const pops = document.querySelectorAll(".pop");
   const idx = Math.floor(Math.random() * pops.length);
+  if (pops[idx].cnt == playArea.last) {
+    return randomUp();
+  }
   return pops[idx];
 }
