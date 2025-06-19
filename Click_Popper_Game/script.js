@@ -70,6 +70,7 @@ function startGame() {
 function startPop() {
   let newPop = randomUp();
   console.log(newPop);
+  newPop.classList.add("active");
 }
 
 function randomUp() {
