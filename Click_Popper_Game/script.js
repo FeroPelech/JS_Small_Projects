@@ -71,6 +71,7 @@ function startPop() {
   let newPop = randomUp();
   console.log(newPop);
   newPop.classList.add("active");
+  newPop.addEventListener("click", hitPop);
 }
 
 function randomUp() {
