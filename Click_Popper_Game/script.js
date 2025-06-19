@@ -73,6 +73,7 @@ function startPop() {
   newPop.classList.add("active");
   newPop.addEventListener("click", hitPop);
   const time = Math.round(Math.random() * 1500 + 750);
+  newPop.innerHTML = "Hit!";
 }
 
 function hitPop(e) {
