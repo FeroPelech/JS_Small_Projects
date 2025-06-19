@@ -71,3 +71,7 @@ function startPop() {
   let newPop = randomUp();
   console.log(newPop);
 }
+
+function randomUp() {
+  return "Kuk";
+}
