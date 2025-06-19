@@ -66,3 +66,5 @@ function startGame() {
   startPop();
   console.log("start");
 }
+
+function startPop() {}
