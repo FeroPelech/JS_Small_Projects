@@ -63,5 +63,6 @@ function startGame() {
   playArea.main.classList.remove("visible");
   playArea.game.classList.add("visible");
   player.gameOver = false;
+  startPop();
   console.log("start");
 }
