@@ -74,6 +74,10 @@ function startPop() {
   newPop.addEventListener("click", hitPop);
 }
 
+function hitPop(e) {
+  console.log(e.target);
+}
+
 function randomUp() {
   const pops = document.querySelectorAll(".pop");
   const idx = Math.floor(Math.random() * pops.length);
