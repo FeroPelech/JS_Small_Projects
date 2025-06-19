@@ -77,6 +77,7 @@ function startPop() {
   playArea.inPlay = setTimeout(function () {
     newPop.classList.remove("active");
     newPop.removeEventListener("click", hitPop);
+    newPop.innerText = newPop.old;
   }, time);
 }
 
