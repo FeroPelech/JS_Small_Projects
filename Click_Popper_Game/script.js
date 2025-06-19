@@ -74,7 +74,9 @@ function startPop() {
   newPop.addEventListener("click", hitPop);
   const time = Math.round(Math.random() * 1500 + 750);
   newPop.innerHTML = "Hit!";
-  playArea.inPlay = setTimeout(function () {}, time);
+  playArea.inPlay = setTimeout(function () {
+    newPop.classList.remove("active");
+  }, time);
 }
 
 function hitPop(e) {
