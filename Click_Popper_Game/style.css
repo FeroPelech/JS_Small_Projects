@@ -36,6 +36,9 @@
 }
 
 .active {
-  border: 1px solid red;
-  background-color: aquamarine;
+  border: 1px solid blue;
+  background-color: aliceblue;
+  color: black;
+  box-shadow: 5px 5px #555;
+  cursor: pointer;
 }
