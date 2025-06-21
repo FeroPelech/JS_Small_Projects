@@ -90,7 +90,8 @@ function startPop() {
 function hitPop(e) {
   console.log(e.target.cnt);
   console.log(e.target.v);
-  player.score = player.score + e.target.v;
+  let newPop = e.target;
+  player.score = player.score + newPop.v;
   newPop.classList.remove("active");
   newPop.removeEventListener("click", hitPop);
   newPop.innerText = newPop.old;
