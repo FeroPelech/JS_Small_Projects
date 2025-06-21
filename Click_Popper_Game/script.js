@@ -88,7 +88,12 @@ function startPop() {
 }
 
 function hitPop(e) {
-  console.log(e.target);
+  console.log(e.target.cnt);
+  console.log(e.target.v);
+  player.score = player.score + e.target.v;
+  newPop.classList.remove("active");
+  newPop.removeEventListener("click", hitPop);
+  newPop.innerText = newPop.old;
 }
 
 function randomUp() {
