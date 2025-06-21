@@ -28,6 +28,8 @@ function getData() {
     });
 }
 
+function updateScore() {}
+
 function buildBoard() {
   playArea.scorer = document.createElement("span");
   playArea.scorer.innerHTML = "Press Button to Start";
