@@ -95,6 +95,7 @@ function hitPop(e) {
   newPop.classList.remove("active");
   newPop.removeEventListener("click", hitPop);
   newPop.innerText = newPop.old;
+  clearTimeout(playArea.inPlay);
 }
 
 function randomUp() {
