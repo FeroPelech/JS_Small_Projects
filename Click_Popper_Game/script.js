@@ -75,6 +75,7 @@ function startPop() {
   const time = Math.round(Math.random() * 1500 + 750);
   const val = Math.floor(Math.random() * gameObj.length);
   newPop.old = newPop.innerText;
+  newPop.v = gameObj[val].value;
   newPop.innerHTML = gameObj[val].icon + "<br>" + gameObj[val].value;
   playArea.inPlay = setTimeout(function () {
     newPop.classList.remove("active");
