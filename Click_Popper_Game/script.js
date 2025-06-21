@@ -96,6 +96,9 @@ function hitPop(e) {
   newPop.removeEventListener("click", hitPop);
   newPop.innerText = newPop.old;
   clearTimeout(playArea.inPlay);
+  if (!player.gameOver) {
+    startPop();
+  }
 }
 
 function randomUp() {
