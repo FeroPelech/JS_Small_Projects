@@ -29,6 +29,7 @@ function getData() {
 }
 
 function buildBoard() {
+  playArea.score = document.createElement("span");
   let rows = 4;
   let cols = 4;
   let cnt = 0;
