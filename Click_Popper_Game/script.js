@@ -31,6 +31,7 @@ function getData() {
 function buildBoard() {
   playArea.score = document.createElement("span");
   playArea.score.innerHTML = "Press Button to Start";
+  playArea.stats.appendChild(playArea.scorer);
   let rows = 4;
   let cols = 4;
   let cnt = 0;
