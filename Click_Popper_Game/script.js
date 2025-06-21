@@ -28,7 +28,10 @@ function getData() {
     });
 }
 
-function updateScore() {}
+function updateScore() {
+  playArea.scorer.innerHTML =
+    "Score: " + player.score + " Lives: " + player.items;
+}
 
 function buildBoard() {
   playArea.scorer = document.createElement("span");
