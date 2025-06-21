@@ -71,6 +71,7 @@ function startGame() {
   playArea.game.classList.add("visible");
   player.gameOver = false;
   startPop();
+  updateScore();
   console.log("start");
 }
 
