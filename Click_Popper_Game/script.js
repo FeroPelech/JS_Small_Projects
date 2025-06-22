@@ -90,6 +90,7 @@ function startPop() {
     newPop.removeEventListener("click", hitPop);
     newPop.innerText = newPop.old;
     if (newPop.v > 0) {
+      player.items--;
     }
     if (!player.gameOver) {
       startPop();
