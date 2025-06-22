@@ -93,6 +93,8 @@ function startPop() {
       player.items--;
       updateScore();
     }
+    if (player.items <= 0) {
+    }
     if (!player.gameOver) {
       startPop();
     }
