@@ -104,6 +104,7 @@ function startPop() {
 
 function gameOver() {
   player.gameOver = true;
+  playArea.main.classList.add("visible");
 }
 
 function hitPop(e) {
