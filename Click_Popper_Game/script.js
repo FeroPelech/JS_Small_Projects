@@ -91,6 +91,7 @@ function startPop() {
     newPop.innerText = newPop.old;
     if (newPop.v > 0) {
       player.items--;
+      updateScore();
     }
     if (!player.gameOver) {
       startPop();
