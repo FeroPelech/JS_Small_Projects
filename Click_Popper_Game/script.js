@@ -102,7 +102,9 @@ function startPop() {
   }, time);
 }
 
-function gameOver() {}
+function gameOver() {
+  player.gameOver = true;
+}
 
 function hitPop(e) {
   console.log(e.target.cnt);
