@@ -106,6 +106,7 @@ function gameOver() {
   player.gameOver = true;
   playArea.main.classList.add("visible");
   playArea.game.classList.remove("visible");
+  document.querySelector(".newGame").innerText = "Try Again";
 }
 
 function hitPop(e) {
