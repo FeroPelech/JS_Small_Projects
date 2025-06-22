@@ -102,6 +102,8 @@ function startPop() {
   }, time);
 }
 
+function gameOver() {}
+
 function hitPop(e) {
   console.log(e.target.cnt);
   console.log(e.target.v);
