@@ -9,6 +9,8 @@
 
 .page {
   display: none;
+  margin: auto;
+  margin-top: 40px;
 }
 
 .visible {
