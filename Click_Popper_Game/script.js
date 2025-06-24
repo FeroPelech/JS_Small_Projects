@@ -77,7 +77,6 @@ function startGame() {
 
 function startPop() {
   let newPop = randomUp();
-  console.log(newPop);
   newPop.classList.add("active");
   newPop.addEventListener("click", hitPop);
   const time = Math.round(Math.random() * 1500 + 750);
