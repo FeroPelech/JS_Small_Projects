@@ -72,7 +72,6 @@ function startGame() {
   player.gameOver = false;
   startPop();
   updateScore();
-  console.log("start");
 }
 
 function startPop() {
@@ -109,8 +108,6 @@ function gameOver() {
 }
 
 function hitPop(e) {
-  console.log(e.target.cnt);
-  console.log(e.target.v);
   let newPop = e.target;
   player.score = player.score + newPop.v;
   updateScore();
