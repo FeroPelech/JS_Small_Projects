@@ -17,3 +17,9 @@ body {
   justify-content: center;
   color: white;
 }
+
+.sub-container {
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
