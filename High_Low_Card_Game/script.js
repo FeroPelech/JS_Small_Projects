@@ -5,4 +5,5 @@ const gamePlay = document.querySelector(".gameplay");
 
 let curCardValue = 0;
 let scoreValue = 0;
+let deck = [];
 console.log(curCardValue);
