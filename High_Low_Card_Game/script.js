@@ -14,7 +14,9 @@ for (let i = 0; i < btn.length; i++) {
 }
 
 function toggleButtons() {
-  console.log("Inside toggle button function");
+  btn[0].classList.toggle("hideButton");
+  btn[1].classList.toggle("hideButton");
+  btn[2].classList.toggle("hideButton");
 }
 
 function playGame(e) {
