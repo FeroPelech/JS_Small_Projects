@@ -27,8 +27,11 @@ function playGame(e) {
     console.log("You clicked start button");
     message.innerHTML = "Higher or Lower";
     gamePlay.innerHTML = "";
+    makeCard();
     toggleButtons();
   }
 }
 
-function makeCard() {}
+function makeCard() {
+  console.log("Make Card function");
+}
