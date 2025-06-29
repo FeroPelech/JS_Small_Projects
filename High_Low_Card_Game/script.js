@@ -13,6 +13,6 @@ for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", playGame);
 }
 
-function playGame() {
-  console.log("Ola");
+function playGame(e) {
+  console.log(e);
 }
