@@ -14,5 +14,7 @@ for (let i = 0; i < btn.length; i++) {
 }
 
 function playGame(e) {
-  console.log(e);
+  console.log(e.target);
+  let temp = e.target.innerText;
+  console.log(temp);
 }
