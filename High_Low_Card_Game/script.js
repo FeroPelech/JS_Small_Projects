@@ -13,6 +13,10 @@ for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", playGame);
 }
 
+function toggleButtons() {
+  console.log("Inside toggle button function");
+}
+
 function playGame(e) {
   console.log(e.target);
   let temp = e.target.innerText;
