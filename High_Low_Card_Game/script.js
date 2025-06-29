@@ -23,5 +23,6 @@ function playGame(e) {
   console.log(temp);
   if (temp == "Start") {
     console.log("You clicked start button");
+    toggleButtons();
   }
 }
