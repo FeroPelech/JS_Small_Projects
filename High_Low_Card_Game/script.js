@@ -26,7 +26,9 @@ function playGame(e) {
   if (temp == "Start") {
     console.log("You clicked start button");
     message.innerHTML = "Higher or Lower";
-
+    gamePlay.innerHTML = "";
     toggleButtons();
   }
 }
+
+function makeCard() {}
