@@ -36,8 +36,12 @@ function playGame(e) {
 function drawCard() {
   if (deck.length > 0) {
     let card = "";
+    return card;
+  } else {
   }
 }
+
+function makeDeck() {}
 
 function makeCard() {
   console.log("Make Card function");
