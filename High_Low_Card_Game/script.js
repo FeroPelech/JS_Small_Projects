@@ -22,6 +22,7 @@ function toggleButtons() {
 function playGame(e) {
   console.log(e.target);
   let temp = e.target.innerText;
+  let myCard = drawCard();
   console.log(temp);
   if (temp == "Start") {
     console.log("You clicked start button");
