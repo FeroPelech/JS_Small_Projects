@@ -38,6 +38,8 @@ function drawCard() {
     let card = "";
     return card;
   } else {
+    makeDeck();
+    return drawCard();
   }
 }
 
