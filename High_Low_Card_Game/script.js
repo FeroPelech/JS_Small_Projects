@@ -43,7 +43,9 @@ function drawCard() {
   }
 }
 
-function makeDeck() {}
+function makeDeck() {
+  console.log("MakeDeck function");
+}
 
 function makeCard() {
   console.log("Make Card function");
