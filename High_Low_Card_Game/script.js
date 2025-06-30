@@ -32,6 +32,8 @@ function playGame(e) {
   }
 }
 
+function drawCard() {}
+
 function makeCard() {
   console.log("Make Card function");
 }
