@@ -33,7 +33,11 @@ function playGame(e) {
   }
 }
 
-function drawCard() {}
+function drawCard() {
+  if (deck.length > 0) {
+    let card = "";
+  }
+}
 
 function makeCard() {
   console.log("Make Card function");
