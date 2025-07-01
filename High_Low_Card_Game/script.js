@@ -44,6 +44,7 @@ function drawCard() {
 }
 
 function makeDeck() {
+  deck = [];
   console.log("MakeDeck function");
 }
 
