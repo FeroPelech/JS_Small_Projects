@@ -51,6 +51,7 @@ function makeDeck() {
       card.suit = suits[i];
       card.rank = ranks[y];
       card.value = y + 1;
+      deck.push(card);
     }
   }
   console.log("MakeDeck function");
