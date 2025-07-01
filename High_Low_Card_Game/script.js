@@ -50,6 +50,7 @@ function makeDeck() {
       let card = {};
       card.suit = suits[i];
       card.rank = ranks[y];
+      card.value = y + 1;
     }
   }
   console.log("MakeDeck function");
