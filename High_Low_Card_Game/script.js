@@ -48,6 +48,7 @@ function makeDeck() {
   for (let i = 0; i < suits.length; i++) {
     for (let y = 0; y < ranks.length; y++) {
       let card = {};
+      card.suit = suits[i];
     }
   }
   console.log("MakeDeck function");
