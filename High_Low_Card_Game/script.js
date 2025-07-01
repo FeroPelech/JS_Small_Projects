@@ -45,6 +45,7 @@ function drawCard() {
 
 function makeDeck() {
   deck = [];
+  for (let i = 0; i < suits.length; i++) {}
   console.log("MakeDeck function");
 }
 
