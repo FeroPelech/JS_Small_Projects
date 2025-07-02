@@ -28,7 +28,7 @@ function playGame(e) {
     console.log("You clicked start button");
     message.innerHTML = "Higher or Lower";
     gamePlay.innerHTML = myCard.rank + myCard.suit;
-    makeCard();
+    makeCard(myCard);
     toggleButtons();
   }
 }
@@ -59,6 +59,6 @@ function makeDeck() {
   console.log("MakeDeck function");
 }
 
-function makeCard() {
+function makeCard(card) {
   console.log("Make Card function");
 }
