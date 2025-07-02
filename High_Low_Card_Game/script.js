@@ -63,5 +63,6 @@ function makeCard(card) {
   console.log(card);
   let html1 = card.rank + "<br>&" + card.suit + ";";
   let div = document.createElement("div");
+  div.innerHTML = html1;
   console.log(div);
 }
