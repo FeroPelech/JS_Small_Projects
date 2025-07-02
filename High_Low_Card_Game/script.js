@@ -35,6 +35,8 @@ function playGame(e) {
 
 function drawCard() {
   if (deck.length > 0) {
+    let randIndex = Math.floor(Math.random() * deck.length);
+    console.log(randIndex);
     let card = "";
     return card;
   } else {
