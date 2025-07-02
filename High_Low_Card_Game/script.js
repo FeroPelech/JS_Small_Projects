@@ -61,6 +61,7 @@ function makeDeck() {
 
 function makeCard(card) {
   console.log(card);
-  let html1 = card.rank + "<br>";
-  console.log(html1);
+  let html1 = card.rank + "<br>&" + card.suit + ";";
+  let div = document.createElement("div");
+  console.log(div);
 }
