@@ -27,7 +27,7 @@ function playGame(e) {
   if (temp == "Start") {
     console.log("You clicked start button");
     message.innerHTML = "Higher or Lower";
-    gamePlay.innerHTML = "";
+    gamePlay.innerHTML = myCard.rank + myCard.suit;
     makeCard();
     toggleButtons();
   }
