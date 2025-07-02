@@ -64,5 +64,6 @@ function makeCard(card) {
   let html1 = card.rank + "<br>&" + card.suit + ";";
   let div = document.createElement("div");
   div.innerHTML = html1;
+  gamePlay.appendChild(div);
   console.log(div);
 }
