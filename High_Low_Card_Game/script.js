@@ -62,6 +62,7 @@ function makeDeck() {
 function makeCard(card) {
   console.log(card);
   let html1 = card.rank + "<br>&" + card.suit + ";";
+  let html2 = card.rank + "&" + card.suit + ";";
   let div = document.createElement("div");
   div.innerHTML = html1;
   gamePlay.appendChild(div);
