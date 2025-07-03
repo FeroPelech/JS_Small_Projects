@@ -66,7 +66,7 @@ function makeCard(card) {
   let curCards = document.querySelectorAll(".card");
   let div = document.createElement("div");
   div.setAttribute("class", "card");
-
+  div.style.left = curCards.length * 25 + "px";
   div.innerHTML = html1;
   gamePlay.appendChild(div);
   console.log(div);
