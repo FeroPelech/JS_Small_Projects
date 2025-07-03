@@ -72,6 +72,8 @@ function makeCard(card) {
     div.classList.add("red");
   }
 
+  let span1 = document.createElement("span");
+
   div.innerHTML = html1;
   gamePlay.appendChild(div);
   console.log(div);
