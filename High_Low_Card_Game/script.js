@@ -65,6 +65,8 @@ function makeCard(card) {
   let html2 = card.rank + "&" + card.suit + ";";
   let curCards = document.querySelectorAll(".card");
   let div = document.createElement("div");
+  div.setAttribute("class", "card");
+
   div.innerHTML = html1;
   gamePlay.appendChild(div);
   console.log(div);
