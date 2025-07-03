@@ -68,6 +68,9 @@ function makeCard(card) {
   div.setAttribute("class", "card");
   div.style.left = curCards.length * 25 + "px";
   curCardValue = card.value;
+  if (card.suit === "hearts" || card.suit === "diams") {
+    div.classList.add("red");
+  }
 
   div.innerHTML = html1;
   gamePlay.appendChild(div);
