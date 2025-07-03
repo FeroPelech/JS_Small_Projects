@@ -74,6 +74,7 @@ function makeCard(card) {
 
   let span1 = document.createElement("span");
   span1.setAttribute("class", "tiny");
+  span1.innerHTML = html2;
 
   div.innerHTML = html1;
   gamePlay.appendChild(div);
