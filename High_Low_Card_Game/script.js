@@ -82,7 +82,6 @@ function makeCard(card) {
   span2.innerHTML = html1;
   div.appendChild(span2);
 
-  div.innerHTML = html1;
   gamePlay.appendChild(div);
   console.log(div);
 }
