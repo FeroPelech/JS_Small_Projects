@@ -20,12 +20,9 @@ function toggleButtons() {
 }
 
 function playGame(e) {
-  console.log(e.target);
   let temp = e.target.innerText;
   let myCard = drawCard();
-  console.log(temp);
   if (temp == "Start") {
-    console.log("You clicked start button");
     message.innerHTML = "Higher or Lower";
     gamePlay.innerHTML = myCard.rank + myCard.suit;
     makeCard(myCard);
@@ -37,7 +34,6 @@ function drawCard() {
   if (deck.length > 0) {
     let randIndex = Math.floor(Math.random() * deck.length);
     let card = deck.splice(randIndex, 1)[0];
-    console.log(card);
     return card;
   } else {
     makeDeck();
@@ -56,11 +52,9 @@ function makeDeck() {
       deck.push(card);
     }
   }
-  console.log("MakeDeck function");
 }
 
 function makeCard(card) {
-  console.log(card);
   let html1 = card.rank + "<br>&" + card.suit + ";";
   let html2 = card.rank + "&" + card.suit + ";";
   let curCards = document.querySelectorAll(".card");
@@ -83,5 +77,4 @@ function makeCard(card) {
   div.appendChild(span2);
 
   gamePlay.appendChild(div);
-  console.log(div);
 }
