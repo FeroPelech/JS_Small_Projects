@@ -78,7 +78,7 @@ function makeCard(card) {
   div.appendChild(span1);
 
   let span2 = document.createElement("span");
-  span2.setAttribute("class", "tiny");
+  span2.setAttribute("class", "big");
   span2.innerHTML = html1;
   div.appendChild(span2);
 
