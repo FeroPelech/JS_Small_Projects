@@ -43,6 +43,7 @@ function playGame(e) {
       message.innerHTML = "Correct, next?";
     } else {
       message.innerHTML = "Game Over";
+      toggleButtons();
     }
   }
 }
