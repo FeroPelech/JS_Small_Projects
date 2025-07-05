@@ -41,6 +41,8 @@ function playGame(e) {
       scoreValue++;
       score.innerHTML = scoreValue;
       message.innerHTML = "Correct, next?";
+    } else {
+      message.innerHTML = "Game Over";
     }
   }
 }
