@@ -39,6 +39,7 @@ function playGame(e) {
       (temp == "Lower" && myCard.value < curCardValue)
     ) {
       scoreValue++;
+      score.innerHTML = scoreValue;
       message.innerHTML = "Correct, next?";
     }
   }
