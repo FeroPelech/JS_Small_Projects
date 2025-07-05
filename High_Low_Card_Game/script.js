@@ -33,6 +33,12 @@ function playGame(e) {
   if (myCard.value == curCardValue) {
     win = "draw";
     message.innerHTML = "Draw";
+  } else {
+    if (
+      (temp == "Higher" && myCard.value > curCardValue) ||
+      (temp == "Lower" && myCard.value < curCardValue)
+    ) {
+    }
   }
 }
 
