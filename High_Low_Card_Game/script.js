@@ -27,6 +27,7 @@ function playGame(e) {
     gamePlay.innerHTML = myCard.rank + myCard.suit;
     makeCard(myCard);
     toggleButtons();
+    return;
   }
 }
 
