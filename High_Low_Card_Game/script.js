@@ -22,6 +22,7 @@ function toggleButtons() {
 function playGame(e) {
   let temp = e.target.innerText;
   let myCard = drawCard();
+  let win = false;
   if (temp == "Start") {
     message.innerHTML = "Higher or Lower";
     gamePlay.innerHTML = myCard.rank + myCard.suit;
