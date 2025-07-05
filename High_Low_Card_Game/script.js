@@ -32,6 +32,7 @@ function playGame(e) {
   }
   if (myCard.value == curCardValue) {
     win = "draw";
+    message.innerHTML = "Draw";
   }
 }
 
