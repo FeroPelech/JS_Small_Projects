@@ -30,6 +30,8 @@ function playGame(e) {
     toggleButtons();
     return;
   }
+  if (myCard.value == curCardValue) {
+  }
 }
 
 function drawCard() {
