@@ -38,7 +38,6 @@ function playGame(e) {
       (temp == "Higher" && myCard.value > curCardValue) ||
       (temp == "Lower" && myCard.value < curCardValue)
     ) {
-      win = true;
     }
   }
 }
