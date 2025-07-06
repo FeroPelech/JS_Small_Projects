@@ -1,3 +1,4 @@
 const btn = document.querySelector("button");
 const message = document.querySelector(".message");
-console.log(message);
+const gameArea = document.querySelector(".gameArea");
+console.log(gameArea);
