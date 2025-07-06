@@ -46,6 +46,7 @@ function playGame(e) {
       toggleButtons();
     }
   }
+  makeCard(myCard);
 }
 
 function drawCard() {
