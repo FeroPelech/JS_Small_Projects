@@ -1,2 +1,3 @@
 const btn = document.querySelector("button");
-console.log(btn);
+const message = document.querySelector(".message");
+console.log(message);
