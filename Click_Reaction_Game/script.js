@@ -10,3 +10,7 @@ btn.addEventListener("click", () => {
     btn.style.display = "none";
   }
 });
+
+function messager(note) {
+  message.innerHTML = note;
+}
