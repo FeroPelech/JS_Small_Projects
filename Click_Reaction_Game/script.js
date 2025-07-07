@@ -3,3 +3,7 @@ const message = document.querySelector(".message");
 const gameArea = document.querySelector(".gameArea");
 let inPlay = false;
 console.log(gameArea);
+
+btn.addEventListener("click", () => {
+  console.log("kuk");
+});
