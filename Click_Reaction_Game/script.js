@@ -7,6 +7,6 @@ console.log(gameArea);
 btn.addEventListener("click", () => {
   if (!inPlay) {
     inPlay = true;
-    console.log("kuk");
+    btn.style.display = "none";
   }
 });
