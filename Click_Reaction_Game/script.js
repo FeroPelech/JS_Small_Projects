@@ -13,6 +13,10 @@ btn.addEventListener("click", () => {
   }
 });
 
+function showBox() {
+  console.log("Show box function");
+}
+
 function messager(note) {
   message.innerHTML = note;
 }
