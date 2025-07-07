@@ -5,5 +5,7 @@ let inPlay = false;
 console.log(gameArea);
 
 btn.addEventListener("click", () => {
-  console.log("kuk");
+  if (!inPlay) {
+    console.log("kuk");
+  }
 });
