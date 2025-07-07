@@ -9,7 +9,7 @@ btn.addEventListener("click", () => {
   if (!inPlay) {
     inPlay = true;
     btn.style.display = "none";
-    messager("Click the circle as quickly as you see them");
+    messager("Click the circle as quickly as you see them.");
     showBox();
   }
 });
