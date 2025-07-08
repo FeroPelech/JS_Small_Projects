@@ -21,7 +21,9 @@ function showBox() {
   console.log(start);
 }
 
-function rand(num) {}
+function rand(num) {
+  let tempVal = Math.floor(Math.random() * num);
+}
 
 function messager(note) {
   message.innerHTML = note;
