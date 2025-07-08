@@ -26,7 +26,9 @@ function rand(num) {
   return tempVal;
 }
 
-function myBox() {}
+function myBox() {
+  let el = document.createElement("div");
+}
 
 function messager(note) {
   message.innerHTML = note;
