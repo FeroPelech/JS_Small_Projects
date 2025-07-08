@@ -23,6 +23,7 @@ function showBox() {
 
 function rand(num) {
   let tempVal = Math.floor(Math.random() * num);
+  return tempVal;
 }
 
 function messager(note) {
