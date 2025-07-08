@@ -2,6 +2,7 @@ const btn = document.querySelector("button");
 const message = document.querySelector(".message");
 const gameArea = document.querySelector(".gameArea");
 let inPlay = false;
+let playArea = {};
 console.log(gameArea);
 messager("Click start button.");
 
