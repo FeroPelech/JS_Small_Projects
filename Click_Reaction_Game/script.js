@@ -17,7 +17,8 @@ btn.addEventListener("click", () => {
 });
 
 function showBox() {
-  console.log("Show box function");
+  start = new Date().getTime();
+  console.log(start);
 }
 
 function messager(note) {
