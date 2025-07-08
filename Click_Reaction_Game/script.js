@@ -28,6 +28,7 @@ function rand(num) {
 
 function myBox() {
   let el = document.createElement("div");
+  gameArea.appendChild(el);
 }
 
 function messager(note) {
