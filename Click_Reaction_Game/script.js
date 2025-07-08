@@ -26,6 +26,8 @@ function rand(num) {
   return tempVal;
 }
 
+function myBox() {}
+
 function messager(note) {
   message.innerHTML = note;
 }
