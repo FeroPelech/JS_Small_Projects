@@ -21,6 +21,8 @@ function showBox() {
   console.log(start);
 }
 
+function rand(num) {}
+
 function messager(note) {
   message.innerHTML = note;
 }
