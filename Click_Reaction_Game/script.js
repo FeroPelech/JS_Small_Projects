@@ -30,6 +30,7 @@ function myBox() {
   let el = document.createElement("div");
   el.classList.add("box");
   el.style.backgroundColor = "red";
+  el.style.width = "100px";
   gameArea.appendChild(el);
 }
 
