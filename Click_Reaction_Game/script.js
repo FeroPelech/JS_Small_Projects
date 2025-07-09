@@ -37,7 +37,7 @@ function myBox() {
   el.style.borderRadius = rand(50) + "%";
   el.style.position = "relative";
   el.style.top = rand(150) + "px";
-  el.style.left = "50px";
+  el.style.left = rand(50) + "px";
   gameArea.appendChild(el);
 }
 
