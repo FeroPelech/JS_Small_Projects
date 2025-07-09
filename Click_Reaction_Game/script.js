@@ -36,7 +36,7 @@ function myBox() {
   el.style.height = rand(30) + 70 + "px";
   el.style.borderRadius = rand(50) + "%";
   el.style.position = "relative";
-  el.style.top = "150px";
+  el.style.top = rand(150) + "px";
   el.style.left = "50px";
   gameArea.appendChild(el);
 }
