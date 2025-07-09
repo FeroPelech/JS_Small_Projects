@@ -34,6 +34,7 @@ function myBox() {
   el.style.height = "100px";
   el.style.borderRadius = "50%";
   el.style.position = "relative";
+  el.style.top = "150px";
   gameArea.appendChild(el);
 }
 
