@@ -34,7 +34,7 @@ function myBox() {
   el.style.backgroundColor = "red";
   el.style.width = rand(30) + 70 + "px";
   el.style.height = rand(30) + 70 + "px";
-  el.style.borderRadius = "50%";
+  el.style.borderRadius = rand(50) + "%";
   el.style.position = "relative";
   el.style.top = "150px";
   el.style.left = "50px";
