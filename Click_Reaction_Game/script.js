@@ -31,6 +31,7 @@ function myBox() {
   el.classList.add("box");
   el.style.backgroundColor = "red";
   el.style.width = "100px";
+  el.style.height = "100px";
   gameArea.appendChild(el);
 }
 
