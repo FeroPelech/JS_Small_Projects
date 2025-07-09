@@ -33,7 +33,7 @@ function myBox() {
   el.classList.add("box");
   el.style.backgroundColor = "red";
   el.style.width = rand(30) + 70 + "px";
-  el.style.height = "100px";
+  el.style.height = rand(30) + 70 + "px";
   el.style.borderRadius = "50%";
   el.style.position = "relative";
   el.style.top = "150px";
