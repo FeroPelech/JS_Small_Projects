@@ -24,7 +24,7 @@ function showBox() {
 
 function rand(num) {
   let tempVal = Math.floor(Math.random() * num);
-  console.log("som tu" + tempVal);
+  console.log(tempVal);
   return tempVal;
 }
 
