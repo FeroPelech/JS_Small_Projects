@@ -33,6 +33,7 @@ function myBox() {
   el.style.width = "100px";
   el.style.height = "100px";
   el.style.borderRadius = "50%";
+  el.style.position = "relative";
   gameArea.appendChild(el);
 }
 
