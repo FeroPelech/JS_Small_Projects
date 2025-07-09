@@ -19,10 +19,12 @@ btn.addEventListener("click", () => {
 function showBox() {
   start = new Date().getTime();
   console.log(start);
+  myBox();
 }
 
 function rand(num) {
   let tempVal = Math.floor(Math.random() * num);
+  console.log("som tu" + tempVal);
   return tempVal;
 }
 
@@ -30,7 +32,7 @@ function myBox() {
   let el = document.createElement("div");
   el.classList.add("box");
   el.style.backgroundColor = "red";
-  el.style.width = "100px";
+  el.style.width = rand(30) + 70 + "px";
   el.style.height = "100px";
   el.style.borderRadius = "50%";
   el.style.position = "relative";
