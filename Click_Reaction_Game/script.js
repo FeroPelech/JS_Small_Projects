@@ -29,6 +29,7 @@ function rand(num) {
 function myBox() {
   let el = document.createElement("div");
   el.classList.add("box");
+  el.style.backgroundColor = "red";
   gameArea.appendChild(el);
 }
 
