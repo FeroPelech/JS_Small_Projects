@@ -31,7 +31,7 @@ function rand(num) {
 function myBox() {
   let el = document.createElement("div");
   el.classList.add("box");
-  el.style.backgroundColor = "red";
+  el.style.backgroundColor = getColor();
   el.style.width = rand(30) + 70 + "px";
   el.style.height = rand(30) + 70 + "px";
   el.style.borderRadius = rand(50) + "%";
@@ -46,10 +46,9 @@ function messager(note) {
 }
 
 function getColor() {
-  function col() {}
-  let hex = rand(255).toString(16);
-  console.log(hex);
-  return hex;
+  function col() {
+    let hex = rand(255).toString(16);
+    return ("0" + String(hex)).slice(-2);
+  }
+  return "#" + col() + col() + col();
 }
-
-getColor();
