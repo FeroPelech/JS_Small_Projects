@@ -45,6 +45,7 @@ function myBox() {
 function hit(e) {
   console.log(e.target);
   let end = new Date().getTime();
+  let duration = (end - start) / 1000;
 }
 
 function messager(note) {
