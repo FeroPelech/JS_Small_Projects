@@ -47,6 +47,7 @@ function hit(e) {
   let end = new Date().getTime();
   let duration = (end - start) / 1000;
   clearTimeout(playArea.timer);
+  gameArea.children[0].remove();
 }
 
 function messager(note) {
