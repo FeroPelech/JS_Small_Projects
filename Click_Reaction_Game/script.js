@@ -42,6 +42,8 @@ function myBox() {
   gameArea.appendChild(el);
 }
 
+function hit(e) {}
+
 function messager(note) {
   message.innerHTML = note;
 }
