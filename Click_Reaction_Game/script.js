@@ -44,3 +44,9 @@ function myBox() {
 function messager(note) {
   message.innerHTML = note;
 }
+
+function getColor() {
+  console.log("In get color function.");
+}
+
+getColor();
