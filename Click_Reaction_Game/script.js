@@ -46,6 +46,7 @@ function messager(note) {
 }
 
 function getColor() {
+  function col() {}
   let hex = rand(255).toString(16);
   console.log(hex);
   return hex;
