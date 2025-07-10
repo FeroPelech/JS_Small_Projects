@@ -19,7 +19,7 @@ btn.addEventListener("click", () => {
 function showBox() {
   start = new Date().getTime();
   console.log(start);
-  myBox();
+  playArea.timer = setTimeout(myBox, rand(3000));
 }
 
 function rand(num) {
@@ -38,6 +38,7 @@ function myBox() {
   el.style.position = "relative";
   el.style.top = rand(150) + "px";
   el.style.left = rand(50) + "px";
+  el.addEventListener("click", hit);
   gameArea.appendChild(el);
 }
 
