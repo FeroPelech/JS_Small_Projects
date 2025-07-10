@@ -42,7 +42,10 @@ function myBox() {
   gameArea.appendChild(el);
 }
 
-function hit(e) {}
+function hit(e) {
+  console.log(e.target);
+  let end = new Date().getTime();
+}
 
 function messager(note) {
   message.innerHTML = note;
