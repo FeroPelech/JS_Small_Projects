@@ -46,7 +46,9 @@ function messager(note) {
 }
 
 function getColor() {
-  console.log("In get color function.");
+  let hex = rand(255).toString(16);
+  console.log(hex);
+  return hex;
 }
 
 getColor();
