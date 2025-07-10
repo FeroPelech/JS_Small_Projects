@@ -48,6 +48,7 @@ function hit(e) {
   let duration = (end - start) / 1000;
   clearTimeout(playArea.timer);
   gameArea.children[0].remove();
+  playArea.timer = setTimeout(myBox, rand(3000));
 }
 
 function messager(note) {
