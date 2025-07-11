@@ -24,7 +24,6 @@ function showBox() {
 
 function rand(num) {
   let tempVal = Math.floor(Math.random() * num);
-  console.log(tempVal);
   return tempVal;
 }
 
