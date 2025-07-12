@@ -18,7 +18,6 @@ btn.addEventListener("click", () => {
 
 function showBox() {
   start = new Date().getTime();
-  console.log(start);
   playArea.timer = setTimeout(myBox, rand(3000));
 }
 
