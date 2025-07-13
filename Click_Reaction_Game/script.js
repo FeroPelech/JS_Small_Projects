@@ -4,7 +4,6 @@ const gameArea = document.querySelector(".gameArea");
 let inPlay = false;
 let playArea = {};
 let start;
-console.log(gameArea);
 messager("Click start button.");
 
 btn.addEventListener("click", () => {
