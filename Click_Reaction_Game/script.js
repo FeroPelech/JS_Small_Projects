@@ -16,7 +16,6 @@ btn.addEventListener("click", () => {
 });
 
 function showBox() {
-  start = new Date().getTime();
   playArea.timer = setTimeout(myBox, rand(3000));
 }
 
@@ -36,11 +35,13 @@ function myBox() {
   el.style.top = rand(150) + "px";
   el.style.left = rand(50) + "px";
   el.addEventListener("click", hit);
+  el.start = new Date().getTime();
   gameArea.appendChild(el);
 }
 
 function hit(e) {
   let end = new Date().getTime();
+  let start = e.target.start;
   let duration = (end - start) / 1000;
   messager("It took " + duration + " seconds to click.");
   clearTimeout(playArea.timer);
