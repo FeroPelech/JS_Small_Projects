@@ -3,7 +3,6 @@ const message = document.querySelector(".message");
 const gameArea = document.querySelector(".gameArea");
 let inPlay = false;
 let playArea = {};
-let start;
 messager("Click start button.");
 
 btn.addEventListener("click", () => {
