@@ -1,7 +1,8 @@
 window.addEventListener("load", init);
 
 function init() {
-  console.log("init function work");
   let div = document.createElement("div");
   div.setAttribute("class", "message");
+  div.innerText = "Press start button";
+  console.log(div);
 }
