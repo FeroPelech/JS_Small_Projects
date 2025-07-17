@@ -42,6 +42,7 @@ function myBox() {
 function hit(e) {
   let end = new Date().getTime();
   let duration = (end - start) / 1000;
+  messager("It took " + duration + " seconds to click.");
   clearTimeout(playArea.timer);
   gameArea.children[0].remove();
   playArea.timer = setTimeout(myBox, rand(3000));
