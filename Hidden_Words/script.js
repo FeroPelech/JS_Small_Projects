@@ -5,5 +5,6 @@ function init() {
   div.setAttribute("class", "message");
   div.innerText = "Press start button";
   document.body.appendChild(div);
-  console.log(div);
+  let btn = document.createElement("button");
+  console.log(btn);
 }
