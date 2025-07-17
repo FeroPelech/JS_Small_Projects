@@ -6,5 +6,6 @@ function init() {
   div.innerText = "Press start button";
   document.body.appendChild(div);
   let btn = document.createElement("button");
+  btn.type = "button";
   console.log(btn);
 }
