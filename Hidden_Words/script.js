@@ -26,6 +26,7 @@ function init() {
 
 function start() {
   this.style.display = "none";
+  message("Select this Word");
 }
 
 function message(output) {
