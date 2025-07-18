@@ -28,4 +28,6 @@ function start() {
   this.style.display = "none";
 }
 
-function message(output) {}
+function message(output) {
+  document.querySelector(".message").innerHTML = output;
+}
