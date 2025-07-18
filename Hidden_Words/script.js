@@ -1,4 +1,12 @@
 window.addEventListener("load", init);
+const myWords = [
+  "javascript",
+  "html",
+  "course",
+  "laurence",
+  "coding",
+  "brackets",
+];
 
 function init() {
   let div = document.createElement("div");
