@@ -7,5 +7,6 @@ function init() {
   document.body.appendChild(div);
   let btn = document.createElement("button");
   btn.type = "button";
+  btn.innerText = "Start Game";
   console.log(btn);
 }
