@@ -16,6 +16,7 @@ function init() {
   let btn = document.createElement("button");
   btn.type = "button";
   btn.innerText = "Start Game";
+  btn.addEventListener("click", start);
   document.body.appendChild(btn);
   let div1 = document.createElement("div");
   div1.classList.add("game");
