@@ -10,5 +10,6 @@ function init() {
   btn.innerText = "Start Game";
   document.body.appendChild(btn);
   let div1 = document.createElement("div");
-  console.log(btn);
+  div1.classList.add("game");
+  console.log(div1);
 }
