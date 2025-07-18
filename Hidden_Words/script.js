@@ -8,5 +8,6 @@ function init() {
   let btn = document.createElement("button");
   btn.type = "button";
   btn.innerText = "Start Game";
+  document.body.appendChild(btn);
   console.log(btn);
 }
