@@ -29,6 +29,9 @@ function start() {
   myWords.sort(function (a, b) {
     return 0.5 - Math.random();
   });
+  myWords.forEach((item) => {
+    console.log(item);
+  });
   message("Select this Word");
 }
 
