@@ -25,5 +25,5 @@ function init() {
 }
 
 function start() {
-  console.log("Start function");
+  this.style.display = "none";
 }
