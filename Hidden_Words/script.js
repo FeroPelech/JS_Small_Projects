@@ -26,6 +26,9 @@ function init() {
 
 function start() {
   this.style.display = "none";
+  myWords.sort(function (a, b) {
+    return 0.5 - Math.random();
+  });
   message("Select this Word");
 }
 
