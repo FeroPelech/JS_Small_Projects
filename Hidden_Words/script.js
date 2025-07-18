@@ -27,3 +27,5 @@ function init() {
 function start() {
   this.style.display = "none";
 }
+
+function message(output) {}
