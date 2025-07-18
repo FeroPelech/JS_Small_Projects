@@ -23,3 +23,7 @@ function init() {
   document.body.appendChild(div1);
   console.log(div1);
 }
+
+function start() {
+  console.log("Start function");
+}
