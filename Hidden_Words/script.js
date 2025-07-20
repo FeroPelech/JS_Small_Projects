@@ -37,6 +37,9 @@ function start() {
     let temp1 = temp.join("");
     let div = document.createElement("div");
     div.innerText = "select";
+    div.addEventListener("mouseenter", () => {
+      div.style.backgroundColor = "red";
+    });
     console.log(item);
   });
   message("Select this Word");
