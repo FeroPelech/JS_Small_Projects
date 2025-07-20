@@ -31,6 +31,9 @@ function start() {
   });
   myWords.forEach((item) => {
     let temp = item.split("");
+    temp.sort((a, b) => {
+      return 0.5 - Math.random();
+    });
     console.log(item);
   });
   message("Select this Word");
