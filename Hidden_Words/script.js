@@ -29,6 +29,7 @@ function start() {
   myWords.sort(function (a, b) {
     return 0.5 - Math.random();
   });
+  const game = document.querySelector(".game");
   myWords.forEach((item) => {
     let temp = item.split("");
     temp.sort((a, b) => {
@@ -43,6 +44,7 @@ function start() {
     div.addEventListener("mouseleave", () => {
       div.style.backgroundColor = "white";
     });
+    game;
     console.log(item);
   });
   message("Select this Word");
