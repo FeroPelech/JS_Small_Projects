@@ -36,6 +36,7 @@ function start() {
     });
     let temp1 = temp.join("");
     let div = document.createElement("div");
+    div.innerText = "select";
     console.log(item);
   });
   message("Select this Word");
