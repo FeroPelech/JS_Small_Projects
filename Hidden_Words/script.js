@@ -44,7 +44,7 @@ function start() {
     div.addEventListener("mouseleave", () => {
       div.style.backgroundColor = "white";
     });
-    game;
+    game.appendChild(div);
     console.log(item);
   });
   message("Select this Word");
