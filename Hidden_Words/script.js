@@ -34,6 +34,7 @@ function start() {
     temp.sort((a, b) => {
       return 0.5 - Math.random();
     });
+    let temp1 = temp.join("");
     console.log(item);
   });
   message("Select this Word");
