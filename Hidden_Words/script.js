@@ -44,6 +44,7 @@ function start() {
     });
     div.addEventListener("mouseleave", () => {
       div.style.backgroundColor = "white";
+      div.innerText = "Select";
     });
     game.appendChild(div);
     console.log(item);
