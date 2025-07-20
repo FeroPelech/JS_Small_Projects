@@ -40,6 +40,9 @@ function start() {
     div.addEventListener("mouseenter", () => {
       div.style.backgroundColor = "red";
     });
+    div.addEventListener("mouseleave", () => {
+      div.style.backgroundColor = "white";
+    });
     console.log(item);
   });
   message("Select this Word");
