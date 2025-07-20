@@ -30,6 +30,7 @@ function start() {
     return 0.5 - Math.random();
   });
   myWords.forEach((item) => {
+    let temp = item.split("");
     console.log(item);
   });
   message("Select this Word");
