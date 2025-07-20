@@ -35,6 +35,7 @@ function start() {
       return 0.5 - Math.random();
     });
     let temp1 = temp.join("");
+    let div = document.createElement("div");
     console.log(item);
   });
   message("Select this Word");
