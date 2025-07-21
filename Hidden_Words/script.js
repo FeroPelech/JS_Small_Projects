@@ -40,7 +40,7 @@ function start() {
     div.innerText = "Select";
     div.addEventListener("mouseenter", () => {
       div.style.backgroundColor = "red";
-      div.innerText = temp1;
+      div.innerText = "Select";
     });
     div.addEventListener("mouseleave", () => {
       div.style.backgroundColor = "white";
