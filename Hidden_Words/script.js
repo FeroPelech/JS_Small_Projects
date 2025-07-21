@@ -38,6 +38,7 @@ function start() {
     let temp1 = temp.join("");
     let div = document.createElement("div");
     div.innerText = "Select";
+    div.classList.add("box");
     div.addEventListener("mouseenter", () => {
       div.style.backgroundColor = "red";
       div.innerText = "Select";
