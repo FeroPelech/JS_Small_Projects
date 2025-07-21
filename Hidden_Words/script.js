@@ -48,6 +48,9 @@ function start() {
       div.style.backgroundColor = "red";
       div.innerText = "Select";
     });
+    div.addEventListener("click", () => {
+      console.log("click");
+    });
     game.appendChild(div);
     console.log(item);
   });
