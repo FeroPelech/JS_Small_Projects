@@ -39,12 +39,13 @@ function start() {
     let div = document.createElement("div");
     div.innerText = "Select";
     div.classList.add("box");
+    div.style.backgroundColor = "red";
     div.addEventListener("mouseenter", () => {
-      div.style.backgroundColor = "red";
+      div.style.backgroundColor = "white";
       div.innerText = "Select";
     });
     div.addEventListener("mouseleave", () => {
-      div.style.backgroundColor = "white";
+      div.style.backgroundColor = "red";
       div.innerText = "Select";
     });
     game.appendChild(div);
