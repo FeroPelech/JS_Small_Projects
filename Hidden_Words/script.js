@@ -7,6 +7,7 @@ const myWords = [
   "coding",
   "brackets",
 ];
+let curr = 0;
 
 function init() {
   let div = document.createElement("div");
