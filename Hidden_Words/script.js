@@ -7,7 +7,7 @@ const myWords = [
   "coding",
   "brackets",
 ];
-let curr = 0;
+let cur = 0;
 
 function init() {
   let div = document.createElement("div");
@@ -26,6 +26,7 @@ function init() {
 }
 
 function start() {
+  cur = 0;
   this.style.display = "none";
   myWords.sort(function (a, b) {
     return 0.5 - Math.random();
