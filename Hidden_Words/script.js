@@ -61,4 +61,5 @@ function start() {
 
 function message(output) {
   document.querySelector(".message").innerHTML = output;
+  console.log("Here i am");
 }
