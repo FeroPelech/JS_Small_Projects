@@ -52,9 +52,12 @@ function start() {
     });
     div.addEventListener("click", () => {
       if (div.word === myWords[cur]) {
+        console.log("right");
+        cur++;
+        nextWord();
+      } else {
+        console.log("wrong");
       }
-      cur++;
-      nextWord();
     });
     game.appendChild(div);
   });
