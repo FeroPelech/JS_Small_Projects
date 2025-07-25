@@ -65,6 +65,8 @@ function start() {
 }
 
 function nextWord() {
+  if (cur >= myWords.length) {
+  }
   message("Select this Word: " + myWords[cur]);
 }
 
