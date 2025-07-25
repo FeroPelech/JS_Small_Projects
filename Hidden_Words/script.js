@@ -44,7 +44,7 @@ function start() {
     div.style.backgroundColor = "red";
     div.addEventListener("mouseenter", () => {
       div.style.backgroundColor = "white";
-      div.innerText = "Select";
+      div.innerText = temp1;
     });
     div.addEventListener("mouseleave", () => {
       div.style.backgroundColor = "red";
@@ -62,7 +62,7 @@ function start() {
 
 function nextWord() {
   console.log(cur);
-  message("Select this Word " + myWords[cur]);
+  message("Select this Word: " + myWords[cur]);
 }
 
 function message(output) {
