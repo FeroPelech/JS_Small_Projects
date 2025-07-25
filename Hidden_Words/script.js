@@ -51,7 +51,6 @@ function start() {
       div.innerText = "Select";
     });
     div.addEventListener("click", () => {
-      console.log(this.word);
       cur++;
       nextWord();
     });
