@@ -56,7 +56,10 @@ function start() {
     game.appendChild(div);
     console.log(item);
   });
-  message("Select this Word");
+}
+
+function nextWord() {
+  console.log(cur);
 }
 
 function message(output) {
