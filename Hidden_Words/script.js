@@ -22,7 +22,6 @@ function init() {
   let div1 = document.createElement("div");
   div1.classList.add("game");
   document.body.appendChild(div1);
-  console.log(div1);
 }
 
 function start() {
