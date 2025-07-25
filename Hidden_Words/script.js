@@ -56,6 +56,7 @@ function start() {
     game.appendChild(div);
     console.log(item);
   });
+  nextWord();
 }
 
 function nextWord() {
