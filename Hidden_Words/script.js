@@ -62,7 +62,7 @@ function start() {
 
 function nextWord() {
   console.log(cur);
-  message("Select this Word");
+  message("Select this Word " + myWords[cur]);
 }
 
 function message(output) {
