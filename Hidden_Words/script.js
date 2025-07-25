@@ -51,6 +51,8 @@ function start() {
       div.innerText = "Select";
     });
     div.addEventListener("click", () => {
+      if (div.word === myWords[cur]) {
+      }
       cur++;
       nextWord();
     });
