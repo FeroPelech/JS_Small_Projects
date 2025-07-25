@@ -51,11 +51,11 @@ function start() {
       div.innerText = "Select";
     });
     div.addEventListener("click", () => {
-      console.log("click");
+      console.log(this.word);
+      cur++;
+      nextWord();
     });
     game.appendChild(div);
-    cur++;
-    console.log(item);
   });
   nextWord();
 }
