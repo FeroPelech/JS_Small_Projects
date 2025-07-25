@@ -61,11 +61,9 @@ function start() {
 }
 
 function nextWord() {
-  console.log(cur);
   message("Select this Word: " + myWords[cur]);
 }
 
 function message(output) {
   document.querySelector(".message").innerHTML = output;
-  console.log("Here i am");
 }
