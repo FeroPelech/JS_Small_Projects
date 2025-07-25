@@ -61,6 +61,7 @@ function start() {
 
 function nextWord() {
   console.log(cur);
+  message("Select this Word");
 }
 
 function message(output) {
