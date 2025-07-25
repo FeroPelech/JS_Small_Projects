@@ -54,6 +54,7 @@ function start() {
       console.log("click");
     });
     game.appendChild(div);
+    cur++;
     console.log(item);
   });
   nextWord();
