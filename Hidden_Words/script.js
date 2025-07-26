@@ -69,7 +69,7 @@ function start() {
 function nextWord() {
   if (cur >= myWords.length) {
     let endTime = Date.parse(new Date());
-    let duration = endTime - startTime;
+    let duration = (endTime - startTime) / 1000;
     message("Game Over played " + duration);
   } else {
     message("Select this Word: " + myWords[cur]);
