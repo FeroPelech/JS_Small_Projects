@@ -55,6 +55,7 @@ function start() {
     div.addEventListener("click", () => {
       if (div.word === myWords[cur]) {
         console.log("right");
+        this.classList.add("hidden");
         cur++;
         nextWord();
       } else {
