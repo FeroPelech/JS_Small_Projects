@@ -44,6 +44,7 @@ function start() {
     div.innerText = "Select";
     div.classList.add("box");
     div.style.backgroundColor = "red";
+    div.word = item;
     div.addEventListener("mouseenter", () => {
       div.style.backgroundColor = "white";
       div.innerText = temp1;
