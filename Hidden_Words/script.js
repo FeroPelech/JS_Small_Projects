@@ -8,6 +8,7 @@ const myWords = [
   "brackets",
 ];
 let cur = 0;
+let startTime;
 
 function init() {
   let div = document.createElement("div");
