@@ -28,7 +28,6 @@ function init() {
 function start() {
   cur = 0;
   startTime = Date.parse(new Date());
-  console.log(startTime);
   this.style.display = "none";
   myWords.sort(function (a, b) {
     return 0.5 - Math.random();
