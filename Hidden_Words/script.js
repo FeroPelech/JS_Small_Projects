@@ -30,6 +30,9 @@ function start() {
   startTime = Date.parse(new Date());
   this.style.display = "none";
   let tempArr = myWords.slice(0);
+  tempArr.sort((a, b) => {
+    return 0.5 - Math.random();
+  });
   myWords.sort(function (a, b) {
     return 0.5 - Math.random();
   });
