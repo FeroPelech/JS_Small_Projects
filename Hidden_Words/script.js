@@ -33,7 +33,7 @@ function start() {
   tempArr.sort((a, b) => {
     return 0.5 - Math.random();
   });
-  myWords.sort(function (a, b) {
+  myWords.sort((a, b) => {
     return 0.5 - Math.random();
   });
   const game = document.querySelector(".game");
