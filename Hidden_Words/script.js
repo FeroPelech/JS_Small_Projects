@@ -37,7 +37,7 @@ function start() {
     return 0.5 - Math.random();
   });
   const game = document.querySelector(".game");
-  myWords.forEach((item) => {
+  tempArr.forEach((item) => {
     let temp = item.split("");
     temp.sort((a, b) => {
       return 0.5 - Math.random();
