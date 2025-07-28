@@ -3,4 +3,7 @@ const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
 
 startScreen.addEventListener("click", start);
-console.log(startScreen);
+
+function start() {
+  console.log("Click");
+}
