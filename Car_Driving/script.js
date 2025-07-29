@@ -11,7 +11,10 @@ function pressOn(e) {
   console.log("on", e.key);
 }
 
-function pressOff(e) {}
+function pressOff(e) {
+  e.preventDefault();
+  console.log("off", e.key);
+}
 function start() {
   console.log("Click");
 }
