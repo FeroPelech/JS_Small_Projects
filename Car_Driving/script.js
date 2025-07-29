@@ -1,6 +1,12 @@
 const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
+let keys = {
+  ArrowUp: false,
+  ArrowDown: false,
+  ArrowRight: false,
+  ArrowLeft: false,
+};
 
 startScreen.addEventListener("click", start);
 document.addEventListener("keydown", pressOn);
