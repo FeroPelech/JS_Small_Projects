@@ -14,6 +14,7 @@ document.addEventListener("keyup", pressOff);
 
 function pressOn(e) {
   e.preventDefault();
+  keys[e.key] = true;
   console.log("on", e.key);
 }
 
