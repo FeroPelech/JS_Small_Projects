@@ -10,6 +10,8 @@ function pressOn(e) {
   e.preventDefault();
   console.log("on", e.key);
 }
+
+function pressOff(e) {}
 function start() {
   console.log("Click");
 }
