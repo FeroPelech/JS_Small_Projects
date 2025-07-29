@@ -20,7 +20,8 @@ function pressOn(e) {
 
 function pressOff(e) {
   e.preventDefault();
-  console.log("off", e.key);
+  keys[e.key] = false;
+  console.log(keys);
 }
 function start() {
   console.log("Click");
