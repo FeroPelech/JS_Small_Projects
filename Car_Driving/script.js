@@ -31,5 +31,6 @@ function pressOff(e) {
 }
 function start() {
   console.log("Click");
+  player.start = true;
   window.requestAnimationFrame(playGame);
 }
