@@ -12,6 +12,10 @@ startScreen.addEventListener("click", start);
 document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
 
+function playGame() {
+  console.log("play game");
+}
+
 function pressOn(e) {
   e.preventDefault();
   keys[e.key] = true;
