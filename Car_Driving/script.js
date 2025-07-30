@@ -29,4 +29,5 @@ function pressOff(e) {
 }
 function start() {
   console.log("Click");
+  window.requestAnimationFrame(playGame);
 }
