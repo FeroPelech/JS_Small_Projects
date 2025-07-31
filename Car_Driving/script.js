@@ -17,6 +17,9 @@ function playGame() {
   console.log("play game");
   let car = document.querySelector(".car");
   if (player.start) {
+    if (keys.ArrowUp) {
+      player.y += player.speed;
+    }
     window.requestAnimationFrame(playGame);
   }
 }
