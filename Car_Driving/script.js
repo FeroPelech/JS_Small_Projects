@@ -31,6 +31,7 @@ function pressOff(e) {
   console.log(keys);
 }
 function start() {
+  startScreen.classList.remove("hide");
   player.start = true;
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
