@@ -15,6 +15,7 @@ document.addEventListener("keyup", pressOff);
 
 function playGame() {
   console.log("play game");
+  let car = document.querySelector(".car");
   if (player.start) {
     window.requestAnimationFrame(playGame);
   }
