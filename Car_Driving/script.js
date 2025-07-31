@@ -32,7 +32,7 @@ function pressOff(e) {
 }
 function start() {
   startScreen.classList.add("hide");
-  startScreen.classList.remove("hide");
+  gameArea.classList.remove("hide");
   player.start = true;
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
