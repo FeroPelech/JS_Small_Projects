@@ -31,6 +31,7 @@ function pressOff(e) {
   console.log(keys);
 }
 function start() {
+  startScreen.classList.add("hide");
   startScreen.classList.remove("hide");
   player.start = true;
   window.requestAnimationFrame(playGame);
