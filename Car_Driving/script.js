@@ -36,4 +36,5 @@ function start() {
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
   car.innerText = "Car";
+  gameArea.appendChild(car);
 }
