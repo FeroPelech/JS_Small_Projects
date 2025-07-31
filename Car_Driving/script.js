@@ -1,7 +1,7 @@
 const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
-let player = {};
+let player = { speed: 5 };
 let keys = {
   ArrowUp: false,
   ArrowDown: false,
@@ -37,5 +37,6 @@ function start() {
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
   car.innerText = "Car";
+  car.setAttribute("class", "car");
   gameArea.appendChild(car);
 }
