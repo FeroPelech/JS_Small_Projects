@@ -34,4 +34,5 @@ function start() {
   console.log("Click");
   player.start = true;
   window.requestAnimationFrame(playGame);
+  let car = document.createElement("div");
 }
