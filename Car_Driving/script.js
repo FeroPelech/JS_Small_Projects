@@ -52,4 +52,5 @@ function start() {
   car.innerText = "Car";
   car.setAttribute("class", "car");
   gameArea.appendChild(car);
+  player.x = car.offsetLeft;
 }
