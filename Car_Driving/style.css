@@ -10,3 +10,12 @@
   height: 150px;
   background-color: blue;
 }
+
+.gameArea {
+  background-color: black;
+  width: 200px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
