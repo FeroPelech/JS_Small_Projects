@@ -53,4 +53,5 @@ function start() {
   car.setAttribute("class", "car");
   gameArea.appendChild(car);
   player.x = car.offsetLeft;
+  player.y = car.offsetTop;
 }
