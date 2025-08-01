@@ -29,6 +29,8 @@ function playGame() {
     if (keys.ArrowRight) {
       player.x += player.speed;
     }
+    car.style.left = player.x + "px";
+
     window.requestAnimationFrame(playGame);
   }
 }
