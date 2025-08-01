@@ -18,10 +18,10 @@ function playGame() {
   let car = document.querySelector(".car");
   if (player.start) {
     if (keys.ArrowUp) {
-      player.y += player.speed;
+      player.y -= player.speed;
     }
     if (keys.ArrowDown) {
-      player.y -= player.speed;
+      player.y += player.speed;
     }
     if (keys.ArrowLeft) {
       player.x -= player.speed;
