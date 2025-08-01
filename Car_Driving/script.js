@@ -30,7 +30,7 @@ function playGame() {
       player.x += player.speed;
     }
     car.style.left = player.x + "px";
-
+    car.style.top = player.y + "px";
     window.requestAnimationFrame(playGame);
   }
 }
