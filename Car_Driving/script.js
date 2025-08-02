@@ -18,16 +18,16 @@ function playGame() {
   let car = document.querySelector(".car");
   let road = gameArea.getBoundingClientRect();
   if (player.start) {
-    if (keys.ArrowUp) {
+    if (keys.ArrowUp && player.y > 0) {
       player.y -= player.speed;
     }
-    if (keys.ArrowDown) {
+    if (keys.ArrowDown && player.y < road.height - 150) {
       player.y += player.speed;
     }
     if (keys.ArrowLeft && player.x > 0) {
       player.x -= player.speed;
     }
-    if (keys.ArrowRight && player.x < road.x - 205) {
+    if (keys.ArrowRight && player.x < 150) {
       player.x += player.speed;
     }
     car.style.left = player.x + "px";
