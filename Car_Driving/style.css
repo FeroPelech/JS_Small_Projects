@@ -21,9 +21,10 @@
 }
 
 .line {
+  margin-top: 50px;
   position: absolute;
   height: 100px;
   width: 10px;
-  margin: auto;
+  margin-left: 95px;
   background-color: white;
 }
