@@ -50,7 +50,9 @@ function start() {
   startScreen.classList.add("hide");
   gameArea.classList.remove("hide");
   player.start = true;
-  for (let x = 0; x < 5; x++) {}
+  for (let x = 0; x < 5; x++) {
+    let div = document.createElement("div");
+  }
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
   car.innerText = "Car";
