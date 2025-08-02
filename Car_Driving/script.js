@@ -27,7 +27,7 @@ function playGame() {
     if (keys.ArrowLeft && player.x > 0) {
       player.x -= player.speed;
     }
-    if (keys.ArrowRight) {
+    if (keys.ArrowRight && player.x < road.x) {
       player.x += player.speed;
     }
     car.style.left = player.x + "px";
