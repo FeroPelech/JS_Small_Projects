@@ -19,3 +19,11 @@
   position: relative;
   margin: auto;
 }
+
+.line {
+  position: absolute;
+  height: 100px;
+  width: 10px;
+  margin: auto;
+  background-color: white;
+}
