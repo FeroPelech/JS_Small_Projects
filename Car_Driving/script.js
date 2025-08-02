@@ -52,6 +52,7 @@ function start() {
   player.start = true;
   for (let x = 0; x < 5; x++) {
     let div = document.createElement("div");
+    div.classList.add("line");
   }
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
