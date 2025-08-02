@@ -53,6 +53,7 @@ function start() {
   for (let x = 0; x < 5; x++) {
     let div = document.createElement("div");
     div.classList.add("line");
+    div.style.top = x * 150 + "px";
   }
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
