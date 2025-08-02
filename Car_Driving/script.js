@@ -54,6 +54,7 @@ function start() {
     let div = document.createElement("div");
     div.classList.add("line");
     div.style.top = x * 150 + "px";
+    gameArea.appendChild(div);
   }
   window.requestAnimationFrame(playGame);
   let car = document.createElement("div");
