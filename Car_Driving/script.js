@@ -60,6 +60,7 @@ function start() {
   for (let x = 0; x < 5; x++) {
     let div = document.createElement("div");
     div.classList.add("line");
+    div.y = x * 150;
     div.style.top = x * 150 + "px";
     gameArea.appendChild(div);
   }
