@@ -1,6 +1,7 @@
 const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
+let enemySpeed = 2;
 let player = { speed: 5 };
 let keys = {
   ArrowUp: false,
@@ -90,10 +91,10 @@ function start() {
   gameArea.appendChild(car);
   player.x = car.offsetLeft;
   player.y = car.offsetTop;
-  for (let x = 0; x < 3; x++) {
+  for (let x = 0; x < 1; x++) {
     let enemy = document.createElement("div");
     enemy.classList.add("enemy");
-    enemy.y = Math.floor(Math.random() * 500) * -1;
+    enemy.y = (x + 1) * 600 * -1;
     enemy.style.top = enemy.y + "px";
     enemy.style.left = Math.floor(Math.random() * 150) + "px";
     gameArea.appendChild(enemy);
