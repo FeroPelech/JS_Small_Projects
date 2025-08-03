@@ -25,6 +25,8 @@ function moveLines() {
   });
 }
 
+function moveEnemy() {}
+
 function playGame() {
   console.log("play game");
   let car = document.querySelector(".car");
