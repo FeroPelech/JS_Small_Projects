@@ -101,4 +101,7 @@ function start() {
       gameArea.appendChild(enemy);
     }
   }
+  if (!enemySpawnInterval) {
+    enemySpawnInterval = setInterval(createEnemy, 2000);
+  }
 }
