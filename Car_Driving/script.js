@@ -21,6 +21,7 @@ function moveLines() {
       item.y -= 750;
     }
     item.y += player.speed;
+    item.style.top = item.y + "px";
   });
 }
 
