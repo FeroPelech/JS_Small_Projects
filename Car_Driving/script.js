@@ -13,6 +13,8 @@ startScreen.addEventListener("click", start);
 document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
 
+function moveLines() {}
+
 function playGame() {
   console.log("play game");
   let car = document.querySelector(".car");
