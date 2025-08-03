@@ -18,6 +18,7 @@ function moveLines() {
   let lines = document.querySelectorAll(".line");
   lines.forEach((item) => {
     if (item.y > 750) {
+      item.y -= 750;
     }
   });
 }
