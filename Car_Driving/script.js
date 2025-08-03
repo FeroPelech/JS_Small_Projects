@@ -13,11 +13,14 @@ startScreen.addEventListener("click", start);
 document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
 
-function moveLines() {}
+function moveLines() {
+  console.log("Move lines fucntion");
+}
 
 function playGame() {
   console.log("play game");
   let car = document.querySelector(".car");
+  moveLines();
   let road = gameArea.getBoundingClientRect();
   if (player.start) {
     if (keys.ArrowUp && player.y > 0) {
