@@ -16,7 +16,10 @@ document.addEventListener("keyup", pressOff);
 function moveLines() {
   console.log("Move lines fucntion");
   let lines = document.querySelectorAll(".line");
-  lines.forEach((item) => {});
+  lines.forEach((item) => {
+    if (item.y > 750) {
+    }
+  });
 }
 
 function playGame() {
