@@ -91,12 +91,14 @@ function start() {
   gameArea.appendChild(car);
   player.x = car.offsetLeft;
   player.y = car.offsetTop;
-  for (let x = 0; x < 1; x++) {
-    let enemy = document.createElement("div");
-    enemy.classList.add("enemy");
-    enemy.y = (x + 1) * 600 * -1;
-    enemy.style.top = enemy.y + "px";
-    enemy.style.left = Math.floor(Math.random() * 150) + "px";
-    gameArea.appendChild(enemy);
+  function createEnemy() {
+    for (let x = 0; x < 1; x++) {
+      let enemy = document.createElement("div");
+      enemy.classList.add("enemy");
+      enemy.y = (x + 1) * 600 * -1;
+      enemy.style.top = enemy.y + "px";
+      enemy.style.left = Math.floor(Math.random() * 150) + "px";
+      gameArea.appendChild(enemy);
+    }
   }
 }
