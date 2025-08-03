@@ -25,7 +25,17 @@ function moveLines() {
   });
 }
 
-function moveEnemy() {}
+function moveEnemy() {
+  let ele = document.querySelectorAll(".enemy");
+  ele.forEach((item) => {
+    if (item.y >= 750) {
+      item.y -= 750;
+      item.style.left = Math.floor(Math.random() * 150) + "px";
+    }
+    item.y += player.speed;
+    item.style.top = item.y + "px";
+  });
+}
 
 function playGame() {
   console.log("play game");
