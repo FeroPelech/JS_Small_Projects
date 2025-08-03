@@ -41,6 +41,7 @@ function playGame() {
   console.log("play game");
   let car = document.querySelector(".car");
   moveLines();
+  moveEnemy();
   let road = gameArea.getBoundingClientRect();
   if (player.start) {
     if (keys.ArrowUp && player.y > 0) {
