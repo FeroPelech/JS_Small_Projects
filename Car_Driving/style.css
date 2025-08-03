@@ -11,6 +11,15 @@
   background-color: blue;
 }
 
+.enemy {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  width: 50px;
+  height: 150px;
+  background-color: red;
+}
+
 .gameArea {
   background-color: black;
   width: 200px;
