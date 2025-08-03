@@ -94,6 +94,7 @@ function start() {
     enemy.classList.add("enemy");
     enemy.y = Math.floor(Math.random() * 500) * -1;
     enemy.style.top = enemy.y + "px";
+    enemy.style.left = Math.floor(Math.random() * 150) + "px";
     gameArea.appendChild(enemy);
   }
 }
