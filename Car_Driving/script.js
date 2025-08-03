@@ -1,7 +1,7 @@
 const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
-let enemySpeed = 2;
+let enemySpeed = 4;
 let player = { speed: 5 };
 let keys = {
   ArrowUp: false,
@@ -33,7 +33,7 @@ function moveEnemy() {
       item.y -= 750;
       item.style.left = Math.floor(Math.random() * 150) + "px";
     }
-    item.y += player.speed;
+    item.y += enemySpeed;
     item.style.top = item.y + "px";
   });
 }
