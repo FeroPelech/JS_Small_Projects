@@ -20,6 +20,7 @@ function moveLines() {
     if (item.y > 750) {
       item.y -= 750;
     }
+    item.y += player.speed;
   });
 }
 
