@@ -2,6 +2,8 @@ const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
 let enemySpeed = 4;
+let enemySpawnInterval = null;
+let gameStarted = false;
 let player = { speed: 5 };
 let keys = {
   ArrowUp: false,
@@ -74,9 +76,13 @@ function pressOff(e) {
   console.log(keys);
 }
 function start() {
+  if (gameStarted) return;
+  gameStarted = true;
+
   startScreen.classList.add("hide");
   gameArea.classList.remove("hide");
   player.start = true;
+
   for (let x = 0; x < 5; x++) {
     let div = document.createElement("div");
     div.classList.add("line");
@@ -84,24 +90,29 @@ function start() {
     div.style.top = x * 150 + "px";
     gameArea.appendChild(div);
   }
-  window.requestAnimationFrame(playGame);
+
   let car = document.createElement("div");
   car.innerText = "Car";
   car.setAttribute("class", "car");
   gameArea.appendChild(car);
   player.x = car.offsetLeft;
   player.y = car.offsetTop;
+
   function createEnemy() {
-    for (let x = 0; x < 1; x++) {
-      let enemy = document.createElement("div");
-      enemy.classList.add("enemy");
-      enemy.y = (x + 1) * 600 * -1;
-      enemy.style.top = enemy.y + "px";
-      enemy.style.left = Math.floor(Math.random() * 150) + "px";
-      gameArea.appendChild(enemy);
-    }
+    const enemies = document.querySelectorAll(".enemy");
+    if (enemies.length >= 2) return;
+
+    let enemy = document.createElement("div");
+    enemy.classList.add("enemy");
+    enemy.y = -100;
+    enemy.style.top = enemy.y + "px";
+    enemy.style.left = Math.floor(Math.random() * 150) + "px";
+    gameArea.appendChild(enemy);
   }
+
   if (!enemySpawnInterval) {
-    enemySpawnInterval = setInterval(createEnemy, 2000);
+    enemySpawnInterval = setInterval(createEnemy, 3000);
   }
+
+  window.requestAnimationFrame(playGame);
 }
