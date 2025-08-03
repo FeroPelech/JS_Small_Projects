@@ -77,4 +77,11 @@ function start() {
   gameArea.appendChild(car);
   player.x = car.offsetLeft;
   player.y = car.offsetTop;
+  for (let x = 0; x < 3; x++) {
+    let enemy = document.createElement("div");
+    enemy.classList.add("enemy");
+    enemy.y = Math.floor(Math.random() * 500) * -1;
+    enemy.style.top = enemy.y + "px";
+    gameArea.appendChild(enemy);
+  }
 }
