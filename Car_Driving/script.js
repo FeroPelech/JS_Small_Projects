@@ -117,4 +117,6 @@ function start() {
   window.requestAnimationFrame(playGame);
 }
 
-function isOverlapping() {}
+function isOverlapping() {
+  const enemies = document.querySelectorAll(".enemy");
+}
