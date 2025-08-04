@@ -121,5 +121,6 @@ function isOverlapping() {
   const enemies = document.querySelectorAll(".enemy");
   for (let enemy of enemies) {
     const rect = enemy.getBoundingClientRect();
+    const existingTop = enemy.offsetTop;
   }
 }
