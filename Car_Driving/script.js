@@ -103,6 +103,7 @@ function start() {
     if (enemies.length >= 2) return;
 
     const newLeft = Math.floor(Math.random() * 150);
+    const newTop = -100;
     let enemy = document.createElement("div");
     enemy.classList.add("enemy");
     enemy.y = -100;
