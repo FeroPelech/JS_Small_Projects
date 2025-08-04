@@ -102,6 +102,7 @@ function start() {
     const enemies = document.querySelectorAll(".enemy");
     if (enemies.length >= 2) return;
 
+    const newLeft = Math.floor(Math.random() * 150);
     let enemy = document.createElement("div");
     enemy.classList.add("enemy");
     enemy.y = -100;
