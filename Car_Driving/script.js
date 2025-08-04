@@ -34,7 +34,7 @@ function moveEnemy() {
   let enemies = document.querySelectorAll(".enemy");
   enemies.forEach((item) => {
     if (item.y >= 800) {
-      item.remove(); // odstraň nepriateľov mimo obraz
+      item.remove();
     } else {
       item.y += enemySpeed;
       item.style.top = item.y + "px";
@@ -103,27 +103,33 @@ function start() {
   window.requestAnimationFrame(playGame);
 }
 
-// Nepriatelia sa spawnuju v 3 pruhoch (0, 75, 150)
 const enemyLanes = [0, 75, 150];
 
 function createEnemy() {
   const enemies = document.querySelectorAll(".enemy");
   if (enemies.length >= 5) return;
 
-  const newLeft = enemyLanes[Math.floor(Math.random() * enemyLanes.length)];
-  const newTop = -150;
+  let attempts = 0;
+  let spawned = false;
 
-  if (isOverlapping(newTop, newLeft)) return;
+  while (attempts < 10 && !spawned) {
+    const newLeft = Math.floor(Math.random() * 150);
+    const newTop = -150;
 
-  let enemy = document.createElement("div");
-  enemy.classList.add("enemy");
-  enemy.y = newTop;
-  enemy.style.top = newTop + "px";
-  enemy.style.left = newLeft + "px";
-  gameArea.appendChild(enemy);
+    if (!isOverlapping(newTop, newLeft)) {
+      let enemy = document.createElement("div");
+      enemy.classList.add("enemy");
+      enemy.y = newTop;
+      enemy.style.top = newTop + "px";
+      enemy.style.left = newLeft + "px";
+      gameArea.appendChild(enemy);
+      spawned = true;
+    }
+
+    attempts++;
+  }
 }
 
-// Porovnáva nové pozície s existujúcimi
 function isOverlapping(newTop, newLeft) {
   const enemies = document.querySelectorAll(".enemy");
 
