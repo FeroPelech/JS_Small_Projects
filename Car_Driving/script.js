@@ -141,3 +141,5 @@ function isOverlapping(newTop, newLeft) {
 
   return false;
 }
+
+function isCollide(a, b) {}
