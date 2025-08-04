@@ -1,10 +1,13 @@
 const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
+
 let enemySpeed = 4;
 let enemySpawnInterval = null;
 let gameStarted = false;
+
 let player = { speed: 5 };
+
 let keys = {
   ArrowUp: false,
   ArrowDown: false,
@@ -17,7 +20,6 @@ document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
 
 function moveLines() {
-  console.log("Move lines fucntion");
   let lines = document.querySelectorAll(".line");
   lines.forEach((item) => {
     if (item.y > 750) {
@@ -29,38 +31,34 @@ function moveLines() {
 }
 
 function moveEnemy() {
-  let ele = document.querySelectorAll(".enemy");
-  ele.forEach((item) => {
-    if (item.y >= 750) {
-      item.y -= 750;
-      item.style.left = Math.floor(Math.random() * 150) + "px";
+  let enemies = document.querySelectorAll(".enemy");
+  enemies.forEach((item) => {
+    if (item.y >= 800) {
+      item.remove(); // odstraň nepriateľov mimo obraz
+    } else {
+      item.y += enemySpeed;
+      item.style.top = item.y + "px";
     }
-    item.y += enemySpeed;
-    item.style.top = item.y + "px";
   });
 }
 
 function playGame() {
-  console.log("play game");
   let car = document.querySelector(".car");
   moveLines();
   moveEnemy();
+
   let road = gameArea.getBoundingClientRect();
+
   if (player.start) {
-    if (keys.ArrowUp && player.y > 0) {
-      player.y -= player.speed;
-    }
-    if (keys.ArrowDown && player.y < road.height - 150) {
+    if (keys.ArrowUp && player.y > 0) player.y -= player.speed;
+    if (keys.ArrowDown && player.y < road.height - 150)
       player.y += player.speed;
-    }
-    if (keys.ArrowLeft && player.x > 0) {
-      player.x -= player.speed;
-    }
-    if (keys.ArrowRight && player.x < 150) {
-      player.x += player.speed;
-    }
+    if (keys.ArrowLeft && player.x > 0) player.x -= player.speed;
+    if (keys.ArrowRight && player.x < 150) player.x += player.speed;
+
     car.style.left = player.x + "px";
     car.style.top = player.y + "px";
+
     window.requestAnimationFrame(playGame);
   }
 }
@@ -73,8 +71,8 @@ function pressOn(e) {
 function pressOff(e) {
   e.preventDefault();
   keys[e.key] = false;
-  console.log(keys);
 }
+
 function start() {
   if (gameStarted) return;
   gameStarted = true;
@@ -87,49 +85,59 @@ function start() {
     let div = document.createElement("div");
     div.classList.add("line");
     div.y = x * 150;
-    div.style.top = x * 150 + "px";
+    div.style.top = div.y + "px";
     gameArea.appendChild(div);
   }
 
   let car = document.createElement("div");
+  car.classList.add("car");
   car.innerText = "Car";
-  car.setAttribute("class", "car");
   gameArea.appendChild(car);
   player.x = car.offsetLeft;
   player.y = car.offsetTop;
 
-  function createEnemy() {
-    const enemies = document.querySelectorAll(".enemy");
-    if (enemies.length >= 2) return;
-
-    const newLeft = Math.floor(Math.random() * 150);
-    const newTop = -100;
-    let enemy = document.createElement("div");
-    enemy.classList.add("enemy");
-    enemy.y = -100;
-    enemy.style.top = enemy.y + "px";
-    enemy.style.left = Math.floor(Math.random() * 150) + "px";
-    gameArea.appendChild(enemy);
-  }
-
   if (!enemySpawnInterval) {
-    enemySpawnInterval = setInterval(createEnemy, 3000);
+    enemySpawnInterval = setInterval(createEnemy, 2000);
   }
 
   window.requestAnimationFrame(playGame);
 }
 
+// Nepriatelia sa spawnuju v 3 pruhoch (0, 75, 150)
+const enemyLanes = [0, 75, 150];
+
+function createEnemy() {
+  const enemies = document.querySelectorAll(".enemy");
+  if (enemies.length >= 5) return;
+
+  const newLeft = enemyLanes[Math.floor(Math.random() * enemyLanes.length)];
+  const newTop = -150;
+
+  if (isOverlapping(newTop, newLeft)) return;
+
+  let enemy = document.createElement("div");
+  enemy.classList.add("enemy");
+  enemy.y = newTop;
+  enemy.style.top = newTop + "px";
+  enemy.style.left = newLeft + "px";
+  gameArea.appendChild(enemy);
+}
+
+// Porovnáva nové pozície s existujúcimi
 function isOverlapping(newTop, newLeft) {
   const enemies = document.querySelectorAll(".enemy");
+
   for (let enemy of enemies) {
-    const rect = enemy.getBoundingClientRect();
     const existingTop = enemy.offsetTop;
     const existingLeft = enemy.offsetLeft;
-    const distance = Math.abs(existingTop - newTop);
-    const horizontalDistance = Math.abs(existingLeft - newLeft);
-    if (distance < 150 && horizontalDistance < 50) {
+
+    const verticalOverlap = Math.abs(existingTop - newTop) < 150;
+    const horizontalOverlap = existingLeft === newLeft;
+
+    if (verticalOverlap && horizontalOverlap) {
       return true;
     }
   }
+
   return false;
 }
