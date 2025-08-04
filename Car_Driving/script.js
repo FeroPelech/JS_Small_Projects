@@ -117,7 +117,7 @@ function start() {
   window.requestAnimationFrame(playGame);
 }
 
-function isOverlapping() {
+function isOverlapping(newTop, newLeft) {
   const enemies = document.querySelectorAll(".enemy");
   for (let enemy of enemies) {
     const rect = enemy.getBoundingClientRect();
