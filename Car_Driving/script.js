@@ -142,4 +142,6 @@ function isOverlapping(newTop, newLeft) {
   return false;
 }
 
-function isCollide(a, b) {}
+function isCollide(a, b) {
+  let aRect = a.getBoundingClientRect();
+}
