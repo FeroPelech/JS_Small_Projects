@@ -144,4 +144,5 @@ function isOverlapping(newTop, newLeft) {
 
 function isCollide(a, b) {
   let aRect = a.getBoundingClientRect();
+  let bRect = b.getBoundingClientRect();
 }
