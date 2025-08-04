@@ -116,3 +116,5 @@ function start() {
 
   window.requestAnimationFrame(playGame);
 }
+
+function isOverlapping() {}
