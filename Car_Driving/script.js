@@ -30,9 +30,12 @@ function moveLines() {
   });
 }
 
-function moveEnemy() {
+function moveEnemy(car) {
   let enemies = document.querySelectorAll(".enemy");
   enemies.forEach((item) => {
+    if (isCollide(car, item)) {
+      console.log("Hit");
+    }
     if (item.y >= 800) {
       item.remove();
     } else {
@@ -45,7 +48,7 @@ function moveEnemy() {
 function playGame() {
   let car = document.querySelector(".car");
   moveLines();
-  moveEnemy();
+  moveEnemy(car);
 
   let road = gameArea.getBoundingClientRect();
 
