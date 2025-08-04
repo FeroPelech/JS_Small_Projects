@@ -125,5 +125,9 @@ function isOverlapping(newTop, newLeft) {
     const existingLeft = enemy.offsetLeft;
     const distance = Math.abs(existingTop - newTop);
     const horizontalDistance = Math.abs(existingLeft - newLeft);
+    if (distance < 150 && horizontalDistance < 50) {
+      return true;
+    }
   }
+  return false;
 }
