@@ -166,4 +166,6 @@ function isCollide(a, b) {
   );
 }
 
-function endGame() {}
+function endGame() {
+  player.start = false;
+}
