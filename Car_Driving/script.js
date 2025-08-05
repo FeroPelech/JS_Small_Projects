@@ -164,3 +164,5 @@ function isCollide(a, b) {
     aRect.left > bRect.right
   );
 }
+
+function endGame() {}
