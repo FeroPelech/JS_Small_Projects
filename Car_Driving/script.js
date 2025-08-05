@@ -85,6 +85,7 @@ function start() {
 
   startScreen.classList.add("hide");
   gameArea.classList.remove("hide");
+  gameArea.innerHTML = "";
   player.start = true;
   player.score = 0;
   for (let x = 0; x < 5; x++) {
