@@ -64,6 +64,7 @@ function playGame() {
 
     window.requestAnimationFrame(playGame);
     player.score++;
+    score.innerText = player.score;
   }
 }
 
