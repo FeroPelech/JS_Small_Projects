@@ -63,6 +63,7 @@ function playGame() {
     car.style.top = player.y + "px";
 
     window.requestAnimationFrame(playGame);
+    player.score++;
   }
 }
 
@@ -83,7 +84,7 @@ function start() {
   startScreen.classList.add("hide");
   gameArea.classList.remove("hide");
   player.start = true;
-
+  player.score = 0;
   for (let x = 0; x < 5; x++) {
     let div = document.createElement("div");
     div.classList.add("line");
