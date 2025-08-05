@@ -35,6 +35,7 @@ function moveEnemy(car) {
   enemies.forEach((item) => {
     if (isCollide(car, item)) {
       console.log("Hit");
+      endGame();
     }
     if (item.y >= 800) {
       item.remove();
