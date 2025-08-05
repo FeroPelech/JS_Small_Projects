@@ -6,7 +6,7 @@ let enemySpeed = 4;
 let enemySpawnInterval = null;
 let gameStarted = false;
 
-let player = { speed: 5 };
+let player = { speed: 5, score: 0 };
 
 let keys = {
   ArrowUp: false,
