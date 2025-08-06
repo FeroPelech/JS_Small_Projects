@@ -174,5 +174,7 @@ function endGame() {
 }
 
 function randomColor() {
-  function c() {}
+  function c() {
+    let hex = Math.floor(Math.random() * 256).toString(16);
+  }
 }
