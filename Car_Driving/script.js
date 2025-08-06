@@ -2,12 +2,7 @@ const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
 
-let enemySpeed = 4;
-let enemySpawnInterval = null;
-let gameStarted = false;
-
-let player = { speed: 5, score: 0 };
-
+let player = { speed: 5, score: 0, start: false };
 let keys = {
   ArrowUp: false,
   ArrowDown: false,
@@ -15,43 +10,92 @@ let keys = {
   ArrowLeft: false,
 };
 
+let enemySpeed = 4;
+let enemySpawnInterval = null;
+
 startScreen.addEventListener("click", start);
 document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
 
+function start() {
+  startScreen.classList.add("hide");
+  gameArea.classList.remove("hide");
+  gameArea.innerHTML = "";
+  player.start = true;
+  player.score = 0;
+
+  for (let x = 0; x < 5; x++) {
+    let div = document.createElement("div");
+    div.classList.add("line");
+    div.y = x * 150;
+    div.style.top = div.y + "px";
+    gameArea.appendChild(div);
+  }
+
+  let car = document.createElement("div");
+  car.classList.add("car");
+  gameArea.appendChild(car);
+  player.x = car.offsetLeft;
+  player.y = car.offsetTop;
+
+  for (let i = 0; i < 3; i++) createEnemy();
+
+  if (!enemySpawnInterval) {
+    enemySpawnInterval = setInterval(() => {
+      if (document.querySelectorAll(".enemy").length < 6) {
+        createEnemy();
+      }
+    }, 2000);
+  }
+
+  window.requestAnimationFrame(playGame);
+}
+
+function createEnemy() {
+  const enemy = document.createElement("div");
+  enemy.classList.add("enemy");
+  enemy.y = -150;
+  enemy.style.top = `${enemy.y}px`;
+  enemy.style.left = `${Math.floor(Math.random() * 150)}px`;
+  gameArea.appendChild(enemy);
+}
+
 function moveLines() {
   let lines = document.querySelectorAll(".line");
-  lines.forEach((item) => {
-    if (item.y > 750) {
-      item.y -= 750;
+  lines.forEach((line) => {
+    line.y += player.speed;
+    if (line.y >= 800) {
+      line.y = -100;
     }
-    item.y += player.speed;
-    item.style.top = item.y + "px";
+    line.style.top = line.y + "px";
   });
 }
 
-function moveEnemy(car) {
+function moveEnemies(car) {
   let enemies = document.querySelectorAll(".enemy");
-  enemies.forEach((item) => {
-    if (isCollide(car, item)) {
-      console.log("Hit");
-      endGame();
+  enemies.forEach((enemy) => {
+    enemy.y += enemySpeed;
+    if (enemy.y >= 800) {
+      enemy.y = -150;
+      enemy.style.left = `${Math.floor(Math.random() * 150)}px`;
+      enemy.style.backgroundColor = randomColor();
     }
-    if (item.y >= 800) {
-      item.remove();
-      item.style.left = Math.floor(Math.random() * 150) + "px";
-      item.style.backgroundColor = randomColor();
-    } else {
-      item.y += enemySpeed;
-      item.style.top = item.y + "px";
+
+    enemy.style.top = `${enemy.y}px`;
+
+    if (isCollide(car, enemy)) {
+      endGame();
     }
   });
 }
 
 function playGame() {
   let car = document.querySelector(".car");
+
+  if (!car) return;
+
   moveLines();
-  moveEnemy(car);
+  moveEnemies(car);
 
   let road = gameArea.getBoundingClientRect();
 
@@ -62,8 +106,8 @@ function playGame() {
     if (keys.ArrowLeft && player.x > 0) player.x -= player.speed;
     if (keys.ArrowRight && player.x < 150) player.x += player.speed;
 
-    car.style.left = player.x + "px";
     car.style.top = player.y + "px";
+    car.style.left = player.x + "px";
 
     window.requestAnimationFrame(playGame);
     player.score++;
@@ -81,82 +125,6 @@ function pressOff(e) {
   keys[e.key] = false;
 }
 
-function start() {
-  if (gameStarted) return;
-  gameStarted = true;
-
-  startScreen.classList.add("hide");
-  // gameArea.classList.remove("hide");
-  gameArea.innerHTML = "";
-  player.start = true;
-  player.score = 0;
-  for (let x = 0; x < 5; x++) {
-    let div = document.createElement("div");
-    div.classList.add("line");
-    div.y = x * 150;
-    div.style.top = div.y + "px";
-    gameArea.appendChild(div);
-  }
-
-  let car = document.createElement("div");
-  car.classList.add("car");
-  car.innerText = "Car";
-  gameArea.appendChild(car);
-  player.x = car.offsetLeft;
-  player.y = car.offsetTop;
-
-  if (!enemySpawnInterval) {
-    enemySpawnInterval = setInterval(createEnemy, 2000);
-  }
-
-  window.requestAnimationFrame(playGame);
-}
-
-const enemyLanes = [0, 75, 150];
-
-function createEnemy() {
-  const enemies = document.querySelectorAll(".enemy");
-  if (enemies.length >= 5) return;
-
-  let attempts = 0;
-  let spawned = false;
-
-  while (attempts < 10 && !spawned) {
-    const newLeft = Math.floor(Math.random() * 150);
-    const newTop = -150;
-
-    if (!isOverlapping(newTop, newLeft)) {
-      let enemy = document.createElement("div");
-      enemy.classList.add("enemy");
-      enemy.y = newTop;
-      enemy.style.top = newTop + "px";
-      enemy.style.left = newLeft + "px";
-      gameArea.appendChild(enemy);
-      spawned = true;
-    }
-
-    attempts++;
-  }
-}
-
-function isOverlapping(newTop, newLeft) {
-  const enemies = document.querySelectorAll(".enemy");
-
-  for (let enemy of enemies) {
-    const existingTop = enemy.offsetTop;
-    const existingLeft = enemy.offsetLeft;
-
-    const verticalOverlap = Math.abs(existingTop - newTop) < 160;
-    const horizontalOverlap = Math.abs(existingLeft - newLeft) < 55;
-
-    if (verticalOverlap && horizontalOverlap) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
 function isCollide(a, b) {
   let aRect = a.getBoundingClientRect();
   let bRect = b.getBoundingClientRect();
@@ -171,14 +139,16 @@ function isCollide(a, b) {
 
 function endGame() {
   player.start = false;
-  score.innerHTML = "Game Over <br>Score was " + player.score;
+  score.innerHTML = "Game Over<br>Score: " + player.score;
   startScreen.classList.remove("hide");
+  clearInterval(enemySpawnInterval);
+  enemySpawnInterval = null;
 }
 
 function randomColor() {
-  function c() {
-    let hex = Math.floor(Math.random() * 256).toString(16);
-    return ("0" + String(hex)).substring(-2);
-  }
-  return "#" + c() + c() + c();
+  const hex = () => {
+    let h = Math.floor(Math.random() * 256).toString(16);
+    return h.length === 1 ? "0" + h : h;
+  };
+  return "#" + hex() + hex() + hex();
 }
