@@ -84,7 +84,7 @@ function start() {
   gameStarted = true;
 
   startScreen.classList.add("hide");
-  gameArea.classList.remove("hide");
+  // gameArea.classList.remove("hide");
   gameArea.innerHTML = "";
   player.start = true;
   player.score = 0;
@@ -172,3 +172,5 @@ function endGame() {
   score.innerHTML = "Game Over <br>Score was " + player.score;
   startScreen.classList.remove("hide");
 }
+
+function randomColor() {}
