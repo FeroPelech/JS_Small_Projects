@@ -173,4 +173,6 @@ function endGame() {
   startScreen.classList.remove("hide");
 }
 
-function randomColor() {}
+function randomColor() {
+  function c() {}
+}
