@@ -178,4 +178,5 @@ function randomColor() {
     let hex = Math.floor(Math.random() * 256).toString(16);
     return ("0" + String(hex)).substring(-2);
   }
+  return "#" + c() + c() + c();
 }
