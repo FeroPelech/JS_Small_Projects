@@ -39,6 +39,7 @@ function moveEnemy(car) {
     }
     if (item.y >= 800) {
       item.remove();
+      item.style.left = Math.floor(Math.random() * 150) + "px";
     } else {
       item.y += enemySpeed;
       item.style.top = item.y + "px";
