@@ -2,7 +2,12 @@ const score = document.querySelector(".score");
 const startScreen = document.querySelector(".startScreen");
 const gameArea = document.querySelector(".gameArea");
 
+let enemySpeed = 4;
+let enemySpawnInterval = null;
+let gameStarted = false;
+
 let player = { speed: 5, score: 0, start: false };
+
 let keys = {
   ArrowUp: false,
   ArrowDown: false,
@@ -10,64 +15,18 @@ let keys = {
   ArrowLeft: false,
 };
 
-let enemySpeed = 4;
-let enemySpawnInterval = null;
-
 startScreen.addEventListener("click", start);
 document.addEventListener("keydown", pressOn);
 document.addEventListener("keyup", pressOff);
 
-function start() {
-  startScreen.classList.add("hide");
-  gameArea.classList.remove("hide");
-  gameArea.innerHTML = "";
-  player.start = true;
-  player.score = 0;
-
-  for (let x = 0; x < 5; x++) {
-    let div = document.createElement("div");
-    div.classList.add("line");
-    div.y = x * 150;
-    div.style.top = div.y + "px";
-    gameArea.appendChild(div);
-  }
-
-  let car = document.createElement("div");
-  car.classList.add("car");
-  gameArea.appendChild(car);
-  player.x = car.offsetLeft;
-  player.y = car.offsetTop;
-
-  for (let i = 0; i < 3; i++) createEnemy();
-
-  if (!enemySpawnInterval) {
-    enemySpawnInterval = setInterval(() => {
-      if (document.querySelectorAll(".enemy").length < 6) {
-        createEnemy();
-      }
-    }, 2000);
-  }
-
-  window.requestAnimationFrame(playGame);
-}
-
-function createEnemy() {
-  const enemy = document.createElement("div");
-  enemy.classList.add("enemy");
-  enemy.y = -150;
-  enemy.style.top = `${enemy.y}px`;
-  enemy.style.left = `${Math.floor(Math.random() * 150)}px`;
-  gameArea.appendChild(enemy);
-}
-
 function moveLines() {
   let lines = document.querySelectorAll(".line");
-  lines.forEach((line) => {
-    line.y += player.speed;
-    if (line.y >= 800) {
-      line.y = -100;
+  lines.forEach((item) => {
+    if (item.y > 750) {
+      item.y -= 750;
     }
-    line.style.top = line.y + "px";
+    item.y += player.speed;
+    item.style.top = item.y + "px";
   });
 }
 
@@ -75,13 +34,14 @@ function moveEnemies(car) {
   let enemies = document.querySelectorAll(".enemy");
   enemies.forEach((enemy) => {
     enemy.y += enemySpeed;
+
     if (enemy.y >= 800) {
       enemy.y = -150;
       enemy.style.left = `${Math.floor(Math.random() * 150)}px`;
       enemy.style.backgroundColor = randomColor();
     }
 
-    enemy.style.top = `${enemy.y}px`;
+    enemy.style.top = enemy.y + "px";
 
     if (isCollide(car, enemy)) {
       endGame();
@@ -91,9 +51,6 @@ function moveEnemies(car) {
 
 function playGame() {
   let car = document.querySelector(".car");
-
-  if (!car) return;
-
   moveLines();
   moveEnemies(car);
 
@@ -106,8 +63,8 @@ function playGame() {
     if (keys.ArrowLeft && player.x > 0) player.x -= player.speed;
     if (keys.ArrowRight && player.x < 150) player.x += player.speed;
 
-    car.style.top = player.y + "px";
     car.style.left = player.x + "px";
+    car.style.top = player.y + "px";
 
     window.requestAnimationFrame(playGame);
     player.score++;
@@ -125,6 +82,59 @@ function pressOff(e) {
   keys[e.key] = false;
 }
 
+function start() {
+  if (gameStarted) return;
+  gameStarted = true;
+
+  startScreen.classList.add("hide");
+  gameArea.classList.remove("hide");
+  gameArea.innerHTML = "";
+  player.start = true;
+  player.score = 0;
+
+  // 💠 Biele čiary na ceste
+  for (let x = 0; x < 5; x++) {
+    let div = document.createElement("div");
+    div.classList.add("line");
+    div.y = x * 150;
+    div.style.top = div.y + "px";
+    gameArea.appendChild(div);
+  }
+
+  // 🟦 Hráčovo auto
+  let car = document.createElement("div");
+  car.classList.add("car");
+  car.innerText = "Car";
+  gameArea.appendChild(car);
+
+  // 🔽 Umiestnime hráča dolu
+  player.x = 75;
+  player.y = gameArea.offsetHeight - 160;
+  car.style.left = player.x + "px";
+  car.style.top = player.y + "px";
+
+  // 🔴 Spustenie generovania nepriateľov
+  if (!enemySpawnInterval) {
+    enemySpawnInterval = setInterval(() => {
+      if (document.querySelectorAll(".enemy").length < 6) {
+        createEnemy();
+      }
+    }, 2000);
+  }
+
+  window.requestAnimationFrame(playGame);
+}
+
+function createEnemy() {
+  let enemy = document.createElement("div");
+  enemy.classList.add("enemy");
+  enemy.y = -150;
+  enemy.style.top = enemy.y + "px";
+  enemy.style.left = `${Math.floor(Math.random() * 150)}px`;
+  enemy.style.backgroundColor = randomColor();
+  gameArea.appendChild(enemy);
+}
+
 function isCollide(a, b) {
   let aRect = a.getBoundingClientRect();
   let bRect = b.getBoundingClientRect();
@@ -139,10 +149,11 @@ function isCollide(a, b) {
 
 function endGame() {
   player.start = false;
-  score.innerHTML = "Game Over<br>Score: " + player.score;
+  score.innerHTML = "Game Over<br>Score was: " + player.score;
   startScreen.classList.remove("hide");
   clearInterval(enemySpawnInterval);
   enemySpawnInterval = null;
+  gameStarted = false;
 }
 
 function randomColor() {
