@@ -11,5 +11,5 @@ console.log(textArea);
 });
 
 function textCounter(e) {
-  console.log(e);
+  let count = textArea.value.length;
 }
