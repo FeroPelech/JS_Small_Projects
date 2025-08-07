@@ -6,6 +6,10 @@ textArea.addEventListener("change", textCounter);
 textArea.addEventListener("keyup", textCounter);
 textArea.addEventListener("keydown", textCounter);
 
+["keyup", "keydown", "change"].forEach(function (e) {
+  textArea.addEventListener(e, textCounter);
+});
+
 function textCounter(e) {
   console.log(e);
 }
