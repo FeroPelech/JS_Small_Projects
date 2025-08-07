@@ -10,6 +10,8 @@ console.log(textArea);
   textArea.addEventListener(e, textCounter);
 });
 
+const maxLength = 10;
+
 function textCounter(e) {
   let count = textArea.value.length;
 }
