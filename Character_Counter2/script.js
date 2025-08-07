@@ -11,6 +11,7 @@ console.log(textArea);
 });
 
 const maxLength = 10;
+const warnLength = 5;
 
 function textCounter(e) {
   let count = textArea.value.length;
