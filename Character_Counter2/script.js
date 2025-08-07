@@ -5,3 +5,7 @@ console.log(textArea);
 textArea.addEventListener("change", textCounter);
 textArea.addEventListener("keyup", textCounter);
 textArea.addEventListener("keydown", textCounter);
+
+function textCounter(e) {
+  console.log(e);
+}
