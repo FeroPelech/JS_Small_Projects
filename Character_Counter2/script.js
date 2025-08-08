@@ -15,4 +15,7 @@ const warnLength = 5;
 
 function textCounter(e) {
   let count = textArea.value.length;
+  if (count > maxLength) {
+    console.log(textArea.value.substring(0, maxLength));
+  }
 }
