@@ -2,3 +2,7 @@ textarea {
   width: 400px;
   height: 50px;
 }
+
+.red {
+  color: red;
+}
