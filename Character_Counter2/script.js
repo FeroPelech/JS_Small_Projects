@@ -18,4 +18,6 @@ function textCounter(e) {
     console.log(textArea.value.substring(0, maxLength));
     textArea.value = textArea.value.substring(0, maxLength);
   }
+  if (count > warnLength) {
+  }
 }
