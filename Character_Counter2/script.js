@@ -19,5 +19,6 @@ function textCounter(e) {
     textArea.value = textArea.value.substring(0, maxLength);
   }
   if (count > warnLength) {
+    output.classList.add("red");
   }
 }
