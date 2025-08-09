@@ -10,7 +10,7 @@ const textArea = document.querySelector("textarea");
 });
 
 const maxLength = 20;
-const warnLength = 5;
+const warnLength = 7;
 
 function textCounter(e) {
   let count = textArea.value.length;
