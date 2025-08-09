@@ -9,7 +9,7 @@ const textArea = document.querySelector("textarea");
   textArea.addEventListener(e, textCounter);
 });
 
-const maxLength = 10;
+const maxLength = 20;
 const warnLength = 5;
 
 function textCounter(e) {
