@@ -20,6 +20,8 @@ function textCounter(e) {
   }
   if (count > warnLength) {
     output.classList.add("red");
+  } else {
+    output.classList.remove("red");
   }
   output.innerHTML = maxLength - count + "characters left";
 }
