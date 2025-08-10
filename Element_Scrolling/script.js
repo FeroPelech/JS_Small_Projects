@@ -21,4 +21,6 @@ function setupScroll() {
   scrollInt = setInterval(scrollingEle, 50);
 }
 
-function scrollingEle() {}
+function scrollingEle() {
+  let scrollSpeed = 10;
+}
