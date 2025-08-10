@@ -6,3 +6,10 @@
   border: 1px solid black;
   overflow: hidden;
 }
+
+#cElement #sElement {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
