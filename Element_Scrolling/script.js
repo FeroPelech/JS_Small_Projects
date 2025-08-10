@@ -13,4 +13,6 @@ btn.addEventListener("click", () => {
   console.log("Click");
 });
 
-function setupScroll() {}
+function setupScroll() {
+  sElement.innerHTML = content;
+}
