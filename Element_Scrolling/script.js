@@ -20,3 +20,5 @@ function setupScroll() {
   sElement.style.top = temp.height + "px";
   scrollInt = setInterval(scrollingEle, 50);
 }
+
+function scrollingEle() {}
