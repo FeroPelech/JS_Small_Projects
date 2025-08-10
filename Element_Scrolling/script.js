@@ -16,4 +16,5 @@ btn.addEventListener("click", () => {
 function setupScroll() {
   sElement.innerHTML = content;
   let temp = sElement.getBoundingClientRect();
+  cElement.style.height = temp.height + "px";
 }
