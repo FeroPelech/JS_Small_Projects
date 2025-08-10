@@ -18,4 +18,5 @@ function setupScroll() {
   let temp = sElement.getBoundingClientRect();
   cElement.style.height = temp.height + "px";
   sElement.style.top = temp.height + "px";
+  scrollInt = setInterval(scrollingEle, 50);
 }
