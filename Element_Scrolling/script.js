@@ -24,4 +24,5 @@ function setupScroll() {
 function scrollingEle() {
   let scrollSpeed = 10;
   let posY = parseInt(sElement.style.top);
+  sElement.style.top = posY + scrollSpeed + "px";
 }
