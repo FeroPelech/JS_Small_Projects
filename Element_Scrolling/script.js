@@ -15,4 +15,5 @@ btn.addEventListener("click", () => {
 
 function setupScroll() {
   sElement.innerHTML = content;
+  let temp = sElement.getBoundingClientRect();
 }
