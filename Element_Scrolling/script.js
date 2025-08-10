@@ -17,4 +17,5 @@ function setupScroll() {
   sElement.innerHTML = content;
   let temp = sElement.getBoundingClientRect();
   cElement.style.height = temp.height + "px";
+  sElement.style.top = temp.height + "px";
 }
