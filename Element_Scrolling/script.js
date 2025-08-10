@@ -9,3 +9,5 @@ window.onload = setupScroll;
 btn.addEventListener("click", () => {
   console.log("Click");
 });
+
+function setupScroll() {}
