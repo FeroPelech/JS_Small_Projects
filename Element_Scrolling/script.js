@@ -4,6 +4,8 @@ const sElement = document.getElementById("sElement");
 const speed = document.querySelector("input");
 const output = document.querySelector(".output");
 
+window.onload = setupScroll;
+
 btn.addEventListener("click", () => {
   console.log("Click");
 });
