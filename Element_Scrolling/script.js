@@ -14,6 +14,8 @@ btn.addEventListener("click", () => {
   console.log("Click");
 });
 
+cElement.addEventListener("mouseenter", scrollSpeed);
+
 function setupScroll() {
   sElement.innerHTML = content;
   let temp = sElement.getBoundingClientRect();
