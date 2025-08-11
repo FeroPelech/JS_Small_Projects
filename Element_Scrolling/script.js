@@ -24,11 +24,13 @@ function setupScroll() {
 
 function scrollingEle() {
   let scrollSpeed = 10;
-  let posY = parseInt(sElement.style.top);
-  if (posY + sElement.clientHeight > 0) {
-    sElement.style.top = posY + scrollSpeed + "px";
-  } else {
-    sElement.style.top = cElement.clientHeight + "px";
+  if (scroller) {
+    let posY = parseInt(sElement.style.top);
+    if (posY + sElement.clientHeight > 0) {
+      sElement.style.top = posY + scrollSpeed + "px";
+    } else {
+      sElement.style.top = cElement.clientHeight + "px";
+    }
   }
   output.innerHTML = "Scroll speed " + scrollSpeed + " Y position " + posY;
 }
