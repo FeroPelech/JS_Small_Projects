@@ -25,7 +25,7 @@ function scrollSpeed(e) {
 function setupScroll() {
   sElement.innerHTML = content;
   let temp = sElement.getBoundingClientRect();
-  cElement.style.height = temp.height + "px";
+  cElement.style.height = temp.height / 2 + "px";
   sElement.style.top = temp.height + "px";
   scrollInt = setInterval(scrollingEle, 50);
 }
