@@ -18,7 +18,6 @@ cElement.addEventListener("mouseenter", scrollSpeed);
 cElement.addEventListener("mouseleave", scrollSpeed);
 
 function scrollSpeed(e) {
-  console.log(e.type);
   scroller = e.type == "mouseenter" ? false : true;
   output.innerHTML = "Mouse stopper";
 }
