@@ -31,6 +31,6 @@ function scrollingEle() {
     } else {
       sElement.style.top = cElement.clientHeight + "px";
     }
+    output.innerHTML = "Scroll speed " + scrollSpeed + " Y position " + posY;
   }
-  output.innerHTML = "Scroll speed " + scrollSpeed + " Y position " + posY;
 }
