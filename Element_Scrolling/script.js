@@ -12,8 +12,8 @@ window.onload = setupScroll;
 
 btn.addEventListener("click", () => {
   console.log("Click");
-  scroller ^= true;
-  btn.innerText = !scroller ? "Start" : "Stop";
+  scroller = !scroller;
+  btn.innerText = scroller ? "Stop" : "Start";
 });
 
 cElement.addEventListener("mouseenter", scrollSpeed);
