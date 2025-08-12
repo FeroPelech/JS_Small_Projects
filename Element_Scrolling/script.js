@@ -3,7 +3,6 @@ const cElement = document.getElementById("cElement");
 const sElement = document.getElementById("sElement");
 const speed = document.querySelector("input");
 const output = document.querySelector(".output");
-console.log(btn, cElement, sElement, speed, output);
 let scroller = true;
 
 const content =
@@ -12,7 +11,6 @@ const content =
 window.onload = setupScroll;
 
 btn.addEventListener("click", () => {
-  console.log("Click");
   scroller = !scroller;
   btn.innerText = scroller ? "Stop" : "Start";
 });
