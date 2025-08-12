@@ -12,6 +12,7 @@ window.onload = setupScroll;
 
 btn.addEventListener("click", () => {
   console.log("Click");
+  scroller ^= true;
 });
 
 cElement.addEventListener("mouseenter", scrollSpeed);
