@@ -31,7 +31,7 @@ function setupScroll() {
 }
 
 function scrollingEle() {
-  let scrollSpeed = 10;
+  let scrollSpeed = speed.value;
   if (scroller) {
     let posY = parseInt(sElement.style.top);
     if (posY + sElement.clientHeight > 0) {
