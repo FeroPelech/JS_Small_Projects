@@ -1,10 +1,15 @@
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .copyMe {
   display: inline-block;
   padding: 15px;
   border: 1px solid black;
-  position: absolute;
   min-width: 120px;
   text-align: center;
-  height: 40px;
+  height: auto;
   cursor: pointer;
 }
