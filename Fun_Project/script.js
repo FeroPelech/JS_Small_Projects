@@ -6,4 +6,5 @@ rep.forEach((e, index) => {
   e.addEventListener("click", (e) => {
     console.log(index);
   });
+  e.style.left = index * 100 + "px";
 });
