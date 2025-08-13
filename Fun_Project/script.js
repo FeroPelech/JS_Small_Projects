@@ -1,4 +1,5 @@
 const rep = document.querySelectorAll(".copyMe");
+let holder = {};
 
 rep.forEach((e, index) => {
   console.log(e);
