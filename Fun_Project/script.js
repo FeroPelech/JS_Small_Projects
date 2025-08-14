@@ -19,6 +19,8 @@ rep.forEach((ele, index) => {
     function mover() {
       if (holder.obj.moves <= 0) {
         clearInterval(holder.obj.int);
+      } else {
+        holder.obj.moves--;
       }
     }
 
