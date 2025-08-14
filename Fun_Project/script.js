@@ -1,10 +1,10 @@
 const rep = document.querySelectorAll(".copyMe");
 let holder = {};
 
-rep.forEach((e, index) => {
-  console.log(e);
+rep.forEach((ele, index) => {
+  console.log(ele);
   console.log(index);
-  e.addEventListener("click", (ele) => {
+  ele.addEventListener("click", (e) => {
     console.log(index);
     holder.obj = ele.cloneNode(true);
     holder.obj.style.cursor = "move";
@@ -16,5 +16,5 @@ rep.forEach((e, index) => {
     document.body.appendChild(holder.obj);
     console.log(holder.obj);
   });
-  e.style.left = index * 100 + "px";
+  ele.style.left = index * 100 + "px";
 });
