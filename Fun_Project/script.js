@@ -8,6 +8,7 @@ rep.forEach((e, index) => {
     console.log(index);
     holder.obj = e.cloneNode(true);
     holder.obj.style.cursor = "move";
+    holder.obj.classList.add("newb");
     console.log(holder.obj);
   });
   e.style.left = index * 100 + "px";
