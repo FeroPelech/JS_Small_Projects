@@ -9,6 +9,7 @@ rep.forEach((e, index) => {
     holder.obj = e.cloneNode(true);
     holder.obj.style.cursor = "move";
     holder.obj.classList.add("newb");
+    holder.obj.style.backgroundColor = "green";
     console.log(holder.obj);
   });
   e.style.left = index * 100 + "px";
