@@ -15,6 +15,9 @@ rep.forEach((ele, index) => {
     holder.obj.style.top = ele.offsetTop + 200 + "px";
     holder.obj.moves = Math.floor(Math.random() * 25);
     holder.obj.int = setInterval(mover, 25);
+
+    function mover() {}
+
     document.body.appendChild(holder.obj);
     console.log(holder.obj);
   });
