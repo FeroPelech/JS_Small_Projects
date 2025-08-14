@@ -21,6 +21,7 @@ rep.forEach((ele, index) => {
         clearInterval(holder.obj.int);
       } else {
         holder.obj.moves--;
+        holder.obj.startY += 10;
       }
     }
 
