@@ -4,12 +4,13 @@ let holder = {};
 rep.forEach((e, index) => {
   console.log(e);
   console.log(index);
-  e.addEventListener("click", (e) => {
+  e.addEventListener("click", (ele) => {
     console.log(index);
-    holder.obj = e.cloneNode(true);
+    holder.obj = ele.cloneNode(true);
     holder.obj.style.cursor = "move";
     holder.obj.classList.add("newb");
     holder.obj.style.backgroundColor = "green";
+    holder.obj.style.left = ele.offsetLeft + "px";
     console.log(holder.obj);
   });
   e.style.left = index * 100 + "px";
