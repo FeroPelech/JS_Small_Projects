@@ -16,7 +16,10 @@ rep.forEach((ele, index) => {
     holder.obj.moves = Math.floor(Math.random() * 25);
     holder.obj.int = setInterval(mover, 25);
 
-    function mover() {}
+    function mover() {
+      if (holder.obj.moves <= 0) {
+      }
+    }
 
     document.body.appendChild(holder.obj);
     console.log(holder.obj);
