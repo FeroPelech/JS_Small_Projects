@@ -10,7 +10,7 @@ rep.forEach((ele, index) => {
     holder.obj.style.cursor = "move";
     holder.obj.classList.add("newb");
     holder.obj.style.backgroundColor = "green";
-    holder.obj.style.position = "absolute";
+    // holder.obj.style.position = "absolute";
     holder.obj.style.left = ele.offsetLeft + "px";
     holder.obj.style.top = ele.offsetTop + 200 + "px";
     holder.obj.moves = Math.floor(Math.random() * 25);
