@@ -12,6 +12,8 @@ rep.forEach((e, index) => {
     holder.obj.style.backgroundColor = "green";
     holder.obj.style.left = ele.offsetLeft + "px";
     holder.obj.style.top = ele.offsetTop + 200 + "px";
+
+    document.body.appendChild(holder.obj);
     console.log(holder.obj);
   });
   e.style.left = index * 100 + "px";
