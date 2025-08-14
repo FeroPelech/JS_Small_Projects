@@ -7,6 +7,7 @@ rep.forEach((e, index) => {
   e.addEventListener("click", (e) => {
     console.log(index);
     holder.obj = e.cloneNode(true);
+    holder.obj.style.cursor = "move";
     console.log(holder.obj);
   });
   e.style.left = index * 100 + "px";
