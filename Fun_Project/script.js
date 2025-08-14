@@ -13,6 +13,7 @@ rep.forEach((ele, index) => {
     holder.obj.style.position = "absolute";
     holder.obj.style.left = ele.offsetLeft + "px";
     holder.obj.style.top = ele.offsetTop + 200 + "px";
+    holder.obj.moves = Math.floor(Math.random() * 25);
 
     document.body.appendChild(holder.obj);
     console.log(holder.obj);
