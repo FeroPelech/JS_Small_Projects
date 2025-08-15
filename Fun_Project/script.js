@@ -15,6 +15,7 @@ rep.forEach((ele, index) => {
     holder.obj.style.top = ele.offsetTop + 200 + "px";
 
     holder.obj.startX = ele.offsetLeft;
+    holder.obj.startY = ele.offsetTop;
 
     holder.obj.moves = Math.floor(Math.random() * 25);
     holder.obj.int = setInterval(mover, 25);
