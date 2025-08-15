@@ -27,6 +27,7 @@ rep.forEach((ele, index) => {
         holder.obj.moves--;
         holder.obj.startY += 10;
         holder.obj.startX += 1;
+        holder.obj.style.top = holder.obj.startY + "px";
       }
     }
 
