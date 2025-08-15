@@ -34,6 +34,7 @@ rep.forEach((ele, index) => {
 
     document.body.appendChild(holder.obj);
     console.log(holder.obj);
+    drager(holder.obj);
   });
   ele.style.left = index * 100 + "px";
 });
