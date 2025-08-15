@@ -45,5 +45,6 @@ function drager(el) {
   function dragMouse(e) {
     pos.nx = e.clientX;
     pos.ny = e.clientY;
+    console.log(pos.nx, pos.ny);
   }
 }
