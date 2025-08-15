@@ -26,6 +26,7 @@ rep.forEach((ele, index) => {
       } else {
         holder.obj.moves--;
         holder.obj.startY += 10;
+        holder.obj.startX += 1;
       }
     }
 
