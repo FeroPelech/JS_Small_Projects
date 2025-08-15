@@ -41,4 +41,5 @@ rep.forEach((ele, index) => {
 
 function drager(el) {
   let pos = {};
+  el.onmousedown = dragMouse;
 }
