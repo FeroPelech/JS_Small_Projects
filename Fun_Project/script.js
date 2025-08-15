@@ -38,3 +38,5 @@ rep.forEach((ele, index) => {
   });
   ele.style.left = index * 100 + "px";
 });
+
+function drager() {}
