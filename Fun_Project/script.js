@@ -44,5 +44,6 @@ function drager(el) {
   el.onmousedown = dragMouse;
   function dragMouse(e) {
     pos.nx = e.clientX;
+    pos.ny = e.clientY;
   }
 }
