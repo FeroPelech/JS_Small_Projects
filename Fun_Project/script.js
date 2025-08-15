@@ -46,6 +46,8 @@ function drager(el) {
     pos.nx = e.clientX;
     pos.ny = e.clientY;
     console.log(pos.nx, pos.ny);
-    document.onmouseup = function () {};
+    document.onmouseup = function () {
+      document.onmouseup = null;
+    };
   }
 }
