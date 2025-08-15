@@ -48,6 +48,7 @@ function drager(el) {
     console.log(pos.nx, pos.ny);
     document.onmouseup = function () {
       document.onmouseup = null;
+      document.onmousedown = null;
     };
   }
 }
