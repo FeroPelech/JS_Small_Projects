@@ -40,6 +40,8 @@ rep.forEach((ele, index) => {
   ele.style.left = index * 100 + "px";
 });
 
+function ranColor() {}
+
 function drager(el) {
   let pos = {};
   el.onmousedown = dragMouse;
