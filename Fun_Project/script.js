@@ -45,6 +45,7 @@ function ranColor() {
     let hex = Math.floor(Math.random() * 256).toString(16);
     return hex;
   }
+  return "#" + c() + c() + c();
 }
 
 function drager(el) {
