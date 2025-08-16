@@ -54,6 +54,7 @@ function drager(el) {
       pos.ox = pos.nx - e.clientX;
       pos.oy = pos.ny - e.clientY;
       pos.nx = e.clientX;
+      pos.ny = e.clientY;
     };
   }
 }
