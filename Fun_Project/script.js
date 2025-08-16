@@ -50,6 +50,8 @@ function drager(el) {
       document.onmouseup = null;
       document.onmousedown = null;
     };
-    document.onmousemove = function (e) {};
+    document.onmousemove = function (e) {
+      pos.ox = pos.nx - e.clientX;
+    };
   }
 }
