@@ -41,7 +41,9 @@ rep.forEach((ele, index) => {
 });
 
 function ranColor() {
-  function c() {}
+  function c() {
+    let hex = Math.floor(Math.random() * 256).toString(16);
+  }
 }
 
 function drager(el) {
