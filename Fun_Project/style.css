@@ -21,4 +21,8 @@
 #garbage {
   position: absolute;
   height: 100px;
+  width: 100px;
+  background-color: black;
+  left: 500px;
+  top: 300px;
 }
