@@ -52,6 +52,7 @@ function drager(el) {
     };
     document.onmousemove = function (e) {
       pos.ox = pos.nx - e.clientX;
+      pos.oy = pos.ny - e.clientY;
     };
   }
 }
