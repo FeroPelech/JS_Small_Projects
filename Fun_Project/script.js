@@ -11,6 +11,7 @@ rep.forEach((ele, index) => {
     holder.obj.classList.add("newb");
     holder.obj.style.backgroundColor = "green";
     // holder.obj.style.position = "absolute";
+    holder.obj.style.backgroundColor = ranColor();
     holder.obj.style.left = ele.offsetLeft + "px";
     holder.obj.style.top = ele.offsetTop + 200 + "px";
 
