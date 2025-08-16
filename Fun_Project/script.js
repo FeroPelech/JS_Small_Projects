@@ -55,6 +55,7 @@ function drager(el) {
       pos.oy = pos.ny - e.clientY;
       pos.nx = e.clientX;
       pos.ny = e.clientY;
+      el.style.top = el.offsetTop - pos.oy + "px";
     };
   }
 }
