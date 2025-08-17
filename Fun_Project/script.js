@@ -73,3 +73,5 @@ function drager(el) {
     };
   }
 }
+
+function isCollide(a) {}
