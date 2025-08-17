@@ -68,7 +68,6 @@ function drager(el) {
       pos.nx = e.clientX;
       pos.ny = e.clientY;
       if (isCollide(el)) {
-        console.log("OVER");
       }
       el.style.top = el.offsetTop - pos.oy + "px";
       el.style.left = el.offsetLeft - pos.ox + "px";
