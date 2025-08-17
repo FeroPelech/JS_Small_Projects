@@ -1,4 +1,6 @@
 const rep = document.querySelectorAll(".copyMe");
+const garbage = document.getElementById("garbage");
+
 let holder = {};
 
 rep.forEach((ele, index) => {
