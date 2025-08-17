@@ -45,7 +45,7 @@ rep.forEach((ele, index) => {
 function ranColor() {
   function c() {
     let hex = Math.floor(Math.random() * 256).toString(16);
-    hex = ("0" + String(hex)).substring(-2);
+    hex = ("0" + hex).slice(-2);
     return hex;
   }
   return "#" + c() + c() + c();
