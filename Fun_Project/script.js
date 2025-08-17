@@ -78,4 +78,5 @@ function drager(el) {
 
 function isCollide(a) {
   let aRect = a.getBoundingClientRect();
+  let bRect = garbage.getBoundingClientRect();
 }
