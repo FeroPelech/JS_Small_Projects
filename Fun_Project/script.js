@@ -76,4 +76,6 @@ function drager(el) {
   }
 }
 
-function isCollide(a) {}
+function isCollide(a) {
+  let aRect = a.getBoundingClientRect();
+}
