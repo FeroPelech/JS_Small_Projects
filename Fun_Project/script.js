@@ -80,4 +80,10 @@ function isCollide(a) {
   let aRect = a.getBoundingClientRect();
   let bRect = garbage.getBoundingClientRect();
   console.log(aRect, bRect);
+  return !(
+    aRect.bottom < bRect.top ||
+    aRect.top > bRect.bottom ||
+    aRect.right < bRect.left ||
+    aRect.left > bRect.right
+  );
 }
