@@ -11,7 +11,7 @@ rep.forEach((ele, index) => {
     holder.obj = ele.cloneNode(true);
     holder.obj.style.cursor = "move";
     holder.obj.classList.add("newb");
-    holder.obj.style.backgroundColor = "green";
+    holder.obj.style.backgroundColor = ranColor();
     // holder.obj.style.position = "absolute";
     holder.obj.style.backgroundColor = ranColor();
     holder.obj.style.left = ele.offsetLeft + "px";
@@ -79,4 +79,5 @@ function drager(el) {
 function isCollide(a) {
   let aRect = a.getBoundingClientRect();
   let bRect = garbage.getBoundingClientRect();
+  console.log(aRect, bRect);
 }
