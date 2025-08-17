@@ -55,6 +55,9 @@ function drager(el) {
   function dragMouse(e) {
     pos.nx = e.clientX;
     pos.ny = e.clientY;
+    if (isCollide(el)) {
+      console.log("OVER");
+    }
     console.log(pos.nx, pos.ny);
     document.onmouseup = function () {
       document.onmouseup = null;
