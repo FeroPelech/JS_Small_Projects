@@ -1,5 +1,6 @@
 const rep = document.querySelectorAll(".copyMe");
 const garbage = document.getElementById("garbage");
+const minTop = 300;
 
 let holder = {};
 
@@ -12,7 +13,7 @@ rep.forEach((ele, index) => {
     holder.obj.style.position = "absolute";
     holder.obj.style.backgroundColor = ranColor();
     holder.obj.style.left = ele.offsetLeft + "px";
-    holder.obj.style.top = ele.offsetTop + 300 + "px";
+    holder.obj.style.top = 1500 + "px";
 
     holder.obj.startX = ele.offsetLeft;
     holder.obj.startY = ele.offsetTop;
