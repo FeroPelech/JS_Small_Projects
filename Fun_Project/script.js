@@ -1,6 +1,7 @@
 const rep = document.querySelectorAll(".copyMe");
 const garbage = document.getElementById("garbage");
 const minTop = 300;
+const maxTop = window.innerHeight - 100;
 
 let holder = {};
 
