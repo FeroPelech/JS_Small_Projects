@@ -14,7 +14,8 @@ rep.forEach((ele, index) => {
     holder.obj.style.position = "absolute";
     holder.obj.style.backgroundColor = ranColor();
     holder.obj.style.left = ele.offsetLeft + "px";
-    holder.obj.style.top = 1500 + "px";
+    holder.obj.style.top =
+      Math.floor(Math.random() * (maxTop - minTop) + minTop) + "px";
 
     holder.obj.startX = ele.offsetLeft;
     holder.obj.startY = ele.offsetTop;
