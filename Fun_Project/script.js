@@ -4,10 +4,7 @@ const garbage = document.getElementById("garbage");
 let holder = {};
 
 rep.forEach((ele, index) => {
-  console.log(ele);
-  console.log(index);
   ele.addEventListener("click", (e) => {
-    console.log(index);
     holder.obj = ele.cloneNode(true);
     holder.obj.style.cursor = "move";
     holder.obj.classList.add("newb");
@@ -36,7 +33,6 @@ rep.forEach((ele, index) => {
     }
 
     document.body.appendChild(holder.obj);
-    console.log(holder.obj);
     drager(holder.obj);
   });
   ele.style.left = index * 100 + "px";
@@ -57,7 +53,6 @@ function drager(el) {
   function dragMouse(e) {
     pos.nx = e.clientX;
     pos.ny = e.clientY;
-    console.log(pos.nx, pos.ny);
     document.onmouseup = function () {
       document.onmouseup = null;
       document.onmousedown = null;
@@ -80,7 +75,6 @@ function drager(el) {
 function isCollide(a) {
   let aRect = a.getBoundingClientRect();
   let bRect = garbage.getBoundingClientRect();
-  console.log(aRect, bRect);
   return !(
     aRect.bottom < bRect.top ||
     aRect.top > bRect.bottom ||
