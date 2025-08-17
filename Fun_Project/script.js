@@ -1,7 +1,5 @@
 const rep = document.querySelectorAll(".copyMe");
 const garbage = document.getElementById("garbage");
-const minTop = 300;
-const maxTop = window.innerHeight - 100;
 
 let holder = {};
 
@@ -12,6 +10,8 @@ rep.forEach((ele, index) => {
     holder.obj.classList.add("newb");
     holder.obj.style.position = "absolute";
     holder.obj.style.backgroundColor = ranColor();
+    const minTop = 300;
+    const maxTop = window.innerHeight - 100;
     holder.obj.style.left = ele.offsetLeft + "px";
     holder.obj.style.top =
       Math.floor(Math.random() * (maxTop - minTop) + minTop) + "px";
