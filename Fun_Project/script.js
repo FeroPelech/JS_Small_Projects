@@ -69,6 +69,7 @@ function drager(el) {
       pos.ny = e.clientY;
       if (isCollide(el)) {
         el.onmousedown = null;
+        el.parentElement.removeChild(el);
       }
       el.style.top = el.offsetTop - pos.oy + "px";
       el.style.left = el.offsetLeft - pos.ox + "px";
