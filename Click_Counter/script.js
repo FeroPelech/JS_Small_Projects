@@ -6,6 +6,7 @@ let score = 0;
 btn.addEventListener("click", () => {
   score++;
   console.log(score);
+  changeP(score);
 });
 
 function changeP(s) {
