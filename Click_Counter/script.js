@@ -1,3 +1,4 @@
 const container = document.querySelector(".container");
 const btn = document.querySelector(".btn");
-console.log(btn);
+const p = document.querySelector(".text_note");
+console.log(p);
