@@ -1,2 +1,3 @@
 const container = document.querySelector(".container");
-console.log(container);
+const btn = document.querySelector(".btn");
+console.log(btn);
