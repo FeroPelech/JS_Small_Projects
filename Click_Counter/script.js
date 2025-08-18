@@ -8,4 +8,6 @@ btn.addEventListener("click", () => {
   console.log(score);
 });
 
-function changeP(s) {}
+function changeP(s) {
+  p.innerHTML = `You clicked on button ${s} times.`;
+}
