@@ -13,5 +13,15 @@ body {
 .container {
   width: 700px;
   height: 500px;
-  background-color: lightblue;
+  background-color: rgb(220, 220, 220);
+}
+
+button {
+  width: 680px;
+  height: 400px;
+  margin: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: xx-large;
+  cursor: pointer;
+  border: 1px ridge rgb(59, 59, 59);
 }
