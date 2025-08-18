@@ -12,3 +12,8 @@ btn.addEventListener("click", () => {
 function changeP(s) {
   p.innerHTML = `You clicked on button ${s} times.`;
 }
+
+function ranColor() {
+  let hex = Math.floor(Math.random() * 16777215).toString(16);
+  return "#" + hex.padStart(6, "0");
+}
