@@ -7,3 +7,5 @@ btn.addEventListener("click", () => {
   score++;
   console.log(score);
 });
+
+function changeP(s) {}
