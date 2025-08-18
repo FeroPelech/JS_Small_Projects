@@ -5,7 +5,7 @@ let score = 0;
 
 btn.addEventListener("click", () => {
   score++;
-  console.log(score);
+  container.style.boxShadow = `0 0 40px ${ranColor()}`;
   changeP(score);
 });
 
