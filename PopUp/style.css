@@ -34,3 +34,14 @@ img {
   top: 0;
   left: 0;
 }
+
+.output {
+  width: 60%;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  overflow: hidden;
+  z-index: 100;
+}
