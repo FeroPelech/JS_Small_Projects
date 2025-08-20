@@ -8,4 +8,5 @@ images.forEach((ele) => {
 
 function popImage(e) {
   console.log(this.src);
+  output.querySelector("img").setAttribute("src", this.src);
 }
