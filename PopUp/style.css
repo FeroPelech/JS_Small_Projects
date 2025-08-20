@@ -20,25 +20,28 @@ img {
   margin: 5px;
 }
 
+.hide {
+  display: none;
+}
+
 .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.66);
   position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 10;
+  top: 0;
+  left: 0;
 }
 
 .output {
+  width: 60%;
+  height: 40%;
+  background-color: white;
   position: absolute;
   top: 30%;
   left: 20%;
-  width: 60%;
-  height: 40%;
-  background: white;
-  z-index: 20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  z-index: 100;
 }
 
 .output img {
@@ -55,9 +58,7 @@ img {
   right: 5%;
   z-index: 105;
   cursor: pointer;
-  color: black;
-}
-
-.hide {
-  display: none;
+  color: white;
+  background-color: black;
+  padding: 5px;
 }
