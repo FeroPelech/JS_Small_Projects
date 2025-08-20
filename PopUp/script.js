@@ -1,3 +1,4 @@
+const output = document.querySelector(".output");
 const images = document.querySelectorAll(".pop img");
 images.forEach((ele) => {
   ele.addEventListener("click", popImage);
