@@ -1,8 +1,8 @@
 const images = document.querySelectorAll(".pop img");
 images.forEach((ele) => {
-  console.log(ele);
+  ele.addEventListener("click", popImage);
 });
 
 function popImage(e) {
-  console.log(this.src);
+  console.log(e.src);
 }
