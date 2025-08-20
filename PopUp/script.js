@@ -4,5 +4,5 @@ images.forEach((ele) => {
 });
 
 function popImage(e) {
-  console.log(e.src);
+  console.log(this.src);
 }
