@@ -43,3 +43,7 @@ body {
   color: rgb(102, 44, 156);
   cursor: pointer;
 }
+
+.show.hide {
+  display: none;
+}
