@@ -16,4 +16,5 @@ function popImage(e) {
 
 function hide() {
   show.classList.add("hide");
+  output.querySelector("img").setAttribute("src", "");
 }
