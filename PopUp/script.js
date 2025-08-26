@@ -1,6 +1,6 @@
 const output = document.querySelector(".output");
 const show = document.querySelector(".show");
-const close = document.querySelectorAll(".close");
+const close = document.querySelector(".close");
 const images = document.querySelectorAll(".pop img");
 images.forEach((ele) => {
   ele.addEventListener("click", popImage);
@@ -14,4 +14,6 @@ function popImage(e) {
   show.classList.remove("hide");
 }
 
-function hide() {}
+function hide() {
+  console.log("ola");
+}
