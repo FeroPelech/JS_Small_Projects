@@ -15,5 +15,5 @@ function popImage(e) {
 }
 
 function hide() {
-  console.log("ola");
+  show.classList.add("hide");
 }
