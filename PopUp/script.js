@@ -6,6 +6,8 @@ images.forEach((ele) => {
   ele.addEventListener("click", popImage);
 });
 
+close.addEventListener("click", hide);
+
 function popImage(e) {
   console.log(this.src);
   output.querySelector("img").setAttribute("src", this.src);
