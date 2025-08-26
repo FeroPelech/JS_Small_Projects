@@ -35,3 +35,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.close {
+  position: relative;
+  bottom: 230px;
+  left: 310px;
+  color: rgb(102, 44, 156);
+  cursor: pointer;
+}
