@@ -10,5 +10,6 @@ btn.addEventListener("click", () => {
     return 0.5 - Math.random();
   });
   let theWords = myWords.shift();
+  player.solution = theWords.split("");
   console.log(theWords);
 });
