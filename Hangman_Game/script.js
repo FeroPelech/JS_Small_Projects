@@ -11,6 +11,7 @@ btn.addEventListener("click", () => {
   });
   let theWords = myWords.shift();
   player.solution = theWords.split("");
+  buildBoard();
   console.log(player.solution);
 });
 
