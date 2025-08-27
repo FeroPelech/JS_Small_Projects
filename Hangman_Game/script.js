@@ -6,5 +6,9 @@ const myWords = ["javascript", "course", "laurence"];
 let player = {};
 
 btn.addEventListener("click", () => {
-  console.log("click");
+  myWords.sort(() => {
+    return 0.5 - Math.random();
+  });
+  let theWords = myWords.shift();
+  console.log(theWords);
 });
