@@ -15,4 +15,8 @@ btn.addEventListener("click", () => {
   console.log(player.solution);
 });
 
-function buildBoard() {}
+function buildBoard() {
+  player.solution.forEach((element) => {
+    console.log(element);
+  });
+}
