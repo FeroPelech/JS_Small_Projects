@@ -19,5 +19,6 @@ function buildBoard() {
   player.solution.forEach((element) => {
     let div = document.createElement("div");
     div.classList.add("letter2");
+    div.innerText = "_";
   });
 }
