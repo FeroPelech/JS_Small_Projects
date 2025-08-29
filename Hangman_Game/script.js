@@ -21,5 +21,6 @@ function buildBoard() {
     div.classList.add("letter2");
     div.innerText = "_";
     div.myLetter = letter;
+    output2.appendChild(div);
   });
 }
