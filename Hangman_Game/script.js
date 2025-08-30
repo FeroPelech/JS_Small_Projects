@@ -23,4 +23,5 @@ function buildBoard() {
     div.myLetter = letter;
     output2.appendChild(div);
   });
+  for (let x = 0; x < 26; x++) {}
 }
