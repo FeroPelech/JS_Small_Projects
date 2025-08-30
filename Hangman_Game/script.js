@@ -26,5 +26,6 @@ function buildBoard() {
   for (let x = 0; x < 26; x++) {
     let temp = String.fromCharCode(65 + x);
     console.log(temp);
+    let div = document.createElement("div");
   }
 }
