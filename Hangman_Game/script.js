@@ -20,7 +20,7 @@ function buildBoard() {
     let div = document.createElement("div");
     div.classList.add("letter2");
     div.innerText = "_";
-    div.myLetter = letter;
+    div.myLetter = element;
     output2.appendChild(div);
   });
   for (let x = 0; x < 26; x++) {}
