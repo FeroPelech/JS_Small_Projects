@@ -29,5 +29,6 @@ function buildBoard() {
     let div = document.createElement("div");
     div.classList.add("letter");
     div.myLetter = temp;
+    div.innerHTML = temp;
   }
 }
