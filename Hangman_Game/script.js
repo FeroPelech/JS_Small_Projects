@@ -23,5 +23,8 @@ function buildBoard() {
     div.myLetter = element;
     output2.appendChild(div);
   });
-  for (let x = 0; x < 26; x++) {}
+  for (let x = 0; x < 26; x++) {
+    let temp = String.fromCharCode(65 + x);
+    console.log(temp);
+  }
 }
