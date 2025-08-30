@@ -27,5 +27,6 @@ function buildBoard() {
     let temp = String.fromCharCode(65 + x);
     console.log(temp);
     let div = document.createElement("div");
+    div.classList.add("letter");
   }
 }
