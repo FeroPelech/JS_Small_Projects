@@ -31,7 +31,9 @@ function buildBoard() {
     div.classList.add("letter");
     div.myLetter = temp;
     div.addEventListener("click", handler);
-    let handler = function (e) {};
+    let handler = function (e) {
+      div.removeEventListener("click", handler);
+    };
     div.innerHTML = temp;
     output1.appendChild(div);
   }
