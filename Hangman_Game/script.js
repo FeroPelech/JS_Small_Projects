@@ -34,6 +34,7 @@ function buildBoard() {
     let handler = function (e) {
       div.removeEventListener("click", handler);
       div.classList.add("done");
+      let counter = 0;
     };
     div.addEventListener("click", handler);
     div.innerHTML = temp;
