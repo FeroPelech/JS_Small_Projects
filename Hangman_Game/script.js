@@ -30,5 +30,6 @@ function buildBoard() {
     div.classList.add("letter");
     div.myLetter = temp;
     div.innerHTML = temp;
+    output1.appendChild(div);
   }
 }
