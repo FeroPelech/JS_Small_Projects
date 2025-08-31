@@ -35,6 +35,7 @@ function buildBoard() {
       div.removeEventListener("click", handler);
       div.classList.add("done");
       let counter = 0;
+      solutionLetter.forEach((letter) => {});
     };
     div.addEventListener("click", handler);
     div.innerHTML = temp;
