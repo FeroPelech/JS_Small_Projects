@@ -39,6 +39,8 @@ function buildBoard() {
         if (letter.innerHTML != "_") {
           counter++;
         }
+        if (letter.myLetter.toUpperCase() === temp) {
+        }
       });
     };
     div.addEventListener("click", handler);
