@@ -40,6 +40,7 @@ function buildBoard() {
           counter++;
         }
         if (letter.myLetter.toUpperCase() === temp) {
+          letter.innerHTML = temp;
         }
       });
     };
