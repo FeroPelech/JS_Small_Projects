@@ -37,6 +37,7 @@ function buildBoard() {
       let counter = 0;
       solutionLetter.forEach((letter) => {
         if (letter.innerHTML != "_") {
+          counter++;
         }
       });
     };
