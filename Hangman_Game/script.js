@@ -46,6 +46,8 @@ function buildBoard() {
           guess++;
         }
       });
+      if (guess > 0) {
+      }
     };
     div.addEventListener("click", handler);
     div.innerHTML = temp;
