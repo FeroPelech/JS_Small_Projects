@@ -47,6 +47,7 @@ function buildBoard() {
         }
       });
       if (guess > 0) {
+        console.log("You found " + guess + " letters");
       }
     };
     div.addEventListener("click", handler);
