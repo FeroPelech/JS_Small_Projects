@@ -43,6 +43,7 @@ function buildBoard() {
         }
         if (letter.myLetter.toUpperCase() === temp) {
           letter.innerHTML = temp;
+          guess++;
         }
       });
     };
