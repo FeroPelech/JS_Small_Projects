@@ -51,6 +51,7 @@ function buildBoard() {
       }
       let letterLeft = solutionLetter.length - (guess + counter);
       if (letterLeft < 1) {
+        btn.style.display = "block";
       }
     };
     div.addEventListener("click", handler);
