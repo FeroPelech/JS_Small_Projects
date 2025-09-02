@@ -5,6 +5,7 @@ const btn = document.querySelector("button");
 // const myWords = ["javascript", "course", "laurence"];
 const myWords = ["aa", "bb", "cc"];
 let player = {};
+let mes = "";
 
 btn.addEventListener("click", () => {
   output1.innerHTML = "";
