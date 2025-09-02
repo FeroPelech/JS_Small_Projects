@@ -50,6 +50,8 @@ function buildBoard() {
         console.log("You found " + guess + " letters");
       }
       let letterLeft = solutionLetter.length - (guess + counter);
+      if (letterLeft < 1) {
+      }
     };
     div.addEventListener("click", handler);
     div.innerHTML = temp;
