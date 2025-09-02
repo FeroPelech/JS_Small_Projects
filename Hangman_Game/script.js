@@ -7,6 +7,7 @@ const myWords = ["aa", "bb", "cc"];
 let player = {};
 
 btn.addEventListener("click", () => {
+  output1.innerHTML = "";
   btn.style.display = "none";
   myWords.sort(() => {
     return 0.5 - Math.random();
