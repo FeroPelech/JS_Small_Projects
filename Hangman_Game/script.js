@@ -8,6 +8,7 @@ let player = {};
 
 btn.addEventListener("click", () => {
   output1.innerHTML = "";
+  output2.innerHTML = "";
   btn.style.display = "none";
   myWords.sort(() => {
     return 0.5 - Math.random();
