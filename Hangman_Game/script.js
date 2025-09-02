@@ -19,7 +19,7 @@ btn.addEventListener("click", () => {
     buildBoard();
     console.log(player.solution);
   } else {
-    console.log("no more words");
+    msg.innerHTML = "No more words!";
   }
 });
 
