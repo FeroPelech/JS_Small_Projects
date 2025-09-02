@@ -55,11 +55,12 @@ function buildBoard() {
         }
       });
       if (guess > 0) {
-        let mul = guess > 1 ? "times" : "time";
+        let mul = guess > 1 ? "times." : "time.";
         mes = "You found " + temp + " letter " + guess + " " + mul;
         msg.style.color = "green";
       } else {
         msg.style.color = "red";
+        mes = "Not found.";
       }
       let letterLeft = solutionLetter.length - (guess + counter);
       if (letterLeft < 1) {
