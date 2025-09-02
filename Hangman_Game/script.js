@@ -63,6 +63,7 @@ function buildBoard() {
         mes = "Not found.";
       }
       let letterLeft = solutionLetter.length - (guess + counter);
+      msg.innerHTML = mes + "<br>" + letterLeft;
       if (letterLeft < 1) {
         btn.style.display = "block";
       }
