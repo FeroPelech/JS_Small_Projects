@@ -49,6 +49,7 @@ function buildBoard() {
       if (guess > 0) {
         console.log("You found " + guess + " letters");
       }
+      let letterLeft = solutionLetter.length - (guess + counter);
     };
     div.addEventListener("click", handler);
     div.innerHTML = temp;
