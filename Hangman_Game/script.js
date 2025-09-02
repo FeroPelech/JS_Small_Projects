@@ -55,6 +55,7 @@ function buildBoard() {
         }
       });
       if (guess > 0) {
+        let mul = guess > 1 ? "times" : "time";
         console.log("You found " + guess + " letters");
       }
       let letterLeft = solutionLetter.length - (guess + counter);
