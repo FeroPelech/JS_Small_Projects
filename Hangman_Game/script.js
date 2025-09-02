@@ -9,14 +9,18 @@ let player = {};
 btn.addEventListener("click", () => {
   output1.innerHTML = "";
   output2.innerHTML = "";
-  btn.style.display = "none";
-  myWords.sort(() => {
-    return 0.5 - Math.random();
-  });
-  let theWords = myWords.shift();
-  player.solution = theWords.split("");
-  buildBoard();
-  console.log(player.solution);
+  if (myWords.length > 0) {
+    btn.style.display = "none";
+    myWords.sort(() => {
+      return 0.5 - Math.random();
+    });
+    let theWords = myWords.shift();
+    player.solution = theWords.split("");
+    buildBoard();
+    console.log(player.solution);
+  } else {
+    console.log("no more words");
+  }
 });
 
 function buildBoard() {
