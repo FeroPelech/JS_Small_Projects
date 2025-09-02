@@ -57,6 +57,7 @@ function buildBoard() {
       if (guess > 0) {
         let mul = guess > 1 ? "times" : "time";
         mes = "You found " + temp + " letter " + guess + " " + mul;
+        msg.style.color = "green";
       }
       let letterLeft = solutionLetter.length - (guess + counter);
       if (letterLeft < 1) {
