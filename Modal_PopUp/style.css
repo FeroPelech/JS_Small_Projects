@@ -8,3 +8,11 @@
   background-color: rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
 }
+
+.modalBody {
+  width: 50%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  background-color: aliceblue;
+}
