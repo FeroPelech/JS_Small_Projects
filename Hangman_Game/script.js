@@ -17,7 +17,6 @@ btn.addEventListener("click", () => {
     let theWords = myWords.shift();
     player.solution = theWords.split("");
     buildBoard();
-    console.log(player.solution);
   } else {
     msg.style.color = "black";
     msg.innerHTML = "No more words!";
@@ -35,7 +34,6 @@ function buildBoard() {
   let solutionLetter = document.querySelectorAll(".letter2");
   for (let x = 0; x < 26; x++) {
     let temp = String.fromCharCode(65 + x);
-    console.log(temp);
     let div = document.createElement("div");
     div.classList.add("letter");
     div.myLetter = temp;
