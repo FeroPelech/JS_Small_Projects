@@ -5,5 +5,7 @@ btn.forEach((e) => {
 });
 
 function makeClick(el) {
-  console.log("func");
+  el.addEventListener("click", () => {
+    console.log("func");
+  });
 }
