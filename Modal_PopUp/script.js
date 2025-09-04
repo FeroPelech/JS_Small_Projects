@@ -1,2 +1,6 @@
 const btn = document.querySelectorAll(".modal");
-btn.forEach(() => {});
+btn.forEach((e) => {
+  console.log(e);
+});
+
+function makeClick(el) {}
