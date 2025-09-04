@@ -9,6 +9,12 @@
   overflow-y: scroll;
 }
 
+.modalBody h2 {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+}
+
 .modalBody {
   width: 50%;
   left: 25%;
