@@ -16,6 +16,14 @@
   margin: 0;
 }
 
+.modalBody footer {
+  text-align: center;
+  font-size: 0.8em;
+  background-color: #222;
+  color: white;
+  padding: 5px;
+}
+
 .modalBody {
   width: 50%;
   left: 25%;
