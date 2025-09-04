@@ -23,6 +23,10 @@
   background-color: aliceblue;
 }
 
+.modalMain {
+  padding: 10px;
+}
+
 .close {
   position: absolute;
   top: 10px;
