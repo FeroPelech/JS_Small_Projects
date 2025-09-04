@@ -1,3 +1,7 @@
+.modalWraper {
+  display: none;
+}
+
 .modalWraper .showModal {
   display: block;
   position: fixed;
