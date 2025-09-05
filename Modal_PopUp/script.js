@@ -8,5 +8,6 @@ btn.forEach((e) => {
 function makeClick(el) {
   el.addEventListener("click", () => {
     console.log("func");
+    modalWrapper.classList.add("showModal");
   });
 }
