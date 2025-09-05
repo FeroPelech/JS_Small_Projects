@@ -13,7 +13,7 @@ function makeClick(el) {
       return modalWrapper.classList.remove("showModal");
     });
     modalWrapper.addEventListener("click", () => {
-      console.log("modalW");
+      return modalWrapper.classList.remove("showModal");
     });
   });
 }
