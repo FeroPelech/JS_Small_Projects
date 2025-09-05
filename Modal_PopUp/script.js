@@ -12,5 +12,8 @@ function makeClick(el) {
     closeBtn.addEventListener("click", () => {
       return modalWrapper.classList.remove("showModal");
     });
+    modalWrapper.addEventListener("click", () => {
+      console.log("modalW");
+    });
   });
 }
