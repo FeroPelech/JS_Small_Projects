@@ -1,5 +1,6 @@
 const btn = document.querySelectorAll(".modal");
 const modalWrapper = document.querySelector(".modalWrapper");
+const body = document.querySelector("body");
 btn.forEach((e) => {
   console.log(e);
   makeClick(e);
