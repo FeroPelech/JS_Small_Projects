@@ -9,5 +9,8 @@ function makeClick(el) {
   el.addEventListener("click", () => {
     modalWrapper.classList.add("showModal");
     const closeBtn = document.querySelector(".close");
+    closeBtn.addEventListener("click", () => {
+      console.log("closeBtn");
+    });
   });
 }
