@@ -15,5 +15,8 @@ function makeClick(el) {
     modalWrapper.addEventListener("click", () => {
       return modalWrapper.classList.remove("showModal");
     });
+    body.addEventListener("keydown", (e) => {
+      console.log(e.key);
+    });
   });
 }
