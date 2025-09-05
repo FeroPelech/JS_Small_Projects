@@ -10,7 +10,7 @@ function makeClick(el) {
     modalWrapper.classList.add("showModal");
     const closeBtn = document.querySelector(".close");
     closeBtn.addEventListener("click", () => {
-      console.log("closeBtn");
+      return modalWrapper.classList.remove("showModal");
     });
   });
 }
