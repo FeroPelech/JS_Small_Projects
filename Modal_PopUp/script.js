@@ -8,5 +8,6 @@ btn.forEach((e) => {
 function makeClick(el) {
   el.addEventListener("click", () => {
     modalWrapper.classList.add("showModal");
+    const closeBtn = document.querySelector(".close");
   });
 }
