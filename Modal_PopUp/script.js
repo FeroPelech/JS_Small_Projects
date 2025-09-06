@@ -18,6 +18,7 @@ function makeClick(el) {
     body.addEventListener("keydown", (e) => {
       console.log(e.key);
       if (e.key === 27) {
+        return modalWrapper.classList.remove("showModal");
       }
     });
   });
