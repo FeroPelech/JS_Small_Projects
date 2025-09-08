@@ -24,5 +24,6 @@ function builder() {
     img.setAttribute("src", myImages[x].img);
     let cap = document.createElement("div");
     cap.classList.add("caption");
+    cap.innerText = myImages[x].caption;
   }
 }
