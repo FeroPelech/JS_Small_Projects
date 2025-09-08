@@ -22,5 +22,6 @@ function builder() {
     slide.setAttribute("class", "mySlide fade");
     let img = document.createElement("img");
     img.setAttribute("src", myImages[x].img);
+    let cap = document.createElement("div");
   }
 }
