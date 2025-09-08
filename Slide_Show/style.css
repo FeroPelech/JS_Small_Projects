@@ -24,3 +24,9 @@
   display: inline-block;
   cursor: pointer;
 }
+
+.indicator {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
