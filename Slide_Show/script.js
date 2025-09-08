@@ -19,5 +19,6 @@ builder();
 function builder() {
   for (let x = 0; x < myImages.length; x++) {
     let slide = document.createElement("div");
+    slide.setAttribute("class", "mySlide fade");
   }
 }
