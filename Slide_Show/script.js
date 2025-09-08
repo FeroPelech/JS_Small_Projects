@@ -17,5 +17,7 @@ const myImages = [
 builder();
 
 function builder() {
-  for (let x = 0; x < myImages.length; x++) {}
+  for (let x = 0; x < myImages.length; x++) {
+    let slide = document.createElement("div");
+  }
 }
