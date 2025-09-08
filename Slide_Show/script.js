@@ -16,4 +16,6 @@ const myImages = [
 ];
 builder();
 
-function builder() {}
+function builder() {
+  for (let x = 0; x < myImages.length; x++) {}
+}
