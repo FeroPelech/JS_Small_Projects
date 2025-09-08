@@ -14,3 +14,5 @@ const myImages = [
     caption: "Hello World Image 3",
   },
 ];
+
+function builder() {}
