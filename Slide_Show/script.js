@@ -23,5 +23,6 @@ function builder() {
     let img = document.createElement("img");
     img.setAttribute("src", myImages[x].img);
     let cap = document.createElement("div");
+    cap.classList.add("caption");
   }
 }
