@@ -35,4 +35,7 @@ function builder() {
     });
     document.querySelector(".indicator").appendChild(span);
   }
+  function moveSlide(num) {
+    console.log(num);
+  }
 }
