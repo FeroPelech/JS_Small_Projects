@@ -25,5 +25,6 @@ function builder() {
     let cap = document.createElement("div");
     cap.classList.add("caption");
     cap.innerText = myImages[x].caption;
+    slide.appendChild(img);
   }
 }
