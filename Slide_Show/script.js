@@ -34,6 +34,7 @@ function builder() {
       moveSlide(x);
     });
     document.querySelector(".indicator").appendChild(span);
+    playSlide();
   }
   function moveSlide(num) {
     console.log(num);
