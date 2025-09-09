@@ -26,5 +26,6 @@ function builder() {
     cap.classList.add("caption");
     cap.innerText = myImages[x].caption;
     slide.appendChild(img);
+    slide.appendChild(cap);
   }
 }
