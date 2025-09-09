@@ -30,5 +30,8 @@ function builder() {
     document.querySelector(".container").appendChild(slide);
     let span = document.createElement("span");
     span.classList.add("dot");
+    span.addEventListener("click", () => {
+      console.log("span");
+    });
   }
 }
