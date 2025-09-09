@@ -31,7 +31,7 @@ function builder() {
     let span = document.createElement("span");
     span.classList.add("dot");
     span.addEventListener("click", () => {
-      console.log("span");
+      moveSlide(x);
     });
     document.querySelector(".indicator").appendChild(span);
   }
