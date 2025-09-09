@@ -28,5 +28,6 @@ function builder() {
     slide.appendChild(img);
     slide.appendChild(cap);
     document.querySelector(".container").appendChild(slide);
+    let span = document.createElement("span");
   }
 }
