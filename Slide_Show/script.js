@@ -29,5 +29,6 @@ function builder() {
     slide.appendChild(cap);
     document.querySelector(".container").appendChild(slide);
     let span = document.createElement("span");
+    span.classList.add("dot");
   }
 }
