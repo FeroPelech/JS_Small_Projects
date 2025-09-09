@@ -33,5 +33,6 @@ function builder() {
     span.addEventListener("click", () => {
       console.log("span");
     });
+    document.querySelector(".indicator").appendChild(span);
   }
 }
