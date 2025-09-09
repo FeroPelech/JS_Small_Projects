@@ -27,5 +27,6 @@ function builder() {
     cap.innerText = myImages[x].caption;
     slide.appendChild(img);
     slide.appendChild(cap);
+    document.querySelector(".container").appendChild(slide);
   }
 }
