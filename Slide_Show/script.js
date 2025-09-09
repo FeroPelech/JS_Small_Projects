@@ -38,4 +38,5 @@ function builder() {
   function moveSlide(num) {
     console.log(num);
   }
+  function playSlide() {}
 }
