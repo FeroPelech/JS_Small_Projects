@@ -30,3 +30,13 @@
   text-align: center;
   width: 100%;
 }
+
+.caption {
+  color: #f3f3f3;
+  font-size: 0.8em;
+  padding: 10px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+}
