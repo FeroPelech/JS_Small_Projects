@@ -50,5 +50,6 @@ function builder() {
       e.style.display = "none";
     });
     slides[slideIndex];
+    slideIndex++;
   }
 }
