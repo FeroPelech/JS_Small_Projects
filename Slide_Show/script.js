@@ -49,5 +49,6 @@ function builder() {
     slides.forEach((e) => {
       e.style.display = "none";
     });
+    slides[slideIndex];
   }
 }
