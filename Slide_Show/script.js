@@ -51,5 +51,6 @@ function builder() {
     });
     slides[slideIndex].style.display = "block";
     slideIndex++;
+    timer = setTimeout(playSlide, 3000);
   }
 }
