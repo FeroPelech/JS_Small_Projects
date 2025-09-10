@@ -34,23 +34,23 @@ function builder() {
       moveSlide(x);
     });
     document.querySelector(".indicator").appendChild(span);
-    playSlide();
   }
-  function moveSlide(num) {
-    console.log(num);
+  playSlide();
+}
+function moveSlide(num) {
+  console.log(num);
+}
+function playSlide() {
+  const slides = document.querySelectorAll(".mySlides");
+  const dots = document.querySelectorAll(".dot");
+  const active = document.querySelector(".active");
+  if (slideIndex + 1 > slides.length) {
+    slideIndex = 0;
   }
-  function playSlide() {
-    const slides = document.querySelectorAll(".mySlides");
-    const dots = document.querySelectorAll(".dot");
-    const active = document.querySelector(".active");
-    if (slideIndex + 1 > slides.length) {
-      slideIndex = 0;
-    }
-    slides.forEach((e) => {
-      e.style.display = "none";
-    });
-    slides[slideIndex].style.display = "block";
-    slideIndex++;
-    timer = setTimeout(playSlide, 3000);
-  }
+  slides.forEach((e) => {
+    e.style.display = "none";
+  });
+  slides[slideIndex].style.display = "block";
+  slideIndex++;
+  timer = setTimeout(playSlide, 3000);
 }
