@@ -46,5 +46,6 @@ function builder() {
     if (slideIndex + 1 > slides.length) {
       slideIndex = 0;
     }
+    slides.forEach((e) => {});
   }
 }
