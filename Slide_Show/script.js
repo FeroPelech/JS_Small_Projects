@@ -49,7 +49,7 @@ function builder() {
     slides.forEach((e) => {
       e.style.display = "none";
     });
-    slides[slideIndex];
+    slides[slideIndex].style.display = "block";
     slideIndex++;
   }
 }
