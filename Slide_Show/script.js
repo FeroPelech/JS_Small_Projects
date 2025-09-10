@@ -44,6 +44,7 @@ function builder() {
     const dots = document.querySelectorAll(".dot");
     const active = document.querySelector(".active");
     if (slideIndex + 1 > slides.length) {
+      slideIndex = 0;
     }
   }
 }
