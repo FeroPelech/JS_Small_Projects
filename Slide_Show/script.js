@@ -46,6 +46,8 @@ function builder() {
     if (slideIndex + 1 > slides.length) {
       slideIndex = 0;
     }
-    slides.forEach((e) => {});
+    slides.forEach((e) => {
+      e.style.display = "none";
+    });
   }
 }
