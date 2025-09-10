@@ -43,6 +43,7 @@ function builder() {
     const slides = document.querySelectorAll(".mySlides");
     const dots = document.querySelectorAll(".dot");
     const active = document.querySelector(".active");
-    console.log(active);
+    if (slideIndex + 1 > slides.length) {
+    }
   }
 }
