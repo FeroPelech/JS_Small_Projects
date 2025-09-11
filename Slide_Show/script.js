@@ -47,6 +47,7 @@ function playSlide() {
   const dots = document.querySelectorAll(".dot");
   const active = document.querySelector(".active");
   if (active != null) {
+    active.classList.remove("active");
   }
   if (slideIndex + 1 > slides.length) {
     slideIndex = 0;
