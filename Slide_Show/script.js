@@ -37,9 +37,7 @@ function builder() {
   }
   playSlide();
 }
-function moveSlide(num) {
-  console.log(num);
-}
+function moveSlide(num) {}
 function playSlide() {
   const slides = document.querySelectorAll(".mySlides");
   const dots = document.querySelectorAll(".dot");
