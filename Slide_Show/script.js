@@ -56,6 +56,7 @@ function playSlide() {
     e.style.display = "none";
   });
   slides[slideIndex].style.display = "block";
+  dots[slideIndex].classList.add("active");
   slideIndex++;
   timer = setTimeout(playSlide, 3000);
 }
