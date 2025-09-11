@@ -39,6 +39,7 @@ function builder() {
 }
 function moveSlide(num) {
   slideIndex = num;
+  clearTimeout(timer);
 }
 function playSlide() {
   const slides = document.querySelectorAll(".mySlides");
