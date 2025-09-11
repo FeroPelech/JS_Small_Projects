@@ -10,7 +10,7 @@ const myImages = [
     caption: "Hello World Image 2",
   },
   {
-    img: "https://images.pexels.com/photos/206369/pexels-photo-206369.jpeg",
+    img: "https://images.pexels.com/photos/1615848/pexels-photo-1615848.jpeg",
     caption: "Hello World Image 3",
   },
 ];
