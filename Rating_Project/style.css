@@ -8,3 +8,7 @@ ul {
   color: #ddd;
   display: inline-block;
 }
+
+.yellow {
+  color: yellow;
+}
