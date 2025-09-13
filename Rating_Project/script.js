@@ -7,5 +7,5 @@ for (let i = 0; i < stars.length; i++) {
 }
 
 function starRate(e) {
-  console.log(e);
+  console.log(this.starValue);
 }
