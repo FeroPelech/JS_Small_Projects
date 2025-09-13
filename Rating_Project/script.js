@@ -13,5 +13,6 @@ function starRate(e) {
   let starValue = this.starValue;
   stars.forEach((ele, ind) => {
     console.log(ele);
+    console.log(ind);
   });
 }
