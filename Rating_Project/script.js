@@ -1,3 +1,5 @@
 const stars = document.querySelectorAll(".star");
 const output = document.querySelector(".output");
-for (let i = 0; i < stars.length; i++) {}
+for (let i = 0; i < stars.length; i++) {
+  stars[i].starValue = i++;
+}
