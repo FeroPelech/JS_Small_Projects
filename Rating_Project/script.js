@@ -9,5 +9,5 @@ for (let i = 0; i < stars.length; i++) {
 }
 
 function starRate(e) {
-  console.log(this.starValue);
+  let t = e.type;
 }
