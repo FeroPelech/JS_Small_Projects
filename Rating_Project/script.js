@@ -6,4 +6,6 @@ for (let i = 0; i < stars.length; i++) {
   stars[i].addEventListener("click", starRate);
 }
 
-function starRate(e) {}
+function starRate(e) {
+  console.log(e);
+}
