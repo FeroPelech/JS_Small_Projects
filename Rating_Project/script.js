@@ -11,4 +11,5 @@ for (let i = 0; i < stars.length; i++) {
 function starRate(e) {
   let t = e.type;
   let starValue = this.starValue;
+  stars.forEach((ele, ind) => {});
 }
