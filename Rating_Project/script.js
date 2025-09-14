@@ -18,9 +18,11 @@ function starRate(e) {
     } else {
       ele.classList.remove("orange");
     }
-    if (t === "mouseout") {
+    if (t === "mouseover") {
       if (ind < starValue) {
         ele.classList.add("yellow");
+      } else {
+        ele.classList.remove("yellow");
       }
     }
   }
