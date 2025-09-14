@@ -15,6 +15,8 @@ function starRate(e) {
   if (t === "click") {
     if (ind < starValue) {
       ele.classList.Add("orange");
+    } else {
+      ele.classList.remove("orange");
     }
   }
 }
