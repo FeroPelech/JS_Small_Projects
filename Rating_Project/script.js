@@ -19,6 +19,8 @@ function starRate(e) {
       ele.classList.remove("orange");
     }
     if (t === "mouseout") {
+      if (ind < starValue) {
+      }
     }
   }
 }
