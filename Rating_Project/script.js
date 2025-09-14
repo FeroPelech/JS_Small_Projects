@@ -12,4 +12,6 @@ function starRate(e) {
   let t = e.type;
   let starValue = this.starValue;
   stars.forEach((ele, ind) => {});
+  if (t === "click") {
+  }
 }
