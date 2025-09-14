@@ -14,6 +14,7 @@ function starRate(e) {
   stars.forEach((ele, ind) => {});
   if (t === "click") {
     if (ind < starValue) {
+      ele.classList.Add("orange");
     }
   }
 }
