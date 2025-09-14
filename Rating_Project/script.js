@@ -20,6 +20,7 @@ function starRate(e) {
     }
     if (t === "mouseout") {
       if (ind < starValue) {
+        ele.classList.add("yellow");
       }
     }
   }
