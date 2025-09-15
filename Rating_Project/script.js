@@ -16,12 +16,13 @@ function starRate(e) {
       output.innerHTML = "You rated this " + starValue + "stars.";
     }
   }
-  stars.forEach((ele, ind) => {});
-  if (t === "click") {
-    if (ind < starValue) {
-      ele.classList.Add("orange");
-    } else {
-      ele.classList.remove("orange");
+  stars.forEach((ele, ind) => {
+    if (t === "click") {
+      if (ind < starValue) {
+        ele.classList.Add("orange");
+      } else {
+        ele.classList.remove("orange");
+      }
     }
     if (t === "mouseover") {
       if (ind < starValue) {
@@ -33,5 +34,5 @@ function starRate(e) {
     if (t === "mouseout") {
       ele.classList.remove("yellow");
     }
-  }
+  });
 }
