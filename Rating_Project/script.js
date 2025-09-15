@@ -25,5 +25,7 @@ function starRate(e) {
         ele.classList.remove("yellow");
       }
     }
+    if (t === "mouseout") {
+    }
   }
 }
