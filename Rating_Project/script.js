@@ -11,6 +11,8 @@ for (let i = 0; i < stars.length; i++) {
 function starRate(e) {
   let t = e.type;
   let starValue = this.starValue;
+  if (t === "click") {
+  }
   stars.forEach((ele, ind) => {});
   if (t === "click") {
     if (ind < starValue) {
