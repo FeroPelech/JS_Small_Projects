@@ -13,6 +13,7 @@ function starRate(e) {
   let starValue = this.starValue;
   if (t === "click") {
     if (starValue > 1) {
+      output.innerHTML = "You rated this " + starValue + "stars.";
     }
   }
   stars.forEach((ele, ind) => {});
