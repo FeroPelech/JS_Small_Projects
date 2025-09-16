@@ -9,6 +9,7 @@ let keys = {
 function pressOn(e) {
   e.preventDefault();
   let tempKey = e.key == " " ? "space" : e.key;
+  keys[tempKey] = true;
   console.log(e);
 }
 
