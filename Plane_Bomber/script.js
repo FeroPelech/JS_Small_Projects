@@ -7,3 +7,7 @@ document.addEventListener("keyup", pressOff);
 function pressOn(e) {
   console.log(e);
 }
+
+function pressOff(e) {
+  console.log(e);
+}
