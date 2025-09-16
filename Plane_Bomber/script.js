@@ -14,4 +14,5 @@ function pressOn(e) {
 
 function pressOff(e) {
   e.preventDefault();
+  let tempKey = e.key == " " ? "space" : e.key;
 }
