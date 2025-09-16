@@ -7,6 +7,7 @@ let keys = {
   space: false,
 };
 function pressOn(e) {
+  e.preventDefault();
   console.log(e);
 }
 
