@@ -7,6 +7,8 @@ document.addEventListener("click", start);
 let keys = {
   space: false,
 };
+
+function start() {}
 function pressOn(e) {
   e.preventDefault();
   let tempKey = e.key == " " ? "space" : e.key;
