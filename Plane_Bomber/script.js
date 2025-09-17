@@ -13,7 +13,9 @@ let player = {
   inplay: false,
 };
 
-function start() {}
+function start() {
+  player.inplay = true;
+}
 function pressOn(e) {
   e.preventDefault();
   let tempKey = e.key == " " ? "space" : e.key;
