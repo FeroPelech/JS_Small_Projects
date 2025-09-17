@@ -7,7 +7,9 @@ document.addEventListener("click", start);
 let keys = {
   space: false,
 };
-let player = {};
+let player = {
+  score: 0,
+};
 
 function start() {}
 function pressOn(e) {
