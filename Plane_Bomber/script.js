@@ -15,6 +15,7 @@ let player = {
 
 function start() {
   player.inplay = true;
+  player.plane = document.createElement("div");
 }
 function pressOn(e) {
   e.preventDefault();
