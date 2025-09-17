@@ -9,6 +9,7 @@ let keys = {
 };
 let player = {
   score: 0,
+  speed: 2,
 };
 
 function start() {}
