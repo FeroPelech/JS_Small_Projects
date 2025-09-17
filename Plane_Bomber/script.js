@@ -17,6 +17,7 @@ function start() {
   player.inplay = true;
   player.plane = document.createElement("div");
   player.plane.setAttribute("class", "plane");
+  gameArea.appendChild(player.plane);
 }
 function pressOn(e) {
   e.preventDefault();
