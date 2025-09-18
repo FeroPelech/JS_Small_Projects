@@ -21,7 +21,10 @@ function start() {
   window.requestAnimationFrame(playGame);
 }
 
-function playGame() {}
+function playGame() {
+  if (player.inplay) {
+  }
+}
 
 function pressOn(e) {
   e.preventDefault();
