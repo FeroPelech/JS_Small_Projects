@@ -18,6 +18,7 @@ function start() {
   player.plane = document.createElement("div");
   player.plane.setAttribute("class", "plane");
   gameArea.appendChild(player.plane);
+  window.requestAnimationFrame(playGame);
 }
 function pressOn(e) {
   e.preventDefault();
