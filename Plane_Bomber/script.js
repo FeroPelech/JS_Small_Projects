@@ -20,6 +20,9 @@ function start() {
   gameArea.appendChild(player.plane);
   window.requestAnimationFrame(playGame);
 }
+
+function playGame() {}
+
 function pressOn(e) {
   e.preventDefault();
   let tempKey = e.key == " " ? "space" : e.key;
