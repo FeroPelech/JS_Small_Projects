@@ -1,0 +1,9 @@
+.plane {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  background-size: cover;
+}
