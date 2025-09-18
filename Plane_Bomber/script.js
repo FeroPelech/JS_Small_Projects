@@ -27,6 +27,8 @@ function playGame() {
     if (keys.ArrowUp) {
       player.y -= player.speed;
     }
+    if (keys.ArrowDown) {
+    }
     window.requestAnimationFrame(playGame);
   }
 }
