@@ -30,6 +30,7 @@ function playGame() {
     if (keys.ArrowDown) {
       player.y += player.speed;
     }
+    player.plane.style.left = player.x + "px";
     window.requestAnimationFrame(playGame);
   }
 }
