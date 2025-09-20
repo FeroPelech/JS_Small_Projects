@@ -23,7 +23,6 @@ function start() {
 
 function playGame() {
   if (player.inplay) {
-    console.log(keys);
     if (keys.ArrowUp) {
       player.y -= player.speed;
     }
