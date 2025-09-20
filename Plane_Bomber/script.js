@@ -31,6 +31,7 @@ function playGame() {
       player.y += player.speed;
     }
     player.plane.style.left = player.x + "px";
+    player.plane.style.top = player.y + "px";
     window.requestAnimationFrame(playGame);
   }
 }
