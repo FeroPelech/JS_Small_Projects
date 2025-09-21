@@ -29,6 +29,9 @@ function playGame() {
     if (keys.ArrowDown) {
       player.y += player.speed;
     }
+    if (keys.ArrowLeft) {
+      player.x += player.speed;
+    }
     player.plane.style.left = player.x + "px";
     player.plane.style.top = player.y + "px";
     window.requestAnimationFrame(playGame);
