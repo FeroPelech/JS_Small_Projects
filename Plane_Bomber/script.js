@@ -30,6 +30,9 @@ function playGame() {
       player.y += player.speed;
     }
     if (keys.ArrowLeft) {
+      player.x -= player.speed;
+    }
+    if (keys.ArrowRight) {
       player.x += player.speed;
     }
     player.plane.style.left = player.x + "px";
