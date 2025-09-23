@@ -20,6 +20,7 @@ function start() {
   player.plane.setAttribute("class", "plane");
   gameArea.appendChild(player.plane);
   window.requestAnimationFrame(playGame);
+  player.x = player.plane.offsetLeft;
 }
 
 function playGame() {
