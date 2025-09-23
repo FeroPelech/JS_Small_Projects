@@ -21,6 +21,7 @@ function start() {
   gameArea.appendChild(player.plane);
   window.requestAnimationFrame(playGame);
   player.x = player.plane.offsetLeft;
+  player.y = player.plane.offsetTop;
 }
 
 function playGame() {
