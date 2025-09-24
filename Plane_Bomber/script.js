@@ -17,6 +17,7 @@ function start() {
   gameMessage.classList.add("hide");
   if (!player.inplay) {
     player.inplay = true;
+    player.score = 2000;
     player.plane = document.createElement("div");
     player.plane.setAttribute("class", "plane");
     gameArea.appendChild(player.plane);
