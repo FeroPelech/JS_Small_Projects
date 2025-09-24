@@ -46,6 +46,7 @@ function playGame() {
       player.x = 0;
       player.score -= 100;
     }
+    player.score--;
     player.plane.style.left = player.x + "px";
     player.plane.style.top = player.y + "px";
     window.requestAnimationFrame(playGame);
