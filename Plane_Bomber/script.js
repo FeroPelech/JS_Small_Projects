@@ -30,6 +30,7 @@ function start() {
 
 function makeEnemy() {
   player.base = document.createElement("div");
+  player.base.setAttribute("class", "base");
 }
 
 function playGame() {
