@@ -16,6 +16,7 @@ let player = {
 function start() {
   gameMessage.classList.add("hide");
   if (!player.inplay) {
+    playGame();
     player.inplay = true;
     player.score = 2000;
     player.plane = document.createElement("div");
@@ -26,6 +27,8 @@ function start() {
     player.y = player.plane.offsetTop;
   }
 }
+
+function makeEnemy() {}
 
 function playGame() {
   if (player.inplay) {
