@@ -15,13 +15,15 @@ let player = {
 
 function start() {
   gameMessage.classList.add("hide");
-  player.inplay = true;
-  player.plane = document.createElement("div");
-  player.plane.setAttribute("class", "plane");
-  gameArea.appendChild(player.plane);
-  window.requestAnimationFrame(playGame);
-  player.x = player.plane.offsetLeft;
-  player.y = player.plane.offsetTop;
+  if (!player.inplay) {
+    player.inplay = true;
+    player.plane = document.createElement("div");
+    player.plane.setAttribute("class", "plane");
+    gameArea.appendChild(player.plane);
+    window.requestAnimationFrame(playGame);
+    player.x = player.plane.offsetLeft;
+    player.y = player.plane.offsetTop;
+  }
 }
 
 function playGame() {
