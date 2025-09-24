@@ -41,6 +41,7 @@ function playGame() {
     if (keys.ArrowRight && player.x < gameArea.offsetWidth - 50) {
       player.x += player.speed;
     }
+    player.x += player.speed * 2;
     player.plane.style.left = player.x + "px";
     player.plane.style.top = player.y + "px";
     window.requestAnimationFrame(playGame);
