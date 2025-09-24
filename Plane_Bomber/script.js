@@ -53,6 +53,7 @@ function playGame() {
     player.plane.style.left = player.x + "px";
     player.plane.style.top = player.y + "px";
     window.requestAnimationFrame(playGame);
+    score.innerHTML = "Score: " + player.score;
   }
 }
 
