@@ -28,7 +28,7 @@ function start() {
 
 function playGame() {
   if (player.inplay) {
-    if (keys.ArrowUp) {
+    if (keys.ArrowUp && player.y > 0) {
       player.y -= player.speed;
     }
     if (keys.ArrowDown) {
