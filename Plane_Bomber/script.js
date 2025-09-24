@@ -43,6 +43,7 @@ function playGame() {
     }
     player.x += player.speed * 2;
     if (player.x > gameArea.offsetWidth) {
+      player.x = 0;
     }
     player.plane.style.left = player.x + "px";
     player.plane.style.top = player.y + "px";
