@@ -28,7 +28,9 @@ function start() {
   }
 }
 
-function makeEnemy() {}
+function makeEnemy() {
+  player.base = document.createElement("div");
+}
 
 function playGame() {
   if (player.inplay) {
