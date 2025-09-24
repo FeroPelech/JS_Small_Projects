@@ -29,7 +29,7 @@ function start() {
 
 function playGame() {
   if (player.inplay) {
-    if (keys.ArrowUp && player.y > 100) {
+    if (keys.ArrowUp && player.y > 80) {
       player.y -= player.speed;
     }
     if (keys.ArrowDown && player.y < 200) {
