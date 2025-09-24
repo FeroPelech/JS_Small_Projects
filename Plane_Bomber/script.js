@@ -37,7 +37,7 @@ function playGame() {
     if (keys.ArrowLeft && player.x > 0) {
       player.x -= player.speed;
     }
-    if (keys.ArrowRight) {
+    if (keys.ArrowRight && player.x < gameArea) {
       player.x += player.speed;
     }
     player.plane.style.left = player.x + "px";
