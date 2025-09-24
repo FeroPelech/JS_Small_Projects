@@ -31,7 +31,7 @@ function playGame() {
     if (keys.ArrowUp && player.y > 0) {
       player.y -= player.speed;
     }
-    if (keys.ArrowDown) {
+    if (keys.ArrowDown && player.y < 200) {
       player.y += player.speed;
     }
     if (keys.ArrowLeft) {
