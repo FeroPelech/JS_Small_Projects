@@ -35,6 +35,7 @@ function makeEnemy() {
   player.base.style.height = Math.floor(Math.random() * 100) + 100 + "px";
   player.base.style.left =
     Math.floor(Math.random() * gameArea.offsetWidth - 200) + 100 + "px";
+  gameArea.appendChild(player.base);
 }
 
 function playGame() {
