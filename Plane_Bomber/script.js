@@ -44,6 +44,7 @@ function makeBomb() {
   if (player.inplay) {
     player.score -= 300;
     player.activeBomb++;
+    let bomb = document.createElement("div");
   }
 }
 
