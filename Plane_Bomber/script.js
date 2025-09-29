@@ -43,6 +43,7 @@ function makeBomb() {
   console.log("Bomb");
   if (player.inplay) {
     player.score -= 300;
+    player.activeBomb++;
   }
 }
 
