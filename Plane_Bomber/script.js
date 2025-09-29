@@ -50,6 +50,7 @@ function makeBomb() {
     bomb.y = player.y;
     bomb.x = player.x;
     bomb.style.left = bomb.x + "px";
+    bomb.style.top = bomb.y + "px";
   }
 }
 
