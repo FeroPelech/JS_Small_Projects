@@ -41,6 +41,8 @@ function makeEnemy() {
 
 function makeBomb() {
   console.log("Bomb");
+  if (player.inplay) {
+  }
 }
 
 function playGame() {
