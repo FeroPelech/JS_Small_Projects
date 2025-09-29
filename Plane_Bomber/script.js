@@ -47,6 +47,7 @@ function makeBomb() {
     let bomb = document.createElement("div");
     bomb.classList.add("bomb");
     bomb.innerHTML = player.activeBomb;
+    bomb.y = player.y;
   }
 }
 
