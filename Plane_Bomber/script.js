@@ -48,6 +48,7 @@ function makeBomb() {
     bomb.classList.add("bomb");
     bomb.innerHTML = player.activeBomb;
     bomb.y = player.y;
+    bomb.x = player.x;
   }
 }
 
