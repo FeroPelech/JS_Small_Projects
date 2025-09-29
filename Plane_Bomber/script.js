@@ -49,6 +49,7 @@ function makeBomb() {
     bomb.innerHTML = player.activeBomb;
     bomb.y = player.y;
     bomb.x = player.x;
+    bomb.style.left = bomb.x + "px";
   }
 }
 
