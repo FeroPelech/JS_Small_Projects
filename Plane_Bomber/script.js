@@ -55,7 +55,7 @@ function makeBomb() {
     player.ready = false;
     setTimeout(() => {
       player.ready = true;
-    });
+    }, 500);
   }
 }
 
