@@ -38,11 +38,14 @@ function makeEnemy() {
   gameArea.appendChild(player.base);
 }
 
-function makeBomb() {}
+function makeBomb() {
+  console.log("Bomb");
+}
 
 function playGame() {
   if (player.inplay) {
     if (keys.space) {
+      makeBomb();
     }
     if (keys.ArrowUp && player.y > 80) {
       player.y -= player.speed;
