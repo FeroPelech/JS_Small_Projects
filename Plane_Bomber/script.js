@@ -40,6 +40,8 @@ function makeEnemy() {
 
 function playGame() {
   if (player.inplay) {
+    if (keys.space) {
+    }
     if (keys.ArrowUp && player.y > 80) {
       player.y -= player.speed;
     }
