@@ -38,6 +38,8 @@ function makeEnemy() {
   gameArea.appendChild(player.base);
 }
 
+function makeBomb() {}
+
 function playGame() {
   if (player.inplay) {
     if (keys.space) {
