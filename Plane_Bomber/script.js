@@ -51,6 +51,7 @@ function makeBomb() {
     bomb.x = player.x;
     bomb.style.left = bomb.x + "px";
     bomb.style.top = bomb.y + "px";
+    gameArea.appendChild(bomb);
   }
 }
 
