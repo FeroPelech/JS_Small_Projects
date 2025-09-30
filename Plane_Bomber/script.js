@@ -65,6 +65,7 @@ function moveBomb() {
   let bombs = document.querySelectorAll(".bomb");
   bombs.forEach((item) => {
     item.y += 5;
+    item.style.top = item.y + "px";
   });
 }
 
