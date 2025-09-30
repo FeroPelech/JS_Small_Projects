@@ -71,12 +71,14 @@ function moveBomb() {
       item.parentElement.removeChild(item);
     }
     if (isCollide(item, player.base)) {
+      console.log("crash");
     }
   });
 }
 
 function isCollide(a, b) {
   let aRect = a.getBoundingClientRect();
+  let bRect = b.getBoundingClientRect();
 }
 
 function playGame() {
