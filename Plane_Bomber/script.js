@@ -63,6 +63,7 @@ function makeBomb() {
 
 function moveBomb() {
   let bombs = document.querySelectorAll(".bomb");
+  bombs.forEach((item) => {});
 }
 
 function playGame() {
