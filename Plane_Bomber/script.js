@@ -65,6 +65,7 @@ function moveBomb() {}
 
 function playGame() {
   if (player.inplay) {
+    moveBomb();
     if (keys.space) {
       makeBomb();
     }
