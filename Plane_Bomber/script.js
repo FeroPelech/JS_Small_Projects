@@ -66,6 +66,8 @@ function moveBomb() {
   bombs.forEach((item) => {
     item.y += 5;
     item.style.top = item.y + "px";
+    if (item.y > 1000) {
+    }
   });
 }
 
