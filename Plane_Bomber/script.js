@@ -61,7 +61,9 @@ function makeBomb() {
   }
 }
 
-function moveBomb() {}
+function moveBomb() {
+  let bombs = document.querySelectorAll(".bomb");
+}
 
 function playGame() {
   if (player.inplay) {
