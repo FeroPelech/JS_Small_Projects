@@ -70,6 +70,8 @@ function moveBomb() {
       player.activeBomb--;
       item.parentElement.removeChild(item);
     }
+    if (isCollide(item, player.base)) {
+    }
   });
 }
 
