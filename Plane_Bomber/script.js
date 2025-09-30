@@ -73,7 +73,9 @@ function moveBomb() {
   });
 }
 
-function isCollide(a, b) {}
+function isCollide(a, b) {
+  let aRect = a.getBoundingClientRect();
+}
 
 function playGame() {
   if (player.inplay) {
