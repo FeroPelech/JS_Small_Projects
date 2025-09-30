@@ -68,6 +68,7 @@ function moveBomb() {
     item.style.top = item.y + "px";
     if (item.y > 1000) {
       player.activeBomb--;
+      item.parentElement.removeChild(item);
     }
   });
 }
