@@ -73,6 +73,8 @@ function moveBomb() {
   });
 }
 
+function isCollide(a, b) {}
+
 function playGame() {
   if (player.inplay) {
     moveBomb();
