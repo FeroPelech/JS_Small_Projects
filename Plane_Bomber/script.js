@@ -61,6 +61,8 @@ function makeBomb() {
   }
 }
 
+function moveBomb() {}
+
 function playGame() {
   if (player.inplay) {
     if (keys.space) {
