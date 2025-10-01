@@ -79,6 +79,7 @@ function moveBomb() {
 function isCollide(a, b) {
   let aRect = a.getBoundingClientRect();
   let bRect = b.getBoundingClientRect();
+  console.log(aRect);
 }
 
 function playGame() {
