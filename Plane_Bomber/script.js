@@ -80,7 +80,6 @@ function moveBomb() {
 function isCollide(a, b) {
   let aRect = a.getBoundingClientRect();
   let bRect = b.getBoundingClientRect();
-  console.log(aRect);
   return !(
     aRect.bottom < bRect.top ||
     aRect.top > bRect.bottom ||
