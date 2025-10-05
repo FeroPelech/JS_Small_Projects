@@ -72,6 +72,7 @@ function moveBomb() {
     }
     if (isCollide(item, player.base)) {
       player.score += 2000;
+      player.base.parentElement.removeChild(player.base);
     }
   });
 }
