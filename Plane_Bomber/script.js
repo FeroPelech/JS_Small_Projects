@@ -74,6 +74,7 @@ function moveBomb() {
       player.score += 2000;
       player.base.parentElement.removeChild(player.base);
       item.parentElement.removeChild(item);
+      makeEnemy();
     }
   });
 }
