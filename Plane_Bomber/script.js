@@ -23,6 +23,7 @@ function start() {
     player.ready = true;
     player.activeBomb = 0;
     player.bombScore = 0;
+    player.level = 10;
     player.plane = document.createElement("div");
     player.plane.setAttribute("class", "plane");
     gameArea.appendChild(player.plane);
@@ -44,7 +45,7 @@ function makeEnemy() {
 
 function makeBomb() {
   console.log("Bomb");
-  if (player.inplay) {
+  if (player.ready && player.activeBomb < player.totalBombs) {
     player.score -= 300;
     player.bombScore++;
     player.activeBomb++;
