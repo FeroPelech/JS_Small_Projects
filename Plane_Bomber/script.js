@@ -45,7 +45,7 @@ function makeBomb() {
   console.log("Bomb");
   if (player.inplay) {
     player.score -= 300;
-    player.bombScore++;
+    // player.bombScore++;
     player.activeBomb++;
     let bomb = document.createElement("div");
     bomb.classList.add("bomb");
