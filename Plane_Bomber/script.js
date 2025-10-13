@@ -22,6 +22,7 @@ function start() {
     player.totalBombs = 2;
     player.ready = true;
     player.activeBomb = 0;
+    player.bombScore = 0;
     player.plane = document.createElement("div");
     player.plane.setAttribute("class", "plane");
     gameArea.appendChild(player.plane);
