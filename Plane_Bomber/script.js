@@ -19,7 +19,7 @@ function start() {
     makeEnemy();
     player.inplay = true;
     player.score = 2000;
-    player.totalBombs = 2;
+    player.totalBombs = 6;
     player.ready = true;
     player.activeBomb = 0;
     player.bombScore = 0;
