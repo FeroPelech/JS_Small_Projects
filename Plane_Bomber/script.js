@@ -17,6 +17,7 @@ function start() {
   gameMessage.classList.add("hide");
   if (!player.inplay) {
     gameArea.innerHTML = "";
+    player.level = 1;
     makeEnemy();
     player.inplay = true;
     player.score = 2000;
@@ -24,7 +25,6 @@ function start() {
     player.ready = true;
     player.activeBomb = 0;
     player.bombScore = 0;
-    player.level = 1;
     player.plane = document.createElement("div");
     player.plane.setAttribute("class", "plane");
     gameArea.appendChild(player.plane);
