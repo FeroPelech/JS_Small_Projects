@@ -33,6 +33,7 @@ function start() {
   }
 }
 
+function endGame() {}
 function makeEnemy() {
   player.level--;
   if (player.level < 0) {
