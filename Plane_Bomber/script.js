@@ -16,6 +16,7 @@ let player = {
 function start() {
   gameMessage.classList.add("hide");
   if (!player.inplay) {
+    gameArea.innerHTML = "";
     makeEnemy();
     player.inplay = true;
     player.score = 2000;
