@@ -36,6 +36,7 @@ function start() {
 function makeEnemy() {
   player.level--;
   if (player.level < 0) {
+    endGame();
   }
   player.base = document.createElement("div");
   player.base.setAttribute("class", "base");
