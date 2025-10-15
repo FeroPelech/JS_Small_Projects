@@ -35,6 +35,8 @@ function start() {
 
 function makeEnemy() {
   player.level--;
+  if (player.level < 0) {
+  }
   player.base = document.createElement("div");
   player.base.setAttribute("class", "base");
   player.base.style.width = Math.floor(Math.random() * 200) + 10 + "px";
