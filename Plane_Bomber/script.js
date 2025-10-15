@@ -36,7 +36,7 @@ function start() {
 function endGame() {
   console.log("Game Over");
   player.inplay = false;
-  gameMessage.classList.remove("hides");
+  gameMessage.classList.remove("hide");
 }
 
 function makeEnemy() {
