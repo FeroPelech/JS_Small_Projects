@@ -35,7 +35,6 @@ function start() {
 }
 
 function endGame() {
-  console.log("Game Over");
   player.inplay = false;
   gameMessage.classList.remove("hide");
 }
@@ -56,7 +55,6 @@ function makeEnemy() {
 }
 
 function makeBomb() {
-  console.log("Bomb");
   if (player.ready && player.activeBomb < player.totalBombs) {
     player.score -= 300;
     player.bombScore++;
@@ -87,6 +85,7 @@ function moveBomb() {
     }
     if (isCollide(item, player.base)) {
       player.score += 2000;
+      player.activeBomb--;
       player.base.parentElement.removeChild(player.base);
       item.parentElement.removeChild(item);
       makeEnemy();
