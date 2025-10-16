@@ -3,6 +3,6 @@ const contentClass = document.querySelectorAll(".content");
 
 for (let i = 0; i < mainClass.length; i++) {
   mainClass[i].addEventListener("click", () => {
-    console.log(mainClass[i]);
+    console.log(mainClass[i].nextElementSibling);
   });
 }
