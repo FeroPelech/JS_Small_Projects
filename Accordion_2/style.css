@@ -9,3 +9,7 @@
   font-size: 1.5em;
   background-color: #ddd;
 }
+
+.active {
+  display: block;
+}
