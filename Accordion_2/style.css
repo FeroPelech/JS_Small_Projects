@@ -1,8 +1,9 @@
 .content {
   display: none;
   padding: 20px;
-  font-size: 0.8em;
+  font-size: 1.2em;
   border: 1px solid black;
+  width: 100%;
 }
 
 .main {
