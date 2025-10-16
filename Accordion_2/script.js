@@ -7,3 +7,5 @@ for (let i = 0; i < mainClass.length; i++) {
     mainClass[i].nextElementSibling.classList.toggle("active");
   });
 }
+
+function clearActive() {}
