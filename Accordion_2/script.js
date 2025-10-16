@@ -8,4 +8,6 @@ for (let i = 0; i < mainClass.length; i++) {
   });
 }
 
-function clearActive() {}
+function clearActive() {
+  for (let i = 0; i < contentClass.length; i++) {}
+}
