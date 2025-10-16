@@ -8,6 +8,7 @@
 .main {
   font-size: 1.5em;
   background-color: #ddd;
+  cursor: pointer;
 }
 
 .active {
