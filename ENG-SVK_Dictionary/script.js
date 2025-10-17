@@ -7,7 +7,9 @@ console.log(menu);
 const label = document.createElement("label");
 label.setAttribute("for", "inputDictionary");
 label.innerHTML = "Choose dictionary.";
-console.log(label);
+const input = document.createElement("input");
+input.setAttribute("type", "file");
+console.log(input);
 
 // Added menu elements to the menu
 menu.appendChild(label);
