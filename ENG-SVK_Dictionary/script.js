@@ -18,3 +18,6 @@ console.log(input);
 // Added menu elements to the menu
 menu.appendChild(label);
 menu.appendChild(input);
+
+//Create container content
+const divContent = document.createElement("div");
