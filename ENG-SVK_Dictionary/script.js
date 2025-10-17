@@ -1,2 +1,3 @@
 const container = document.querySelector(".container");
-console.log(container);
+const menu = document.querySelector(".menu");
+console.log(menu);
