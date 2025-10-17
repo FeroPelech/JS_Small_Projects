@@ -21,3 +21,7 @@ menu.appendChild(input);
 
 //Create container content
 const divContent = document.createElement("div");
+divContent.setAttribute("class", "ContainerDiv");
+
+//Added container elements to the container
+container.appendChild(divContent);
