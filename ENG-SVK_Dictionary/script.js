@@ -5,5 +5,6 @@ console.log(menu);
 //Create menu content
 
 const label = document.createElement("label");
+label.setAttribute("for", "inputDictionary");
 
 console.log(label);
