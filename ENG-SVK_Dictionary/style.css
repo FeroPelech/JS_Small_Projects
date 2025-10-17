@@ -21,4 +21,6 @@ body {
 
 .container {
   padding-top: 150px;
+  width: 95%;
+  margin: 0 auto;
 }
