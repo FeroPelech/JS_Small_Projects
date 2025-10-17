@@ -11,7 +11,9 @@ const input = document.createElement("input");
 input.setAttribute("type", "file");
 input.setAttribute("id", "inputDictionary");
 input.setAttribute("name", "fileInput");
+const menuBtn = document.createElement("button");
 console.log(input);
 
 // Added menu elements to the menu
 menu.appendChild(label);
+menu.appendChild(input);
