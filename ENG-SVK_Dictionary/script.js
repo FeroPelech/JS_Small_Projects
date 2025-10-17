@@ -6,5 +6,5 @@ console.log(menu);
 
 const label = document.createElement("label");
 label.setAttribute("for", "inputDictionary");
-
+label.innerHTML = "Choose dictionary";
 console.log(label);
