@@ -6,6 +6,7 @@ body {
 }
 
 .menu {
+  position: fixed;
   background: linear-gradient(135deg, #feb47b, #ff7e5f);
   width: 95%;
   margin: 20px;
