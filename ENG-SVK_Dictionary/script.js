@@ -9,6 +9,8 @@ label.setAttribute("for", "inputDictionary");
 label.innerHTML = "Choose dictionary.";
 const input = document.createElement("input");
 input.setAttribute("type", "file");
+input.setAttribute("id", "inputDictionary");
+
 console.log(input);
 
 // Added menu elements to the menu
