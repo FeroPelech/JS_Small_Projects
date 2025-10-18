@@ -11,7 +11,7 @@ const input = document.createElement("input");
 input.setAttribute("type", "file");
 input.setAttribute("id", "inputDictionary");
 input.setAttribute("name", "fileInput");
-const mixBtn = document.createElement("mixBtn");
+const mixBtn = document.createElement("button");
 mixBtn.setAttribute("class", "mixBtn");
 // const menuBtn = document.createElement("button");
 // menuBtn.setAttribute("class", "menuBtn");
@@ -20,6 +20,7 @@ console.log(input);
 // Added menu elements to the menu
 menu.appendChild(label);
 menu.appendChild(input);
+menu.appendChild(mixBtn);
 
 //Create container content
 const divContent = document.createElement("div");
