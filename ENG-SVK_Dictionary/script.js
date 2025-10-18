@@ -12,6 +12,7 @@ input.setAttribute("type", "file");
 input.setAttribute("id", "inputDictionary");
 input.setAttribute("name", "fileInput");
 const mixBtn = document.createElement("mixBtn");
+mixBtn.setAttribute("class", "mixBtn");
 // const menuBtn = document.createElement("button");
 // menuBtn.setAttribute("class", "menuBtn");
 console.log(input);
