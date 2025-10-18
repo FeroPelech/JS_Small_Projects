@@ -11,6 +11,7 @@ const input = document.createElement("input");
 input.setAttribute("type", "file");
 input.setAttribute("id", "inputDictionary");
 input.setAttribute("name", "fileInput");
+const mixBtn = document.createElement("mixBtn");
 // const menuBtn = document.createElement("button");
 // menuBtn.setAttribute("class", "menuBtn");
 console.log(input);
