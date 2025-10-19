@@ -45,6 +45,7 @@ document
       const fileContent = event.target.result;
       rows(fileContent);
     };
+    reader.readAsText(file);
   });
 
 function rows(fileContent) {}
