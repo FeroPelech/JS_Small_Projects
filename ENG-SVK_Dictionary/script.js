@@ -41,5 +41,7 @@ document
       return;
     }
     const reader = new FileReader();
-    reader.onload = function (event) {};
+    reader.onload = function (event) {
+      const fileContent = event.target.result;
+    };
   });
