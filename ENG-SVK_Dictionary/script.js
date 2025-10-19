@@ -30,3 +30,8 @@ divContent.innerHTML = "Just check";
 
 //Added container elements to the container
 container.appendChild(divContent);
+
+//Read data
+document
+  .getElementById("inputDictionary")
+  .addEventListener("change", function () {});
