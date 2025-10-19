@@ -43,7 +43,8 @@ document
     const reader = new FileReader();
     reader.onload = function (event) {
       const fileContent = event.target.result;
+      rows(fileContent);
     };
   });
 
-function rows() {}
+function rows(fileContent) {}
