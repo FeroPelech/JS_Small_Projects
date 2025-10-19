@@ -37,5 +37,7 @@ document
   .addEventListener("change", function () {
     const file = this.files[0];
     if (!file) {
+      alert("Please select a file first.");
+      return;
     }
   });
