@@ -40,4 +40,5 @@ document
       alert("Please select a file first.");
       return;
     }
+    const reader = new FileReader();
   });
