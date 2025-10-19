@@ -34,4 +34,6 @@ container.appendChild(divContent);
 //Read data
 document
   .getElementById("inputDictionary")
-  .addEventListener("change", function () {});
+  .addEventListener("change", function () {
+    const file = this.files[0];
+  });
