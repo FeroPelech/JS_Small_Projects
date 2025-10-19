@@ -48,4 +48,6 @@ document
     reader.readAsText(file);
   });
 
-function rows(fileContent) {}
+function rows(fileContent) {
+  console.log(fileContent);
+}
