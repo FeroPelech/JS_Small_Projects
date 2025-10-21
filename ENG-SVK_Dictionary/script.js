@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 const menu = document.querySelector(".menu");
+let content = [];
 console.log(menu);
 
 //Create menu content
