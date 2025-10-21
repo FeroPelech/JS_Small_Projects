@@ -3,6 +3,7 @@ const menu = document.querySelector(".menu");
 let content = [];
 let workArray = [];
 let slovakWords = [];
+let englishWords = [];
 console.log(menu);
 
 //Create menu content
