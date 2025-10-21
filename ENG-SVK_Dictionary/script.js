@@ -56,4 +56,5 @@ function rows(fileContent) {
   content = [];
   workArray = [];
   slovakWords = [];
+  englishWords = [];
 }
