@@ -1,6 +1,7 @@
 const container = document.querySelector(".container");
 const menu = document.querySelector(".menu");
 let content = [];
+let workArray = [];
 console.log(menu);
 
 //Create menu content
