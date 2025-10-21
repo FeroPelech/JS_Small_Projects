@@ -52,4 +52,6 @@ document
     reader.readAsText(file);
   });
 
-function rows(fileContent) {}
+function rows(fileContent) {
+  content = [];
+}
