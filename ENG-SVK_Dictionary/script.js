@@ -57,4 +57,6 @@ function rows(fileContent) {
   workArray = [];
   slovakWords = [];
   englishWords = [];
+  if (typeof fileContent === "string") {
+  }
 }
