@@ -71,4 +71,8 @@ function rows(fileContent) {
   }
 }
 
+loadBtn.addEventListener("click", () => {
+  console.log("LoadButton");
+});
+
 function loadWords() {}
