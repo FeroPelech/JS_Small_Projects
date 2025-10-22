@@ -70,3 +70,5 @@ function rows(fileContent) {
     slovakWords.push(workArray[1]);
   }
 }
+
+function loadWords() {}
