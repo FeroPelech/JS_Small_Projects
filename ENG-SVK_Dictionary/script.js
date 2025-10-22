@@ -72,9 +72,9 @@ function rows(fileContent) {
 }
 
 loadBtn.addEventListener("click", () => {
-  loadWords();
+  loadWords(englishWords, slovakWords);
 });
 
-function loadWords() {
+function loadWords(eng, svk) {
   console.log("Load words function");
 }
