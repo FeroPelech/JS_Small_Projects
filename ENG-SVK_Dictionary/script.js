@@ -76,5 +76,5 @@ loadBtn.addEventListener("click", () => {
 });
 
 function loadWords(eng, svk) {
-  console.log("Load words function");
+  let inputs = [];
 }
