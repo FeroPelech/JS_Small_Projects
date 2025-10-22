@@ -20,6 +20,7 @@ mixBtn.setAttribute("class", "mixBtn");
 mixBtn.textContent = "MIX";
 const loadBtn = document.createElement("button");
 loadBtn.setAttribute("class", "loadBtn");
+loadBtn.textContent = "Load";
 // const menuBtn = document.createElement("button");
 // menuBtn.setAttribute("class", "menuBtn");
 console.log(input);
