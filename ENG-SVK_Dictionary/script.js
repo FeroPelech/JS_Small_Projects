@@ -60,4 +60,5 @@ function rows(fileContent) {
   if (typeof fileContent === "string") {
     content = fileContent.split("\r\n");
   }
+  for (let i = 0; i < content.length; i++) {}
 }
