@@ -29,6 +29,7 @@ console.log(input);
 menu.appendChild(label);
 menu.appendChild(input);
 menu.appendChild(mixBtn);
+menu.appendChild(loadBtn);
 
 //Create container content
 const divContent = document.createElement("div");
