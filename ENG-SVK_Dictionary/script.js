@@ -58,5 +58,6 @@ function rows(fileContent) {
   slovakWords = [];
   englishWords = [];
   if (typeof fileContent === "string") {
+    content = fileContent.split("\r\n");
   }
 }
