@@ -62,5 +62,6 @@ function rows(fileContent) {
   }
   for (let i = 0; i < content.length; i++) {
     workArray = content[i].split(" - ");
+    englishWords.push(workArray[0]);
   }
 }
