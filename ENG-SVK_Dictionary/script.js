@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 const container = document.querySelector(".container");
 const menu = document.querySelector(".menu");
 let content = [];
@@ -76,5 +78,7 @@ loadBtn.addEventListener("click", () => {
 
 function loadWords(eng, svk) {
   let inputs = [];
-  for (let i = 0; i < eng.length; i++) {}
+  for (let i = 0; i < eng.length; i++) {
+    console.log(eng[i]);
+  }
 }
