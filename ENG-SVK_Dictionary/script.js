@@ -82,6 +82,7 @@ function loadWords(eng, svk) {
     console.log(eng[i]);
     const wordDiv = document.createElement("div");
     wordDiv.className = "wordDiv";
+    const newWordDiv = document.createElement("div");
     console.log(wordDiv);
   }
 }
