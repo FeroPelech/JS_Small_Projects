@@ -85,6 +85,7 @@ function loadWords(eng, svk) {
     const newWordDiv = document.createElement("div");
     newWordDiv.className = `index${i}`;
     newWordDiv.textContent = eng[i];
+    wordRow.appendChild(newDiv);
     console.log(wordDiv);
   }
 }
