@@ -88,5 +88,6 @@ function loadWords(eng, svk) {
     wordRow.appendChild(newDiv);
     console.log(wordDiv);
     const newInput = document.createElement("input");
+    newInput.className = `inputIndex${i}`;
   }
 }
