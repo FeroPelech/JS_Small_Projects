@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 const container = document.querySelector(".container");
 const menu = document.querySelector(".menu");
 let content = [];
@@ -85,9 +83,10 @@ function loadWords(eng, svk) {
     const newWordDiv = document.createElement("div");
     newWordDiv.className = `index${i}`;
     newWordDiv.textContent = eng[i];
-    wordRow.appendChild(newDiv);
+    wordDiv.appendChild(newWordDiv);
     console.log(wordDiv);
     const newInput = document.createElement("input");
     newInput.className = `inputIndex${i}`;
+    wordDiv.appendChild(newInput);
   }
 }
