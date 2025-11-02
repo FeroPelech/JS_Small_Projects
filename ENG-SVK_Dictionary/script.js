@@ -89,5 +89,6 @@ function loadWords(eng, svk) {
     newInput.className = `inputIndex${i}`;
     wordDiv.appendChild(newInput);
     const checkBtn = document.createElement("button");
+    checkBtn.className = `checkBtn${i}`;
   }
 }
