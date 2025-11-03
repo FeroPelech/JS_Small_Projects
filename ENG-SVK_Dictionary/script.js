@@ -90,5 +90,6 @@ function loadWords(eng, svk) {
     wordDiv.appendChild(newInput);
     const checkBtn = document.createElement("button");
     checkBtn.className = `checkBtn${i}`;
+    checkBtn.textContent = "Check!";
   }
 }
