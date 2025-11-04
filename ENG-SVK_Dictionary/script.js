@@ -92,5 +92,6 @@ function loadWords(eng, svk) {
     checkBtn.className = `checkBtn${i}`;
     checkBtn.textContent = "Check!";
     wordDiv.appendChild(checkBtn);
+    container.appendChild(wordDiv);
   }
 }
