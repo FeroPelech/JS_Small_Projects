@@ -93,5 +93,7 @@ function loadWords(eng, svk) {
     checkBtn.textContent = "Check!";
     wordDiv.appendChild(checkBtn);
     container.appendChild(wordDiv);
+
+    inputs.push(newInput);
   }
 }
