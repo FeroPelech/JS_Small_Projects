@@ -32,7 +32,7 @@ menu.appendChild(loadBtn);
 
 //Create container content
 const divContent = document.createElement("div");
-divContent.setAttribute("class", "ContainerDiv");
+divContent.setAttribute("class", "containerDiv");
 
 //Added container elements to the container
 container.appendChild(divContent);
