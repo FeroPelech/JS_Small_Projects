@@ -77,14 +77,12 @@ loadBtn.addEventListener("click", () => {
 function loadWords(eng, svk) {
   let inputs = [];
   for (let i = 0; i < eng.length; i++) {
-    console.log(eng[i]);
     const wordDiv = document.createElement("div");
     wordDiv.className = "wordDiv";
     const newWordDiv = document.createElement("div");
     newWordDiv.className = `index${i}`;
     newWordDiv.textContent = eng[i];
     wordDiv.appendChild(newWordDiv);
-    console.log(wordDiv);
     const newInput = document.createElement("input");
     newInput.className = `inputIndex${i}`;
     wordDiv.appendChild(newInput);
@@ -93,7 +91,9 @@ function loadWords(eng, svk) {
     checkBtn.textContent = "Check!";
     wordDiv.appendChild(checkBtn);
     container.appendChild(wordDiv);
-
     inputs.push(newInput);
+    newInput.addEventListener("keydown", (e) => {
+      console.log(e);
+    });
   }
 }
