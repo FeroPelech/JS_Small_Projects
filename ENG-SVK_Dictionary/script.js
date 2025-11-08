@@ -92,8 +92,6 @@ function loadWords(eng, svk) {
     divContent.appendChild(wordDiv);
 
     inputs.push(newInput);
-    newInput.addEventListener("keydown", (e) => {
-      console.log(e);
-    });
+    newInput.addEventListener("keydown", (e) => {});
   }
 }
