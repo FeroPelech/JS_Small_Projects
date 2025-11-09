@@ -92,6 +92,10 @@ function loadWords(eng, svk) {
     divContent.appendChild(wordDiv);
 
     inputs.push(newInput);
-    newInput.addEventListener("keydown", (e) => {});
+    newInput.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowDown" && i < inputs.length - 1) {
+        console.log("down");
+      }
+    });
   }
 }
