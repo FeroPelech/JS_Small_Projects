@@ -95,6 +95,7 @@ function loadWords(eng, svk) {
     newInput.addEventListener("keydown", (e) => {
       if (e.key === "ArrowDown" && i < inputs.length - 1) {
         console.log("down");
+        e.preventDefault();
       }
     });
   }
