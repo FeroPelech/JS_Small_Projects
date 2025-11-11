@@ -96,6 +96,7 @@ function loadWords(eng, svk) {
       if (e.key === "ArrowDown" && i < inputs.length - 1) {
         console.log("down");
         e.preventDefault();
+        inputs[i + 1].focus();
       }
     });
   }
