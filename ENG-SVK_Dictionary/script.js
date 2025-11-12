@@ -98,6 +98,8 @@ function loadWords(eng, svk) {
         e.preventDefault();
         inputs[i + 1].focus();
       }
+      if (e.key === "ArrowUp" && i > 0) {
+      }
     });
   }
 }
