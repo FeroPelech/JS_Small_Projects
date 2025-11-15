@@ -100,6 +100,7 @@ function loadWords(eng, svk) {
       }
       if (e.key === "ArrowUp" && i > 0) {
         e.preventDefault();
+        inputs[i - 1].focus();
       }
     });
   }
