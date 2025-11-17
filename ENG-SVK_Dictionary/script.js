@@ -104,6 +104,7 @@ function loadWords(eng, svk) {
       }
       if (e.key === "Enter") {
         console.log("Enter");
+        e.preventDefault();
       }
     });
   }
