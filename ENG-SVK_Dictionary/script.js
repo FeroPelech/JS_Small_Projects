@@ -108,5 +108,6 @@ function loadWords(eng, svk) {
         checkBtn.click();
       }
     });
+    container.appendChild(checkAllBtn);
   }
 }
