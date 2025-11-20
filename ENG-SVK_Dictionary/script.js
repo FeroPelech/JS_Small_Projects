@@ -35,6 +35,7 @@ menu.appendChild(loadBtn);
 //Create container content
 const divContent = document.createElement("div");
 divContent.setAttribute("class", "containerDiv");
+clearAllInputs.textContent = "Clear inputs.";
 
 //Added container elements to the container
 container.appendChild(divContent);
