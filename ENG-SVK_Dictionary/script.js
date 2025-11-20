@@ -113,5 +113,9 @@ function loadWords(eng, svk) {
     });
     container.appendChild(checkAllBtn);
     container.appendChild(clearAllInputs);
+
+    checkBtn.addEventListener("click", () => {
+      console.log("Check Button");
+    });
   }
 }
