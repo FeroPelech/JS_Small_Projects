@@ -23,6 +23,7 @@ loadBtn.setAttribute("class", "loadBtn");
 loadBtn.textContent = "Load";
 // const menuBtn = document.createElement("button");
 // menuBtn.setAttribute("class", "menuBtn");
+const clearAllInputs = document.createElement("button");
 
 // Added menu elements to the menu
 menu.appendChild(label);
