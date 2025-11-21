@@ -36,6 +36,7 @@ divContent.setAttribute("class", "containerDiv");
 clearAllInputs.textContent = "Clear inputs.";
 const clearAllInputs = document.createElement("button");
 clearAllInputs.className = "clearBtn";
+clearAllInputs.textContent = "Clear All";
 const checkAllBtn = document.createElement("button");
 checkAllBtn.className = "checkAllBtn";
 checkAllBtn.textContent = "Check all answers!";
