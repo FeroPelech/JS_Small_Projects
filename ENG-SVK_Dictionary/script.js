@@ -27,6 +27,7 @@ const clearAllInputs = document.createElement("button");
 clearAllInputs.className = "clearBtn";
 const checkAllBtn = document.createElement("button");
 checkAllBtn.className = "checkAllBtn";
+checkAllBtn.textContent = "Check all answers!";
 
 // Added menu elements to the menu
 menu.appendChild(label);
