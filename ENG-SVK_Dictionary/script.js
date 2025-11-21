@@ -25,6 +25,7 @@ loadBtn.textContent = "Load";
 // menuBtn.setAttribute("class", "menuBtn");
 const clearAllInputs = document.createElement("button");
 clearAllInputs.className = "clearBtn";
+const checkAllBtn = document.createElement("button");
 
 // Added menu elements to the menu
 menu.appendChild(label);
