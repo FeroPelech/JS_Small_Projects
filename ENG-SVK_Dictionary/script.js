@@ -119,6 +119,7 @@ function loadWords(eng, svk) {
 
     checkBtn.addEventListener("click", () => {
       console.log("Check Button");
+      const userInput = newInput.value.trim();
     });
   }
 }
