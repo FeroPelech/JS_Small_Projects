@@ -23,11 +23,6 @@ loadBtn.setAttribute("class", "loadBtn");
 loadBtn.textContent = "Load";
 // const menuBtn = document.createElement("button");
 // menuBtn.setAttribute("class", "menuBtn");
-const clearAllInputs = document.createElement("button");
-clearAllInputs.className = "clearBtn";
-const checkAllBtn = document.createElement("button");
-checkAllBtn.className = "checkAllBtn";
-checkAllBtn.textContent = "Check all answers!";
 
 // Added menu elements to the menu
 menu.appendChild(label);
@@ -39,6 +34,11 @@ menu.appendChild(loadBtn);
 const divContent = document.createElement("div");
 divContent.setAttribute("class", "containerDiv");
 clearAllInputs.textContent = "Clear inputs.";
+const clearAllInputs = document.createElement("button");
+clearAllInputs.className = "clearBtn";
+const checkAllBtn = document.createElement("button");
+checkAllBtn.className = "checkAllBtn";
+checkAllBtn.textContent = "Check all answers!";
 
 //Added container elements to the container
 container.appendChild(divContent);
