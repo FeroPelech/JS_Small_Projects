@@ -121,6 +121,9 @@ function loadWords(eng, svk) {
     checkBtn.addEventListener("click", () => {
       console.log("Check Button");
       const userInput = newInput.value.trim();
+      if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
+        console.log("If con");
+      }
     });
   }
 }
