@@ -124,6 +124,7 @@ function loadWords(eng, svk) {
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
         console.log("If con");
         newInput.style.border = "2px solid green";
+        newInput.style.boxShadow = "0 0 20px 4px green";
       }
     });
   }
