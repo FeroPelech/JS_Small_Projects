@@ -123,6 +123,7 @@ function loadWords(eng, svk) {
       const userInput = newInput.value.trim();
       if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
         console.log("If con");
+        newInput.style.border = "2px solid green";
       }
     });
   }
