@@ -127,6 +127,7 @@ function loadWords(eng, svk) {
         newInput.style.boxShadow = "0 0 20px 4px green";
       } else {
         console.log("Else in addeventistener");
+        newInput.style.border = "2px solid red";
       }
     });
   }
