@@ -125,6 +125,8 @@ function loadWords(eng, svk) {
         console.log("If con");
         newInput.style.border = "2px solid green";
         newInput.style.boxShadow = "0 0 20px 4px green";
+      } else {
+        console.log("Else in addeventistener");
       }
     });
   }
