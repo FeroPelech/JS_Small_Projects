@@ -133,6 +133,5 @@ function loadWords(eng, svk) {
     });
   }
   if (inputs.length > 0) {
-    console.log("Console log for inputs");
   }
 }
