@@ -137,6 +137,8 @@ function loadWords(eng, svk) {
   }
   checkAllBtn.onclick = () => {
     console.log("click");
-    inputs.forEach((e, i) => {});
+    inputs.forEach((e, i) => {
+      const userInputAll = e.value.trim();
+    });
   };
 }
