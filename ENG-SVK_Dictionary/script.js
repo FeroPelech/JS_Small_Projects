@@ -139,6 +139,7 @@ function loadWords(eng, svk) {
     console.log("click");
     inputs.forEach((e, i) => {
       const userInputAll = e.value.trim();
+      const parent = e.parentElement;
     });
   };
 }
