@@ -140,6 +140,7 @@ function loadWords(eng, svk) {
     inputs.forEach((e, i) => {
       const userInputAll = e.value.trim();
       const parent = e.parentElement;
+      const existingAnswer = parent.querySelector(".correct-answer");
     });
   };
 }
