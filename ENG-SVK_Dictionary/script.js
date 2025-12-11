@@ -141,6 +141,9 @@ function loadWords(eng, svk) {
       const userInputAll = e.value.trim();
       const parent = e.parentElement;
       const existingAnswer = parent.querySelector(".correct-answer");
+      if (existingAnswer) {
+        parent.removeChild(existingAnswer);
+      }
     });
   };
 }
