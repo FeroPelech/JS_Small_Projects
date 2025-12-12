@@ -144,6 +144,9 @@ function loadWords(eng, svk) {
       if (existingAnswer) {
         parent.removeChild(existingAnswer);
       }
+      if (userInputAll.toLowerCase() === checkWords[i].toLowerCase()) {
+        console.log("another if");
+      }
     });
   };
 }
