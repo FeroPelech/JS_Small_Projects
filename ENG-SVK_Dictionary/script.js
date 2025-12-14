@@ -146,6 +146,7 @@ function loadWords(eng, svk) {
       }
       if (userInputAll.toLowerCase() === checkWords[i].toLowerCase()) {
         console.log("another if");
+        e.style.border = "2px solid green";
       }
     });
   };
