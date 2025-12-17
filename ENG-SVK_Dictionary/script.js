@@ -150,6 +150,7 @@ function loadWords(eng, svk) {
         e.style.boxShadow = "0 0 20px 4px green";
       } else {
         e.style.border = "2px solid red";
+        e.style.boxShadow = "0 0 20px 4px red";
       }
     });
   };
