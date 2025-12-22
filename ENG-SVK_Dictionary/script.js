@@ -154,6 +154,7 @@ function loadWords(eng, svk) {
         const correctDiv = document.createElement("div");
         correctDiv.className = "correct-answer";
         correctDiv.style.color = "#888";
+        correctDiv.style.fontSize = "0.85em";
       }
     });
   };
