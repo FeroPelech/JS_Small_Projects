@@ -156,6 +156,7 @@ function loadWords(eng, svk) {
         correctDiv.style.color = "#888";
         correctDiv.style.fontSize = "0.85em";
         correctDiv.textContent = `    ${checkWords[i]}`;
+        parent.appendChild(correctDiv);
       }
     });
   };
