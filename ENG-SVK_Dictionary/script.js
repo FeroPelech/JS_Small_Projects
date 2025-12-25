@@ -160,4 +160,7 @@ function loadWords(eng, svk) {
       }
     });
   };
+  clearAllInputs.onclick = () => {
+    console.log("Cler inputs");
+  };
 }
