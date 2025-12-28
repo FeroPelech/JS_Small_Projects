@@ -162,6 +162,8 @@ function loadWords(eng, svk) {
   };
   clearAllInputs.onclick = () => {
     console.log("Cler inputs");
-    inputs.forEach((e, i) => {});
+    inputs.forEach((e, i) => {
+      e.value = "";
+    });
   };
 }
