@@ -164,6 +164,7 @@ function loadWords(eng, svk) {
     console.log("Cler inputs");
     inputs.forEach((e, i) => {
       e.value = "";
+      e.style.border = "none";
     });
   };
 }
