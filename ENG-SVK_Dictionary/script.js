@@ -165,6 +165,7 @@ function loadWords(eng, svk) {
     inputs.forEach((e, i) => {
       e.value = "";
       e.style.border = "none";
+      e.style.boxShadow = "none";
     });
   };
 }
