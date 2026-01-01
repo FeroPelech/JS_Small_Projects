@@ -166,6 +166,7 @@ function loadWords(eng, svk) {
       e.value = "";
       e.style.border = "none";
       e.style.boxShadow = "none";
+      const parent = e.parentElement;
     });
   };
 }
