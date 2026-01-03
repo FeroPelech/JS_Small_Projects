@@ -168,6 +168,9 @@ function loadWords(eng, svk) {
       e.style.boxShadow = "none";
       const parent = e.parentElement;
       const existingAnswer = parent.querySelector(".correct-answer");
+      if (existingAnswer && existingAnswer.parentNode === parent) {
+        console.log("If condition");
+      }
     });
   };
 }
