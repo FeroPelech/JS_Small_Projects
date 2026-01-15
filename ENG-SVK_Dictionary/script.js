@@ -33,7 +33,6 @@ menu.appendChild(loadBtn);
 //Create container content
 const divContent = document.createElement("div");
 divContent.setAttribute("class", "containerDiv");
-clearAllInputs.textContent = "Clear inputs.";
 const clearAllInputs = document.createElement("button");
 clearAllInputs.className = "clearBtn";
 clearAllInputs.textContent = "Clear All";
@@ -121,7 +120,7 @@ function loadWords(eng, svk) {
     checkBtn.addEventListener("click", () => {
       console.log("Check Button");
       const userInput = newInput.value.trim();
-      if (userInput.toLowerCase() === checkWords[i].toLowerCase()) {
+      if (userInput.toLowerCase() === svk[i].toLowerCase()) {
         console.log("If con");
         newInput.style.border = "2px solid green";
         newInput.style.boxShadow = "0 0 20px 4px green";
@@ -144,7 +143,7 @@ function loadWords(eng, svk) {
       if (existingAnswer) {
         parent.removeChild(existingAnswer);
       }
-      if (userInputAll.toLowerCase() === checkWords[i].toLowerCase()) {
+      if (userInputAll.toLowerCase() === svk[i].toLowerCase()) {
         console.log("another if");
         e.style.border = "2px solid green";
         e.style.boxShadow = "0 0 20px 4px green";
@@ -155,7 +154,7 @@ function loadWords(eng, svk) {
         correctDiv.className = "correct-answer";
         correctDiv.style.color = "#888";
         correctDiv.style.fontSize = "0.85em";
-        correctDiv.textContent = `    ${checkWords[i]}`;
+        correctDiv.textContent = `    ${svk[i]}`;
         parent.appendChild(correctDiv);
       }
     });
