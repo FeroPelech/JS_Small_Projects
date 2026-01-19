@@ -40,6 +40,8 @@ clearAllInputs.textContent = "Clear All";
 const checkAllBtn = document.createElement("button");
 checkAllBtn.className = "checkAllBtn";
 checkAllBtn.textContent = "Check all answers!";
+downFoot.appendChild(checkAllBtn);
+downFoot.appendChild(clearAllInputs);
 
 //Added container elements to the container
 container.appendChild(divContent);
@@ -115,8 +117,6 @@ function loadWords(eng, svk) {
         checkBtn.click();
       }
     });
-    downFoot.appendChild(checkAllBtn);
-    downFoot.appendChild(clearAllInputs);
 
     checkBtn.addEventListener("click", () => {
       console.log("Check Button");
