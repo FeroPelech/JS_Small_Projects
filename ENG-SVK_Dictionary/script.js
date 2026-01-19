@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 const menu = document.querySelector(".menu");
+const downFoot = document.querySelector(".downFoot");
 let content = [];
 let workArray = [];
 let slovakWords = [];
@@ -114,8 +115,8 @@ function loadWords(eng, svk) {
         checkBtn.click();
       }
     });
-    container.appendChild(checkAllBtn);
-    container.appendChild(clearAllInputs);
+    downFoot.appendChild(checkAllBtn);
+    downFoot.appendChild(clearAllInputs);
 
     checkBtn.addEventListener("click", () => {
       console.log("Check Button");
