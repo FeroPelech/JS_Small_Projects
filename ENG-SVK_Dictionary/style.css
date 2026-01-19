@@ -1,5 +1,5 @@
 :root {
-  --page-width: 90%;
+  --page-width: 80%;
   --max-width: 900px;
   --gutter: 20px; /* vzdialenosť od okrajov */
   --menu-h: 80px; /* výška menu */
@@ -47,7 +47,7 @@ body {
   transform: translateX(-50%);
   width: var(--page-width);
   max-width: var(--max-width);
-  bottom: var(--gutter); /* zabezpečí výšku panelu do spodnej časti */
+  bottom: 110px; /* zabezpečí výšku panelu do spodnej časti */
   z-index: 900;
   /* overflow: visible; wrapper nechá vnútorný element robiť scroll */
   pointer-events: none; /* voliteľné: aby div nezachytával kliky mimo contentu */
@@ -61,9 +61,12 @@ body {
   inset: 0; /* top:0; right:0; bottom:0; left:0; -> vyplní wrapper */
   background: #ffffff;
   border: 2px solid #000;
+  overflow: auto;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
   padding: 16px;
+  clip-path: inset(0 round 10px);
+  padding-right: 10px;
   box-sizing: border-box;
 
   /* Dôležité pre vnútorné scrollovanie */
@@ -112,4 +115,28 @@ body {
     --max-width: 420px;
     --menu-h: 72px;
   }
+}
+
+/* FOOTER DOLE */
+.downFoot {
+  position: fixed;
+  bottom: var(--gutter);
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--page-width);
+  max-width: var(--max-width);
+  height: 70px;
+  margin-top: 150px;
+
+  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  border: 2px solid #000;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  z-index: 1000;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
