@@ -155,5 +155,6 @@ body {
 
 .checkAllBtn:hover {
   background-color: #d4fcc6;
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 0 20px #5a5a5a;
 }
