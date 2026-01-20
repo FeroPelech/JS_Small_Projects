@@ -144,3 +144,9 @@ body {
   z-index: 1000;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
+
+.checkAllBtn {
+  height: 25px;
+  border: 1px bold black;
+  border-radius: 5px;
+}
