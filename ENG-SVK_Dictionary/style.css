@@ -74,6 +74,10 @@ body {
   -webkit-overflow-scrolling: touch; /* plynulé scrollovanie na mobile */
 }
 
+.containerDiv::-webkit-scrollbar {
+  display: none; /* Chrome / Edge */
+}
+
 /* štýl riadkov slovíčok */
 .wordDiv {
   display: flex;
