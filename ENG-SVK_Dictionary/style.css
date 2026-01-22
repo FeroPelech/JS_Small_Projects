@@ -166,3 +166,9 @@ body {
   transition: transform 0.5s ease;
   background-color: 0.5s ease;
 }
+
+.clearBtn:hover {
+  background-color: #d4fcc6;
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 0 20px #5a5a5a;
+}
