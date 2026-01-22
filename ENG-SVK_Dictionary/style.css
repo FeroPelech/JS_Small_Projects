@@ -158,3 +158,11 @@ body {
   transform: scale(1.1) translateY(-2px);
   box-shadow: 0 0 20px #5a5a5a;
 }
+
+.clearBtn {
+  height: 25px;
+  border: 1px bold black;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  background-color: 0.5s ease;
+}
