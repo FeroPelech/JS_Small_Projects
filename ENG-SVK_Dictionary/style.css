@@ -6,18 +6,16 @@
   --gap-between: 16px; /* medzera medzi menu a panelom so slovíčkami */
 }
 
-/* zakážeme hlavné scrollovanie stránky (voliteľné) */
 html,
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* ak chceš povoliť scroll celej stránky, nastav na auto */
+  overflow: hidden;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #25197f, #7b95fe);
 }
 
-/* MENU (pevne hore, centrované) */
 .menu {
   position: fixed;
   top: var(--gutter);
