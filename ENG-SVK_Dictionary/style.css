@@ -38,27 +38,23 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
 
-/* PANEL SO SLOVÍČKAMI - tiež pevný, ale s vnútorným scrollom */
 .container {
-  /* wrapper nepotrebuje scroll; .containerDiv bude pevne umiestnené */
-  position: fixed; /* aby wrapper zostal na mieste tiež */
+  position: fixed;
   top: calc(var(--gutter) + var(--menu-h) + var(--gap-between));
   left: 50%;
   transform: translateX(-50%);
   width: var(--page-width);
   max-width: var(--max-width);
-  bottom: 110px; /* zabezpečí výšku panelu do spodnej časti */
+  bottom: 110px;
   z-index: 900;
-  /* overflow: visible; wrapper nechá vnútorný element robiť scroll */
-  pointer-events: none; /* voliteľné: aby div nezachytával kliky mimo contentu */
+  pointer-events: none;
   box-sizing: border-box;
 }
 
-/* Skutočný box so slovíčkami, ktorý bude scrollovateľný */
 .containerDiv {
-  pointer-events: auto; /* aby v ňom boli interaktívne prvky klikateľné */
-  position: absolute; /* relatívne k .container (fixované miesto) */
-  inset: 0; /* top:0; right:0; bottom:0; left:0; -> vyplní wrapper */
+  pointer-events: auto;
+  position: absolute;
+  inset: 0;
   background: #ffffff;
   border: 2px solid #000;
   overflow: auto;
@@ -68,17 +64,14 @@ body {
   clip-path: inset(0 round 10px);
   padding-right: 10px;
   box-sizing: border-box;
-
-  /* Dôležité pre vnútorné scrollovanie */
   overflow: auto;
-  -webkit-overflow-scrolling: touch; /* plynulé scrollovanie na mobile */
+  -webkit-overflow-scrolling: touch;
 }
 
 .containerDiv::-webkit-scrollbar {
-  display: none; /* Chrome / Edge */
+  display: none;
 }
 
-/* štýl riadkov slovíčok */
 .wordDiv {
   display: flex;
   align-items: center;
@@ -91,13 +84,14 @@ body {
 }
 
 .wordDiv .index {
-  /* min-width: 140px; */
-  /* max-width: 40%; */
+  min-width: 140px;
+  max-width: 40%;
   font-weight: 600;
 }
 
 .wordDiv input {
   flex: 1;
+  width: 250px;
   padding: 6px 8px;
   border: 1px solid #bbb;
   border-radius: 6px;
@@ -112,16 +106,14 @@ body {
   color: #fff;
 }
 
-/* Ak chceš, môžeš pridať media query pre menšie obrazovky */
 @media (max-width: 480px) {
   :root {
     --page-width: 96%;
-    --max-width: 420px;
+    --max-width: 480px;
     --menu-h: 72px;
   }
 }
 
-/* FOOTER DOLE */
 .downFoot {
   position: fixed;
   bottom: var(--gutter);
