@@ -12,3 +12,16 @@ body {
   height: 100vh;
   background-color: rgb(114, 29, 114);
 }
+
+.button {
+  position: relative;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  background-color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  color: #5c4800;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.5s;
+}
