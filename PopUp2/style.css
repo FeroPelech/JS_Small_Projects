@@ -32,7 +32,7 @@ body {
 
 #newsLetter {
   position: fixed;
-  top: -100%;
+  /* top: -100%; */
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
@@ -41,10 +41,17 @@ body {
   padding: 80px 50px 50px;
   transition: 0.5s;
   border-radius: 4px;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 #newsLetter.active {
   visibility: visible;
   top: 50%;
+}
+
+#newsLetter h2 {
+  text-align: center;
+  color: #5c4800;
+  font-size: 24px;
+  margin: 20px 10px;
 }
