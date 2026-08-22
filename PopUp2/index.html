@@ -14,7 +14,7 @@
     <title>PopUp2</title>
   </head>
   <body>
-    <a class="button" onclick="toggleNewLetter()">Subscribe Us</a>
+    <!-- <a class="button" onclick="toggleNewsLetter()">Subscribe Us</a> -->
     <div class="hidden" id="newsLetter">
       <h2>Join Our Exclusive News Letter</h2>
       <p>Follow my dark way to the absolut power!</p>
@@ -24,10 +24,10 @@
       <div class="box">
         <button type="submit">Sign Up!</button>
       </div>
+      <a class="close" onclick="toggleNewsLetter()">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </a>
     </div>
-    <a class="close" onclick="toggleNewLetter()">
-      <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-    </a>
     <script src="script.js"></script>
   </body>
 </html>
