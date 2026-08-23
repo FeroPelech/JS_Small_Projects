@@ -32,16 +32,16 @@ body {
 
 #newsLetter {
   position: fixed;
-  /* top: -100%; */
-  /* left: 50%;
-  transform: translate(-50%, -50%); */
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #fff;
   z-index: 1000;
   width: 450px;
   padding: 80px 50px 50px;
   transition: 0.5s;
   border-radius: 4px;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 #newsLetter.active {
@@ -88,4 +88,11 @@ button {
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 20px;
 }
