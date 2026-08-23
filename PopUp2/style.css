@@ -69,3 +69,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+input,
+button {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  outline: none;
+  font-size: 1rem;
+  font-family: serif;
+}
