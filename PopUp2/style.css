@@ -33,8 +33,8 @@ body {
 #newsLetter {
   position: fixed;
   /* top: -100%; */
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
   background-color: #fff;
   z-index: 1000;
   width: 450px;
@@ -78,4 +78,14 @@ button {
   outline: none;
   font-size: 1rem;
   font-family: serif;
+}
+
+button {
+  border: none;
+  width: 150px;
+  letter-spacing: 0.1rem;
+  background-color: rgb(114, 29, 114);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
 }
