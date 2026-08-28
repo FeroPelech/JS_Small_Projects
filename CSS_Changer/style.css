@@ -11,3 +11,13 @@
   --width: 40%;
   --border-radius: 15px;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+}
