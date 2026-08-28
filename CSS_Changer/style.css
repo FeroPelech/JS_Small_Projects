@@ -21,3 +21,12 @@ body {
   font-family: sans-serif;
   background-color: #f6f6f6;
 }
+
+.container {
+  border-radius: 20px;
+  background: linear-gradient(to right, #1d2b64, #61045f);
+  box-shadow:
+    10px 10px 10px rgba(246, 178, 172, 0.2),
+    -10px -10px 30px rgba(255, 107, 107, 0.8);
+  padding: 1.5rem;
+}
