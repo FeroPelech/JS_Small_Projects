@@ -3,3 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --padding: 20px;
+  --blur: 0px;
+  --base: rgb(255, 133, 0);
+  --width: 40%;
+  --border-radius: 15px;
+}
