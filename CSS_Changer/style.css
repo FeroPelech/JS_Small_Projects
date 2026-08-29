@@ -55,3 +55,16 @@ label {
   color: #f6f6f6;
   margin: 10px;
 }
+
+img {
+  width: var(--width);
+  height: 80%;
+  margin-top: 1rem;
+  padding: var(--padding);
+  filter: blur(var(--blur));
+  background-color: var(--base);
+  border-radius: var(--border-radius);
+  transition:
+    filter 0.3s ease,
+    backgound-color 0.3s ease;
+}
