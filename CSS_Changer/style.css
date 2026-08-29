@@ -36,3 +36,9 @@ h1 {
   color: #f6f6f6;
   margin-bottom: 1rem;
 }
+
+.heading {
+  font-size: 2rem;
+  color: var(--base);
+  font-weight: 800;
+}
