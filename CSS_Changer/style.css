@@ -49,3 +49,9 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+label {
+  font-size: 1rem;
+  color: #f6f6f6;
+  margin: 10px;
+}
