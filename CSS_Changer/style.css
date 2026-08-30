@@ -68,3 +68,14 @@ img {
     filter 0.3s ease,
     backgound-color 0.3s ease;
 }
+
+input[type='color'] {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 5px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
