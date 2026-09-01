@@ -4,3 +4,5 @@ console.log(inputs)
 inputs.forEach((e) => {
   e.addEventListener('change', update)
 })
+
+function update() {}
