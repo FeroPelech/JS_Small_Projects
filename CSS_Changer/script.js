@@ -5,4 +5,6 @@ inputs.forEach((e) => {
   e.addEventListener('change', update)
 })
 
-function update() {}
+function update() {
+  const suffixData = this.dataset.sizing || ''
+}
