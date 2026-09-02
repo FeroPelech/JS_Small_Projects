@@ -7,4 +7,8 @@ inputs.forEach((e) => {
 
 function update() {
   const suffixData = this.dataset.sizing || ''
+  document.documentElement.style.setProperty(
+    `--${this.name}`,
+    this.value + suffixData,
+  )
 }
