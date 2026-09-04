@@ -1,2 +1,3 @@
 const display = document.querySelector('.display')
-console.log(display)
+let value = Number(display.textContent)
+console.log(value)
