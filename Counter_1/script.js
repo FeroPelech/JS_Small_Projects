@@ -12,6 +12,12 @@ decreaseBtn.addEventListener('click', () => {
   checkValue(value)
 })
 
+increaseBtn.addEventListener('click', () => {
+  value = value + 1
+  display.textContent = value
+  checkValue(value)
+})
+
 function checkValue(value) {
   if (value <= -16) {
     display.style.boxShadow = '0 0 25px rgba(225, 2, 250, 0.3)'
