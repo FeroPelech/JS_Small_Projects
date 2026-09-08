@@ -27,3 +27,7 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+
+h1 {
+  text-align: center;
+}
