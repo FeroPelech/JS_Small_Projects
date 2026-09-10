@@ -7,4 +7,5 @@ textArea.addEventListener('input', (e) => {
 
 function newP(e) {
   console.log(e)
+  let value = e.target.value
 }
