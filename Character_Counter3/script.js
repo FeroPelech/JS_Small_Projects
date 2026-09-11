@@ -6,9 +6,7 @@ textArea.addEventListener('input', (e) => {
 })
 
 function newP(e) {
-  console.log(e)
   let value = e.target.value
   let numberOfCharacters = value.replace(/\s/g, '').length
-  console.log(numberOfCharacters)
   count.textContent = `Number of letters: ${numberOfCharacters}`
 }
