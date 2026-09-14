@@ -30,3 +30,8 @@
   cursor: pointer;
   transition: all ease-in-out 200ms;
 }
+
+.btn:hover {
+  background-color: rgb(218, 233, 228);
+  scale: 1.1;
+}
