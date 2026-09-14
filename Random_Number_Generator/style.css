@@ -13,3 +13,11 @@
   background-color: azure;
   gap: 10px;
 }
+
+.inputs {
+  padding: 15px;
+  background-color: rgb(177, 200, 192);
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+}
