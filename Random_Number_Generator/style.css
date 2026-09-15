@@ -36,13 +36,13 @@
   scale: 1.1;
 }
 
-.minValue {
+.firstValue {
   border: none;
   border-radius: 5px;
   padding: 3px;
 }
 
-.maxValue {
+.secondValue {
   border: none;
   border-radius: 5px;
   padding: 3px;
