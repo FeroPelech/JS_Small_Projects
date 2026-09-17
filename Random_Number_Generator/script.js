@@ -6,3 +6,5 @@ const btn = document.querySelector('.btn')
 function randomNumber(first, second) {
   return Math.floor(Math.random() * (second - first + 1)) + first
 }
+
+btn.addEventListener('click', () => {})
