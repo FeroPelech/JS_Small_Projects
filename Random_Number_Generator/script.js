@@ -10,4 +10,5 @@ function randomNumber(first, second) {
 btn.addEventListener('click', () => {
   const firstValueNumber = Number(firstValue.value)
   const secondValueNumber = Number(secondValue.value)
+  const result = randomNumber(firstValueNumber, secondValueNumber)
 })
