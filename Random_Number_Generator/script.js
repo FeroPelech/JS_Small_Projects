@@ -7,4 +7,6 @@ function randomNumber(first, second) {
   return Math.floor(Math.random() * (second - first + 1)) + first
 }
 
-btn.addEventListener('click', () => {})
+btn.addEventListener('click', () => {
+  const firstValueNumber = Number(firstValue.value)
+})
