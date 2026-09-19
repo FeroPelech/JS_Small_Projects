@@ -12,5 +12,4 @@ btn.addEventListener('click', () => {
   const secondValueNumber = Number(secondValue.value)
   const result = randomNumber(firstValueNumber, secondValueNumber)
   text.textContent = `Random number:${result}`
-  console.log(result)
 })
