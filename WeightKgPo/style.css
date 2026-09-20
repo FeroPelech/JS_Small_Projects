@@ -3,3 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: azure;
+  gap: 10px;
+  border: 1px solid black;
+}
