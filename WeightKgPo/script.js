@@ -9,3 +9,7 @@ console.log(resultBtn)
 const result = document.querySelector('.resultInfo')
 console.log(result)
 let checkSwitchBtn = 'kg'
+
+switchBtn.addEventListener('click', () => {
+  console.log('click')
+})
