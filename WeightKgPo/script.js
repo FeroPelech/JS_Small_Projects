@@ -8,3 +8,4 @@ const resultBtn = document.querySelector('.resultBtn')
 console.log(resultBtn)
 const result = document.querySelector('.resultInfo')
 console.log(result)
+let checkSwitchBtn = 'kg'
