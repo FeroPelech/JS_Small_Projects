@@ -11,5 +11,7 @@ console.log(result)
 let checkSwitchBtn = 'kg'
 
 switchBtn.addEventListener('click', () => {
-  console.log('click')
+  /**/
+  if (checkSwitchBtn === 'kg') {
+  }
 })
