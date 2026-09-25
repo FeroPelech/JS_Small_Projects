@@ -13,5 +13,6 @@ let checkSwitchBtn = 'kg'
 switchBtn.addEventListener('click', () => {
   /**/
   if (checkSwitchBtn === 'kg') {
+    switchBtn.textContent = 'Switch Lb. to Kg.'
   }
 })
