@@ -18,5 +18,6 @@ switchBtn.addEventListener('click', () => {
     /**/
   } else {
     switchBtn.textContent = 'Switch Kg. to Lb.'
+    label.textContent = 'Kilograms'
   }
 })
