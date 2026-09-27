@@ -26,5 +26,6 @@ switchBtn.addEventListener('click', () => {
 resultBtn.addEventListener('click', () => {
   const weight = Number(input.value)
   if (checkSwitchBtn == 'kg') {
+    const pounds = (weight * 2.20462).toFixed(2)
   }
 })
