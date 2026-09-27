@@ -23,4 +23,6 @@ switchBtn.addEventListener('click', () => {
   }
 })
 
-resultBtn.addEventListener('click', () => {})
+resultBtn.addEventListener('click', () => {
+  const weight = Number(input.value)
+})
