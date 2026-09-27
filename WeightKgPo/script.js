@@ -22,3 +22,5 @@ switchBtn.addEventListener('click', () => {
     checkSwitchBtn = 'kg'
   }
 })
+
+resultBtn.addEventListener('click', () => {})
