@@ -30,5 +30,6 @@ resultBtn.addEventListener('click', () => {
     result.textContent = `Weight in Pounds: ` + pounds + ` lb`
   } else {
     const kilograms = (weight / 2.20462).toFixed(2)
+    result.textContent = `Weight in Kilograms: ` + kilograms + ` kg`
   }
 })
