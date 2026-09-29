@@ -57,3 +57,10 @@ body {
   scale: 1.05;
   background-color: rgb(26, 213, 26);
 }
+
+#inputW {
+  padding: 5px 10px;
+  border: 2px solid #f59e0b;
+  border-radius: 8px;
+  outline: none;
+}
