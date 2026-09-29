@@ -52,3 +52,8 @@ body {
   border: none;
   transition: all 200ms ease-in-out;
 }
+
+.resultBtn:hover {
+  scale: 1.05;
+  background-color: rgb(26, 213, 26);
+}
