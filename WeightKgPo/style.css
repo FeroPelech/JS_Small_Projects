@@ -36,3 +36,8 @@ body {
   border: none;
   transition: all 200ms ease-in-out;
 }
+
+.btn:hover {
+  scale: 1.05;
+  background-color: rgb(68, 68, 68);
+}
