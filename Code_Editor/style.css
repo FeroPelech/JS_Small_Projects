@@ -36,3 +36,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.left .box {
+  height: 25vh;
+}
