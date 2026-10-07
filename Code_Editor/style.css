@@ -66,3 +66,12 @@ iframe {
   outline: none;
   border-radius: 0 0 5px 5px;
 }
+
+label {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  padding: 0 10px;
+}
