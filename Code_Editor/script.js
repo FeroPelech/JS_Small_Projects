@@ -1,3 +1,3 @@
 function run() {
-  console.log('function run')
+  let html = document.getElementById('html-code').value
 }
