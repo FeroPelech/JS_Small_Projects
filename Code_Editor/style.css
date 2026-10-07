@@ -53,3 +53,7 @@ textarea {
   font-size: 18px;
   border-radius: 0 0 5px 5px;
 }
+
+textarea:focus {
+  background-color: #2a2a2a;
+}
