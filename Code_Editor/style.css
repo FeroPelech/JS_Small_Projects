@@ -40,3 +40,16 @@ body {
 .left .box {
   height: 25vh;
 }
+
+textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 0 0 5px 5px;
+}
