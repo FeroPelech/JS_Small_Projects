@@ -4,7 +4,6 @@ function run() {
   let js = document.getElementById('js-code').value
   let outPut = document.getElementById('output')
 
-  outPut.contentDocument.body.innerHTML =
-    htmlCode + '<style>' + cssCode + '</style>'
-  outPut.contentWindow.eval(jsCode)
+  outPut.contentDocument.body.innerHTML = html + '<style>' + css + '</style>'
+  outPut.contentWindow.eval(js)
 }
