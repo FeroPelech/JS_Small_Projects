@@ -6,4 +6,5 @@ function run() {
 
   outPut.contentDocument.body.innerHTML =
     htmlCode + '<style>' + cssCode + '</style>'
+  outPut.contentWindow.eval(jsCode)
 }
