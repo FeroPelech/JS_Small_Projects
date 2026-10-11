@@ -10,3 +10,5 @@ const days = [
   'Friday',
   'Saturday',
 ]
+
+const date = new Date()
