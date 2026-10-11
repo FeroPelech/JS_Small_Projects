@@ -12,3 +12,4 @@ const days = [
 ]
 
 const date = new Date()
+const day = date.getDay()
