@@ -15,3 +15,7 @@ const day = date.getDay()
 console.log(days[day])
 
 actualDay.textContent = days[day]
+
+if (day == 0) {
+  funInfo.textContent = `It's God day. \n Rest and charge some power for next days.`
+}
