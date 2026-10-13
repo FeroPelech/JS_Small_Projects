@@ -18,4 +18,6 @@ actualDay.textContent = days[day]
 
 if (day == 0) {
   funInfo.textContent = `It's God day. \n Rest and charge some power for next days.`
+} else if (day == 1) {
+  funInfo.textContent = '...be strong!'
 }
