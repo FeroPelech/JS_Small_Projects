@@ -1,5 +1,4 @@
 const actualDay = document.querySelector('.day')
-/**/
 const funInfo = document.querySelector('.funInfo')
 const days = [
   'Sunday',
@@ -13,3 +12,6 @@ const days = [
 
 const date = new Date()
 const day = date.getDay()
+console.log(days[day])
+
+actualDay.textContent = days[day]
