@@ -28,4 +28,6 @@ if (day == 0) {
   funInfo.textContent = 'Krížom krážom s Jožom Rážom.'
 } else if (day == 5) {
   funInfo.textContent = `It's friday day.`
+} else if (day == 6) {
+  funInfo.textContent = 'Day for homework.'
 }
