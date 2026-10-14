@@ -22,4 +22,6 @@ if (day == 0) {
   funInfo.textContent = '...be strong!'
 } else if (day == 2) {
   funInfo.textContent = 'Nothing Special.'
+} else if (day == 3) {
+  funInfo.textContent = 'The week is halfway over.'
 }
