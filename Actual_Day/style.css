@@ -11,3 +11,16 @@
   min-height: 100vh;
   background-color: black;
 }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 2px solid yellow;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 5px 1px gold;
+  white-space: pre-line;
+  text-align: center;
+}
