@@ -73,3 +73,7 @@ button.reset {
     transform: translateY(-10px);
   }
 }
+
+button.start {
+  background-color: #28b485;
+}
