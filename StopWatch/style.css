@@ -77,3 +77,7 @@ button.reset {
 button.start {
   background-color: #28b485;
 }
+
+button.stop {
+  background-color: #ff6a88;
+}
