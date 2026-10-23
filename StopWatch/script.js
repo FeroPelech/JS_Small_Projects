@@ -3,4 +3,5 @@ window.onload = () => {
   let miliseconds = 0
   let interval
   const addSeconds = document.querySelector('seconds')
+  const addMilliSeconds = document.querySelector('milli')
 }
