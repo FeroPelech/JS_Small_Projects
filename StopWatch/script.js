@@ -7,4 +7,8 @@ window.onload = () => {
   const startBtn = document.querySelector('.start')
   const stopBtn = document.querySelector('.stop')
   const resetBtn = document.querySelector('.reset')
+
+  startBtn.onclick = () => {
+    console.log('hej')
+  }
 }
