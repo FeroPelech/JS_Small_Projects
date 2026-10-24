@@ -12,4 +12,8 @@ window.onload = () => {
     clearInterval(interval)
     interval = setInterval(start, 10)
   }
+
+  function start() {
+    console.log('kuk')
+  }
 }
