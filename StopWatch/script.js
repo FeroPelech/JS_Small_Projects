@@ -9,6 +9,6 @@ window.onload = () => {
   const resetBtn = document.querySelector('.reset')
 
   startBtn.onclick = () => {
-    console.log('hej')
+    interval = setInterval(startBtn, 10)
   }
 }
