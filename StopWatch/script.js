@@ -20,5 +20,9 @@ window.onload = () => {
     } else {
       addMilliSeconds.innerHTML = miliseconds
     }
+
+    if (miliseconds > 99) {
+      seconds++
+    }
   }
 }
