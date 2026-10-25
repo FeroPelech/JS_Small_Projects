@@ -15,5 +15,8 @@ window.onload = () => {
 
   function start() {
     miliseconds++
+    if (miliseconds < 10) {
+      addMilliSeconds.innerHTML = '0' + miliseconds
+    }
   }
 }
