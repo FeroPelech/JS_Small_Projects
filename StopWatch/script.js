@@ -14,6 +14,6 @@ window.onload = () => {
   }
 
   function start() {
-    console.log('kuk')
+    miliseconds++
   }
 }
