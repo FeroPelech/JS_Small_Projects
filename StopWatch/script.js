@@ -23,6 +23,7 @@ window.onload = () => {
 
     if (miliseconds > 99) {
       seconds++
+      addSeconds.innerHTML = seconds < 10 ? '0' + seconds : seconds
     }
   }
 }
