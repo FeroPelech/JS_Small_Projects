@@ -25,6 +25,7 @@ window.onload = () => {
       seconds++
       addSeconds.innerHTML = seconds < 10 ? '0' + seconds : seconds
       miliseconds = 0
+      addMilliSeconds.innerHTML = '00'
     }
   }
 }
