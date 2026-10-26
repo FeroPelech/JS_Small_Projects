@@ -13,6 +13,10 @@ window.onload = () => {
     interval = setInterval(start, 10)
   }
 
+  stopBtn.onclick = function () {
+    clearInterval(interval)
+  }
+
   function start() {
     miliseconds++
     if (miliseconds < 10) {
