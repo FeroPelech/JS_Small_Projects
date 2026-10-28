@@ -19,6 +19,7 @@ window.onload = () => {
 
   resetBtn.onclick = () => {
     clearInterval(interval)
+    seconds = 0
   }
 
   function start() {
