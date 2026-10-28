@@ -20,6 +20,7 @@ window.onload = () => {
   resetBtn.onclick = () => {
     clearInterval(interval)
     seconds = 0
+    miliseconds = 0
   }
 
   function start() {
