@@ -17,6 +17,8 @@ window.onload = () => {
     clearInterval(interval)
   }
 
+  resetBtn.onclick = () => {}
+
   function start() {
     miliseconds++
     if (miliseconds < 10) {
