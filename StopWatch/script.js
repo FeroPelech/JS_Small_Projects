@@ -17,7 +17,9 @@ window.onload = () => {
     clearInterval(interval)
   }
 
-  resetBtn.onclick = () => {}
+  resetBtn.onclick = () => {
+    clearInterval(interval)
+  }
 
   function start() {
     miliseconds++
