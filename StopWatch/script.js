@@ -21,6 +21,7 @@ window.onload = () => {
     clearInterval(interval)
     seconds = 0
     miliseconds = 0
+    addSeconds.textContent = '00'
   }
 
   function start() {
