@@ -22,6 +22,7 @@ window.onload = () => {
     seconds = 0
     miliseconds = 0
     addSeconds.textContent = '00'
+    addMilliSeconds.textContent = '00'
   }
 
   function start() {
