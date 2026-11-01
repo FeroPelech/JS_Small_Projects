@@ -3,3 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #c9c9c9;
+}
