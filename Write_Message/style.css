@@ -27,3 +27,8 @@ h2 {
   margin-bottom: 1rem;
   color: #3498db;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
