@@ -51,3 +51,7 @@ form {
   color: #ffffff;
   background-color: #3498db;
 }
+
+.submit:hover {
+  background-color: #2980b9;
+}
