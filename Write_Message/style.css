@@ -56,3 +56,12 @@ form {
 .submit:hover {
   background-color: #2980b9;
 }
+
+.invalid-message {
+  display: none;
+  background-color: #e74c3c;
+  border-radius: 5px;
+  padding: 0.2rem;
+  color: #ffffff;
+  margin-top: 5px;
+}
