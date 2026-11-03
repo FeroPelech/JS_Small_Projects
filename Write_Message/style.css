@@ -65,3 +65,9 @@ form {
   color: #ffffff;
   margin-top: 5px;
 }
+
+.message-content {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #2ecc71;
+}
