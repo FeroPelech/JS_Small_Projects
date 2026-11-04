@@ -3,4 +3,6 @@ function showMessageContent(message) {
   messageContent.textContent = `"${message}" - Your Message is Delivered`
 }
 
-function showInvalidMessage() {}
+function showInvalidMessage() {
+  const invalidMessage = document.querySelector('.invalid-message')
+}
