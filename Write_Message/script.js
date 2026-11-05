@@ -10,3 +10,5 @@ function showInvalidMessage() {
     invalidMessage.style.display = 'none'
   }, 2000)
 }
+
+function onSubmitForm(e) {}
