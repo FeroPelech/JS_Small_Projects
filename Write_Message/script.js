@@ -6,5 +6,7 @@ function showMessageContent(message) {
 function showInvalidMessage() {
   const invalidMessage = document.querySelector('.invalid-message')
   invalidMessage.computedStyleMap.display = 'block'
-  setTimeout(() => {}, 2000)
+  setTimeout(() => {
+    invalidMessage.style.display = 'none'
+  }, 2000)
 }
