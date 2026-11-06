@@ -14,4 +14,5 @@ function showInvalidMessage() {
 function onSubmitForm(e) {
   e.preventDefault()
   const messageInput = document.querySelector('.message')
+  const message = messageInput.value.trim()
 }
