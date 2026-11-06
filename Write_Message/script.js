@@ -11,4 +11,6 @@ function showInvalidMessage() {
   }, 2000)
 }
 
-function onSubmitForm(e) {}
+function onSubmitForm(e) {
+  e.preventDefault()
+}
