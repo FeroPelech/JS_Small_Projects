@@ -16,5 +16,6 @@ function onSubmitForm(e) {
   const messageInput = document.querySelector('.message')
   const message = messageInput.value.trim()
   if (message === '') {
+    showInvalidMessage()
   }
 }
