@@ -18,5 +18,6 @@ function onSubmitForm(e) {
   if (message === '') {
     showInvalidMessage()
   } else {
+    showMessageContent()
   }
 }
