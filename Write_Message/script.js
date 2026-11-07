@@ -17,5 +17,6 @@ function onSubmitForm(e) {
   const message = messageInput.value.trim()
   if (message === '') {
     showInvalidMessage()
+  } else {
   }
 }
