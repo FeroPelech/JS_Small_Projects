@@ -24,3 +24,5 @@ function onSubmitForm(e) {
     messageInput.value = ''
   }
 }
+
+;(function () {})()
