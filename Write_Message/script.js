@@ -25,4 +25,6 @@ function onSubmitForm(e) {
   }
 }
 
-;(function () {})()
+;(function () {
+  const form = document.querySelector('#form')
+})()
