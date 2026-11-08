@@ -27,4 +27,5 @@ function onSubmitForm(e) {
 
 ;(function () {
   const form = document.querySelector('#form')
+  form.addEventListener('submit', onSubmitForm)
 })()
