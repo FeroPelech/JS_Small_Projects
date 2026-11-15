@@ -13,9 +13,15 @@ body {
   min-height: 100vh;
 }
 
-.container{
-    background: linear-gradient(to bottom, #ffffff,#f4f7f9);
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
-    w400px
+.container {
+  background: linear-gradient(to bottom, #ffffff, #f4f7f9);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.header {
+  border-bottom: 1px solid f0f0f0;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
 }
