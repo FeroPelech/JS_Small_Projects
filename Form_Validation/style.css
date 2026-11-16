@@ -40,3 +40,7 @@ form {
   position: relative;
   transition: all 0.3s ease;
 }
+
+.control-form:hover {
+  transform: translateY(-5px);
+}
