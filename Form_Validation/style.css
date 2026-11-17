@@ -49,3 +49,13 @@ form {
   display: inline-block;
   margin-bottom: 5px;
 }
+
+.control-form input {
+  border: 2px solid #f7f7f7;
+  border-radius: 4px;
+  display: block;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
