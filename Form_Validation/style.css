@@ -44,3 +44,8 @@ form {
 .control-form:hover {
   transform: translateY(-5px);
 }
+
+.control-form label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
