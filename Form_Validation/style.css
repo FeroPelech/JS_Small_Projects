@@ -98,3 +98,7 @@ form {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.form button:hover {
+  background-color: #84bcc7;
+}
