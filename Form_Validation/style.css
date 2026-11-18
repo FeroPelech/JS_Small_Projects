@@ -84,3 +84,17 @@ form {
   opacity: 1;
   transform: translateY(0);
 }
+
+.form button {
+  background-color: #0ed2f7;
+  border: 2px solid #84bcc7;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
