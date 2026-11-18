@@ -78,3 +78,9 @@ form {
   visibility: hidden;
   transition: all 0.3s ease;
 }
+
+.control-form.fail small {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
