@@ -7,3 +7,5 @@ const passwordCheck = document.getElementById('passwordCheck')
 form.addEventListener('submit', (e) => {
   e.preventDefault()
 })
+
+function checkInputs() {}
