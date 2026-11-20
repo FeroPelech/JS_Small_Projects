@@ -5,5 +5,5 @@ const password = document.getElementById('password')
 const passwordCheck = document.getElementById('passwordCheck')
 
 form.addEventListener('submit', (e) => {
-  console.log(e)
+  e.preventDefault()
 })
