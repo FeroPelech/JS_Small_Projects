@@ -1,3 +1,5 @@
+const { use } = require('react')
+
 const form = document.getElementById('form')
 const username = document.getElementById('username')
 const email = document.getElementById('email')
@@ -9,4 +11,6 @@ form.addEventListener('submit', (e) => {
   checkInputs()
 })
 
-function checkInputs() {}
+function checkInputs() {
+  const usernameValue = username.value.trim()
+}
