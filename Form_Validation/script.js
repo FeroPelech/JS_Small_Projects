@@ -23,3 +23,5 @@ function checkInputs() {
     setSuccessFor(username)
   }
 }
+
+function setErrorFor(input, message) {}
