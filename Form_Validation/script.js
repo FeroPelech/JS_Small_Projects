@@ -16,4 +16,8 @@ function checkInputs() {
   const emailValue = email.value.trim()
   const passwordValue = password.value.trim()
   const passwordCheckValue = passwordCheck.value.trim()
+
+  if (username === '') {
+    setErrorFor(username, 'Username cannot be empty')
+  }
 }
