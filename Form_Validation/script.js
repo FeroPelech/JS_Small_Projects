@@ -19,5 +19,7 @@ function checkInputs() {
 
   if (username === '') {
     setErrorFor(username, 'Username cannot be empty')
+  } else {
+    setSuccessFor(username)
   }
 }
