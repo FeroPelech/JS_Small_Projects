@@ -15,4 +15,5 @@ function checkInputs() {
   const usernameValue = username.value.trim()
   const emailValue = email.value.trim()
   const passwordValue = password.value.trim()
+  const passwordCheckValue = passwordCheck.value.trim()
 }
