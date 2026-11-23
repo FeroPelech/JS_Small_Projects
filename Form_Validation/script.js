@@ -33,4 +33,5 @@ function setErrorFor(input, message) {
 
 function setSuccessFor(input) {
   const controlForm = input.parentElement
+  controlForm.className = 'control-form success'
 }
