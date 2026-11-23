@@ -1,4 +1,4 @@
-const { use } = require('react')
+// const { use } = require('react')
 
 const form = document.getElementById('form')
 const username = document.getElementById('username')
@@ -26,4 +26,5 @@ function checkInputs() {
 
 function setErrorFor(input, message) {
   const controlForm = input.parentElement
+  const small = controlForm.querySelector('.error')
 }
