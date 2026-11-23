@@ -30,3 +30,5 @@ function setErrorFor(input, message) {
   controlForm.className = 'control-form.fail'
   small.innerText = message
 }
+
+function setSuccessFor(input) {}
