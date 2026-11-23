@@ -31,4 +31,6 @@ function setErrorFor(input, message) {
   small.innerText = message
 }
 
-function setSuccessFor(input) {}
+function setSuccessFor(input) {
+  const controlForm = input.parentElement
+}
