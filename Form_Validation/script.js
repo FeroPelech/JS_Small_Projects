@@ -28,4 +28,5 @@ function setErrorFor(input, message) {
   const controlForm = input.parentElement
   const small = controlForm.querySelector('.error')
   controlForm.className = 'control-form.fail'
+  small.innerText = message
 }
