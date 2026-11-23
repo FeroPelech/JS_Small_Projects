@@ -22,6 +22,9 @@ function checkInputs() {
   } else {
     setSuccessFor(username)
   }
+
+  if (emailValue === '') {
+  }
 }
 
 function setErrorFor(input, message) {
