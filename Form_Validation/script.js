@@ -24,4 +24,6 @@ function checkInputs() {
   }
 }
 
-function setErrorFor(input, message) {}
+function setErrorFor(input, message) {
+  const controlForm = input.parentElement
+}
