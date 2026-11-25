@@ -27,6 +27,8 @@ function checkInputs() {
     setErrorFor(email, 'Email Cannot be Empty')
   } else if (!isEmail(email)) {
     setErrorFor(email, 'Enter a Valid Email')
+  } else {
+    setSuccessFor(email)
   }
 }
 
