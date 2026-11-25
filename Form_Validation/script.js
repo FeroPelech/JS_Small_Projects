@@ -24,6 +24,8 @@ function checkInputs() {
   }
 
   if (emailValue === '') {
+    setErrorFor(email, 'Email Cannot be Empty')
+  } else if (!isEmail(email)) {
   }
 }
 
@@ -38,3 +40,5 @@ function setSuccessFor(input) {
   const controlForm = input.parentElement
   controlForm.className = 'control-form success'
 }
+
+function isEmail(email) {}
