@@ -32,6 +32,9 @@ function checkInputs() {
   }
 }
 
+if (passwordCheck === '') {
+}
+
 function setErrorFor(input, message) {
   const controlForm = input.parentElement
   const small = controlForm.querySelector('.error')
