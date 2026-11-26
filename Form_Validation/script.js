@@ -34,7 +34,8 @@ function checkInputs() {
 
 if (passwordCheck === '') {
   setErrorFor(password, 'Password Check cannot be empty')
-} else if (passwordValue != passwordCheckValue) {
+} else if (passwordValue !== passwordCheckValue) {
+  setErrorFor(passwordCheck, 'Password does not match')
 }
 
 function setErrorFor(input, message) {
