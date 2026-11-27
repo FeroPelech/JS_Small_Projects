@@ -32,7 +32,7 @@ function checkInputs() {
   }
 }
 
-if (passwordCheck === '') {
+if (passwordCheckValue === '') {
   setErrorFor(password, 'Password Check cannot be empty')
 } else if (passwordValue !== passwordCheckValue) {
   setErrorFor(passwordCheck, 'Password does not match')
