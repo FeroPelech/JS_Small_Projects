@@ -37,6 +37,7 @@ if (passwordCheck === '') {
 } else if (passwordValue !== passwordCheckValue) {
   setErrorFor(passwordCheck, 'Password does not match')
 } else {
+  setSuccessFor(password)
 }
 
 function setErrorFor(input, message) {
